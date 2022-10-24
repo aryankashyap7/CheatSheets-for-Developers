@@ -16,6 +16,7 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 
 - [windows](./CheatSheets/windows-cheatsheet.md)
 - [git](./CheatSheets/git-cheatsheet.md)
+- [linux](./CheatSheets/linux-cheatsheet.md)
 
 * [Contributions](#contributions)
 
