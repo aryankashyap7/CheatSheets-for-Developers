@@ -79,7 +79,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `uname` | Print system information |
 | `uname -a` | Print all system information |
 | `uname -r` | Print kernel release |
@@ -179,7 +178,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `grep pattern file` | Search for pattern in file |
 | `grep -r pattern directory` | Recursively search for pattern in directory |
 | `grep -v pattern file` | Invert match, print non-matching lines |
