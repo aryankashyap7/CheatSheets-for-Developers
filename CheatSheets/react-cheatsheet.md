@@ -57,7 +57,7 @@ function User({ children }) {
 
 ```
 function App() {
-	const isAuthUser = useAuth();
+  const isAuthUser = useAuth();
 
   if (isAuthUser) {
     // if our user is authenticated, let them use the app
@@ -110,6 +110,8 @@ function Greeting({ name }) {
 ```
 
 ## React Hooks
+
+React hooks were introduced in React version 16.8 as a way to easily add reusable, stateful logic to React function components.
 
 ## React useState Hook
 
