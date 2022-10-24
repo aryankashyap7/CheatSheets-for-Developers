@@ -143,7 +143,21 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Toggle editor layout (horizontal/vertical)    | "Shift+Alt+0 "                  |
 |	Toggle full screen                            | "F11  "                         |
 
-
+#### Rich languages editing:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	Trigger suggestion		                      | "Ctrl+Space, Ctrl+I "           |
+|	Trigger parameter hints		                  | "Ctrl+Shift+Space               |
+|	Format document		                          | "Shift+Alt+F "                  |  
+|	Format selection		                      | "Ctrl+K Ctrl+F "                | 
+|	Go to Definition		                      | "F12 "                          |
+|	Peek Definition		                          | "Alt+F12 "                      |
+|	Open Definition to the side		              | "Ctrl+K F12 "                   |
+|	Quick Fix		                              | "Ctrl+. "                       |
+|	Show References		                          | "Shift+F12 "                    |
+|	Rename Symbol		                          | "F2 "                           |
+|	Trim trailing whitespace		              | "Ctrl+K Ctrl+X "                |
+|	Change file language		                  | "Ctrl+K M "                     |
 
 
 
