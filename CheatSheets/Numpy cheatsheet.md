@@ -84,6 +84,20 @@ np.ones((3,4))
            [1., 1., 1., 1.]])
 
 
+### Creating an Identity Array(n x n array with its main diagonal set to one) 
+
+```python
+np.identity(3)
+```
+
+
+
+
+    array([[1., 0., 0.],
+           [0., 1., 0.],
+           [0., 0., 1.]])
+
+
 
 ### Getting element from a certain range
 
