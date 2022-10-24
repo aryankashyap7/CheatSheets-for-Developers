@@ -124,7 +124,24 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Scroll page up/down		                      | "Shift+PgUp / PgDn "            |
 |	Scroll to top/bottom		                  | "Ctrl+Home / End "              |
 
-
+#### Display:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|   Zen Mode (Esc Esc to exit)			          | "Ctrl+K Z "                     |
+|	Open Markdown preview to the side		      | "Ctrl+K V "                     |
+|	Open Markdown preview		                  | "Ctrl+Shift+V "                 | 
+|	Show Output panel		                      | "Ctrl+Shift+U "                 |
+|	Toggle Search details		                  | "Ctrl+Shift+J "                 |
+|	Replace in files		                      | "Ctrl+Shift+H "                 |
+|	Show Extensions		                          | "Ctrl+Shift+X "                 |
+|	Show Debug		                              | "Ctrl+Shift+D "                 |
+|	Show Source Control		                      | "Ctrl+Shift+G "                 |
+|	Show Explorer / Toggle focus		          | "Ctrl+Shift+E "                 |
+|	Show Search		                              | "Ctrl+Shift+F "                 |
+|	Toggle Sidebar visibility		              | "Ctrl+B "                       |
+|   Zoom in/out		                              | "Ctrl+ = / -"                   |
+|	Toggle editor layout (horizontal/vertical)    | "Shift+Alt+0 "                  |
+|	Toggle full screen                            | "F11  "                         |
 
 
 
