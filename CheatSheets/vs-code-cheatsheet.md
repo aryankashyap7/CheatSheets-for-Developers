@@ -94,6 +94,23 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Toggle case-sensitive / regex / whole word    | "Alt+C / R / W "                |
 
 
+#### File management:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	New File		                              | "Ctrl+N "                       |
+|	Open File		                              | "Ctrl+O "                       |
+|	Save		                                  | "Ctrl+S "                       |  
+|	Save As		                                  | "Ctrl+Shift+S "                 |
+|	Save All		                              | "Ctrl+K S "                     |
+|	Close	                                      | "Ctrl+F4 "                      |
+|	Close All		                              | "Ctrl+K Ctrl+W "                |
+|	Reopen closed editor		                  | "Ctrl+Shift+T "                 |
+|	Keep preview mode editor open                 | "Ctrl+K Enter "                 |
+|	Open previous		                          | "Ctrl+Shift+Tab "               |
+|	Open next		                              | "Ctrl+Tab "                     |
+|	Copy path of active file   					  | "Ctrl+K P "                     |
+|	Reveal active file in Explorer		          | "Ctrl+K R "                     |
+|	Show active file in new window/instance		  | "Ctrl+K O  "                    |
 
 
 
