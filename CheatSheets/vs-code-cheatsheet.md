@@ -170,4 +170,14 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	PgDn Move editor left/right		              | "Ctrl+Shift+PgUp / "            | 
 |	Move active editor group    				  | "Ctrl+K ← / → "                 |
 
+#### Debug:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	Toggle breakpoint		                      | "F9 "                           |
+|	Start/Continue		                          | "F5  "                 		    |
+|	Stop		                                  | "Shift+F5 "                     |
+|	Step into/out 	                              |   "F11 / Shift+F11  "           | 
+|	Step over		                              | "F10  "             			| 
+|	Show hover		                              | "Ctrl+K Ctrl+I  "            	| 
+
 
