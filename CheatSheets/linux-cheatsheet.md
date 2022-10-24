@@ -12,6 +12,7 @@
   - [Disk Usage](#disk-usage)
   - [Search](#search)
   - [Networking](#networking)
+  - [VIM](#vim)
 
 # Linux CheatSheet for Developers
 
@@ -134,6 +135,19 @@
 | `vim file`   | Vim is a highly configurable text editor built to enable efficient text editing.      |
 | `vi file`    | Vi is a screen-oriented text editor originally created for the Unix operating system. |
 | `emacs file` | Emacs is a family of text editors that are characterized by their extensibility.      |
+
+## VIM
+
+| Command   | Description   |
+| --------- | ------------  |
+| `h`       | move cursor left |
+| `j`       | move cursor down |
+| `k`       | move cursor up   |
+| `l`       | move cursor right|
+| `gg`      | go to the first line of the document |
+| `G`       | go to the last line of the document  |
+| `zz`      | center cursor on screen |
+| `0`       | jump to the start of the line |
 
 **[🔼Back to Top](#table-of-contents)**
 
