@@ -10,30 +10,12 @@ updated: 2022-10-24
 Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
 #### VS Code General:
-F1 Show Command Palette --`Ctrl+Shift+P`
-Quick Open, Go to File… --`Ctrl+P`  
-New window/instance --`Ctrl+Shift+N`
-Close window/instance --`Ctrl+Shift+W `
-User Settings --`Ctrl+,`
-Keyboard Shortcuts --`Ctrl+K Ctrl+S `
+| 	Description                               	| Command           				|                     
+|	F1 Show Command Palette 					| `Ctrl+Shift+P`
+|	Quick Open, Go to File… 					| `Ctrl+P`  
+|	New window/instance 						| `Ctrl+Shift+N`
+|	Close window/instance						| `Ctrl+Shift+W `
+|	User Settings								| `Ctrl+,`
+|	Keyboard Shortcuts 							| `Ctrl+K Ctrl+S `
 
 
-
-
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
---``
-
---``
