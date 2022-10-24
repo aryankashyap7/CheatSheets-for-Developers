@@ -82,7 +82,16 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Go to File	                                  | "Ctrl+P "                       |
 |	Go to Line		                              | "Ctrl+G "                       |
 
-
+#### Search and replace:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	Find		                                  | "Ctrl+F "                       |
+|	Replace		                                  | "Ctrl+H "                       |
+|	Find next/previous		                      | "F3 / Shift+F3 "                |
+|	Select all occurences of Find match           | "Alt+Enter "                    |
+|	Add selection to next Find match		      | "Ctrl+D "                       |
+|	Move last selection to next Find match		  | "Ctrl+K Ctrl+D "                |
+|	Toggle case-sensitive / regex / whole word    | "Alt+C / R / W "                |
 
 
 
