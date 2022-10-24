@@ -1,479 +1,263 @@
----
-title: C Programming language
-description: C Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
-created: 2020-04-25
-updated: 2022-10-20
----
+## Table of Contents
 
-## Basics
+- [C for Developers](#c-for-developer)
+- [Data Types](#data-types)
+- [Operators](#operators)
+- [Control Flow](#control-flow)
+- [Functions](#functions)
+- [Arrays](#arrays)
+- [Pointers](#pointers)
+- [Structures](#structures)
+- [Unions](#unions)
+- [Enumerations](#enumerations)
+- [Bit Fields](#bit-fields)
+- [Typedef](#typedef)
+- [Storage Classes](#storage-classes)
+- [Preprocessor](#preprocessor)
+- [Input/Output](#inputoutput)
+- [String](#string)
+- [Math](#math)
+- [Time](#time)
+- [File](#file)
 
-* `scanf("%d", &x);` -- read value into the variable x from input stream
-* `printf("%d",x);` -- printf value to the output stream
-* `gets(str);` -- reads a line from input stream into a variable
-* `scanf("%[^\n]",s);` --reads a line from input using scanf only
+## C for Developers
 
-### Sample C program
+C is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
 
-```c
-#include <stdio.h>    
-int main() {    
-    printf("Hello World!!");    
-    return 0;   
-}  
-```
-* `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
-* `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
-* `main()` function is the entry point of any C program.
-* `printf and scanf` are inbuilt library functions which are used for input and output in C language. They are defined in `stdio.h` header file.
-* `return 0` is used to terminate the main() function and returns the value 0
-* `//` -- single line comment
-* `/* comments */` -- Multi line comment
+**[🔼Back to Top](#table-of-contents)**
 
-## Data types
+## Data Types
 
-| Types | Data-type|
-|----|----|
-|Basic | bool, void, int/long, long long, char, float, double|
-|Derived | array, pointer, structure, union|
-|Enumeration | enum|
-|Void |	void|
+| Data Type | Description    | Size         |
+| :-------- | :------------- | :----------- |
+| char      | Character      | 1 byte       |
+| int       | Integer        | 2 or 4 bytes |
+| float     | Floating point | 4 bytes      |
+| double    | Floating point | 8 bytes      |
+| void      | Void           | 1 byte       |
 
-### 1. Basic Data types
-| Data type | Description | Range | Memory Size| Format specifier|
-|----|----|----|----|----|
-| int| used to store whole numbers|-2,147,483,648 to 2,147,483,647|4 bytes| %d|
-|unsigned int| used to store non-negative whole numbers|0 to 4,294,967,295|4 bytes| %u|
-|short int| used to store whole numbers|-32,768 to 32,767| 2 bytes|%hd|
-|unsigned short int| used to store non-negative whole numbers|0 to 65535| 2 bytes|%hu|
-|long int| used to store whole numbers|	-2,147,483,648 to 2,147,483,647| 4 bytes|%ld|
-|unsigned long int| used to store non-negative whole numbers|0 to 4,294,967,295 | 4 bytes|%lu|
-|long long int| used to store whole numbers | -(2^63) to (2^63)-1 | 8 bytes|%lld|
-|unsigned long long int| used to store non-negative whole numbers|0 to (2^64)| 4 bytes|%llu|
-|float| used to store fractional numbers|6 to 7 decimal digits| 4 bytes|%f|
-|double| used to store fractional numbers|15 decimal digits| 8 bytes|%lf|
-|char|used to store a single character|one character|1 bytes|%c|
+**[🔼Back to Top](#table-of-contents)**
 
-### 2. Derived Data types
-
-Arrays:
-```c
-data-type array-name[size];
-```
-Pointers:
-
-```c
-datatype *pointername;
-```
-Structures: 
-
-```c
-struct structure_name {
-
-   member definition;
-   member definition;
-   ...
-   member definition;
-} [one or more structure variables]; 
-
-struct structure_name variable name;
-```
-
-### 3. Enumeration Data types non-negative
-
-```c
-enum name{constant1, constant2, constant3, ....... };
-```
-### 4. Void Data types
-
-Void specifies that there is no return value. Generally used when function returns no value, pointer with type as void represents the address of an object but not it's type.
-
-## Variables
-
-### Syntax:
-```c
-data-type variable-name = value;
-```
-### Example:
-```c
-int x = 10; // declaring int variable and assigning value 10 to it
-char grade = 'A'; // declaring char variable and assigning value A to it
-```
-## Literals
-|Literal | Example|
-|----|----|
-|Integer Literal- decimal|255|
-|Integer Literal- octal|0377|
-|Integer Literal- hexadecimal|0xFF|
-|Float point Literal|53.0f, 79.02|
-|Character literals| 'a', '1'|
-|String literals| "OneCompiler", "Foo"|
-
-### Escape sequences
-|Escape sequence| Description|
-|----|----|
-|\n	| New line|
-|\r	| Carriage Return|
-|\?	| Question mark|
-|\t	| Horizontal tab|
-|\v	| Vertical tab|
-|\f	|Form feed|
-|\\	| Backslash|
-|\'	| Single quotation|
-|\"	| Double quotation|
-|\0 | Null character|
-|\b	|Back space|
-|\a	|Alarm or Beep|
-|\nnn	|Octal Number|
-|\xhh	|hexadecimal Number|
-
-## Arrays
-
-### One dimentional Array:
-
-```c
-data-type array-name[size];
-```
-### Example
-```c
-int a[5] = {1,2,3,4,5};
-```
-
-### Two dimensional array:
-
-```c
-data-type array-name[size][size];
-```
-### Example
-```c
-int a[2][3] = {
-                {1,2,3},
-                {4,5,6}
-              };
-```
 ## Operators
 
-| Operator type | Description|
-|----|-----|
-| Arithmetic Operators|+ , - , * , / , %|
-| Comparison Operators| < , > , <= , >=, != , ==|
-| Bitwise Operators| & , ^ , \|, <<, >> |
-| Logical Operators| && , `\|\|`, ! |
-| Assignment Operators|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
-| Ternary Operators| ? : |
-| sizeof operators| sizeof() |
+| Operator | Description    | Example |
+| :------- | :------------- | :------ |
+| +        | Addition       | a + b   |
+| -        | Subtraction    | a - b   |
+| \*       | Multiplication | a \* b  |
+| /        | Division       | a / b   |
+| %        | Modulus        | a % b   |
+| ++       | Increment      | a++     |
+| --       | Decrement      | a--     |
+| =        | Assignment     | a = b   |
+| ==       | Equal to       | a == b  |
+| !=       | Not equal to   | a != b  |
+| >        | Greater than   | a > b   |
+| <        | Less than      | a < b   |
 
+**[🔼Back to Top](#table-of-contents)**
 
-## Keywords(reserved words)
+## Control Flow
 
-```c
-auto         double      int        struct
-break        else        long       switch
-case         enum        register   typedef
-char         extern      return     union
-const        float       short      unsigned
-continue     for         signed     void
-default      goto        sizeof     volatile
-do           if          static     while
-alignas      nullptr     typeof     alignof
-```
-## Identifiers
+| Statement  | Description                                                                               |
+| :--------- | :---------------------------------------------------------------------------------------- |
+| if         | Executes a block of code if a condition is true                                           |
+| if...else  | Executes a block of code if a condition is true, otherwise executes another block of code |
+| switch     | Executes a block of code depending on the value of a variable                             |
+| while      | Executes a block of code while a condition is true                                        |
+| do...while | Executes a block of code while a condition is true, and then executes the code once more  |
 
-Identifiers are user defined names for variables, functions and arrays.
-
-### Rules:
-* They must be less than or equal to 31 characters.
-* No special characters.
-* Must start with a letter or under score.
-* Can contain letters, digits, or underscore only.
-
-## Strings
-
-Strings are an array of characters ended with null character. Enclosed in double quotes.
-
-Declaration
-```c
-    char str[]="onecompiler";
-```
-
-
-| Function | Description| Example|
-|----|----|---|
-| gets() | It allows you to enter multi-word string | `gets("string")`|
-| puts() | It is used to show string output | `puts("string")`|
-| strlen() | It is used to calculate the length of the string | `strlen(string_name)`|
-| strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
-| strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
-| strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
-| strrev() | It is used to return reverse of a string | `strrev("string")` |
-| strupr() | It return string characters in uppercase | `strupr("string")` |
-| strlwr() | It return string characters in lowercase | `strlwr("string")` |
-| strcasecmp() | It compares two strings without comparing the sensitivity of the case | `strcasecmp(string1 , string2)` |
-| strncat() | It concatenates n characters of one string to another string | `strncat(destination , source, size)` |
-| strstr() | It stores the value in a pointer variable and takes two strings as input | `strstr(string1 , string2)` |
-
-## Constants
-
-Constants are the fixed values. They can be declared in two ways as shown below:
-
-``` c
-const datatype <constant-name> = <constant-value>;
-```
-```c
-#define <constant-name> <constant-value>
-```
-## Special characters
-* `{}` : specifies start and end of code blocks
-* `[]` : used for arrays
-* `()` : used for functions
-* `,` : used to seperate variables, constants etc
-* `*` : used for pointers
-* `#` : used as a macro processor.
-
-## Conditional Statements
-
-### 1. If
-```c
-if(conditional-expression)
-{
-    //code
-}
-```
-### 2. If-else
-
-```c
-if(conditional-expression)
-{
-    //code
-} else {
-    //code
-}
-```
-### 3. If-else-if ladder
-
-```c
-if(conditional-expression-1)
-{
-    //code
-} else if(conditional-expression-2) {
-    //code
-} else if(conditional-expression-3) {
-    //code
-}
-....
-else {
-    //code
-}
-```
-### 4. Switch
-
-```c
-switch(conditional-expression){    
-case value1:    
- //code    
- break;  //optional  
-case value2:    
- //code    
- break;  //optional  
-...    
-    
-default:     
- //code to be executed when all the above cases are not matched;    
-} 
-```
-## Loops
-
-### 1. For
-```c
-for(Initialization; Condition; Increment/decrement){  
-//code  
-} 
-```
-### 2. While
-```c
-while (condition){  
-//code 
-}  
-```
-### 3. Do-While
-```c
-do {  
-//code 
-} while (condition); 
-```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Functions
 
-Function is a sub-routine which contains set of statements.
+| Function | Description                                                       |
+| :------- | :---------------------------------------------------------------- |
+| printf() | Prints formatted output                                           |
+| scanf()  | Reads formatted input                                             |
+| strlen() | Returns the length of a string                                    |
+| strcpy() | Copies a string                                                   |
+| strcat() | Concatenates two strings                                          |
+| strcmp() | Compares two strings                                              |
+| strrev() | Reverses a string                                                 |
+| strlwr() | Converts a string to lowercase                                    |
+| strupr() | Converts a string to uppercase                                    |
+| getch()  | Reads a character from the keyboard                               |
+| getche() | Reads a character from the keyboard and displays it on the screen |
+| putch()  | Writes a character to the screen                                  |
 
-```c
-// declaring a function
-return_type function_name(parameters);
+**[🔼Back to Top](#table-of-contents)**
 
-// defining a function
-return_type function_name(parameters){  
-//code
-}
+## Arrays
 
-// calling a function
-function_name (parameters)
-```
+| Function                    | Description                                                          |
+| :-------------------------- | :------------------------------------------------------------------- |
+| int a[10];                  | Declares an array of 10 integers                                     |
+| int a[5] = {1, 2, 3, 4, 5}; | Declares an array of 5 integers and initializes it                   |
+| int a[] = {1, 2, 3, 4, 5};  | Declares an array of 5 integers and initializes it                   |
+| int a[5] = {1, 2, 3};       | Declares an array of 5 integers and initializes the first 3 elements |
+
+**[🔼Back to Top](#table-of-contents)**
 
 ## Pointers
 
-Pointer is a variable which holds the memory information(address) of another variable of same data type.
+| Function        | Description                                                             |
+| :-------------- | :---------------------------------------------------------------------- |
+| int \*p;        | Declares a pointer to an integer                                        |
+| int \*p = &a;   | Declares a pointer to an integer and initializes it to the address of a |
+| int \*p = a;    | Declares a pointer to an integer and initializes it to the address of a |
+| int \*p = NULL; | Declares a pointer to an integer and initializes it to NULL             |
+| \*p = 10;       | Assigns the value 10 to the variable pointed to by p                    |
+| p++;            | Increments the pointer p by 1                                           |
+| p--;            | Decrements the pointer p by 1                                           |
 
-```c
-datatype *pointername;
-```
-### Example
-```c
-int x = 10, *ptr;
-
-/*ptr = x; // Error because ptr is adress and x is value
-*ptr = &x;  // Error because x is adress and ptr is value */
-
-ptr = &x; // valid because &x and ptr are addresses
-*ptr = x; // valid because both x and *ptr values 
-
-int a[10];
-ptr = a;  // since a is the address of the first element in array (a[0])
-ptr++;    // pointer points to next array element (a[1])
-```
-
-## Types of Pointers
-| Serial Number |Pointer|Description|
-|----|----|---|
-| 1 | Null Pointer | `We can create a null pointer by assigning the null value at the time when we are declaring the pointer.It always contains the value 0`|
-| 2 | Void Pointer | `This pointer has no associated data-type with it. A void pointer can hold addresses of any data-type and can be typecasted to another.It is created by using the keyword void`|
-| 3 | Wild Pointer | `They are also called as uninitialised pointers.They are called so because they point to some arbitary memory location that is randomly alloted and the program can misbehave badly.This type of pointer is not efficient.`|
-| 4 | Dangling Pointer | `The pointers that are pointing to deallocated memory or deleted memory block are known as Dangling pointers.They can raise an error because they point to a deallocated memory block.`|
-
-
+**[🔼Back to Top](#table-of-contents)**
 
 ## Structures
 
-Structure is a user-defined data type where it allows you to combine data of different data types.
+| Function                                                   | Description                                               |
+| :--------------------------------------------------------- | :-------------------------------------------------------- |
+| struct student { int rollno; char name[20]; };             | Declares a structure named student                        |
+| struct student s1;                                         | Declares a variable s1 of type student                    |
+| struct student s1 = {1, "John"};                           | Declares a variable s1 of type student and initializes it |
+| struct student s1 = {.name = "John", .rollno = 1};         | Declares a variable s1 of type student and initializes it |
+| struct student s1; s1.rollno = 1; strcpy(s1.name, "John"); | Declares a variable s1 of type student and initializes it |
 
-```c
-struct structure_name {
-
-   member definition;
-   member definition;
-   ...
-   member definition;
-} [one or more structure variables]; 
-
-struct structure_name variable name; //declaring structure variables
-```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Unions
 
-Union is a user-defined datatype similar to structs which allows to store different data types in the same memory location. In Unnions, one member can contain a value at any given time.
+| Function                                      | Description                                               |
+| :-------------------------------------------- | :-------------------------------------------------------- |
+| union student { int rollno; char name[20]; }; | Declares a union named student                            |
+| union student s1;                             | Declares a variable s1 of type student                    |
+| union student s1 = {1};                       | Declares a variable s1 of type student and initializes it |
 
-```c
-union union_name {
-   member definition;
-   member definition;
-   ...
-   member definition;
-} [one or more union variables];  
+**[🔼Back to Top](#table-of-contents)**
 
-union union_name variable name; // Declaring Union Variables
-```
+## Enumerations
 
-## File handling
+| Function                                                                      | Description                                             |
+| :---------------------------------------------------------------------------- | :------------------------------------------------------ |
+| enum week { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }; | Declares an enumeration named week                      |
+| enum week day;                                                                | Declares a variable day of type week                    |
+| enum week day = Tuesday;                                                      | Declares a variable day of type week and initializes it |
 
-File operations like create, update, read, and deleting files which are stored on the local file system can be performed in C.
+**[🔼Back to Top](#table-of-contents)**
 
-```c
-FILE *fptr; //declaring a pointer of type File
-fptr = fopen("filename",mode); //opening a file
-fscanf(fptr, "format specifier", data); //read a file
-fprintf(fptr, "format specifier", data); //write a file
-fclose(fptr);
-```
+## Bit Fields
 
-|Mode | Description|
-|----|----|
-|r|	Opens for reading.|
-|rb| Opens for reading in binary mode.|
-|r+| Opens for both reading and writing.|
-|w|	Opens for writing. |
-|wb| Opens for writing in binary mode.|
-|a|	Opens for append. |
-|ab| Opens for append in binary mode.|
-|w+| Opens for both reading and writing.|
-|wb+| Opens for both reading and writing in binary mode.|
-|rb+| Opens for both reading and writing in binary mode.|
-|a+| Opens for both reading and appending.|
-|ab+| Opens for both reading and appending in binary mode.|
+| Function                                                                               | Description                              |
+| :------------------------------------------------------------------------------------- | :--------------------------------------- |
+| struct { unsigned int widthValidated; unsigned int heightValidated; } status1;         | Declares a structure with two bit fields |
+| struct { unsigned int widthValidated : 1; unsigned int heightValidated : 1; } status1; | Declares a structure with two bit fields |
 
+**[🔼Back to Top](#table-of-contents)**
 
-## Dynamic Memory Allocation
+## Typedef
 
-A set of functions for dynamic memory allocation from the heap. These methods are used to use the dynamic memory which makes our C programs more efficient
+| Function                                               | Description                       |
+| :----------------------------------------------------- | :-------------------------------- |
+| typedef int INTEGER;                                   | Declares a new type named INTEGER |
+| typedef struct { int rollno; char name[20]; } STUDENT; | Declares a new type named STUDENT |
 
+**[🔼Back to Top](#table-of-contents)**
 
-| Function | Description| Example|
-|----|----|---|
-| malloc() | Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes. | `ptr = (castType*) malloc(size)`|
-| calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
-| free | It is used to free the allocated memory. | `free(ptr)`|
-| realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|
+## Preprocessor Directives
 
+| Directive | Description                                      |
+| :-------- | :----------------------------------------------- |
+| #include  | Includes a header file                           |
+| #define   | Defines a macro                                  |
+| #undef    | Undefines a macro                                |
+| #ifdef    | Checks if a macro is defined                     |
+| #ifndef   | Checks if a macro is not defined                 |
+| #if       | Checks if a condition is true                    |
+| #else     | Executes a block of code if a condition is false |
+| #elif     | Checks if a condition is true                    |
+| #endif    | Ends an if statement                             |
+| #error    | Generates an error                               |
+| #pragma   | Generates a compiler directive                   |
 
-## Header Files
+**[🔼Back to Top](#table-of-contents)**
 
-| Header Files | Description|
-|----|----|
-|stdio.h | Input/Output functions|
-|conio.h | Console Input/Output functions|
-|stdlib.h | General utility functions|
-|math.h | Mathematics functions|
-|string.h | String functions|
-|ctype.h | Character handling functions|
-|time.h | Date and time functions|
-|float.h | Limits of float types|
-|limits.h | Size of basic types|
-|wctype.h | Functions to determine the type contained in wide character data|
+## Input/Output
 
-## Mathematical Functions
-All functions defined under `<math.h>` header file.
+| Function  | Description                         |
+| :-------- | :---------------------------------- |
+| printf()  | Prints formatted output             |
+| scanf()   | Reads formatted input               |
+| fprintf() | Prints formatted output to a file   |
+| fscanf()  | Reads formatted input from a file   |
+| sprintf() | Prints formatted output to a string |
+| sscanf()  | Reads formatted input from a string |
+| puts()    | Prints a string                     |
+| gets()    | Reads a string                      |
+| putchar() | Prints a character                  |
+| getchar() | Reads a character                   |
 
-| Function | Description|
-|----|----|
-| sin(a) | Computes sine of the double angle (in radians) |
-| cos(a) | Computes cosine of the double angle (in radians) |
-| tan(a) | Computes tangent of the double angle (in radians) |
-| asine(a) | Computes principle inverse of the sine (in radians) |
-| acos(a) | Computes principle inverse of the cosine (in radians) |
-| atan(a) | Computes principle inverse of the tangent (in radians) |
-| atan2(a) | Computes principle inverse of tan(y/x) in same quadrant as (x,y) |
-| sqrt(x) | Computes square root of x |
-| log(x) | Computes natural logarithm of x (to the base e) |
-| log2(x) | Computes natural logarithm of x (to the base 2) |
-| log10(x) | Computes natural logarithm of x (to the base 10) |
-| exp(p) | Computes e to the power of p |
-| exp2(p) | Computes 2 to the power of p |
-| exp10(p) | Computes 10 to the power of p |
-| pow(x,y) | Computes x to the power of y |
-| ceil(x) | Computes smallest integer (returned as double) no less than x |
-| floor(x) | Computes largest integer (returned as double) no greater than x |
-| abs(x) | Computes the absolute value of x |
+**[🔼Back to Top](#table-of-contents)**
 
-## Randomize Functions
-All functions defined under `<stdlib.h>` header file. These randomized functions are pseudo-random (time-based random functions).
+## String Functions
 
-* `random()` : returns a random long
-* `srandom(seed)` : seeds the random generator with a new random seed
+| Function | Description                    |
+| :------- | :----------------------------- |
+| strlen() | Returns the length of a string |
+| strcpy() | Copies a string                |
+| strcat() | Concatenates two strings       |
+| strcmp() | Compares two strings           |
+| strrev() | Reverses a string              |
+| strlwr() | Converts a string to lowercase |
 
-## How To Compile in GCC
+**[🔼Back to Top](#table-of-contents)**
 
-* `gcc prog.c` : compiles prog.c into a.out, run result with  `./a.out`.
-* `gcc -o prog prog.c` : compiles prog.c into prog, run result with `./prog`.
-* `gcc -g -o prog prog.c` : as above, but allows for debugging.
+## Math Functions
 
-## use of fflush()
+| Function | Description                                                                   |
+| :------- | :---------------------------------------------------------------------------- |
+| abs()    | Returns the absolute value of an integer                                      |
+| fabs()   | Returns the absolute value of a floating point number                         |
+| ceil()   | Returns the smallest integer greater than or equal to a floating point number |
+| floor()  | Returns the largest integer less than or equal to a floating point number     |
+| sqrt()   | Returns the square root of a number                                           |
+| pow()    | Returns the value of a number raised to a power                               |
+| exp()    | Returns the value of e raised to a power                                      |
 
-*used to clear the buffer
-*used to accept the next string
+**[🔼Back to Top](#table-of-contents)**
+
+## Time Functions
+
+| Function    | Description                                                              |
+| :---------- | :----------------------------------------------------------------------- |
+| time()      | Returns the current time                                                 |
+| clock()     | Returns the number of clock ticks elapsed since the program was launched |
+| difftime()  | Returns the number of seconds between two times                          |
+| mktime()    | Converts a time structure to a time value                                |
+| asctime()   | Converts a time structure to a string                                    |
+| ctime()     | Converts a time value to a string                                        |
+| gmtime()    | Converts a time value to a time structure in UTC                         |
+| localtime() | Converts a time value to a time structure in the local time zone         |
+
+**[🔼Back to Top](#table-of-contents)**
+
+## File Functions
+
+| Function  | Description                                                                     |
+| :-------- | :------------------------------------------------------------------------------ |
+| fopen()   | Opens a file                                                                    |
+| fclose()  | Closes a file                                                                   |
+| fgetc()   | Reads a character from a file                                                   |
+| fputc()   | Writes a character to a file                                                    |
+| fgets()   | Reads a string from a file                                                      |
+| fputs()   | Writes a string to a file                                                       |
+| fread()   | Reads data from a file                                                          |
+| fwrite()  | Writes data to a file                                                           |
+| fseek()   | Sets the position indicator associated with a file                              |
+| ftell()   | Returns the current value of the position indicator of a file                   |
+| rewind()  | Sets the position indicator associated with a file to the beginning of the file |
+| remove()  | Deletes a file                                                                  |
+| rename()  | Renames a file                                                                  |
+| tmpfile() | Creates a temporary file                                                        |
+| tmpnam()  | Generates a temporary file name                                                 |
+
+**[🔼Back to Top](#table-of-contents)**

@@ -1,208 +1,123 @@
----
-title: C#
-description: C# cheatsheet contains useful code syntax with examples which is handy while coding.
-created: 2020-05-19
-updated: 2021-12-19
----
+## Table of Contents
 
-## Basics
+- [C# for Developers](csharp-for-developers)
+- [Data Types](data-types)
+- [Variables](variables)
+- [Operators](operators)
+- [Loops](loops)
 
-### Sample Program
+# C# for Developers
 
-```c#
-using System;
+C Sharp is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of the programming languages designed for the Common Language Infrastructure.
+**[🔼Back to Top](#table-of-contents)**
 
-namespace HelloWorld
-{
-	public class Program
-	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine("Hello, World!");
-		}
-	}
-}
-```
-* **Using Keyword** : using keyword is used to include namespaces in the program. 
-* **Namespace declaration** : Namespace is a container for classes and other namespaces. The `HelloWorld` namespace contains the class `Program`.
-* **Public Class** : class is a container for data and methods, you are declaring `Program` as a class with public visibility.
-* **Main** : Beginning of your program
-* **Console.WriteLine** : Console is a class of the System namespace and WriteLine() is a method in it which is used to print text to the console.
-* C# statements end with a semicolon `;`
-* C# is Case-sensitive
-* `//` : Single line Comment
-* `/* */` : Multi Line Comments
+## Data Types
 
-## Data types
+| Data Type | Description                     | Size     |
+| --------- | ------------------------------- | -------- |
+| bool      | Boolean data type               | 1 bit    |
+| byte      | Unsigned integer                | 1 byte   |
+| char      | Character                       | 2 bytes  |
+| decimal   | Decimal data type               | 16 bytes |
+| double    | Double-precision floating point | 8 bytes  |
+| float     | Single-precision floating point | 4 bytes  |
+| int       | Integer                         | 4 bytes  |
+| long      | Long integer                    | 8 bytes  |
+| sbyte     | Signed integer                  | 1 byte   |
+| short     | Short integer                   | 2 bytes  |
+| uint      | Unsigned integer                | 4 bytes  |
+| ulong     | Unsigned long integer           | 8 bytes  |
+| ushort    | Unsigned short integer          | 2 bytes  |
 
-| Data type | Description                                               | Range                                                   | Memory Size           |
-| ---       | ---                                                       | ---                                                     | ---                   |
-| byte      | used to store unsigned integer                            | 0 to 255                                                | 1 byte                |
-| sbyte     | used to store signed integer                              | -128 to 127                                             | 1 byte                |
-| short     | used to store signed integers                             | -32,768 to 32,767                                       | 2 bytes               |
-| int       | used to store signed integers                             | -2,147,483,648 to 2,147,483,647                         | 4 bytes               |
-| long      | used to store signed integers                             | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 8 bytes               |
-| float     | used to store fractional numbers                          | 6 to 7 decimal digits                                   | 4 bytes               |
-| double    | used to store fractional numbers                          | 15 decimal digits                                       | 8 bytes               |
-| char      | used to store a single character enclosed in single quote | one character                                           | 2 bytes               |
-| bool      | Boolean data type                                         |Stores either true or false                              | 1 bit                 |
-| String    | Stores a sequence of characters enclosed in double quotes | Sequence of Characters                                  | 2 bytes per character |
+**[🔼Back to Top](#table-of-contents)**
 
 ## Variables
 
-```c#
-datatype variableName = value;
-```
-```c#
-int x = 10; // declaring int variable and assigning value 10 to it
-char grade = 'A'; // declaring char variable and assigning value A to it
+Variables are containers for storing data values.
+
+```csharp
+int myNum = 5;               // Integer (whole number)
+
+double myFloatNum = 5.99D;   // Floating point number
+
+char myLetter = 'D';         // Character
+
+string myText = "Hello";     // String
+
+bool myBool = true;          // Boolean
 ```
 
-## Constants
+**[🔼Back to Top](#table-of-contents)**
 
-```c
-const datatype variable-name = value;
-```
+## Operators
 
-## String functions
-| Function name | Description|
-|----|----|
-|str.Length| to return the length of string str|
-|+| to concatenate two strings|
-|string.Concat(str1,str2)| to concatenate two strings str1 and str2|
-|Copy(str1, str2)| To copy string str2 into string str1.|
-|Compare(str1, str2)| returns 0 if str1 and str2 are the same and less than 0 if str1 < str2 and a positive number if str1 > str2|
-|Join(str, String[])| concatenate all the elements of the given string array with the specified separator between each element.|
-|Split(Char[])| splits a string into substrings based on the characters in an array|
-|str.ToUpper()| converts the string to upper case|
-|str.ToLower()| converts the string to lower case|
-|ToString()| to return instance of a string|
-|Trim()| removes all leading and trailing whitespaces from a given string|
-|Clone()| returns a reference to this instance of String|
-|Format()| it returns a formatted string|
-|LastIndexOf()| it returns the last occurence of the string|
-|Replace()| it replaces the specified string character with new character|
-|Contains()| it checks whether a string contains substring|
-|ToCharArray()| it converts a string to a character(char) array| 
-|isEmpty()| it checks whether the string is empty or not and return true or false respectively| 
-|startsWith("char")| it checks the string start with given character or not and return true or false respectively|
-|endsWith("char")| it checks the string end with given character or not and return true or false respectively|
-|charAt(int)| it returns the character at the specified index in a string|
-## Conditional Statements
+| Operator | Description    | Example |
+| -------- | -------------- | ------- |
+| +        | Addition       | x + y   |
+| -        | Subtraction    | x - y   |
+| \*       | Multiplication | x \* y  |
+| /        | Division       | x / y   |
+| %        | Modulus        | x % y   |
+| ++       | Increment      | ++x     |
+| --       | Decrement      | --x     |
 
-### 1. If
-```c
-if(conditional-expression)
-{
-    //code
-}
-```
-### 2. If-else
+**[🔼Back to Top](#table-of-contents)**
 
-```c
-if(conditional-expression)
-{
-    //code
-} else {
-    //code
-}
-```
-### 3. If-else-if ladder
-
-```c
-if(conditional-expression-1)
-{
-    //code
-} else if(conditional-expression-2) {
-    //code
-} else if(conditional-expression-3) {
-    //code
-}
-....
-else {
-    //code
-}
-```
-### 4. Switch
-
-```c
-switch(conditional-expression){    
-case value1:    
- //code    
- break;  //optional  
-case value2:    
- //code    
- break;  //optional  
-...    
-    
-default:     
- //code to be executed when all the above cases are not matched;    
-} 
-```
 ## Loops
 
-### 1. For
-```c
-for(Initialization; Condition; Increment/decrement){  
-//code  
-} 
-```
-### 2. While
-```c
-while(condition){  
-//code 
-}  
-```
-### 3. Do-While
-```c
-do{  
-//code 
-} while(condition); 
-```
-## Arrays
-```c#
-data-type[] array-name; //declaration
-array-name = new data-type[size]{ array-elements }; //initialization
-```
-\[or\]
+### For Loop
 
-```c#
-data-type[] array-name =  new data-type[size]{ array-elements }; //declaration and initialization
-```
-\[or\]
-
-```c#
-data-type[] array-name =  { array-elements }; //short syntax of array declaration and initialization
-```
-### Examples
-
-```c
-int[] num = {1,2,3,4,5};
-```
-## Functions
-
-```c#
-<AccessSpecifier> <return-type> FunctionName(<parameters>)  // functin definition
-{  
-//code
+```csharp
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
 }
-function_name (parameters); // calling a function
 ```
-## Structures
 
-```c
-struct structure_name {
+### While Loop
 
-   member definition;
-   member definition;
-   ...
-   member definition;
-}; 
-
-structure_name variable name; //declaring structure variables
+```csharp
+while (condition) {
+  // code block to be executed
+}
 ```
-## enum
 
-```c#
-enum name{constant1, constant2, constant3, ....... } ;
+### Do While Loop
+
+```csharp
+do {
+  // code block to be executed
+}
+while (condition);
 ```
+
+### For Each Loop
+
+```csharp
+foreach (type variableName in arrayName) {
+  // code block to be executed
+}
+```
+
+### Break
+
+```csharp
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break;
+  }
+  Console.WriteLine(i);
+}
+```
+
+### Continue
+
+```csharp
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    continue;
+  }
+  Console.WriteLine(i);
+}
+```
+
+**[🔼Back to Top](#table-of-contents)**

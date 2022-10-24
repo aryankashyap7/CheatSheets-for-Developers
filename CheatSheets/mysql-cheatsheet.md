@@ -1,4 +1,3 @@
-<!-- MySQL md -->
 # MySQL Cheat Sheet
 
 ## Table of Contents
@@ -33,6 +32,8 @@ sudo systemctl restart mysql
 sudo systemctl status mysql
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ## Basic Commands
 
 ```bash
@@ -58,6 +59,8 @@ select * from table_name;
 exit;
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ## Database
 
 ```bash
@@ -67,6 +70,8 @@ create database database_name;
 # Drop database
 drop database database_name;
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ## Table
 
@@ -88,6 +93,8 @@ alter table table_name drop column_name;
 alter table table_name modify column_name data_type;
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ## Data
 
 ```bash
@@ -100,6 +107,8 @@ update table_name set column_name1 = value1, column_name2 = value2, column_name3
 # Delete data
 delete from table_name where condition;
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ## User
 
@@ -114,6 +123,8 @@ grant all privileges on database_name.* to 'username'@'localhost';
 flush privileges;
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ## Backup
 
 ```bash
@@ -123,6 +134,8 @@ mysqldump -u root -p database_name > database_name.sql
 # Restore
 mysql -u root -p database_name < database_name.sql
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ## References
 
@@ -139,6 +152,4 @@ mysql -u root -p database_name < database_name.sql
 - [MySQL 8.0 SQL Keywords and Reserved Words](https://dev.mysql.com/doc/refman/8.0/en/keywords.html)
 - [MySQL 8.0 SQL Statements](https://dev.mysql.com/doc/refman/8.0/en/sql-statements.html)
 
-
-[Back to top](#table-of-contents)
-
+**[🔼Back to Top](#table-of-contents)**

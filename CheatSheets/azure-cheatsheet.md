@@ -1,172 +1,146 @@
----
-title: Microsoft Azure Fundamentals Cheatsheet
-description: Azure cheatsheet contains important concepts while working with azure.
-created: 2022-10-14
-updated: 2022-10-14
----
-Azure Fundamentals consist  of cloud concepts, Azure services, Azure workloads, security and privacy in Azure, as well as Azure pricing and support.
+## Table of Contents
 
-## Basics
-Cloud computing has started to evolve as one of the pillars of the new normal during the global pandemic. Amongst all the major players,like google cloud , amazon cloud  Microsoft Azure is becomming  one of the leading choices of enterprises worldwide. 
+- [Microsft Azure for Developers](#microsft-azure-for-developers)
+  - [Azure](#azure)
+  - [Azure CLI](#azure-cli)
+  - [Azure Cloud Shell](#azure-cloud-shell)
+  - [Azure Portal](#azure-portal)
+  - [Azure Resource Manager](#azure-resource-manager)
+  - [Azure Resource Manager Templates](#azure-resource-manager-templates)
+  - [Azure Resource Manager Template Functions](#azure-resource-manager-template-functions)
+  - [Azure Resource Manager Template Parameters](#azure-resource-manager-template-parameters)
+  - [Azure Resource Manager Template Variables](#azure-resource-manager-template-variables)
+  - [Azure Resource Manager Template Outputs](#azure-resource-manager-template-outputs)
 
-## Azure Cloud Concepts
-## 1. Benifits of Cloud Computing
-Cost-effective solutions
-Easy accessibility from anywhere
-Faster Deployments of typically large environments
+## Azure
 
-### 2. Cloud Models
-The cloud models define the deployment type of cloud resources. The three main cloud models are: 
-## private, public, and hybrid.
+Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service (PaaS) and infrastructure as a service (IaaS) and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
 
- ### 2.1. Private Cloud 
- It’s a cloud  that’s used by a single entity(where security is main concern). Private cloud provides much greater control for the company and its IT department. However, it also comes with 'greater cost' and 'fewer'  of the benefits of a public cloud deployment
+**[🔼Back to Top](#table-of-contents)**
 
- ### 2.2. Public cloud 
- A public cloud is built, controlled, and maintained by a third-party cloud provider. With a public cloud, anyone that wants to purchase cloud services can access and use resources. 
- Typical examples of public cloud are 
- ## -Google , Aws , Azure
+## Azure CLI
 
- ### 2.3. Hybrid Cloud
- A hybrid cloud is a computing environment that uses both public and private clouds in an inter-connected environment. A hybrid cloud environment can be used to allow a private cloud to surge for increased, temporary demand by deploying public cloud resources.
- It can be used to provide an extra layer of security. For example, users can flexibly choose which services to keep in public cloud and which to deploy to their private cloud infrastructure.
+| Command                                                                     | Description                   |
+| --------------------------------------------------------------------------- | ----------------------------- |
+| `az login`                                                                  | Login to Azure                |
+| `az logout`                                                                 | Logout from Azure             |
+| `az account list`                                                           | List all Azure accounts       |
+| `az account set --subscription "SUBSCRIPTION_ID"`                           | Set the active subscription   |
+| `az account show`                                                           | Show the active subscription  |
+| `az account clear`                                                          | Clear the active subscription |
+| `az account list-locations`                                                 | List all Azure locations      |
+| `az account list-locations --query "[?displayName=='East US'].name"`        | List all Azure locations      |
+| `az account list-locations --query "[?displayName=='East US'].name" -o tsv` | List all Azure locations      |
 
- ## 3. Cloud Models
- ### 3.1 Shared Responsibility Model 
- shared responsibility model, these responsibilities get shared between the cloud provider and the consumer. Physical security, power, cooling, and network connectivity are the responsibility of the cloud provider. Responsibilities are shared between Cloud Provider and consumer based on Azure offerings(Saas , Paas , Iaas).
- For Onpremise offering everything is responsibility of customer.
+**[🔼Back to Top](#table-of-contents)**
 
- ### 3.2 Consumption Based Model
- In IT infrastructure models, there are two types of expenses to consider. First being Capital expenditure (CapEx) and  second operational expenditure (OpEx).
-○ CapEx is typically a one-time, up-front expenditure to purchase or secure tangible resources
-○ OpEx is spending money on services or products over time. 
+## Azure Cloud Shell
 
-### 4 Examples of Consumption Based Model (Cap-Ex & Op-Ex)
- ### Cap-Ex 
-  Buying new building, repaving the parking lot, building a datacenter, or buying a company vehicle.
- ### Op-Ex 
-  leasing a company vehicle, or signing up for cloud services .
+Azure Cloud Shell is a browser-based shell for managing Azure resources. It is available in the Azure portal and can be accessed from any browser. It is a fully configured, authenticated, and managed environment that you can use to run the Azure CLI, PowerShell, or Bash commands.
 
- ## 5 .Cloud Services( Iaas , Paas , Saas)
-### Infrastructure as a service(Iaas)- 
-It is most flexible category of cloud services, as it provides you the maximum amount of control for your cloud resources. In an IaaS model, the cloud provider is responsible for -  maintaining the hardware, network connectivity (to the internet), and physical security. You’re responsible for - operating system installation, configuration, and maintenance; network configuration; database and storage configuration;
+**[🔼Back to Top](#table-of-contents)**
 
-### 5.1  Platform as a service (PaaS)-
- is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains - physical infrastructure, physical security, and connection to the internet.
- PaaS scenario, you don't have to worry about the licensing or patching for operating systems and databases.
- PaaS is  suited to provide a complete development environment without the headache of maintaining all the development infrastructure.
+## Azure Portal
 
- ### 5.2 Software as a service (SaaS)-
-  is the most complete cloud service model from a product perspective. With 'SaaS', you are essentially renting or using a fully developed application. Financial software, messaging applications, Email  and connectivity of  software are examples under category of Saas offering.
+| Command                    | Description  |
+| -------------------------- | ------------ |
+| `https://portal.azure.com` | Azure Portal |
 
-## 5.3 Benifits of Managment in Cloud 
-*Automatically scale resource deployment as per need.*
-*Monitor the health of resources and automatically replace failing resources.*
-*Receive automatic alerts based on configured metrics .*
+**[🔼Back to Top](#table-of-contents)**
 
-## 6. Scaling In Cloud 
-When building or deploying a cloud application, two of the biggest considerations are uptime (or availability) and the ability to handle demand (scale)
+## Azure Resource Manager
 
-### *Types Of Scaling*
-### Horizontal Scaling
-### Vertical Scaling
+Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure subscription. You can use the Azure portal, Azure PowerShell, Azure CLI, or Azure Resource Manager templates to manage your resources.
 
-## Horizontal Scaling - 
- In horizontal scaling, if you suddenly experienced a steep jump in demand, your deployed resources could be scaled out (either automatically or manually). This can be done by add additional virtual machines or containers, scaling out.
+**[🔼Back to Top](#table-of-contents)**
 
- ## Vertical Scaling  -
- you could vertically scale up to add more CPUs or RAM to the virtual machine & also  you could vertically scale down by lowering the CPU or RAM specifications.
+## Azure Resource Manager Templates
 
- ### 7.Azure Accounts - 
- To create and use Azure services, you need an Azure subscription
- When you're working with your own applications and business needs, you need to create an Azure account, and a subscription will be created for you.
+Azure Resource Manager templates are JSON files that define the infrastructure and configuration of your cloud resources. You can use templates to deploy resources in a resource group or subscription. You can also use templates to create nested deployments, which are deployments that are deployed to a resource group that is a child of the resource group that contains the parent deployment.
 
- ### 7.1 Azure Free Account includes:
+**[🔼Back to Top](#table-of-contents)**
 
-Free access to popular Azure products for 12 months.
-A credit to use for the first 30 days.
-Access to more than 25 products that are always free. 
+## Azure Resource Manager Template Functions
 
-### 7.2 Azure Student Account
-Free access to certain Azure services for 12 months.
-A credit to use in the first 12 months.
-Free access to certain software developer tools.
+| Function              | Description                                           |
+| --------------------- | ----------------------------------------------------- |
+| `concat()`            | Concatenates two or more strings.                     |
+| `copyIndex()`         | Returns the index of the current copy loop iteration. |
+| `createArray()`       | Creates an array.                                     |
+| `createObject()`      | Creates an object.                                    |
+| `deployment()`        | Returns a deployment object.                          |
+| `deploymentOutputs()` | Returns the outputs of a deployment.                  |
 
-## 8 . Steps to Create Azure Resources
-### create a virtual Machine
-1.  Sign in to the Azure portal.
-2.  Select Create a resource > Compute > Virtual Machine > Create.
-3.  The Create a virtual machine pane opens to the basics tab.
-4. Verify or enter the following values for each setting. If a setting isn’t specified, leave the default value.
-| Setting            | value                     |
-| -----------         |---------                 |  
-|Subscription        | Concierge Subscription    |
-| Resource group     | Resource group            | 
-| Username           |  azureuser                |
-Public inbound ports | None                      |
+**[🔼Back to Top](#table-of-contents)**
 
-5. Select Review and Create.
+## Azure Resource Manager Template Parameters
 
+| Parameter                                                            | Description                                        |
+| -------------------------------------------------------------------- | -------------------------------------------------- |
+| `parameters`                                                         | Parameters are used to customize the deployment.   |
+| `parameters.location`                                                | The location of the resource.                      |
+| `parameters.storageAccountName`                                      | The name of the storage account.                   |
+| `parameters.storageAccountType`                                      | The type of the storage account.                   |
+| `parameters.storageAccountSku`                                       | The SKU of the storage account.                    |
+| `parameters.storageAccountKind`                                      | The kind of the storage account.                   |
+| `parameters.storageAccountAccessTier`                                | The access tier of the storage account.            |
+| `parameters.storageAccountEnableHttpsTrafficOnly`                    | The enableHttpsTrafficOnly of the storage account. |
+| `parameters.storageAccountAllowBlobPublicAccess`                     | The allowBlobPublicAccess of the storage account.  |
+| `parameters.storageAccountMinimumTlsVersion`                         | The minimumTlsVersion of the storage account.      |
+| `parameters.storageAccountNetworkRuleSet`                            | The networkRuleSet of the storage account.         |
+| `parameters.storageAccountNetworkRuleSet.bypass`                     | The bypass of the storage account.                 |
+| `parameters.storageAccountNetworkRuleSet.defaultAction`              | The defaultAction of the storage account.          |
+| `parameters.storageAccountNetworkRuleSet.ipRules`                    | The ipRules of the storage account.                |
+| `parameters.storageAccountNetworkRuleSet.virtualNetworkRules`        | The virtualNetworkRules of the storage account.    |
+| `parameters.storageAccountNetworkRuleSet.virtualNetworkRules.id`     | The id of the storage account.                     |
+| `parameters.storageAccountNetworkRuleSet.virtualNetworkRules.action` | The action of the storage account.                 |
+| `parameters.storageAccountNetworkRuleSet.virtualNetworkRules.state`  | The state of the storage account.                  |
 
-###  9 .Azure Compute & Networking Services.
-## 9.1 Azure Virtual Machines -
-Azure Virtual Machines (VMs), you can create and use VMs in the cloud. VMs provide infrastructure as a service (IaaS) in the form of a virtualized server and can be used in many ways. 
-Vm can be helpfull when 
-**Total control over the operating system (OS).**
-**The ability to run custom software.**
-**To use custom hosting configurations.**
-## 9.2  Virtual Machine scale set
-Scale sets allow you to centrally manage, configure, and update a large number of VMs in minutes. The number of VM instances can automatically increase or decrease in response to demand, or you can set it to scale based on a defined schedule.
-Helpfull in building  large-scale services for areas such as compute, big data, and container workloads.
-## 9.3  Virtual availability sets 
-availability sets are another tool to help you build a more resilient, highly available environment. Availability sets are designed to ensure that VMs stagger updates and have varied power and network connectivity, preventing you from losing all your VMs with a single network or power failure.
+**[🔼Back to Top](#table-of-contents)**
 
+## Azure Resource Manager Template Variables
 
-## 10 .Examples when to use Virtual Machines.
-During testing and development
-When extending your datacenter to the cloud
-During disaster recovery:
+| Variable                                         | Description                                                      |
+| ------------------------------------------------ | ---------------------------------------------------------------- |
+| `variables`                                      | Variables are used to store values that are used multiple times. |
+| `variables.storageAccountName`                   | The name of the storage account.                                 |
+| `variables.storageAccountType`                   | The type of the storage account.                                 |
+| `variables.storageAccountSku`                    | The SKU of the storage account.                                  |
+| `variables.storageAccountKind`                   | The kind of the storage account.                                 |
+| `variables.storageAccountAccessTier`             | The access tier of the storage account.                          |
+| `variables.storageAccountEnableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the storage account.               |
+| `variables.storageAccountAllowBlobPublicAccess`  | The allowBlobPublicAccess of the storage account.                |
 
-## 11.Azure Functions
-Azure Functions is an event-driven, serverless compute option that doesn’t require maintaining virtual machines or containers. 
+**[🔼Back to Top](#table-of-contents)**
 
-## 12. Azure Virtual Private Networks
-A virtual private network (VPN) uses an encrypted tunnel within another network. VPNs are typically deployed to connect two or more trusted private networks to one another over an untrusted network . Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
+## Azure Resource Manager Template Resources
 
-## 13.Virtual Private Network Gateways
-A VPN gateway is a type of virtual network gateway.
-*Connect on-premises datacenters to virtual networks through a site-to-site connection. *
-* Connect virtual networks to other virtual networks through a network-to-network connection.*
+| Resource                                      | Description                                                          |
+| --------------------------------------------- | -------------------------------------------------------------------- |
+| `resources`                                   | Resources are the components of your solution that will be deployed. |
+| `resources.type`                              | The type of the resource.                                            |
+| `resources.apiVersion`                        | The API version of the resource.                                     |
+| `resources.name`                              | The name of the resource.                                            |
+| `resources.location`                          | The location of the resource.                                        |
+| `resources.tags`                              | The tags of the resource.                                            |
+| `resources.properties`                        | The properties of the resource.                                      |
+| `resources.properties.accountType`            | The accountType of the resource.                                     |
+| `resources.properties.accessTier`             | The accessTier of the resource.                                      |
+| `resources.properties.enableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the resource.                          |
+| `resources.properties.allowBlobPublicAccess`  | The allowBlobPublicAccess of the resource.                           |
 
-## 14 .VPN Gateway is usefull in folllowing cases-
-*Connections between virtual networks*
-*Point-to-site connections*
-*Multisite connections*
+**[🔼Back to Top](#table-of-contents)**
 
-## 15. Azure DNS
-Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure
-## Benifits of Azure DNS 
-*Security*
-*Customizable virtual networks*
-*Alias records*
+## Azure Resource Manager Template Outputs
 
-### Azure Storage Services.
-## *Azure Blobs*
-## *Azure Files*
-## *Azure Queues*
-## *Azure Disks*
+| Output                                         | Description                                            |
+| ---------------------------------------------- | ------------------------------------------------------ |
+| `outputs`                                      | Outputs are used to return values from the deployment. |
+| `outputs.storageAccountName`                   | The name of the storage account.                       |
+| `outputs.storageAccountType`                   | The type of the storage account.                       |
+| `outputs.storageAccountSku`                    | The SKU of the storage account.                        |
+| `outputs.storageAccountKind`                   | The kind of the storage account.                       |
+| `outputs.storageAccountAccessTier`             | The access tier of the storage account.                |
+| `outputs.storageAccountEnableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the storage account.     |
 
-## 16. Benifits of Azure Services
-Durable and highly available
-Secure
-Managed
-Accessible 
-
-## Links to Resources 
-https://learn.microsoft.com/en-us/certifications/azure-fundamentals/
-https://azure.microsoft.com/en-in/free/
-
-
-```
-
-
+**[🔼Back to Top](#table-of-contents)**

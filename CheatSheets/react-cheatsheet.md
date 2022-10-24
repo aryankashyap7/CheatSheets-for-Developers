@@ -1,9 +1,23 @@
----
-title: React JS
-description: A JavaScript library for building user interfaces
-created: 2022-10-24
-updated: 2022-10-24
----
+# React JS for Developers
+
+## Table of Contents
+
+- [React JS for Developers](#react-js-for-developers)
+  - [Table of Contents](#table-of-contents)
+  - [Create React App](#create-react-app)
+  - [React Components](#react-components)
+  - [React Props](#react-props)
+  - [React Children Props](#react-children-props)
+  - [React Conditional](#react-conditional)
+  - [React List](#react-list)
+  - [React Context](#react-context)
+  - [React Hooks](#react-hooks)
+  - [React UseState](#react-usestate)
+  - [React UseEffect](#react-useeffect)
+  - [React Useref](#react-useref)
+  - [React UseContext](#react-usecontext)
+  - [React UseCallback](#react-usecallback)
+  - [React UseMemo](#react-usememo)
 
 ## Create React App
 
@@ -15,6 +29,8 @@ cd my-app
 npm start
 ```
 
+**[🔼Back to Top](#content-outlines)**
+
 ## React Components
 
 ```
@@ -24,6 +40,8 @@ function App() {
 
 export default App;
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React Props
 
@@ -36,6 +54,8 @@ function User(props) {
   return <h1>Hello, {props.name}</h1>; // Hello, Dev!
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React Children Props
 
@@ -53,6 +73,8 @@ function User({ children }) {
 }
 ```
 
+**[🔼Back to Top](#content-outlines)**
+
 ## React Conditionals
 
 ```
@@ -68,6 +90,8 @@ function App() {
   return <UnAuthApp />;
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React Lists
 
@@ -86,6 +110,8 @@ function SoccerPlayers() {
   );
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React Context
 
@@ -109,9 +135,12 @@ function Greeting({ name }) {
 }
 ```
 
+**[🔼Back to Top](#content-outlines)**
+
 ## React Hooks
 
 React hooks were introduced in React version 16.8 as a way to easily add reusable, stateful logic to React function components.
+**[🔼Back to Top](#content-outlines)**
 
 ## React useState Hook
 
@@ -124,6 +153,8 @@ function MyComponent() {
   const [stateValue, setStateValue] = useState(initialValue);
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React useEffect Hook
 
@@ -139,6 +170,8 @@ function MyComponent() {
 }
 ```
 
+**[🔼Back to Top](#content-outlines)**
+
 ## React useRef
 
 It allows us to get direct access to a JSX element.
@@ -152,6 +185,8 @@ function MyComponent() {
   return <div ref={ref} />
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React useContext
 
@@ -184,6 +219,8 @@ function Greeting() {
   );
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**
 
 ## React useCallback
 
@@ -226,6 +263,8 @@ function PlayerList({ players, handleRemovePlayer }) {
 }
 ```
 
+**[🔼Back to Top](#content-outlines)**
+
 ## React useMemo
 
 It allows us to ‘memoize’ a given operation.
@@ -250,3 +289,5 @@ function Post({code, frontmatter}) {
   )
 }
 ```
+
+**[🔼Back to Top](#content-outlines)**

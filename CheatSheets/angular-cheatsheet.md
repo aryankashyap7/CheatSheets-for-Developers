@@ -1,164 +1,68 @@
----
-title: Angular CheatSheet
-description: Angular cheatsheet contains basics of angular binding & angular CLI.
-created: 2022-10-03
-updated: 2022-10-03
----
+## Table of Contents
+
+- [Angular Code Snippets for Developers](#angular-code-snippets-for-developers)
+  - [Angular Bindings](#angular-bindings)
+  - [Angular Lifecycle Hooks](#angular-lifecycle-hooks)
+  - [Angular CLI](#angular-cli)
 
 # Angular Cheatsheet
 
 Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
 
-#### Angular Binding:
+## Angular Binding:
 
- - One Way Binding:
-	```
-	<p>title</p>
-	//No changes were reflected back to the variable.
-	```
-- Two Way Binding
-	```
-	<input [(ngMo­del­)]=­"­student.F­ir­stN­ame­">
-	//Changes were reflected back to the variable
-	```
-- Property Binding
-	```
-	<img [src]=­"­student.profilePicUrl">
-	```
-- Attribute Binding
-	```
-	<button [attr.a­ri­a-l­abe­l]=­"­ok">­Ok<­/bu­tto­n>
-	```
-- Class Binding
-	```
-	<div [class.Focused]="isFocused">S­ele­cte­d</­div>
-	```
-- ngClass
-	```
-	<div [ngClass]="assignClasses()">
-	  <h1>{{student.FirstName}}</h1>
-	</div>
-	```
-- Style Binding
-	```
-	<p [style.co­lor­]="i­sSe­lected ? 'green' : 'red'">Option {{i}}</p>
-	```
- - ngStyle
-	 ```
-	<div [ngStyle]="setStyles()">
-	  {{student.name}}
-	</div>
-	```
+| Syntax                                                                          | Description                                                  |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `<p>{{expression}}</p>`                                                         | Interpolation                                                |
+| `<p [property]="expression"></p>`                                               | Property binding                                             |
+| `<p>title</p>`                                                                  | One-way binding [No changes were reflected in the component] |
+| `<input [(ngModel)]="expression">`                                              | Two-way binding                                              |
+| `<p bind-property="expression"></p>`                                            | Property binding                                             |
+| `<p on-event="statement"></p>`                                                  | Event binding                                                |
+| `<button [attr.a­ri­a-l­abe­l]=­"­ok">­Ok<­/bu­tto­n>`                          | Attribute binding                                            |
+| `<p bind-innerHTML="htmlExp"></p>`                                              | HTML binding                                                 |
+| `<p [style.color]="colorExp">...</p>`                                           | Style binding                                                |
+| `<p [class.special]="isSpecial">...</p>`                                        | Class binding                                                |
+| `<p [ngClass]="{class­-­1:­co­nd­it­ion­1, class­-­2:­co­nd­it­ion­2}">...</p>` | Class binding with ngClass                                   |
+| `<student-details [student]="currStudent"></student-details>`                   | Component binding                                            |
+| `<div [ngClass] = "­{se­lected: isSele­cte­d}">­Student<­/di­v>`                | Directive Binding                                            |
+| `<div [ngSwitch]="switchExpression">`                                           | Structural Directive                                         |
+| `<input [value]="student.name" (input)="student.name=$event.target.value">`     | $event                                                       |
 
-- Component Binding
-	```
-	<student-details [student]="currStudent"></student-details>
-	```
-- Directive Binding
-	```
-	<div [ngClass] = "­{se­lected: isSele­cte­d}">­Student<­/di­v>
-	```
-- Event Binding
-	```
-	<button (click­)="test()">­Test</­but­ton>
-	```
-- $event
-	```
-	<input [value]="student.name"
-	 (input)="student.name=$event.target.value">
-	 ```
-	 
-#### Angular Lifecycle Hooks:
-- ngOnInit()
-	```
-	It get invoked when angular initialize component or directive.
-	```
-- ngOnChanges()
-	```
-	It get invoked when angular sets data bound input property i.e. @Input().
-	```
-- ngDoCheck()
-	```
-	It get invoked for every changes.
-	```
-- ngAfterContentInit()
-	```
-	It get invoked after angular project content in its view.
-	```
-- ngAfterContentChecked()
-	```
-	It get invoked after angular checks the binding of content into view.
-	```
-- ngAfterViewInit()
-	```
-	It get invoked after angular create component view.
-	```
-- ngAfterViewChecked()
-	```
-	It get invoked after angular checks the binding of component view.
-	```
-- ngOnDestroy()
-	```
-	It get invoked before angular destroy component or directives.
-	```
+**[🔼Back to Top](#table-of-contents)**
+|
 
-#### Angular CLI commands:
+## Angular Lifecycle Hooks:
 
-- To create a *new project*
-	```
-	ng new project-name
-	```
-	
-- To generate a *component*
-	```
-	ng g component <name>
-	```
+| Lifecycle Hook          | Description                                                               |
+| ----------------------- | ------------------------------------------------------------------------- |
+| ngOnInit()              | It get invoked when angular initialize component or directive.            |
+| ngOnChanges()           | It get invoked when angular sets data bound input property i.e. @Input(). |
+| ngDoCheck()             | It get invoked for every changes.                                         |
+| ngAfterContentInit()    | It get invoked after angular project content in its view.                 |
+| ngAfterContentChecked() | It get invoked after angular checks the binding of content into view.     |
+| ngAfterViewInit()       | It get invoked after angular create component view.                       |
+| ngAfterViewChecked()    | It get invoked after angular checks the binding of component view.        |
+| ngOnDestroy()           | It get invoked before angular destroy component or directives.            |
 
-- To generate *directive*
-	```
-	ng g directive <name>
-	```
+**[🔼Back to Top](#table-of-contents)**
 
-- To generate *pipe*
-	```
-	ng g pipe <name>
-	```
+## Angular CLI commands:
 
-- To generate *service*
-	```
-	ng g service <name>
-	```
+| Command                         | Description                              |
+| ------------------------------- | ---------------------------------------- |
+| ng new project-name             | To create a new project                  |
+| ng g component <name>           | To generate a component                  |
+| ng g directive <name>           | To generate directive                    |
+| ng g pipe <name>                | To generate pipe                         |
+| ng g service <name>             | To generate service                      |
+| ng g class <name>               | To generate class                        |
+| ng g interface <name>           | To generate interface                    |
+| ng serve                        | To run application in local server       |
+| ng build [--e=<name>]           | To create a build and change environment |
+| ng test                         | To test your application                 |
+| ng e2e                          | To test your application                 |
+| ng generate universal [options] | To generate universal command            |
+| ng g universal [options]        | To generate universal command            |
 
-- To generate *class*
-	```
-	ng g class <name>
-	```
-
-- To g *interface*
-	```
-	ng g interface <name>
-	```
-
-- *Run application* in local server
-	```
-	ng serve
-	```
-- Create a build and change environment
-	```
-	ng build [--e=<name>]
-	```
-
-- *Testing* your application
-	```
-	ng test | e2e
-	```
-	
-- universal command // This command is used to pass this schematic to the "run" command to set up server-side rendering for an app
-	```
-       ng generate universal [options]  
-       ng g universal [options]  
-	```
-	AND [options]
-	--defaults=true|false: When true, it disables interactive input prompts for options with a default.
-
-        --dryRun=true|false: When true, it runs through and reports activity without writing out results.
+**[🔼Back to Top](#table-of-contents)**
