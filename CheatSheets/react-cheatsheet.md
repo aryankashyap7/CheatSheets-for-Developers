@@ -13,13 +13,14 @@ Create React App is a comfortable environment for learning React, and is the bes
 npx create-react-app my-app
 cd my-app
 npm start
-
 ```
 
-## Comments
+## Simple Reactjs Functional Component
 
-Declare the comment:
+```
+function App() {
+  return <div>Hello World</div>;
+}
 
-```bash
-# my comment
+export default App;
 ```
