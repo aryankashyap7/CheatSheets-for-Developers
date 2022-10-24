@@ -22,12 +22,16 @@ Here are a few things you can do that will increase the likelihood of your pull 
   - If there are changes in multiple directories you would like to make that are not dependent upon each other, please submit them as separate pull requests.
 - The pull request should have a useful title and description.
   - Explain the rationale for your change in the pull request using a pull request template.
-- Here's a quick guid to create a pull request:
-  - Fork the github project.
-  - Clone the git repository
-    ```(bash)
-    $ git clone
-    https://github.com/YOUR-GITHUB-USERNAME/CheatSheets-for-Developers.git
-    ```
-  - When your implementation is ready, [submit a pull request][pr]. Add some comments or screen shots to help us.
-  - Wait for us to review your pull request. If something is wrong or if we want you to make some changes before the merge, we'll let you know through commit comments or pull request comments.
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork this repository.
+2. Clone your forked copy of the project(`git clone https://github.com/aryankashyap7/CheatSheets-for-Developers.git`)
+3. Navigate to the project directory(`cd CheatSheets-for-Developers`)
+4. Create a new branch(`git checkout -b YourBranchName`)
+5. Make changes in source code.
+6. Stage your changes(`git add .`) & commit your changes(` git commit -m "<your_commit_message>"`)
+7. Push your local commits to the remote repo(` git push origin YourBranchName`)
+8. Create a PR
