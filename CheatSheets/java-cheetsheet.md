@@ -5,6 +5,7 @@
   - [Operators](#operators)
   - [Statements](#statements)
   - [String Methods](#string-methods)
+  - [Collection](#Collection)
 
  ## Data Types
  | Data Type | Size |
@@ -132,3 +133,28 @@
  |trim()  |trims surrou­nding whitespace  |
  |equals(_s2_)  |true if s equals s2  |
  |compa­reTo(_s2_)  | 0 if equal/+ if s > s2/- if s < s2 |
+ 
+ ## Collection
+ ### List
+ |Type|Declaration|
+ |--|--|
+ |ArrayList|List<E> arr = new ArrayList<E>();|
+ |LinkedList|List<E> arr = new LinkedList<E>();|
+ ### Set
+ |Type|Declaration|
+ |--|--|
+ |HashSet|Set<E> set = new HashSet<E>();|
+ |TreeSet|Set<E> set = new TreeSet<E>();|
+|LinkedHashSet|Set<E> set = new LinkedHashSet();|
+### Map
+|Type|Declaration|
+|--|--|
+|LinkedHashMap|LinkedHashMap<E> linkedHashMap = new LinkedHashMap<E>();|
+|HashMap|HashMap<E> hashMap = new HashMap<E>();|
+|TreeMap|TreeMap<K> treeMap = new TreeMap<E>();| 
+### Queue
+|Type|Declaration|
+|--|--|
+|Queue|Queue<E> queue = new LinkedList();|
+|PriorityQueue|PriorityQueue<E> priorityQueue = new PriorityQueue();|
+|ArrayDeque|ArrayDeque<E> arrayDeque = new ArrayDeque();|
