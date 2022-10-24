@@ -1,21 +1,17 @@
-# React Cheatsheet
-
 ---
-
 title: React CheatSheet
 description: React cheatsheet contains basics of React, JSX, Binding, Virtual DOM, Hooks and more .
 created: 2022-10-24
 updated: 2022-10-24
-
 ---
 
-# Table of Content
+# React Cheatsheet
+
+## Table of Content
 
 - [use state hook](#use-state-hook)
 - [use effect hook](#use-effect-hook)
 - [use ref hook](#use-ref-hook)
-
-## Data Types
 
 ## use state hook
 
