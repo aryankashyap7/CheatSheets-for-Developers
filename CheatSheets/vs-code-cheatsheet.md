@@ -159,6 +159,15 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Trim trailing whitespace		              | "Ctrl+K Ctrl+X "                |
 |	Change file language		                  | "Ctrl+K M "                     |
 
-
+#### Editor management:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	Close editor		                          | "Ctrl+F4, Ctrl+W "              |
+|	Close folder		                          | "Ctrl+K F "                     |
+|	Split editor		                          | "Ctrl+\ "                       |
+|	Focus into 1st, 2nd or 3rd editor group 	  | "Ctrl+ 1 / 2 / 3 "              | 
+|	Focus into previous/next editor group		  | "Ctrl+K Ctrl+ ←/→ "             | 
+|	PgDn Move editor left/right		              | "Ctrl+Shift+PgUp / "            | 
+|	Move active editor group    				  | "Ctrl+K ← / → "                 |
 
 
