@@ -113,7 +113,16 @@ Visual Studio Code is a code editor redefined and optimized for building and deb
 |	Show active file in new window/instance		  | "Ctrl+K O  "                    |
 
 
-
+#### Integrated terminal:
+| 	Description                                   | Command           				|   
+| ----------------------------------------------- | ------------------------------- |                  
+|	Show integrated terminal		              | " Ctrl+`"                       |
+|	Create new terminal                           | "Ctrl+Shift+` "                 |
+|	Copy selection		                          | "Ctrl+C "                       |
+|	Paste into active terminal		              | "Ctrl+V "                       |
+|	Scroll up/down		                          | "Ctrl+↑ / ↓ "                   |
+|	Scroll page up/down		                      | "Shift+PgUp / PgDn "            |
+|	Scroll to top/bottom		                  | "Ctrl+Home / End "              |
 
 
 
