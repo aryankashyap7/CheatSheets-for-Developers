@@ -118,6 +118,9 @@ rows set the height.
 ### Tables (use only for data layout - use CSS for page layout)
 
 - `<table> </table>` Creates a table
+- `<thead> </thead>` Used to group header content in a table
+- `<tbody> </tbody>` Used to group the body content in a table
+- `<tfoot> </tfoot>` Used to group footer content in a table
 - `<tr> </tr>` Sets off each row in a table
 - `<td> </td>` Sets off each cell in a row
 - `<th> </th>` Sets off the table header (a normal cell with bold, centered text)
