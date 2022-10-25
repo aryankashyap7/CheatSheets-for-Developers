@@ -107,13 +107,12 @@ Bash is a powerful scripting language that is used by many developers. This chea
 #### Conditionals
 
 | Command                                                                 | Description                        |
-| ----------------------------------------------------------------------- | ---------------------------------- | ------------------------------------- |
+| ----------------------------------------------------------------------- | ---------------------------------- |
 | `if [ condition ]; then ... fi`                                         | If statement                       |
 | `if [ condition ]; then ... else ... fi`                                | If/else statement                  |
 | `if [ condition1 ]; then ... elif [ condition2 ]; then ... else ... fi` | If/elif/else statement             |
 | `case value in pattern1) ... ;; pattern2) ... ;; esac`                  | Case statement                     |
 | `case value in pattern1) ... ;; pattern2) ... ;; *) ... ;; esac`        | Case statement with a default case |
-| `case value in (pattern1                                                | pattern2) ... ;; esac`             | Case statement with multiple patterns |
 
 **[🔼Back to Top](#table-of-contents)**
 
