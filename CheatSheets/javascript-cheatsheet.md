@@ -50,7 +50,6 @@
   - [10. Async Await](#10-async-await)
     - [10.1. New Async Function](#101-new-async-function)
     - [10.2. New Async Function with Await](#102-new-async-function-with-await)
-    - [10.3. New Async Function with Await and Promise]
   - [11. Fetch](#11-fetch)
     - [11.1. New Fetch](#111-new-fetch)
     - [11.2. New Fetch with URL](#112-new-fetch-with-url)
