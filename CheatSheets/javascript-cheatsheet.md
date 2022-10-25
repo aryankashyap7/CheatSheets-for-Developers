@@ -47,14 +47,10 @@
     - [9.3. New Promise with Reject](#93-new-promise-with-reject)
     - [9.4. New Promise with Resolve and Reject](#94-new-promise-with-resolve-and-reject)
     - [9.5. New Promise with Resolve and Reject and Async](#95-new-promise-with-resolve-and-reject-and-async)
-    - [9.6. New Promise with Resolve and Reject and Async and Await](#96-new-promise-with-resolve-and-reject-and-async-and-await)
   - [10. Async Await](#10-async-await)
     - [10.1. New Async Function](#101-new-async-function)
     - [10.2. New Async Function with Await](#102-new-async-function-with-await)
-    - [10.3. New Async Function with Await and Promise](#103-new-async-function-with-await-and-promise)
-    - [10.4. New Async Function with Await and Promise and Resolve](#104-new-async-function-with-await-and-promise-and-resolve)
-    - [10.5. New Async Function with Await and Promise and Reject](#105-new-async-function-with-await-and-promise-and-reject)
-    - [10.6. New Async Function with Await and Promise and Resolve and Reject](#106-new-async-function-with-await-and-promise-and-resolve-and-reject)
+    - [10.3. New Async Function with Await and Promise]
   - [11. Fetch](#11-fetch)
     - [11.1. New Fetch](#111-new-fetch)
     - [11.2. New Fetch with URL](#112-new-fetch-with-url)
@@ -454,16 +450,6 @@ const newPromiseWithResolveAndRejectAndAsync = new Promise((resolve, reject) => 
 });
 ```
 
-### 9.6. New Promise with Resolve and Reject and Async and Await
-
-```
-const newPromiseWithResolveAndRejectAndAsyncAndAwait = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('resolve');
-    reject('reject');
-  }, 1000);
-});
-
 **[🔼Back to Top](#table-of-contents)**
 
 ## 10. Async Await
@@ -489,52 +475,7 @@ console.log('newAsyncFunctionWithAwait');
 
 ```
 
-### 10.3. New Async Function with Await and Promise
-
-```
-
-async function newAsyncFunctionWithAwaitAndPromise() {
-await newPromiseWithResolveAndRejectAndAsyncAndAwait;
-console.log('newAsyncFunctionWithAwaitAndPromise');
-}
-
-```
-
-### 10.4. New Async Function with Await and Promise and Resolve
-
-```
-
-async function newAsyncFunctionWithAwaitAndPromiseAndResolve() {
-await newPromiseWithResolveAndRejectAndAsyncAndAwait;
-console.log('newAsyncFunctionWithAwaitAndPromiseAndResolve');
-}
-
-```
-
-### 10.5. New Async Function with Await and Promise and Reject
-
-```
-
-async function newAsyncFunctionWithAwaitAndPromiseAndReject() {
-await newPromiseWithResolveAndRejectAndAsyncAndAwait;
-console.log('newAsyncFunctionWithAwaitAndPromiseAndReject');
-}
-
-```
-
-### 10.6. New Async Function with Await and Promise and Resolve and Reject
-
-```
-
-async function newAsyncFunctionWithAwaitAndPromiseAndResolveAndReject() {
-await newPromiseWithResolveAndRejectAndAsyncAndAwait;
-console.log('newAsyncFunctionWithAwaitAndPromiseAndResolveAndReject');
-}
-
-```
-
 **[🔼Back to Top](#table-of-contents)**
-
 
 ## 11. Fetch
 
@@ -687,8 +628,6 @@ console.log(json);
 
 **[🔼Back to Top](#table-of-contents)**
 
-
-
 ## 12. Events
 
 ### 12.1. New Event
@@ -715,6 +654,8 @@ const newEventWithTypeAndOptions = new Event('build', {
 bubbles: true,
 cancelable: true,
 });
+
+```
 
 ```
 
