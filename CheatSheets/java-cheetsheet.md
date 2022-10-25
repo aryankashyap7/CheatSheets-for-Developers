@@ -260,7 +260,7 @@ System.out.println(str);
 | compa­reTo(_s2_)           | 0 if equal/+ if s > s2/- if s < s2 |
 
 
-## StringTokeniser
+## StringTokenizer
 #### A class in java that is used to break a string into tokens based on given delimeter(s), by default breaks at whitespaces
 
 ### Initialising
