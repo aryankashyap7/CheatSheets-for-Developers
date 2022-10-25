@@ -70,6 +70,7 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | <kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>M</kbd> | Maximize all windows                                                                                          |
 | <kbd>Win</kbd>+<kbd>D</kbd>+<kbd>M</kbd>     | Minimize/Maximize all windows                                                                                 |
 | <kbd>Win</kbd>+<kbd>,</kbd>                  | Peek Desktop Quickly                                                                                          |
+| <kbd>Win</kbd>+<kbd>V</kbd>                  | Open the Clipboard Application (to view & utilized your recent copied text & images)                          |
 
 **[🔼Back to Top](#table-of-contents)**
 
