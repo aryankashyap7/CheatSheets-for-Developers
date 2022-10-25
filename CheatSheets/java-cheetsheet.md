@@ -7,7 +7,7 @@
 - [Arrays](#arrays)
 - [Strings](#strings)
 - [String Methods](#string-methods)
-- [StringTokeniser](#stringtokeniser)
+- [StringTokenizer](#stringtokenizer)
 - [Collection](#Collection)
 
 ## Data Types
