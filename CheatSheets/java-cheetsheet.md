@@ -6,6 +6,7 @@
 - [Statements](#statements)
 - [String Methods](#string-methods)
 - [Collection](#Collection)
+- [operation in Arrays](#Operation)
 
 ## Data Types
 
@@ -190,3 +191,47 @@ try {
 | ArrayDeque    | ArrayDeque<E> arrayDeque = new ArrayDeque();          |
 
 **[🔼Back to Top](#table-of-contents)**
+     
+ ## Operation
+     
+     ### Create
+     ```java
+     datatype arrayName[]=new datatype[size];
+     
+     
+     
+     ### Input && ### Output
+     ```java
+     import java.util.*;
+     public class Array{
+     public static void main(String [] args){
+        int marks[]=new int [3];
+        Scanner sc = new Scanner(system.in);
+        marks[0]=sc.nextInt();
+        marks[1]=sc.nextInt();
+        marks[2]=sc.nextInt();
+     System.out.println("marks in subject 1"+ marks[0]);
+     System.out.println("marks in subject 2"+ marks[1]);
+     System.out.println("marks in subject 3"+ marks[2]);
+    }
+  }
+     ### Update
+     
+        ```java
+     import java.util.*;
+     public class Array{
+     public static void main(String [] args){
+        int marks[]=new int [3];
+        Scanner sc = new Scanner(system.in);
+        marks[0]=sc.nextInt();
+        marks[1]=sc.nextInt();
+        marks[2]=sc.nextInt();
+     System.out.println("marks in subject 1"+ marks[0]);
+     System.out.println("marks in subject 2"+ marks[1]);
+     System.out.println("marks in subject 3"+ marks[2]);
+        marks[2]=105;
+     System.out.println(" Updated marks in subject 3"+ marks[2]);
+     
+    }
+  }
+     
