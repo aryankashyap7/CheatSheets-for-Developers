@@ -1,4 +1,4 @@
-# PHP Cheatsheet for Developers
+# Kotlin Cheatsheet for Developers
 
 ## Table of Contents
 - [Basic](#Basic)
@@ -7,14 +7,14 @@
 - [Strings](#strings)
 - [Booleans](#booleans)
 - [Floats](#floats)
-- [If..Else](#if..else)
-- [While Loop](#while_loop)
+- [If Else](#if-else)
+- [While Loop](#while-loop)
 - [Classes](#classes)
 - [Functions](#functions)
-- [Collection](#Collection)
+- [Collection](#collections)
 
 ## Basic 
-- You do not need ; to break statements since it is a interpreted language
+- You do not need ; to break statements since it is an interpreted language
 - The keyword void common in Java or C# is called Unit in Kotlin
 - Unlike Java or C#, you declare the type of a variable after the name, e.g. var firstName : String
 
@@ -23,7 +23,7 @@
 ## Variables
 - There are two keywords for variable declaration, var and val
 - var : var is like a general variable and can be assigned multiple times and is known as the mutable variable in Kotlin
-- val : val is a constant variable and can not be assigned multiple times and can be Initialized only single time and is known as the immutable variable in Kotlin
+- val : val is a constant variable and can not be assigned multiple times and can be Initialized only a single time and is known as the immutable variable in Kotlin
  
 **[🔼Back to Top](#table-of-contents)**
 
@@ -63,7 +63,7 @@ val floatNum = 10.0F
 ```
 **[🔼Back to Top](#table-of-contents)**
 
-## If..Else
+## If Else
 Kotlin supports the usual logical conditions from mathematics:
 
 - Less than: a < b
@@ -169,4 +169,5 @@ A collection is a group of related items
 | List   | val numbers = listOf("one", "two", "three", "four")|
 | Set      | val numbers = setOf(1, 2, 3, 4) |
 | Map       |val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1)|
+
 **[🔼Back to Top](#table-of-contents)**
