@@ -13,6 +13,7 @@
   - [Search](#search)
   - [Networking](#networking)
   - [VIM](#vim)
+  - [Emacs](#emacs)
 
 # Linux CheatSheet for Developers
 
@@ -80,7 +81,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `uname` | Print system information |
 | `uname -a` | Print all system information |
 | `uname -r` | Print kernel release |
@@ -136,19 +136,6 @@
 | `vi file`    | Vi is a screen-oriented text editor originally created for the Unix operating system. |
 | `emacs file` | Emacs is a family of text editors that are characterized by their extensibility.      |
 
-## VIM
-
-| Command   | Description   |
-| --------- | ------------  |
-| `h`       | move cursor left |
-| `j`       | move cursor down |
-| `k`       | move cursor up   |
-| `l`       | move cursor right|
-| `gg`      | go to the first line of the document |
-| `G`       | go to the last line of the document  |
-| `zz`      | center cursor on screen |
-| `0`       | jump to the start of the line |
-
 **[🔼Back to Top](#table-of-contents)**
 
 ## Archives
@@ -193,7 +180,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `grep pattern file` | Search for pattern in file |
 | `grep -r pattern directory` | Recursively search for pattern in directory |
 | `grep -v pattern file` | Invert match, print non-matching lines |
@@ -220,5 +206,32 @@
 | `host -t mx domain` | Get MX records for domain        |
 | `hostname -I`       | Get all IP addresses             |
 | `hostname -i`       | Get IP address                   |
+
+**[🔼Back to Top](#table-of-contents)**
+
+## VIM
+
+| Command   | Description   |
+| --------- | ------------  |
+| `h`       | move cursor left |
+| `j`       | move cursor down |
+| `k`       | move cursor up   |
+| `l`       | move cursor right|
+| `gg`      | go to the first line of the document |
+| `G`       | go to the last line of the document  |
+| `zz`      | center cursor on screen |
+| `0`       | jump to the start of the line |
+
+# Emacs
+
+| Command   | Description   |
+| --------- | ------------  |
+| `CTRL+O`  | Write the current file to disk |
+| `CTRL+X`  | Close the current file buffer / Exit from Nano |
+| `CTRL+R`  | Insert another file into the current one       |
+| `ALT+<`   | Switch to the previous file buffer |
+| `ALT+>`   | Switch to the next file buffer     |
+| `ALT+D`   | Count the number of words, lines, and characters |
+| `CTRL+L`  | Refresh (redraw) the current screen  |
 
 **[🔼Back to Top](#table-of-contents)**
