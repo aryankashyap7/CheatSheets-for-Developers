@@ -1,11 +1,16 @@
 # PHP Cheatsheet for Developers
 
 ## Table of Contents
-- [Data Types](#data-types)
-- [Data Conversion](#data-conversion)
-- [Operators](#operators)
-- [Statements](#statements)
-- [String Methods](#string-methods)
+- [Basic](#Basic)
+- [Variables](#variables)
+- [Print](#print)
+- [Strings](#strings)
+- [Booleans](#booleans)
+- [Floats](#floats)
+- [If..Else](#if..else)
+- [While Loop](#while_loop)
+- [Classes](#classes)
+- [Functions](#functions)
 - [Collection](#Collection)
 
 ## Basic 
@@ -18,7 +23,7 @@
 - var : var is like a general variable and can be assigned multiple times and is known as the mutable variable in Kotlin
 - val : val is a constant variable and can not be assigned multiple times and can be Initialized only single time and is known as the immutable variable in Kotlin
 
-## print
+## Print
 ```kotlin
 fun main() {
   println("Hello World")
