@@ -14,15 +14,43 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 
 ## CheatSheets Available
 
-- [windows](./CheatSheets/windows-cheatsheet.md)
-- [git](./CheatSheets/git-cheatsheet.md)
-- [linux](./CheatSheets/linux-cheatsheet.md)
 
-* [Contributions](#contributions)
+| No. | CheatSheet | Description | Link |
+| --- | --- | --- | --- |
+| 1 | Angular | Angular Framework CheatSheet | <a href="./CheatSheets/angular-cheatsheet.md">Click Here</a> |
+| 2 | Assembly | Assembly Language CheatSheet | <a href="./CheatSheets/assembly-cheatsheet.md">Click Here</a> |
+| 3 | AWS | Amazon Web Services CheatSheet | <a href="./CheatSheets/aws-cheatsheet.md">Click Here</a> |
+| 4 | Azure | Microsoft Azure CheatSheet | <a href="./CheatSheets/azure-cheatsheet.md">Click Here</a> |
+| 5 | Bash | Bash Scripting CheatSheet | <a href="./CheatSheets/bash-cheatsheet.md">Click Here</a> |
+| 6 | C | C Language CheatSheet | <a href="./CheatSheets/c-cheatsheet.md">Click Here</a> |
+| 7 | C++ | C++ STL Based CheatSheet | <a href="./CheatSheets/cpp-stl-cheatsheet.md">Click Here</a> |
+| 8 | csharp | C# CheatSheet | <a href="./CheatSheets/csharp-cheatsheet.md">Click Here</a> |
+| 9 | CSS | CSS CheatSheet | <a href="./CheatSheets/css-cheatsheet.md">Click Here</a> |
+| 10 | Docker | Docker CheatSheet | <a href="./CheatSheets/docker-cheatsheet.md">Click Here</a> |
+| 11 | Git | Git Terminal Commands CheatSheet | <a href="./CheatSheets/git-cheatsheet.md">Click Here</a> |
+| 12 | HTML | HTML CheatSheet | <a href="./CheatSheets/html-cheatsheet.md">Click Here</a> |
+| 13 | Java | Java CheatSheet | <a href="./CheatSheets/java-cheatsheet.md">Click Here</a> |
+| 14 | JavaScript | JavaScript CheatSheet | <a href="./CheatSheets/javascript-cheatsheet.md">Click Here</a> |
+| 15 | Kotlin | Kotlin CheatSheet | <a href="./CheatSheets/kotlin-cheatsheet.md">Click Here</a> |
+| 16 | Linux | Linux Terminal Commands CheatSheet | <a href="./CheatSheets/linux-cheatsheet.md">Click Here</a> |
+| 17 | MySQL | MySQL CheatSheet | <a href="./CheatSheets/mysql-cheatsheet.md">Click Here</a> |
+| 18 | NumPy | NumPy CheatSheet | <a href="./CheatSheets/numpy-cheatsheet.md">Click Here</a> |
+| 19 | PHP | PHP CheatSheet | <a href="./CheatSheets/php-cheatsheet.md">Click Here</a> |
+| 20 | Python | Python CheatSheet | <a href="./CheatSheets/python-cheatsheet.md">Click Here</a> |
+| 21 | React | React CheatSheet | <a href="./CheatSheets/react-cheatsheet.md">Click Here</a> |
+| 22 | VSCode | VSCode CheatSheet | <a href="./CheatSheets/vscode-cheatsheet.md">Click Here</a> |
+| 23 | VueJS | VueJS CheatSheet | <a href="./CheatSheets/vuejs-cheatsheet.md">Click Here</a> |
+| 24 | Windows | Windows Shortcuts CheatSheet | <a href="./CheatSheets/windows-cheatsheet.md">Click Here</a> |
+| 25 | Windows Terminal | Windows Terminal Commands CheatSheet | <a href="./CheatSheets/windows-terminal-cheatsheet.md">Click Here</a> |
 
-## Contributions
 
 ---
+
+<p align='center'>We are going to add more CheatSheets in the future. Stay Tuned! 🍁</p>
+<p align='center'>Feel free to drop a ⭐ if you like this repository.</p>
+
+---
+## Contributions
 
 We welcome all kinds of contributions from the open-source community, individuals and partners. We owe our success to
 your active involvement.
