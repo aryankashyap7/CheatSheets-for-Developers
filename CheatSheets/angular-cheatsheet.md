@@ -64,5 +64,8 @@ Angular is an application-design framework and development platform for creating
 | ng e2e                          | To test your application                 |
 | ng generate universal [options] | To generate universal command            |
 | ng g universal [options]        | To generate universal command            |
+| ng add                          | Adds support for an external library     |
+| ng update                       | Updates workspace and its dependencies   |
+| ng version                      | Outputs Angular CLI version              |
 
 **[🔼Back to Top](#table-of-contents)**
