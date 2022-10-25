@@ -33,11 +33,11 @@
 
 ## Setting up Alias
 
-| Command                                 | Description              |
-| --------------------------------------- | ------------------------ |
-| `git config --global alias.co checkout` | Set alias for `checkout` |
-| `git config --global alias.br branch`   | Set alias for `branch`   |
-| `git config --global alias.ci commit`   | Set alias for `commit`   |
+| Command                                 | Description                      |
+| --------------------------------------- | -------------------------------- |
+| `git config --global alias.co checkout` | Set `co` as alias for `checkout` |
+| `git config --global alias.br branch`   | Set `br` as alias for `branch`   |
+| `git config --global alias.ci commit`   | Set `ci` as alias for `commit`   |
 
 **[🔼Back to Top](#table-of-contents)**
 
