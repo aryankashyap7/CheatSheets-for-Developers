@@ -29,7 +29,7 @@ cd my-app
 npm start
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Components
 
@@ -41,7 +41,7 @@ function App() {
 export default App;
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Props
 
@@ -55,7 +55,7 @@ function User(props) {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Children Props
 
@@ -73,7 +73,7 @@ function User({ children }) {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Conditionals
 
@@ -91,7 +91,7 @@ function App() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Lists
 
@@ -111,7 +111,7 @@ function SoccerPlayers() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Context
 
@@ -135,12 +135,12 @@ function Greeting({ name }) {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Hooks
 
 React hooks were introduced in React version 16.8 as a way to easily add reusable, stateful logic to React function components.
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useState Hook
 
@@ -154,7 +154,7 @@ function MyComponent() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useEffect Hook
 
@@ -170,7 +170,7 @@ function MyComponent() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useRef
 
@@ -186,7 +186,7 @@ function MyComponent() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useContext
 
@@ -220,7 +220,7 @@ function Greeting() {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useCallback
 
@@ -263,7 +263,7 @@ function PlayerList({ players, handleRemovePlayer }) {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useMemo
 
@@ -290,4 +290,4 @@ function Post({code, frontmatter}) {
 }
 ```
 
-**[🔼Back to Top](#content-outlines)**
+**[🔼Back to Top](#react-js-for-developers)**
