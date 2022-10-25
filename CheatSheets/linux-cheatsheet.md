@@ -13,6 +13,7 @@
   - [Search](#search)
   - [Networking](#networking)
   - [VIM](#vim)
+  - [Emacs](#emacs)
 
 # Linux CheatSheet for Developers
 
@@ -80,7 +81,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `uname` | Print system information |
 | `uname -a` | Print all system information |
 | `uname -r` | Print kernel release |
@@ -149,6 +149,18 @@
 | `zz`      | center cursor on screen |
 | `0`       | jump to the start of the line |
 
+# Emacs
+
+| Command   | Description   |
+| --------- | ------------  |
+| `CTRL+O`  | Write the current file to disk |
+| `CTRL+X`  | Close the current file buffer / Exit from Nano |
+| `CTRL+R`  | Insert another file into the current one       |
+| `ALT+<`   | Switch to the previous file buffer |
+| `ALT+>`   | Switch to the next file buffer     |
+| `ALT+D`   | Count the number of words, lines, and characters |
+| `CTRL+L`  | Refresh (redraw) the current screen  |
+
 **[🔼Back to Top](#table-of-contents)**
 
 ## Archives
@@ -193,7 +205,6 @@
 
 | Command | Description |
 | ------- | ----------- |
-
 | `grep pattern file` | Search for pattern in file |
 | `grep -r pattern directory` | Recursively search for pattern in directory |
 | `grep -v pattern file` | Invert match, print non-matching lines |
