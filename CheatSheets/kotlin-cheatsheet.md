@@ -18,10 +18,14 @@
 - The keyword void common in Java or C# is called Unit in Kotlin
 - Unlike Java or C#, you declare the type of a variable after the name, e.g. var firstName : String
 
+**[🔼Back to Top](#table-of-contents)**
+
 ## Variables
 - There are two keywords for variable declaration, var and val
 - var : var is like a general variable and can be assigned multiple times and is known as the mutable variable in Kotlin
 - val : val is a constant variable and can not be assigned multiple times and can be Initialized only single time and is known as the immutable variable in Kotlin
+ 
+**[🔼Back to Top](#table-of-contents)**
 
 ## Print
 ```kotlin
@@ -29,6 +33,7 @@ fun main() {
   println("Hello World")
 }
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Strings
 ```kotlin
@@ -38,6 +43,7 @@ fun main(args : Array<String>) {
     val upercaseName = "Hello".uppercase()
 }
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Booleans
 ```kotlin
@@ -46,6 +52,7 @@ val falseBoolean = false
 val andCondition = trueBoolean && falseBoolean
 val orCondition = trueBoolean || falseBoolean
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Floats
 ```kotlin
@@ -54,6 +61,7 @@ val doubleNumber = 10.0
 val longNumbe = 10L
 val floatNum = 10.0F
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## If..Else
 Kotlin supports the usual logical conditions from mathematics:
@@ -81,6 +89,7 @@ if (time < 18) {
 }
 //output - "Bye"
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## While Loop
 The while loop loops through a block of code as long as a specified condition is true
@@ -92,10 +101,12 @@ while (i < 5) {
 } 
 //Will print i from 0 t0 4 (i<5)
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Classes
 Classes in Kotlin are declared using the keyword class
 ```class Student{ /*...*/ }```
+
 
 #### Primary Constructor
 ```kotlin
@@ -127,6 +138,7 @@ enum class Color(val rgb: Int) {
 ```kotlin
 data class Student(val name: String, val age: Int)
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Functions
 Kotlin functions are declared using the **fun** keyword
@@ -148,6 +160,7 @@ fun getStudentName(student: Student, intro: String = "Hello,") {
     return "$intro ${student.name}"
 }
 ```
+**[🔼Back to Top](#table-of-contents)**
 
 ## Collections
 A collection is a group of related items
@@ -156,3 +169,4 @@ A collection is a group of related items
 | List   | val numbers = listOf("one", "two", "three", "four")|
 | Set      | val numbers = setOf(1, 2, 3, 4) |
 | Map       |val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1)|
+**[🔼Back to Top](#table-of-contents)**
