@@ -2,40 +2,40 @@
 
 - [CPP STL CheatSheet for Developers](#cpp-stl-cheatsheet-for-developers)
 	- [Vector](#vector)
-		- [Vector insertion](#vector)
+		- [Vector Insertion](#vector)
 		- [Vector Display](#vector)
 		- [Vector Maximum element](#vector)
 		- [Vector Minimum element](#vector)
-		- [Vector sort](#vector)
-		- [Vector reverse](#vector)
-		- [Vector deletion](#vector)
+		- [Vector Sort](#vector)
+		- [Vector Reverse](#vector)
+		- [Vector Deletion](#vector)
 	- [Set](#set)
-		- [Set insertion](#set)
+		- [Set Insertion](#set)
 		- [Set Display](#set)
 	- [Unordered Set](#unordered-set)
-		- [Unordered insertion](#unordered-set)
+		- [Unordered Insertion](#unordered-set)
 		- [Unordered Display](#unordered-set)
 	- [Map](#map)
-		- [Map insertion](#map)
+		- [Map Insertion](#map)
 		- [Map Display](#map)
 	- [Stack](#stack)
-		- [Stack insertion](#stack)
+		- [Stack Insertion](#stack)
 		- [Stack Display](#stack)
 	- [Queue](#queue)
-		- [Queue insertion](#queue)
+		- [Queue Insertion](#queue)
 		- [Queue Display](#queue)
 	- [Deque](#deque)
-		- [DeQue insertion](#deque)
+		- [DeQue Insertion](#deque)
 		- [DeQue Display](#deque)
     - [Vector pair](#vector-pair)
-		- [Vector pair insertion](#vector-pair)
+		- [Vector pair Insertion](#vector-pair)
 		- [Vector pair Display](#vector-pair)
 	- [List](#list)
-		- [List insertion](#list)
+		- [List Insertion](#list)
 		- [List Display](#list)
-		- [List deletion](#list)
+		- [List Deletion](#list)
 	- [Priority Queue](#priority-queue)
-		- [Priority Queue insertion](#priority-queue)
+		- [Priority Queue Insertion](#priority-queue)
 		- [Priority Queue Display](#priority-queue)
 
 # C++ STL CheatSheet for Developers
@@ -44,10 +44,10 @@
 ### vector
 
 ```cpp 
-    // Vector  initialization 
+    // Vector initialization 
     vector<int> v;
     
-    // Vector  Insetion element
+    // Vector insertion element
     cout << "Insertion of element in vector: " << endl;
     cout << endl;
     for (int i = 0; i < n; i++)
@@ -55,7 +55,7 @@
         v.push_back(a[i]);
     }
     
-    // Vector  Display element
+    // Vector display element
     cout << "Display element of vector " << endl;
     for (int i = 0; i < n; i++)
     {
@@ -63,15 +63,17 @@
     }
     cout << endl;
     
-    // // Vector  maximum element
+    // // Vector maximum element
+    //.begin returns the reference index of the first element.
+    //.end returns the reference index after the last element (not of the last element itself).
     int maximum = *max_element(v.begin(), v.end());
     
-    // Vector  minimum element
+    // Vector minimum element
     int minimum = *min_element(v.begin(), v.end());
     cout << "Maximum element in vector " << maximum << endl;
     cout << "Minmum element in vector " << minimum << endl;
     sort(v.begin(), v.end());
-    // Vector  sort element
+    // Vector sort element
     cout << "Sort element of vector " << endl;
     for (int i = 0; i < n; i++)
     {
@@ -79,7 +81,7 @@
     }
     reverse(v.begin(), v.end());
     cout << endl;
-    // Vector  reverse element
+    // Vector reverse element
     cout << "Reverse element of vector " << minimum << endl;
     for (int i = 0; i < n; i++)
     {
@@ -125,16 +127,16 @@
 
 ```cpp
     
-     //Unordered Set initialization 
+    // Unordered Set initialization 
     unordered_set<int> s1;
     cout << endl;
-      // unordered set insertion 
+    // Unordered Set insertion 
     cout << "Insertion in unordered set " << endl;
     for (int i = 0; i < n; i++)
     {
         s1.insert(a[i]);
     }
-      // Unordered set display
+    // Unordered Set display
     cout << "Display of unordered set element" << endl;
     for (auto i = s1.begin(); i != s1.end(); i++)
     {
@@ -158,7 +160,7 @@
         m[a[i]]++;
     }
     cout << "Display of map element" << endl;
-    // map display
+    // Map display
     for (auto i = m.begin(); i != m.end(); i++)
     {
         cout << i->first << " " << i->second << endl;
@@ -174,7 +176,7 @@
      // Stack initialization 
     stack<int> st;
     cout << endl;
-    // Stack insertion
+    // Stack insertion (inserts at the beginning each time)
     cout << "Insertion in stack " << endl;
     for (int i = 0; i < n; i++)
     {
@@ -197,7 +199,7 @@
     // Queue initialization 
 	queue<int> q;
     cout << endl;
-    // Queue insertion
+    // Queue insertion (inserts at the end each time)
     cout << "Insertion in queue " << endl;
     for (int i = 0; i < n; i++)
     {
