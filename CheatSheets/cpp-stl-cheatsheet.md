@@ -1,52 +1,52 @@
 ## Table of Contents
 
 - [CPP STL CheatSheet for Developers](#cpp-stl-cheatsheet-for-developers)
-	- [Vector](#vector)
-		- [Vector insertion](#vector)
-		- [Vector Display](#vector)
-		- [Vector Maximum element](#vector)
-		- [Vector Minimum element](#vector)
-		- [Vector sort](#vector)
-		- [Vector reverse](#vector)
-		- [Vector deletion](#vector)
-	- [Set](#set)
-		- [Set insertion](#set)
-		- [Set Display](#set)
-	- [Unordered Set](#unordered-set)
-		- [Unordered insertion](#unordered-set)
-		- [Unordered Display](#unordered-set)
-	- [Map](#map)
-		- [Map insertion](#map)
-		- [Map Display](#map)
-	- [Stack](#stack)
-		- [Stack insertion](#stack)
-		- [Stack Display](#stack)
-	- [Queue](#queue)
-		- [Queue insertion](#queue)
-		- [Queue Display](#queue)
-	- [Deque](#deque)
-		- [DeQue insertion](#deque)
-		- [DeQue Display](#deque)
+  - [Vector](#vector)
+    - [Vector insertion](#vector)
+    - [Vector Display](#vector)
+    - [Vector Maximum element](#vector)
+    - [Vector Minimum element](#vector)
+    - [Vector sort](#vector)
+    - [Vector reverse](#vector)
+    - [Vector deletion](#vector)
+  - [Set](#set)
+    - [Set insertion](#set)
+    - [Set Display](#set)
+  - [Unordered Set](#unordered-set)
+    - [Unordered insertion](#unordered-set)
+    - [Unordered Display](#unordered-set)
+  - [Map](#map)
+    - [Map insertion](#map)
+    - [Map Display](#map)
+  - [Stack](#stack)
+    - [Stack insertion](#stack)
+    - [Stack Display](#stack)
+  - [Queue](#queue)
+    - [Queue insertion](#queue)
+    - [Queue Display](#queue)
+  - [Deque](#deque)
+    - [DeQue insertion](#deque)
+    - [DeQue Display](#deque)
     - [Vector pair](#vector-pair)
-		- [Vector pair insertion](#vector-pair)
-		- [Vector pair Display](#vector-pair)
-	- [List](#list)
-		- [List insertion](#list)
-		- [List Display](#list)
-		- [List deletion](#list)
-	- [Priority Queue](#priority-queue)
-		- [Priority Queue insertion](#priority-queue)
-		- [Priority Queue Display](#priority-queue)
+    - [Vector pair insertion](#vector-pair)
+    - [Vector pair Display](#vector-pair)
+  - [List](#list)
+    - [List insertion](#list)
+    - [List Display](#list)
+    - [List deletion](#list)
+  - [Priority Queue](#priority-queue)
+    - [Priority Queue insertion](#priority-queue)
+    - [Priority Queue Display](#priority-queue)
+  - [Hidden Functions](#hidden-functions)
 
 # C++ STL CheatSheet for Developers
 
-
 ### vector
 
-```cpp 
-    // Vector  initialization 
+```cpp
+    // Vector  initialization
     vector<int> v;
-    
+
     // Vector  Insetion element
     cout << "Insertion of element in vector: " << endl;
     cout << endl;
@@ -54,7 +54,7 @@
     {
         v.push_back(a[i]);
     }
-    
+
     // Vector  Display element
     cout << "Display element of vector " << endl;
     for (int i = 0; i < n; i++)
@@ -62,10 +62,10 @@
         cout << v[i] << " ";
     }
     cout << endl;
-    
+
     // // Vector  maximum element
     int maximum = *max_element(v.begin(), v.end());
-    
+
     // Vector  minimum element
     int minimum = *min_element(v.begin(), v.end());
     cout << "Maximum element in vector " << maximum << endl;
@@ -100,10 +100,10 @@
 ### set
 
 ```cpp
-     // Set initialization 
+     // Set initialization
     set<int> s;
     cout << endl;
-      // Set insertion 
+      // Set insertion
     cout << "Insertion in set " << endl;
     cout << endl;
     for (int i = 0; i < n; i++)
@@ -116,7 +116,7 @@
     {
         cout << *i << " ";
     }
-  
+
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -124,11 +124,11 @@
 ### unordered-set
 
 ```cpp
-    
-     //Unordered Set initialization 
+
+     //Unordered Set initialization
     unordered_set<int> s1;
     cout << endl;
-      // unordered set insertion 
+      // unordered set insertion
     cout << "Insertion in unordered set " << endl;
     for (int i = 0; i < n; i++)
     {
@@ -144,11 +144,10 @@
 
 **[🔼Back to Top](#table-of-contents)**
 
-
 ### map
 
 ```cpp
-   // Map initialization 
+   // Map initialization
     map<int, int> m;
     cout << endl;
        // Map insertion
@@ -162,16 +161,16 @@
     for (auto i = m.begin(); i != m.end(); i++)
     {
         cout << i->first << " " << i->second << endl;
-    }  
+    }
 ```
 
 **[🔼Back to Top](#table-of-contents)**
 
-### Stack 
+### Stack
 
 ```cpp
-    
-     // Stack initialization 
+
+     // Stack initialization
     stack<int> st;
     cout << endl;
     // Stack insertion
@@ -186,7 +185,7 @@
     {
         cout << st.top() << " ";
         st.pop();
-    } 
+    }
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -194,7 +193,7 @@
 ### queue
 
 ```queue
-    // Queue initialization 
+    // Queue initialization
 	queue<int> q;
     cout << endl;
     // Queue insertion
@@ -204,7 +203,7 @@
         q.push(a[i]);
     }
       // Queue display
-      
+
     cout << "Display of queue element" << endl;
     for (auto i = s.begin(); i != s.end(); i++)
     {
@@ -218,7 +217,7 @@
 ### deque
 
 ```deque
-    // Deque initialization 
+    // Deque initialization
    deque<int> d;
    // Deque insertion
     cout << "Insertion in deqeue " << endl;
@@ -234,7 +233,7 @@
         d.pop_back();
     }
     cout << "Deletion of dequeue element" << endl;
-    d.pop_back(); 
+    d.pop_back();
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -242,10 +241,10 @@
 ### vector-pair
 
 ```cpp
-   
-   // Vector pair initialization 
+
+   // Vector pair initialization
     vector<pair<int, int>> p;
-    
+
     // Vector pair insertion
     cout << "Insertion in vector pair " << endl;
     cout << endl;
@@ -261,6 +260,7 @@
     }
     cout << endl;
 ```
+
 **[🔼Back to Top](#table-of-contents)**
 
 ### List
@@ -288,10 +288,11 @@
     LI.remove(5);
     //removes last element from list
     LI.pop_back();
-	
+
     //removes first element from list
     LI.pop_front();
 ```
+
 **[🔼Back to Top](#table-of-contents)**
 
 ### Priority Queue
@@ -307,11 +308,45 @@
 		g.pop();
 	}
 	cout << '\n';
-	
+
 	cout << "\n size if pq : " << pq.size();
 	cout << "\n top element of pq : " << pq.top();
-	
+
 	// priority queue deletion
 	pq.pop();
 ```
+
+**[🔼Back to Top](#table-of-contents)**
+
+### Hidden Functions
+
+```cpp
+    __gcd(value1, value2)
+    // Return gcd of two numbers, without using Euclidean Algorithm
+
+    __builtin_ffs(x)
+    //This function returns 1 + position of least significant 1-bit of x. Here x is int, this function with suffix 'l' gets
+    //a long argument and with suffix 'll' gets a long long argument.
+    e.g. __builtin_ffs(10) = 2 because 10 is '...10 1 0' in base 2 and first 1-bit from right is at index 1 (0-based) and
+    function returns 1 + index.
+
+    __builtin_clz(x)
+    //This function returns number of leading 0-bits of x which starts from most significant bit position. x is unsigned int. If
+    //this function with suffix 'l gets a unsigned long argument and with suffix 'll' gets a unsigned long long argument. If x =
+    //= 0, returns an undefined value.
+    e.g. __builtin_clz(16) = 27 because 16 is ' ... 10000' in base-2. Number of bits in a unsigned int is 32. so function
+    returns 32 — 5 = 27.
+
+    __builtin_ctz(x)
+    //This function returns number of trailing 0-bits of x which starts from least significant bit position. x is unsigned int and
+    //like previous function this function with suffix 'l' gets a unsigned long argument and with suffix 'll' gets a unsigned long
+    //long argument. If x == 0, returns an undefined value.
+    e.g. __builtin_ctz(16) = 4 because 16 is '...1 0000 '. Number of trailing 0-bits is 4.
+
+    __builtin_popcount(x)
+    //This function returns number of 1-bits of x. x is unsigned int and like previous function this function with suffix 'l' gets
+    //a unsigned long argument and with suffix 'll' gets a unsigned long long argument. If x == 0, returns an undefined value.
+    e.g. __builtin_popcount(14) = 3 because 14 is '... 111 0' and has three 1-bits.
+```
+
 **[🔼Back to Top](#table-of-contents)**
