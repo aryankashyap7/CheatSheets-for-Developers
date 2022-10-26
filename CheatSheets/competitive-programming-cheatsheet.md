@@ -30,6 +30,8 @@
 using namespace std;
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### macros
 
 ```cpp
@@ -49,6 +51,8 @@ using namespace std;
 #define mt make_tuple
 #define trav(container, it) for (typeof (container.begin()) it = container.begin(); it != container.end(); it++)
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### fast-io
 
@@ -79,6 +83,8 @@ int binarySearch(vector<int>&arr,int value)
 }
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### euclidean-gcd
 
 ```cpp
@@ -89,6 +95,8 @@ int gcd(int a, int b)
     return gcd(b % a, a);
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### binary-exponentiation
 
@@ -105,6 +113,8 @@ int power(int x, int y, int p)
     return res % p;
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### modular-inverse
 
@@ -172,6 +182,8 @@ void Graph::BFS(int s)
     }
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### disjoint-set-union
 
@@ -295,6 +307,8 @@ point3d operator*(ftype a, point3d b) {
 }
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### dot-product
 
 ```cpp
@@ -305,6 +319,8 @@ ftype dot(point3d a, point3d b) {
     return a.x * b.x + a.y * b.y + a.z * b.z;
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### cross-product
 
@@ -321,6 +337,8 @@ ftype cross(point2d a, point2d b) {
     return a.x * b.y - a.y * b.x;
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### intersection
 
