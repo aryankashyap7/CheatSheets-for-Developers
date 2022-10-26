@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [MacOS Keyboard Shortcuts for Developers](#macos-keyboard-shortcuts-for-developers)
-  - [Basic MacOS Keyboard Shortcuts](#basic-mac-keyboard-shortcuts)
+  - [Basic MacOS Keyboard Shortcuts](#basic-macos-keyboard-shortcuts)
   - [Mac Screenshot Keyboard Shortcuts](#mac-screenshot-keyboard-shortcuts)
   - [Mac Finder Keyboard Shortcuts](#mac-finder-keyboard-shortcuts)
   - [Mac Keyboard Shortcuts for Safari](#mac-keyboard-shortcuts-for-safari)
@@ -103,9 +103,7 @@ Below is the list of useful keyboard shortcuts that you can use while using the 
 | Command (⌘) + Option (⌥) + W | Close all open windows | 
 | Command (⌘) + Option (⌥) + Y | View a slideshow of the selected files | 
 | Command (⌘) + Option (⌥) + dragging | Make an alias of the dragged item | 
-| Command (⌘) + R | Show the original file for the selected alias in the Finder | 
-| | Reload a page while using a web browser or Calendar app | 
-| | Check for software updates again when the  Software Update window is open | 
+| Command (⌘) + R | Show the original file for the selected alias in the Finder | \
 | Command (⌘) + Shift (⇧) + A | Open the Applications folder | 
 | Command (⌘) + Shift (⇧) + C | Open the Computer window in Finder | 
 | Command (⌘) + Shift (⇧) + D | Open Desktop folder | 
@@ -167,7 +165,7 @@ Keyboard Shortcut keys in using SAFARI
 | Command                                           | Description                                                 |
 | ------------------------------------------------- | ------------------------------------------------------------|
 | Shift (⇧) + Click a Link | Add a webpage to Reading List | 
-| Press Escape/Command (⌘) + Full stop( | ) | Cancel the current Find | 
+| Press Escape/Command (⌘) + Full stop(.) | Cancel the current Find | 
 | Command (⌘) + Up/Down arrow | Scroll to the top-left or bottom-left corner of a webpage | 
 | Command (⌘) + Comma(,) | Change Safari preferences | 
 | Command (⌘) + Left Bracket([) | Return to the previous webpage | 
@@ -175,8 +173,6 @@ Keyboard Shortcut keys in using SAFARI
 | Command (⌘) + D | Bookmark a webpage | You can also save a webpage as a PDF on iOS or macOS | 
 | Command (⌘) + L | Highlight the Search Field or URL | 
 | Command (⌘) + F | Search the active web page | 
-| Command (⌘) + F + Enter text and press the following keys to navigate between found items-
-| Return | Move forward | 
 | Shift (⇧) + Return | Move backward | 
 | Command (⌘) + T | Open a new tab in Safari | 
 | Command (⌘) + W | Close the current tab | 
