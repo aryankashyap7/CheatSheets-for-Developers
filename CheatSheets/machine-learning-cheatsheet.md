@@ -826,7 +826,7 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 |               |            |    | x          |   |
 |               |  |------|  |    |  |------|  |   |
 |               |  | xx   |  |    |  | x x  |  |   |
-|   LOW BIAS    |  |xx✅x |  |    |  | x✅ x|  |   |
+|   LOW BIAS    |  |xx✅x |  |    |  | x✅ x| |   |
 |               |  |xxx   |  |    |  |  x xx|  |   |
 |               |  |------|  |    |  |------|  |   |
 |               |            |    |x           |   |
@@ -836,7 +836,7 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 |               | xxx xx     |    |x     x     |   |
 |               |xx|------|  |    |x |------|  |   |
 |               |  |x     |  |    |  |      |  |   |
-|  HIGH BIAS    |  |  ✅  |  |    |  |  ✅  | x|   |
+|  HIGH BIAS    |  |  ✅  |  |   |  |  ✅  | x|   |
 |               |  |      |  |    | x|      |  |   |
 |               |  |------|  |    |  |------|  |   |
 |               |            |    |  x      x  |   |
