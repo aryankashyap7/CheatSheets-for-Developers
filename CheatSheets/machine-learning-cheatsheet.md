@@ -817,6 +817,41 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 
 3. Irreducible error: This is the error that is inherent in the problem itself.
 
+<!-- Make a diagram using ASCII art to explain the bias-variance tradeoff -->
+
+```
+----------------------------------------------------
+|                LOW VARIANCE      HIGH VARIANCE   |
+|               ______________    --------------   |
+|               |            |    | x          |   |
+|               |  |------|  |    |  |------|  |   |
+|               |  | xx   |  |    |  | x x  |  |   |
+|   LOW BIAS    |  |xx✅x |  |    |  | x✅ x|  |   |
+|               |  |xxx   |  |    |  |  x xx|  |   |
+|               |  |------|  |    |  |------|  |   |
+|               |            |    |x           |   |
+|               --------------    --------------   |
+|                                                  |
+|               ______________    ______________   |
+|               | xxx xx     |    |x     x     |   |
+|               |xx|------|  |    |x |------|  |   |
+|               |  |x     |  |    |  |      |  |   |
+|  HIGH BIAS    |  |  ✅  |  |    |  |  ✅  | x|   |
+|               |  |      |  |    | x|      |  |   |
+|               |  |------|  |    |  |------|  |   |
+|               |            |    |  x      x  |   |
+|               --------------    --------------   |
+|                                                  |
+| # IMPORTANT POINTS:                              |
+| ✅ - Refers to Truth Value                       |
+| x(🍁) - Refers to Model Answers                  |
+| OVERFITTING =  LOW BIAS + HIGH VARIANCE          |
+| UNDERFITTING = HIGH BIAS + LOW VARIANCE          |
+----------------------------------------------------
+```
+
+````python
+
 **[🔼Back to Top](#table-of-contents)**
 
 ### Regularization
@@ -846,7 +881,7 @@ def cross_validation(X, y, model, no_of_folds):
         scores.append(model.score(X_test, y_test))
     return scores
 
-```
+````
 
 **[🔼Back to Top](#table-of-contents)**
 
