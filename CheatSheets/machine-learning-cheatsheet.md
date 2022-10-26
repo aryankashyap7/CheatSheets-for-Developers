@@ -850,8 +850,6 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 ----------------------------------------------------
 ```
 
-````python
-
 **[🔼Back to Top](#table-of-contents)**
 
 ### Regularization
@@ -881,7 +879,7 @@ def cross_validation(X, y, model, no_of_folds):
         scores.append(model.score(X_test, y_test))
     return scores
 
-````
+```
 
 **[🔼Back to Top](#table-of-contents)**
 
