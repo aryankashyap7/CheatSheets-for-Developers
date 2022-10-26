@@ -1,0 +1,20 @@
+##Table of Contents
+- [Minikube CheatSheet for Developers](#minukube-cheatsheet-for-developers)
+  - [Basic commands](#basic-commands)
+
+#Minikube CheatSheet for Developers
+
+##basic-commands 
+
+| name                                           | Command                                                          |
+| ---------------------------------------------- | ---------------------------------------------------------------- |
+| `minikube lifecycle`                           | minikube delete, minikube start, minikube status, Link: minikube |
+| `Get minikube version`                         | minikube version                                                 |
+| `Get dashboard`                                | minikube dashboard                                               |
+| `start minikube`                               | minikube start                                                   |
+| `Your local docker to use minikube dockerd`    | eval $(minikube docker-env), Then no need for docker push        |
+| `Start minikube with a specific k8s version`   | minikube start --kubernetes-version v1.11.0                      |
+| `Get IP`                                       | minikube ip                                                      |
+
+
+**[🔼Back to Top](#table-of-contents)**
