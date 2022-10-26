@@ -315,7 +315,47 @@
 	// priority queue deletion
 	pq.pop();
 ```
+**[🔼Back to Top](#table-of-contents)**
 
+### Binary Search
+
+// syntax: binary_search(first_address, last_address, Element_to_be_find)
+
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"enter the size of the array\n";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elemeents of the array\n";
+    for(int i=0;i<n;i++)
+    cin>>arr[i];
+
+    int key;
+    cout<<"Enter the element need to be searched\n";
+    cin>>key;
+    cout<<"The elements of the array are\n";
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<" ";
+ 
+    bool temp=binary_search(arr,arr+n,key);
+    
+    if(temp)
+    {
+        cout<<"\nElement is found";
+    }
+    else
+    {
+        cout<<"\nElement is not found";
+    }
+    return 0;
+}
+
+```
 **[🔼Back to Top](#table-of-contents)**
 
 ### Hidden Functions
