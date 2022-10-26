@@ -18,6 +18,11 @@
 		- [Dot Product](#dot-product)
 		- [Cross Product](#cross-product)
 		- [Intersection Point/Plane](#intersection)
+	- [Dynamic Programming](#DP)
+		- [Dice Problem](#DiceProb)
+		- [Coin Problem I](#Coin1)
+		- [Coin Problem II](#Coin2)
+		- [Grid Problem](#Grid)
 	
 # Competitive programming cheat sheet
 
@@ -357,5 +362,136 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
                    triple(x, y, d)) / triple(n1, n2, n3);
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Dynamic Programming
+
+### Dice Problem
+Count the number of ways to construct sum n by throwing a dice one or more times. Each throw produces an outcome between 1 and 6.
+
+```cpp
+int main() {
+    // For Fast I/O.
+    ios_base::sync_with_stdio(0); 
+    cin.tie(0);
+ 
+    int n;
+    cin >> n;
+    int arr[n + 1];
+    arr[0] = 1;
+    
+    for (int i = 1; i <= n; i++) {
+        arr[i] = 0;
+        for (int j = 1; j <= 6 && i - j >= 0; j++) {
+            arr[i] += arr[i - j];
+            arr[i] %= MOD;
+        }
+    }
+    
+    cout << arr[n] << endl;
+ 
+    return 0;
+}
+```
+
+### Coin Problem I
+ Consider a money system consisting of n coins. Each coin has a positive integer value. Produce a sum of money x using the available coins in such a way that the number of coins is minimal.
+
+```cpp
+int main() {
+    int n, y;
+    cin >> n >> y;
+ 
+    int coins[n];
+    for (int i = 0; i < n; i++) cin >> coins[i];
+ 
+    int value[(int) 1e6];
+    value[0] = 0;
+    for (int x = 1; x <= y; x++) {
+        value[x] = 2e9;
+        for (auto c : coins) {
+            if (x-c >= 0) value[x] = min(value[x], value[x-c]+1);        
+        }
+    }
+ 
+    if (value[y] == 2e9) cout << -1 << endl;
+    else cout << value[y] << endl;
+ 
+    return 0;
+}
+```
+
+
+### Coin Problem II
+ Consider a money system consisting of n coins. Each coin has a positive integer value. Calculate the number of distinct ways you can produce a money sum x using the available coins
+
+```
+int main() {
+    // For Fast I/O.
+    ios_base::sync_with_stdio(0); 
+    cin.tie(0);
+ 
+    int n, s;
+    cin >> n >> s;
+ 
+    int arr[n];
+    flp(i, n) cin >> arr[i];
+ 
+    int dp[s + 1];
+    dp[0] = 1;
+ 
+    for (int i = 1; i <= s; i++) {
+        dp[i] = 0;
+        for (int j : arr) {
+            if (i - j >= 0) {
+                dp[i] += dp[i - j];
+                dp[i] %= MOD;
+            }
+        }
+    }
+ 
+    cout << dp[s] << endl;
+ 
+    return 0;
+}
+```
+
+## Grid Problem
+ Consider an n×n grid whose squares may have traps. It is not allowed to move to a square with a trap.
+
+Calculate the number of paths from the upper-left square to the lower-right square. You can only move right or down.
+
+```cpp
+int main() {
+    // For Fast I/O.
+    ios_base::sync_with_stdio(0); 
+    cin.tie(0);
+ 
+    int n;
+    cin >> n;
+    string arr[n];
+ 
+    for (int i = 0; i < n; i++) cin >> arr[i];
+ 
+    int dp[n][n];
+    memset(dp, 0, sizeof(dp));
+    dp[0][0] = 1;
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++>) {
+            if (arr[i][j] == '.') {
+                if (i > 0) (dp[i][j] += dp[i - 1][j]) %= MOD;
+                if (j > 0) (dp[i][j] += dp[i][j - 1]) %= MOD;
+            } else dp[i][j] = 0;
+        }
+    }
+ 
+    cout << dp[n - 1][n - 1] << endl;
+ 
+    return 0;
+}
+```
+
 
 **[🔼Back to Top](#table-of-contents)**
