@@ -315,12 +315,12 @@
 	// priority queue deletion
 	pq.pop();
 ```
-
 **[🔼Back to Top](#table-of-contents)**
 
 ### Hidden Functions
 
 ```cpp
+
     __gcd(value1, value2)
     // Return gcd of two numbers, without using Euclidean Algorithm
 
@@ -347,6 +347,26 @@
     //This function returns number of 1-bits of x. x is unsigned int and like previous function this function with suffix 'l' gets
     //a unsigned long argument and with suffix 'll' gets a unsigned long long argument. If x == 0, returns an undefined value.
     e.g. __builtin_popcount(14) = 3 because 14 is '... 111 0' and has three 1-bits.
+
+    __builtin_parity(x)
+    //This function returns 1 if number of 1-bits of x is odd, otherwise returns 0. x is unsigned int and like previous function
+
+    binary_search(arr, arr + n, key)
+    // This function returns true if key is present in arr[0..n-1]. Else it returns false.It is a built-in function for binary search in C++.
+
+    lower_bound(arr, arr + n, key)
+    // This function returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’.
+
+    upper_bound(arr, arr + n, key)
+    // This function returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’.
+
+    next_permutation(arr, arr + n)
+    // This function returns true if the next permutation of the sequence is possible. Else it returns false. It is a built-in function for next permutation in C++.
+
+    prev_permutation(arr, arr + n)
+    // This function returns true if the previous permutation of the sequence is possible. Else it returns false. It is a built-in function for previous permutation in C++.
+
+
 ```
 
 **[🔼Back to Top](#table-of-contents)**
