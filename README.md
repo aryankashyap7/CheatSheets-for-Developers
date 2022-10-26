@@ -23,7 +23,7 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 | 5   | Bash             | Bash Scripting CheatSheet            | <a href="./CheatSheets/bash-cheatsheet.md">Click Here</a>             |
 | 6   | C                | C Language CheatSheet                | <a href="./CheatSheets/c-cheatsheet.md">Click Here</a>                |
 | 7   | C++              | C++ STL Based CheatSheet             | <a href="./CheatSheets/cpp-stl-cheatsheet.md">Click Here</a>          |
-| 8   | csharp           | C# CheatSheet                        | <a href="./CheatSheets/csharp-cheatsheet.md">Click Here</a>           |
+| 8   | C#               | C Sharp CheatSheet                   | <a href="./CheatSheets/csharp-cheatsheet.md">Click Here</a>           |
 | 9   | CSS              | CSS CheatSheet                       | <a href="./CheatSheets/css-cheatsheet.md">Click Here</a>              |
 | 10  | Docker           | Docker CheatSheet                    | <a href="./CheatSheets/docker-cheatsheet.md">Click Here</a>           |
 | 11  | Git              | Git Terminal Commands CheatSheet     | <a href="./CheatSheets/git-cheatsheet.md">Click Here</a>              |
@@ -38,10 +38,11 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 | 20  | PHP              | PHP CheatSheet                       | <a href="./CheatSheets/php-cheatsheet.md">Click Here</a>              |
 | 21  | Python           | Python CheatSheet                    | <a href="./CheatSheets/python-cheatsheet.md">Click Here</a>           |
 | 22  | React            | React CheatSheet                     | <a href="./CheatSheets/react-cheatsheet.md">Click Here</a>            |
-| 23  | VSCode           | VSCode CheatSheet                    | <a href="./CheatSheets/vscode-cheatsheet.md">Click Here</a>           |
-| 24  | VueJS            | VueJS CheatSheet                     | <a href="./CheatSheets/vuejs-cheatsheet.md">Click Here</a>            |
-| 25  | Windows          | Windows Shortcuts CheatSheet         | <a href="./CheatSheets/windows-cheatsheet.md">Click Here</a>          |
-| 26  | Windows Terminal | Windows Terminal Commands CheatSheet | <a href="./CheatSheets/windows-terminal-cheatsheet.md">Click Here</a> |
+| 23  | Security+        | CompTIA Security+ exam               | <a href="./CheatSheets/security-plus-cheatsheet.md">Click Here</a>    |
+| 24  | VSCode           | VSCode CheatSheet                    | <a href="./CheatSheets/vscode-cheatsheet.md">Click Here</a>           |
+| 25  | VueJS            | VueJS CheatSheet                     | <a href="./CheatSheets/vuejs-cheatsheet.md">Click Here</a>            |
+| 26  | Windows          | Windows Shortcuts CheatSheet         | <a href="./CheatSheets/windows-cheatsheet.md">Click Here</a>          |
+| 27  | Windows Terminal | Windows Terminal Commands CheatSheet | <a href="./CheatSheets/windows-terminal-cheatsheet.md">Click Here</a> |
 
 ---
 
