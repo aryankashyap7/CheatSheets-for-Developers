@@ -317,50 +317,10 @@
 ```
 **[🔼Back to Top](#table-of-contents)**
 
-### Binary Search
-
-// syntax: binary_search(first_address, last_address, Element_to_be_find)
-
-```cpp
-#include<bits/stdc++.h>
-using namespace std;
-
-int main()
-{
-    int n;
-    cout<<"enter the size of the array\n";
-    cin>>n;
-    int arr[n];
-    cout<<"Enter the elemeents of the array\n";
-    for(int i=0;i<n;i++)
-    cin>>arr[i];
-
-    int key;
-    cout<<"Enter the element need to be searched\n";
-    cin>>key;
-    cout<<"The elements of the array are\n";
-    for(int i=0;i<n;i++)
-    cout<<arr[i]<<" ";
- 
-    bool temp=binary_search(arr,arr+n,key);
-    
-    if(temp)
-    {
-        cout<<"\nElement is found";
-    }
-    else
-    {
-        cout<<"\nElement is not found";
-    }
-    return 0;
-}
-
-```
-**[🔼Back to Top](#table-of-contents)**
-
 ### Hidden Functions
 
 ```cpp
+
     __gcd(value1, value2)
     // Return gcd of two numbers, without using Euclidean Algorithm
 
@@ -387,6 +347,26 @@ int main()
     //This function returns number of 1-bits of x. x is unsigned int and like previous function this function with suffix 'l' gets
     //a unsigned long argument and with suffix 'll' gets a unsigned long long argument. If x == 0, returns an undefined value.
     e.g. __builtin_popcount(14) = 3 because 14 is '... 111 0' and has three 1-bits.
+
+    __builtin_parity(x)
+    //This function returns 1 if number of 1-bits of x is odd, otherwise returns 0. x is unsigned int and like previous function
+
+    binary_search(arr, arr + n, key)
+    // This function returns true if key is present in arr[0..n-1]. Else it returns false.It is a built-in function for binary search in C++.
+
+    lower_bound(arr, arr + n, key)
+    // This function returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’.
+
+    upper_bound(arr, arr + n, key)
+    // This function returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’.
+
+    next_permutation(arr, arr + n)
+    // This function returns true if the next permutation of the sequence is possible. Else it returns false. It is a built-in function for next permutation in C++.
+
+    prev_permutation(arr, arr + n)
+    // This function returns true if the previous permutation of the sequence is possible. Else it returns false. It is a built-in function for previous permutation in C++.
+
+
 ```
 
 **[🔼Back to Top](#table-of-contents)**
