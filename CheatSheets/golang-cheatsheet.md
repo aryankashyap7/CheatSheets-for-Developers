@@ -1,10 +1,11 @@
-#Golang Commands for Developers
+# Golang Commands for Developers
 
-##Table of Contents
-
+## Table of Contents
 - [Golang Commands for Developers](#golang-commands-for-developers)
   - [Synopsis](#synopsis)
   - [Basic Commands](#basic-commands)
+ 
+
 
 ## Synopsis
 
@@ -12,27 +13,25 @@ Go is a tool for managing Go source code. The Go distribution includes a command
 
 **[🔼Back to Top](#table-of-contents)**
 
-##basic-commands
+## Basic Commands
 
-| name         | Command                                             |
-|--------------|-----------------------------------------------------|
-|`bug`         | start a bug report                                  |
-|`build`       | compile packages and dependencies                   |
-|`clean`       | remove object files and cached files                |
-|`doc`         | show documentation for package or symbol            |
-|`env`         | print Go environment information                    |
-|`fix`         | update packages to use new APIs                     |
-|`fmt`         | gofmt (reformat) package sources                    |
-|`generate`    | generate Go files by processing source              |
-|`get`         | add dependencies to current module and install them |
-|`install`     | compile and install packages and dependencies       |
-|`list`        | list packages or modules                            |
-|`mod`         | module maintenance                                  |
-|`work`        | workspace maintenance                               |
-|`run`         | compile and run Go program                          |
-|`test`        | test packages                                       |
-|`tool`        | run specified go tool                               |
-|`version`     | print Go version                                    |
-|`vet`         | report likely mistakes in packages                  |
+| Command | Description |
+| --- | --- |
+|`go build`       | compile packages and dependencies                   |
+|`go clean`       | remove object files and cached files                |
+|`go doc`         | show documentation for package or symbol            |
+|`go env`         | print Go environment information                    |
+|`go fix`         | update packages to use new APIs                     |
+|`go fmt`         | gofmt (reformat) package sources                    |
+|`go generate`    | generate Go files by processing source              |
+|`go get`         | add dependencies to current module and install them |
+|`go install`     | compile and install packages and dependencies       |
+|`go list`        | list packages or modules                            |
+|`go mod`         | module maintenance                                  |
+|`go run`         | compile and run Go program                          |
+|`go test`        | test packages                                       |
+|`go tool`        | run specified go tool                               |
+|`go version`     | print Go version                                    |
+|`go vet`         | report likely mistakes in packages                  |
 
 **[🔼Back to Top](#table-of-contents)**
