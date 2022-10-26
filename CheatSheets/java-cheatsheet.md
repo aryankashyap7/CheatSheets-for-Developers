@@ -1,6 +1,7 @@
 # Table of Content
 
 - [Data Types](#data-types)
+- [I/O methods](#I/O-methods)
 - [Data Conversion](#data-conversion)
 - [Operators](#operators)
 - [Statements](#statements)
@@ -22,6 +23,37 @@
 | float     | 4 byte |
 | double    | 8 byte |
 
+**[🔼Back to Top](#table-of-contents)**
+
+## I/O Methods
+
+### Output Methods
+
+```java
+	system.out.print("Hello World!"); //Will not move to the next line.
+	system.out.println("Hello World!"); //Will move to the next line.
+	
+	// There is another type of output method, which is similar to C language.
+	int a = 23;
+	system.out.printf("value of a is : %d", a);
+```
+
+### Input Methods
+
+```java
+	import java.util.Scanner
+	Scanner s = new Scanner(System.in);
+	
+	// input for a integer.
+	int a = s.nextInt();
+	
+	// input for a string.
+	String str = s.nextLine();
+	String ss  = s.next();   // Takes input till 1st whitespace.
+	
+	// input for a double.
+	double d = s.nextDouble();
+```
 **[🔼Back to Top](#table-of-contents)**
 
 ## Data Conversion
