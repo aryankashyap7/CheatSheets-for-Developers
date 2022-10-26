@@ -19,50 +19,60 @@ The following commands are installed by default:
 
 ## Basic commands
 
-- [`new`](dotnet-new.md)
-- [`restore`](dotnet-restore.md)
-- [`build`](dotnet-build.md)
-- [`publish`](dotnet-publish.md)
-- [`run`](dotnet-run.md)
-- [`test`](dotnet-test.md)
-- [`vstest`](dotnet-vstest.md)
-- [`pack`](dotnet-pack.md)
-- [`migrate`](dotnet-migrate.md)
-- [`clean`](dotnet-clean.md)
-- [`sln`](dotnet-sln.md)
-- [`help`](dotnet-help.md)
-- [`store`](dotnet-store.md)
+| Command | Description |
+| --- | --- |
+| `new` | Initializes a sample .NET Core project in the current directory. |
+| `restore` | Restores the dependencies and tools of a project. |
+| `build` | Builds a project and all of its dependencies. |
+| `publish` | Publishes a .NET Core project for deployment (including the runtime). |
+| `run` | Compiles and immediately executes a .NET Core project. |
+| `test` | Runs unit tests using the test runner specified in a project. |
+| `vstest` | Runs unit tests using the test runner specified in a project. |
+| `pack` | Creates a NuGet package. |
+| `migrate` | Migrates a project.json based project to a msbuild based project. |
+| `clean` | Cleans the output of a .NET Core project. |
+| `sln` | Modifies a .sln file. |
+| `help` | Displays help for a command. |
+| `store` | Stores the specified assemblies in the runtime package store. |
+
 
 **[🔼Back to Top](#table-of-contents)**
 
 ## Project modification commands
 
-- [`add package`](dotnet-add-package.md)
-- [`add reference`](dotnet-add-reference.md)
-- [`remove package`](dotnet-remove-package.md)
-- [`remove reference`](dotnet-remove-reference.md)
-- [`list reference`](dotnet-list-reference.md)
+| Command | Description |
+| --- | --- |
+| `add package` | Adds a NuGet package reference to a project file. |
+| `add reference` | Adds a project-to-project reference to a project file. |
+| `remove package` | Removes a NuGet package reference from a project file. |
+| `remove reference` | Removes a project-to-project reference from a project file. |
+| `list reference` | Lists all project-to-project references in a project. |
 
 **[🔼Back to Top](#table-of-contents)**
 
 ## Advanced commands
 
-- [`nuget delete`](dotnet-nuget-delete.md)
-- [`nuget locals`](dotnet-nuget-locals.md)
-- [`nuget push`](dotnet-nuget-push.md)
-- [`msbuild`](dotnet-msbuild.md)
-- [`dotnet install script`](dotnet-install-script.md)
+| Command | Description |
+| --- | --- |
+| `nuget delete` | Deletes a package from a NuGet package source. |
+| `nuget locals` | Lists and manages local NuGet resources. |
+| `nuget push` | Pushes a package to a NuGet package source. |
+| `msbuild` | Runs Microsoft Build Engine (MSBuild) commands. |
+| `dotnet install script` | Installs the .NET CLI tools and adds them to the PATH environment variable. |
 
 **[🔼Back to Top](#table-of-contents)**
 
 ## Tool management commands
 
-- [`tool install`](dotnet-tool-install.md)
-- [`tool list`](dotnet-tool-list.md)
-- [`tool update`](dotnet-tool-update.md)
-- [`tool restore`](global-tools.md#install-a-local-tool) Available since .NET Core SDK 3.0.
-- [`tool run`](global-tools.md#invoke-a-local-tool) Available since .NET Core SDK 3.0.
-- [`tool uninstall`](dotnet-tool-uninstall.md)
+| Command | Description |
+| --- | --- |
+| `tool install` | Installs a global tool. |
+| `tool list` | Lists the installed global tools. |
+| `tool update` | Updates a global tool. |
+| `tool restore` | Restores the tools and dependencies of a project. |
+| `tool run` | Runs a global tool. |
+| `tool uninstall` | Uninstalls a global tool. |
+
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools.
 
