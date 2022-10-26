@@ -54,6 +54,7 @@
   - [7.11. Audio](#audio)
   - [7.12. PyGame](#pygame)
   - [7.13. Pandas](#pandas)
+  - [7.14 Matplotlib](#matplotlib)
 
 ## Main
 
@@ -3831,6 +3832,84 @@ window = sg.Window('Window Title', layout)
 event, values = window.read()
 print(f'Hello {values[0]}!' if event == 'Ok' else '')
 ```
+
+## Matplotlib
+
+**Header:**
+```python
+import numpy as np
+import random
+import matplotlib.pyplot as plt
+```
+
+**Plotting an equation:**
+```python
+fig, ax = plt.subplots()
+x = np.random.randint(1,10, size=10)
+y = x 
+plt.plot(x,y)
+plt.show()
+```
+The above code would plot the line x = y.
+
+**Plotting multiple equations:**
+```python
+fig, ax = plt.subplots()
+x = np.random.randint(1,10, size=10)
+y = x 
+plt.plot(x,y)
+plt.plot(x,x+3)
+plt.show()
+```
+
+**Changing color or style of lines:**
+```python
+plt.plot(x, y, color='ENTER COLOR NAME HERE', linestyle='DRAW LINESTYLE HERE')
+```
+Available linestyles:
+1) --
+2) :
+3) -.
+   
+**Setting graph limits:**
+```python
+plt.xlim(x1,y1)
+plt.ylim(x2, y2)
+```
+
+**Labelling the axis:**
+```python
+plt.xlabel("TITLE GOES HERE")
+plt.ylabel("TITLE GOES HERE")
+```
+
+**Title of the graph:**
+```python
+plt.title("TITLE GOES HERE")
+```
+
+**Make a scatter graph:**
+```python
+plt.scatter(x,y)
+```
+
+**Make a area chart:**
+```python
+plt.fill_between( x, y, color="ENTER COLOR HERE", alpha=ENTER ALPHA HERE)
+```
+
+**Make a bar graph**
+```python
+plt.bar(y, data, align='ENTER ALIGNMENT HERE', alpha=ENTER ALPHA HERE)
+```
+
+**Make a pie chart:**
+```python
+plt.pie(data, labels=labels, explode=(x, x, ... x))
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
 
 ## Appendix
 
