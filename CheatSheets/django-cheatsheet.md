@@ -1,10 +1,10 @@
 ## Table of Contents
 
-- [Design Philosophies](#angular-code-snippets-for-developers)
-- [Django CLI Commands](#angular-bindings)
-- [Django Model Layer](#angular-lifecycle-hooks)
-- [Django View Layer](#angular-cli)
-- [Django Template Layer](#angular-cli)
+- [Design Philosophies](#design-philosophies)
+- [Django CLI Commands](#django-cli)
+- [Django Model Layer](#model-layer)
+- [Django View Layer](#view-layer)
+- [Django Template Layer](#template-layer)
 
 # Django Cheatsheet
 
@@ -93,17 +93,19 @@ Django is a high-level Python web framework that encourages rapid development an
 **Variables**
 
 Variables are surrounded by {{ and }}:
-````
-My first name is {{ first_name }}. My last name is {{ last_name }}.
-With a context of {'first_name': 'John', 'last_name': 'Doe'}, this template renders to:
+````markdown
+<p>User name is {{ user_name }}. User age is {{ user_age }}.</p>
 ````
 
 <br>
 
 **Tags**
+Tags provide arbitrary logic in the rendering process
 Tags are surrounded by {% and %}:
 ````markdown
-{% csrf_token %}
+{% if condition %}
+    <p>hello</p>
+{% endif %}
 ````
 
 <br>
@@ -111,14 +113,40 @@ Tags are surrounded by {% and %}:
 **Filters**
 
 Filters transform the values of variables and tag arguments:
+
+Add 3 to the value of an integer:
 ````markdown
-{{ django|title }}
+{{ int_value | "add: 3" }}
+````
+
+<br>
+
+Capitalize the first letter of the string:
+````markdown
+{{ text_value | capfirst }}
+````
+
+<br>
+
+Format a date:
+````markdown
+{{ date_value | date:"D d M Y" }}
 ````
 
 <br>
 
 **Comments**
+
+Comments are surrounded by {# and #}
 ````markdown
-{# this won't be rendered #}
+{# This is a comment #}
 ````
+
 A {% comment %} tag provides multi-line comments.
+````markdown
+{% comment %}
+    Comment 1
+    Comment 2
+    Comment 3
+{% endcomment %}
+````
