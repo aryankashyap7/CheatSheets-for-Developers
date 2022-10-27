@@ -4,7 +4,7 @@
 
 - [Minikube CheatSheet for Developers](#minukube-cheatsheet-for-developers)
   - [Synopsis](#synopsis)
-  - [Basic Commands](#Basic-commands)
+  - [Basic Commands](#basic-commands)
 
 ## Synopsis
 
@@ -13,9 +13,9 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for us
 
 **[🔼Back to Top](#table-of-contents)**
 
-##Basic-commands
+## Basic Commands
 
-| name                                         | Command                                                          |
+| Command                                         | Command                                                          |
 | -------------------------------------------- | ---------------------------------------------------------------- |
 | `minikube lifecycle`                         | minikube delete, minikube start, minikube status, Link: minikube |
 | `Get minikube version`                       | minikube version                                                 |
