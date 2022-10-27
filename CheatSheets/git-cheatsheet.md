@@ -14,7 +14,11 @@
   - [Rewrite History](#rewrite-history)
   - [Stashing](#stashing)
   - [Tagging](#tagging)
-
+- [Common Problems Resolution](#common-problems-resolution)
+  - [Delete All Commits](#delete-all-commit)
+  - [Update commit](#update-commit)
+  - [Update commit message](#update-commit-message)
+  - [Undo a commit from like 5 commits ago](#undo-a-commit-from-like-5-commits-ago)
 ---
 
 # Git CheatSheet for Developers
@@ -33,11 +37,11 @@
 
 ## Setting up Alias
 
-| Command                                 | Description              |
-| --------------------------------------- | ------------------------ |
-| `git config --global alias.co checkout` | Set alias for `checkout` |
-| `git config --global alias.br branch`   | Set alias for `branch`   |
-| `git config --global alias.ci commit`   | Set alias for `commit`   |
+| Command                                 | Description                      |
+| --------------------------------------- | -------------------------------- |
+| `git config --global alias.co checkout` | Set `co` as alias for `checkout` |
+| `git config --global alias.br branch`   | Set `br` as alias for `branch`   |
+| `git config --global alias.ci commit`   | Set `ci` as alias for `commit`   |
 
 **[🔼Back to Top](#table-of-contents)**
 
@@ -200,5 +204,71 @@
 | `git tag -l "v1.8.5*"`            | List all tags matching a pattern |
 | `git tag [tag]`                   | Annotate a tag                   |
 | `git tag -a [tag] -m "[message]"` | Annotate a tag with a message    |
+
+**[🔼Back to Top](#table-of-contents)**
+
+---
+
+# Common Problems Resolution
+
+## Delete All Commit
+
+If you want to delete all commits and keep only one commit of all the commit.
+
+```python
+#Checkout
+git checkout --orphan latest_branch
+#Add all the files
+git add -A
+#Commit the changes
+git commit -am "commit message"
+#Delete the branch
+git branch -D main
+#Rename the current branch to main
+git branch -m main
+#Force update your repository
+git push -f origin main
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Update Commit
+
+If you have commited and realized that there is small change needed.
+
+```python
+#make your change then,
+git add . # or add individual files
+git commit --amend --no-edit
+# now your last commit contains that change!
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Update commit message
+
+If you want to update previous commit message.
+
+```python
+git commit --amend
+# follow prompts to change the commit message
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Undo a commit from like 5 commits ago
+
+Turns out you don't have to track down and copy-paste the old file contents into the existing file in order to undo changes! If you committed a bug, you can undo the commit all in one go with _revert_.
+
+```python
+# find the commit you need to undo
+git log
+# use the arrow keys to scroll up and down in history
+# once you've found your commit, save the hash
+git revert [saved hash]
+# git will create a new commit that undoes that commit
+# follow prompts to edit the commit message
+# or just save and commit
+```
 
 **[🔼Back to Top](#table-of-contents)**

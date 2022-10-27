@@ -14,15 +14,54 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 
 ## CheatSheets Available
 
-- [windows](./CheatSheets/windows-cheatsheet.md)
-- [git](./CheatSheets/git-cheatsheet.md)
-- [linux](./CheatSheets/linux-cheatsheet.md)
-
-* [Contributions](#contributions)
-
-## Contributions
+| No. | CheatSheet              | Description                          | Link                                                                         |
+| --- | ----------------------- | ------------------------------------ | ---------------------------------------------------------------------------- |
+| 1   | Angular                 | Angular Framework CheatSheet         | <a href="./CheatSheets/angular-cheatsheet.md">Click Here</a>                 |
+| 2   | Assembly                | Assembly Language CheatSheet         | <a href="./CheatSheets/assembly-cheatsheet.md">Click Here</a>                |
+| 3   | AWS                     | Amazon Web Services CheatSheet       | <a href="./CheatSheets/aws-cheatsheet.md">Click Here</a>                     |
+| 4   | Azure                   | Microsoft Azure CheatSheet           | <a href="./CheatSheets/azure-cheatsheet.md">Click Here</a>                   |
+| 5   | Bash                    | Bash Scripting CheatSheet            | <a href="./CheatSheets/bash-cheatsheet.md">Click Here</a>                    |
+| 6   | C                       | C Language CheatSheet                | <a href="./CheatSheets/c-cheatsheet.md">Click Here</a>                       |
+| 7   | Competitive Programming | Competitive Programming CheatSheet   | <a href="./CheatSheets/competitive-programming-cheatsheet.md">Click Here</a> |
+| 8   | C++                     | C++ STL Based CheatSheet             | <a href="./CheatSheets/cpp-stl-cheatsheet.md">Click Here</a>                 |
+| 9   | C#                      | C Sharp CheatSheet                   | <a href="./CheatSheets/csharp-cheatsheet.md">Click Here</a>                  |
+| 10  | CSS                     | CSS CheatSheet                       | <a href="./CheatSheets/css-cheatsheet.md">Click Here</a>                     |
+| 11  | Django                  | Django CheatSheet                    | <a href="./CheatSheets/django-cheatsheet.md">Click Here</a>                  |
+| 12  | Docker                  | Docker CheatSheet                    | <a href="./CheatSheets/docker-cheatsheet.md">Click Here</a>                  |
+| 13  | Dotnet                  | Dotnet CLI CheatSheet                | <a href="./CheatSheets/dotnet-cli-cheatsheet.md">Click Here</a>              |
+| 14  | Flutter                 | Flutter CheatSheet                   | <a href="./CheatSheets/flutter-cheatsheet.md">Click Here</a>                 |
+| 15  | Git                     | Git Terminal Commands CheatSheet     | <a href="./CheatSheets/git-cheatsheet.md">Click Here</a>                     |
+| 16  | Go                      | Go Language CheatSheet               | <a href="./CheatSheets/golang-cheatsheet.md">Click Here</a>                  |
+| 17  | HTML                    | HTML CheatSheet                      | <a href="./CheatSheets/html-cheatsheet.md">Click Here</a>                    |
+| 18  | Java                    | Java CheatSheet                      | <a href="./CheatSheets/java-cheatsheet.md">Click Here</a>                    |
+| 19  | JavaScript              | JavaScript CheatSheet                | <a href="./CheatSheets/javascript-cheatsheet.md">Click Here</a>              |
+| 20  | Kotlin                  | Kotlin CheatSheet                    | <a href="./CheatSheets/kotlin-cheatsheet.md">Click Here</a>                  |
+| 21  | Linux                   | Linux Terminal Commands CheatSheet   | <a href="./CheatSheets/linux-cheatsheet.md">Click Here</a>                   |
+| 22  | Machine Learning        | Machine Learning CheatSheet          | <a href="./CheatSheets/machine-learning-cheatsheet.md">Click Here</a>        |
+| 23  | MacOS                   | MacOS Terminal Commands CheatSheet   | <a href="./CheatSheets/macos-cheatsheet.md">Click Here</a>                   |
+| 24  | Markdown                | Markdown CheatSheet                  | <a href="./CheatSheets/markdown-cheatsheet.md">Click Here</a>                |
+| 25  | Minikube                | Minikube CheatSheet                  | <a href="./CheatSheets/minikube-cheatsheet.md">Click Here</a>                |
+| 26  | MySQL                   | MySQL CheatSheet                     | <a href="./CheatSheets/mysql-cheatsheet.md">Click Here</a>                   |
+| 27  | NumPy                   | NumPy CheatSheet                     | <a href="./CheatSheets/numpy-cheatsheet.md">Click Here</a>                   |
+| 28  | Pandas                  | Pandas CheatSheet                    | <a href="./CheatSheets/pandas-cheatsheet.md">Click Here</a>                  |
+| 29  | PHP                     | PHP CheatSheet                       | <a href="./CheatSheets/php-cheatsheet.md">Click Here</a>                     |
+| 30  | Python                  | Python CheatSheet                    | <a href="./CheatSheets/python-cheatsheet.md">Click Here</a>                  |
+| 31  | React                   | React CheatSheet                     | <a href="./CheatSheets/react-cheatsheet.md">Click Here</a>                   |
+| 32  | Security+               | CompTIA Security+ Exam               | <a href="./CheatSheets/security-plus-cheatsheet.md">Click Here</a>           |
+| 33  | Vi Emacs Nano           | Vi Emacs Nano CheatSheet             | <a href="./CheatSheets/vi-emacs-nano-cheatsheet.md">Click Here</a>           |
+| 34  | VSCode                  | VSCode CheatSheet                    | <a href="./CheatSheets/vscode-cheatsheet.md">Click Here</a>                  |
+| 35  | VueJS                   | VueJS CheatSheet                     | <a href="./CheatSheets/vuejs-cheatsheet.md">Click Here</a>                   |
+| 36  | Windows                 | Windows Shortcuts CheatSheet         | <a href="./CheatSheets/windows-cheatsheet.md">Click Here</a>                 |
+| 37  | Windows Terminal        | Windows Terminal Commands CheatSheet | <a href="./CheatSheets/windows-terminal-cheatsheet.md">Click Here</a>        |
 
 ---
+
+<p align='center'>We are going to add more CheatSheets in the future. Stay Tuned! 🍁</p>
+<p align='center'>Feel free to drop a ⭐ if you like this repository.</p>
+
+---
+
+## Contributions
 
 We welcome all kinds of contributions from the open-source community, individuals and partners. We owe our success to
 your active involvement.

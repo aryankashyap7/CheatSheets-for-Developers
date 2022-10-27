@@ -28,11 +28,63 @@
   - [3.6. Duck_Types](#duck_types)
   - [3.7. Enum](#enum)
   - [3.8. Exception](#sqlite)
-  - [5.5. Bytes](#bytes)
-  - [5.6. Struct](#struct)
-  - [5.7. Array](#array)
-  - [5.8. Memory_View](#memory_view)
-  - [5.9. Deque](#deque)
+  - [3.9. File](#file)
+  - [3.10 Bytes](#bytes)
+  - [3.11. Struct](#struct)
+  - [3.12. Array](#array)
+  - [3.13. Memory_View](#memory_view)
+  - [3.14. Deque](#deque)
+- [4. Functions](#4-functions)
+  - [4.1. Lambda](#lambda)
+  - [4.2. Map](#map)
+  - [4.3. Filter](#filter)
+  - [4.4. Reduce](#reduce)
+  - [4.5. Zip](#zip)
+  - [4.6. Partial](#partial)
+  - [4.7. Compose](#compose)
+  - [4.8. Currying](#currying)
+  - [4.9. Memoize](#memoize)
+  - [4.10. Decorator](#decorator)
+  - [4.11. Closure](#closure)
+  - [4.12. Generator](#generator)
+  - [4.13. Iterator](#iterator)
+  - [4.14. Context_Manager](#context_manager)
+  - [4.15. Decorator](#decorator)
+- [5. Modules](#5-modules)
+  - [5.1. Argparse](#argparse)
+  - [5.2. Logging](#logging)
+  - [5.3. Sqlite](#sqlite)
+  - [5.4. Pickle](#pickle)
+  - [5.5 Collections](#collections)
+  - [5.6 Counter](#counter)
+  - [5.7 OrderedDict](#ordereddict)
+  - [5.8 Defaultdict](#defaultdict)
+  - [5.9 Namedtuple](#namedtuple)
+  - [5.10 ChainMap](#chainmap)
+  - [5.11 Heapq](#heapq)
+  - [5.12 Bisect](#bisect)
+  - [5.13 Array](#array)
+  - [5.14 Weakref](#weakref)
+  - [5.15 Types](#types)
+  - [5.16 Copy](#copy)
+  - [5.17 Pprint](#pprint)
+  - [5.18 Reprlib](#reprlib)
+  - [5.19 Enum](#enum)
+  - [5.20 Pathlib](#pathlib)
+  - [5.21 Functools](#functools)
+  - [5.22 Itertools](#itertools)
+  - [5.23 Contextlib](#contextlib)
+  - [5.24 Atexit](#atexit)
+  - [5.25 Traceback](#traceback)
+  - [5.26 Sys](#sys)
+  - [5.27 Io](#io)
+  - [5.28 Time](#time)
+  - [5.29 Datetime](#datetime)
+  - [5.30 Calendar](#calendar)
+  - [5.31 Random](#random)
+  - [5.32 Statistics](#statistics)
+  - [5.33 Math](#math)
+  - [5.34 Cmath](#cmath)
 - [6. Advanced](#6-advanced)
   - [6.1. Threading](#threading)
   - [6.2. Operator](#operator)
@@ -54,6 +106,7 @@
   - [7.11. Audio](#audio)
   - [7.12. PyGame](#pygame)
   - [7.13. Pandas](#pandas)
+  - [7.14 Matplotlib](#matplotlib)
 
 ## Main
 
@@ -233,9 +286,14 @@ Point(x=1, y=2)
 
 ## Enumerate
 
+Enumerates is a built-in function that returns an enumerate object. enumerate() takes two parameters: iterable and start (default is 0).
+
 ```python
-for i, el in enumerate(<collection> [, i_start]):
-    ...
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+>>> list(enumerate(seasons, start=1))
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -2327,6 +2385,1743 @@ from collections import deque
 
 **[🔼Back to Top](#table-of-contents)**
 
+# Functions
+
+## Lambda
+
+**Anonymous function that can only contain a single expression.**
+
+```python
+<lambda> = lambda <arg_1> [, ...]: <expr>     # Returns a function object.
+```
+
+```python
+>>> (lambda x, y: x + y)(1, 2)
+3
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Map
+
+**Applies a function to each element of a collection.**
+
+```python
+<map> = map(<func>, <collection>)             # Returns a map object.
+```
+
+```python
+>>> list(map(lambda x: x + 1, [1, 2, 3]))
+[2, 3, 4]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Filter
+
+**Returns a collection of elements that satisfy a condition.**
+
+```python
+<filter> = filter(<func>, <collection>)       # Returns a filter object.
+```
+
+```python
+>>> list(filter(lambda x: x > 2, [1, 2, 3]))
+[3]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Reduce
+
+**Applies a function to the first two elements of a collection, then to the result and the next element, and so on.**
+
+```python
+
+from functools import reduce
+<el> = reduce(<func>, <collection>)           # Returns a single element.
+```
+
+```python
+>>> reduce(lambda x, y: x + y, [1, 2, 3])
+
+6
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Zip
+
+**Returns a collection of tuples, where each tuple contains the i-th element from each of the argument sequences or iterables.**
+
+```python
+
+<zip> = zip(<collection_1>, <collection_2>)   # Returns a zip object.
+```
+
+```python
+>>> list(zip([1, 2, 3], [4, 5, 6]))
+[(1, 4), (2, 5), (3, 6)]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Partial
+
+**Returns a new function with some of the arguments already set.**
+
+```python
+from functools import partial
+<func> = partial(<func>, <arg_1> [, ...])     # Returns a function object.
+```
+
+```python
+>>> from functools import partial
+>>> def add(x, y):
+...     return x + y
+...
+>>> add_1 = partial(add, 1)
+>>> add_1(2)
+3
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Compose
+
+**Returns a function that is the composition of a list of functions, where each function consumes the return value of the function that follows.**
+
+```python
+from functools import reduce
+<func> = reduce(lambda f, g: lambda x: f(g(x)), <collection>, lambda x: x)
+```
+
+```python
+>>> from functools import reduce
+>>> def add(x, y):
+...     return x + y
+...
+>>> def mul(x, y):
+...     return x * y
+...
+>>> def sub(x, y):
+...     return x - y
+...
+>>> compose = reduce(lambda f, g: lambda x: f(g(x)), [add, mul, sub], lambda x: x)
+>>> compose(1, 2)
+-3
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Currying
+
+**Returns a function that takes one argument and returns another function that takes the next argument, and so on.**
+
+```python
+<func> = lambda <arg_1>: lambda <arg_2>: …    # Returns a function object.
+```
+
+```python
+>>> def add(x, y):
+...     return x + y
+...
+>>> add_1 = lambda x: add(x, 1)
+>>> add_1(2)
+3
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Memoize
+
+**Returns a function that caches the return value for each argument.**
+
+```python
+from functools import lru_cache
+<func> = lru_cache(maxsize=128, typed=False)(<func>)
+```
+
+```python
+>>> from functools import lru_cache
+>>> @lru_cache(maxsize=128, typed=False)
+... def fib(n):
+...     if n < 2:
+...         return n
+...     return fib(n - 1) + fib(n - 2)
+...
+>>> fib(10)
+55
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Decorator
+
+**A function that takes another function and extends the behavior of the latter function without explicitly modifying it.**
+
+```python
+@<decorator>
+def <func>(…):
+    pass
+```
+
+```python
+>>> def decorator(func):
+...     def wrapper(*args, **kwargs):
+...         print('Before')
+...         func(*args, **kwargs)
+...         print('After')
+...     return wrapper
+...
+
+>>> @decorator
+... def func():
+...     print('Inside')
+...
+>>> func()
+Before
+Inside
+After
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Closure
+
+**A function that remembers the values from the enclosing lexical scope even when the program flow is no longer in that scope.**
+
+```python
+def <func>(…):
+    <var> = <val>
+    def <inner_func>(…):
+        pass
+    return <inner_func>
+```
+
+```python
+>>> def func():
+...     x = 1
+
+...     def inner_func():
+...         print(x)
+...
+>>> inner_func = func()
+>>> inner_func()
+1
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Generator
+
+**A function that returns an iterator object.**
+
+```python
+def <func>(…):
+    yield <val>
+```
+
+```python
+>>> def func():
+...     yield 1
+...     yield 2
+...     yield 3
+...
+>>> list(func())
+[1, 2, 3]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Generator
+
+**A function that returns an iterator object.**
+
+```python
+def <func>(…):
+    yield <val>
+```
+
+```python
+>>> def func():
+...     yield 1
+...     yield 2
+...     yield 3
+...
+>>> list(func())
+[1, 2, 3]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Iterator
+
+**An object that represents a stream of data.**
+
+```python
+<iter> = iter(<collection>)                   # Returns an iterator object.
+
+<el> = next(<iter>)                           # Returns the next element.
+```
+
+```python
+>>> iter = iter([1, 2, 3])
+>>> next(iter)
+1
+>>> next(iter)
+2
+>>> next(iter)
+3
+```
+
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Context Manager
+
+**A class that defines the runtime context to be established when executing a with statement.**
+
+```python
+class <context_manager>:
+    def __enter__(self):
+        pass
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        pass
+```
+
+```python
+>>> class context_manager:
+...     def __enter__(self):
+...         print('Enter')
+...
+...     def __exit__(self, exc_type, exc_value, traceback):
+...         print('Exit')
+...
+>>> with context_manager():
+...     print('Inside')
+...
+Enter
+Inside
+Exit
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Decorator
+
+**A function that takes another function and extends the behavior of the latter function without explicitly modifying it.**
+
+```python
+@<decorator>
+def <func>(…):
+    pass
+```
+
+```python
+>>> def decorator(func):
+...     def wrapper(*args, **kwargs):
+...         print('Before')
+...         func(*args, **kwargs)
+...         print('After')
+...     return wrapper
+...
+
+>>> @decorator
+... def func():
+...     print('Inside')
+...
+>>> func()
+Before
+Inside
+After
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+# Modules
+
+## Argparse
+
+**A module that makes it easy to write user-friendly command-line interfaces.**
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(description='<description>')
+parser.add_argument('<arg>', type=<type>, help='<help>')
+parser.add_argument('<arg>', type=<type>, help='<help>')
+parser.add_argument('<arg>', type=<type>, help='<help>')
+args = parser.parse_args()
+```
+
+```python
+>>> import argparse
+>>> parser = argparse.ArgumentParser(description='A sample program')
+>>> parser.add_argument('x', type=int, help='The base')
+>>> parser.add_argument('y', type=int, help='The exponent')
+>>> parser.add_argument('-v', '--verbose', action='store_true', help='Increase output verbosity')
+>>> args = parser.parse_args()
+>>> args.x ** args.y
+1000
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Logging
+
+**A module that provides a set of convenience functions for simple logging usage.**
+
+```python
+import logging
+
+logging.basicConfig(level=logging.<level>, format='%(asctime)s %(message)s')
+logging.<level>(<msg>)
+```
+
+```python
+>>> import logging
+>>> logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(message)s')
+>>> logging.debug('This is a debug message')
+2019-01-01 00:00:00,000 This is a debug message
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Sqlite
+
+**A module that provides a SQL interface compliant with the DB-API 2.0 specification.**
+
+```python
+import sqlite3
+
+conn = sqlite3.connect('<db>')
+c = conn.cursor()
+c.execute('CREATE TABLE <table> (<col1> <type>, <col2> <type>, <col3> <type>)')
+c.execute('INSERT INTO <table> VALUES (<val1>, <val2>, <val3>)')
+conn.commit()
+c.execute('SELECT * FROM <table>')
+c.fetchall()
+```
+
+```python
+>>> import sqlite3
+>>> conn = sqlite3.connect('test.db')
+>>> c = conn.cursor()
+>>> c.execute('CREATE TABLE test (col1 int, col2 str, col3 float)')
+<sqlite3.Cursor object at 0x7f8b0c0b0c00>
+>>> c.execute('INSERT INTO test VALUES (1, "a", 1.0)')
+<sqlite3.Cursor object at 0x7f8b0c0b0c00>
+>>> conn.commit()
+>>> c.execute('SELECT * FROM test')
+<sqlite3.Cursor object at 0x7f8b0c0b0c00>
+>>> c.fetchall()
+[(1, 'a', 1.0)]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Pickle
+
+**A module that implements binary protocols for serializing and de-serializing a Python object structure.**
+
+```python
+import pickle
+
+with open('<file>', 'wb') as f:
+    pickle.dump(<obj>, f)
+
+with open('<file>', 'rb') as f:
+    pickle.load(f)
+```
+
+```python
+>>> import pickle
+>>> with open('test.pkl', 'wb') as f:
+...     pickle.dump([1, 2, 3], f)
+...
+>>> with open('test.pkl', 'rb') as f:
+...     pickle.load(f)
+...
+[1, 2, 3]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Collections
+
+**A module that implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.**
+
+```python
+from collections import <collection>
+
+<collection>(<iterable>)
+```
+
+```python
+>>> from collections import Counter
+>>> Counter([1, 2, 3, 1, 2, 3, 1, 2, 3])
+Counter({1: 3, 2: 3, 3: 3})
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Counter
+
+**A dict subclass for counting hashable objects.**
+
+```python
+from collections import Counter
+
+Counter(<iterable>)
+```
+
+```python
+>>> from collections import Counter
+>>> Counter([1, 2, 3, 1, 2, 3, 1, 2, 3])
+Counter({1: 3, 2: 3, 3: 3})
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## OrderedDict
+
+**A dict subclass that remembers the order entries were added.**
+
+```python
+from collections import OrderedDict
+
+OrderedDict(<iterable>)
+```
+
+```python
+>>> from collections import OrderedDict
+>>> OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+OrderedDict([('a', 1), ('b', 2), ('c', 3)])
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Defaultdict
+
+**A dict subclass that calls a factory function to supply missing values.**
+
+```python
+from collections import defaultdict
+
+defaultdict(<factory_function>, <iterable>)
+```
+
+```python
+>>> from collections import defaultdict
+
+>>> def default_factory():
+...     return 'default value'
+
+>>> d = defaultdict(default_factory, foo='bar')
+
+>>> print('d[foo]:', d['foo'])
+d[foo]: bar
+
+>>> print('d[bar]:', d['bar'])
+d[bar]: default value
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Namedtuple
+
+**A factory function for creating tuple subclasses with named fields.**
+
+```python
+from collections import namedtuple
+
+namedtuple('<name>', '<fields>')
+```
+
+```python
+>>> from collections import namedtuple
+
+>>> Point = namedtuple('Point', ['x', 'y'])
+
+>>> p = Point(11, y=22)     # instantiate with positional or keyword arguments
+
+>>> p[0] + p[1]             # indexable like the plain tuple (11, 22)
+
+33
+
+>>> x, y = p                # unpack like a regular tuple
+
+>>> x, y
+
+(11, 22)
+
+>>> p.x + p.y               # fields also accessible by name
+
+33
+
+>>> p                       # readable __repr__ with a name=value style
+
+Point(x=11, y=22)
+
+>>> d = p._asdict()         # convert to a dictionary
+
+>>> d['x']
+
+11
+
+>>> Point(**d)              # convert from a dictionary
+
+Point(x=11, y=22)
+
+>>> p._replace(x=100)       # _replace() is like str.replace() but targets named fields
+
+Point(x=100, y=22)
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## ChainMap
+
+**A dict-like class for creating a single view of multiple mappings.**
+
+```python
+
+from collections import ChainMap
+
+ChainMap(<dict1>, <dict2>, ...)
+```
+
+```python
+>>> from collections import ChainMap
+
+>>> a = {'x': 1, 'z': 3}
+>>> b = {'y': 2, 'z': 4}
+
+>>> c = ChainMap(a, b)
+
+>>> c['x']       # Notice how values from a are used, not b
+
+1
+
+>>> c['y']       # Notice how values from b are used, not a
+
+2
+
+>>> c['z']       # Notice how the first occurrence of z is used
+
+3
+
+>>> del c['z']   # Deleting a value only affects the first mapping
+
+>>> a['z']       # a['z'] is now gone
+
+3
+
+>>> b['z']       # b['z'] is still there
+
+4
+
+>>> len(c)       # len() counts the number of mappings, not elements
+
+3
+
+>>> list(c.keys())   # Notice how z is no longer there
+
+['y', 'x']
+
+>>> list(c.values()) # Notice how z is no longer there
+
+[2, 1]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Heapq
+
+**A module for implementing heaps based on regular lists.**
+
+```python
+
+import heapq
+
+heapq.<function>(<list>, <value>)
+```
+
+```python
+>>> import heapq
+
+>>> h = []
+
+>>> heapq.heappush(h, (5, 'write code'))
+
+>>> heapq.heappush(h, (7, 'release product'))
+
+>>> heapq.heappush(h, (1, 'write spec'))
+
+>>> heapq.heappush(h, (3, 'create tests'))
+
+>>> heapq.heappop(h)
+
+(1, 'write spec')
+
+>>> heapq.heappop(h)
+
+(3, 'create tests')
+
+>>> heapq.heappop(h)
+
+(5, 'write code')
+
+>>> heapq.heappop(h)
+
+(7, 'release product')
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Bisect
+
+**A module for maintaining a list in sorted order without having to sort the list after each insertion.**
+
+```python
+
+import bisect
+
+bisect.<function>(<list>, <value>)
+```
+
+```python
+>>> import bisect
+
+>>> scores = []
+
+>>> bisect.insort(scores, 33)
+
+>>> bisect.insort(scores, 99)
+
+>>> bisect.insort(scores, 77)
+
+>>> bisect.insort(scores, 70)
+
+>>> bisect.insort(scores, 89)
+
+>>> bisect.insort(scores, 90)
+
+>>> bisect.insort(scores, 100)
+
+>>> scores
+
+[33, 70, 77, 89, 90, 99, 100]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Array
+
+**An array is a container that holds a fixed number of items of a single type.**
+
+```python
+
+from array import array
+
+array('<typecode>', <iterable>)
+```
+
+```python
+>>> from array import array
+
+>>> a = array('H', [4000, 10, 700, 22222])
+
+>>> sum(a)
+
+26932
+
+>>> a[1:3]
+
+array('H', [10, 700])
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Weakref
+
+**A module for weak references.**
+
+```python
+
+import weakref
+
+weakref.<function>(<object>)
+```
+
+```python
+>>> import weakref
+
+>>> a_set = {0, 1}
+
+>>> wref = weakref.ref(a_set)
+
+>>> wref
+
+<weakref at 0x7f9b7c2d8e18; to 'set' at 0x7f9b7c2d8e48>
+
+>>> wref()
+
+{0, 1}
+
+>>> a_set = {2, 3, 4}
+
+>>> wref()
+
+>>> wref() is None
+
+True
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Types
+
+**A module that provides access to the internal type system.**
+
+```python
+
+import types
+
+types.<function>(<object>)
+```
+
+```python
+
+>>> import types
+
+>>> def double(x):
+
+...     return x * 2
+
+...
+
+>>> type(double)
+
+<class 'function'>
+
+>>> type(abs)
+
+<class 'builtin_function_or_method'>
+
+>>> type(int)
+
+<class 'type'>
+
+>>> type(str)
+
+<class 'type'>
+
+>>> type(type)
+
+<class 'type'>
+
+>>> type(double) == types.FunctionType
+
+True
+
+>>> type(abs) == types.BuiltinFunctionType
+
+True
+
+>>> type(int) == types.TypeType
+
+True
+
+>>> type(str) == types.TypeType
+
+True
+
+>>> type(type) == types.TypeType
+
+True
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Copy
+
+**A module for shallow and deep copying.**
+
+```python
+
+import copy
+
+copy.<function>(<object>)
+```
+
+```python
+
+>>> import copy
+
+>>> l1 = [3, [55, 44], (7, 8, 9)]
+
+>>> l2 = list(l1)
+
+>>> l1
+
+[3, [55, 44], (7, 8, 9)]
+
+
+>>> l2
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l1.append(100)
+
+>>> l1
+
+[3, [55, 44], (7, 8, 9), 100]
+
+>>> l2
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l1[1].remove(55)
+
+>>> l1
+
+[3, [44], (7, 8, 9), 100]
+
+>>> l2
+
+[3, [44], (7, 8, 9)]
+
+>>> l2[1] += [33, 22]
+
+>>> l2
+
+[3, [44, 33, 22], (7, 8, 9)]
+
+>>> l1
+
+[3, [44], (7, 8, 9), 100]
+
+>>> l1[2] += (10, 11)
+
+>>> l1
+
+[3, [44], (7, 8, 9, 10, 11), 100]
+
+>>> l2
+
+[3, [44, 33, 22], (7, 8, 9)]
+
+>>> l3 = copy.copy(l1)
+
+>>> l3
+
+[3, [44], (7, 8, 9, 10, 11), 100]   
+
+>>> l1.append(100)
+
+>>> l1
+
+[3, [44], (7, 8, 9, 10, 11), 100, 100]
+
+>>> l3
+
+[3, [44], (7, 8, 9, 10, 11), 100]
+
+>>> l1[1].remove(44)
+
+>>> l1
+
+[3, [], (7, 8, 9, 10, 11), 100, 100]
+
+>>> l3
+
+[3, [], (7, 8, 9, 10, 11), 100]
+
+>>> l3[2] += (10, 11)
+
+>>> l3
+
+[3, [], (7, 8, 9, 10, 11, 10, 11), 100]
+
+>>> l1
+
+[3, [], (7, 8, 9, 10, 11), 100, 100]
+
+>>> l1 = [3, [55, 44], (7, 8, 9)]
+
+>>> l2 = copy.deepcopy(l1)
+
+>>> l1
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l2
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l1.append(100)
+
+>>> l1
+
+[3, [55, 44], (7, 8, 9), 100]
+
+>>> l2
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l1[1].remove(55)
+
+>>> l1
+
+[3, [44], (7, 8, 9), 100]
+
+>>> l2
+
+[3, [55, 44], (7, 8, 9)]
+
+>>> l2[1] += [33, 22]
+
+>>> l2
+
+[3, [55, 44, 33, 22], (7, 8, 9)]
+
+>>> l1
+
+[3, [44], (7, 8, 9), 100]
+
+>>> l1[2] += (10, 11)
+
+>>> l1
+
+[3, [44], (7, 8, 9, 10, 11), 100]
+
+>>> l2
+
+[3, [55, 44, 33, 22], (7, 8, 9)]
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Pprint
+
+**A module that provides a capability to “pretty-print” arbitrary Python data structures in a form which can be used as input to the interpreter.**
+
+```python
+
+import pprint
+
+pprint.<function>(<object>)
+```
+
+```python
+
+>>> import pprint
+
+>>> t = [[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]]
+
+>>> pprint.pprint(t, width=30)
+
+[[[['black', 'cyan'],
+
+'white',
+
+['green', 'red']],
+
+[['magenta', 'yellow'],
+
+'blue']]]
+
+>>> pprint.pprint(t, width=30, depth=1)
+
+[[['black', 'cyan'],
+
+'white',
+
+['green', 'red']],
+
+[['magenta', 'yellow'],
+
+'blue']]
+
+>>> pprint.pprint(t, width=30, depth=2)
+
+[[['black', 'cyan'],
+
+'white',
+
+['green', 'red']],
+
+[['magenta', 'yellow'],
+
+'blue']]
+
+>>> pprint.pprint(t, width=30, depth=3)
+
+[[['black', 'cyan'],
+
+'white',
+
+['green', 'red']],
+
+[['magenta', 'yellow'],
+
+'blue']]
+
+
+>>> pprint.pprint(t, width=30, depth=4)
+
+[[['black', 'cyan'],
+
+'white',
+
+['green', 'red']],
+
+[['magenta', 'yellow'],
+
+'blue']]
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Reprlib
+
+**A module that provides a version of repr() which can be used to produce abbreviated, recursive representations of large or deeply nested containers.**
+
+```python
+
+import reprlib
+
+reprlib.<function>(<object>)
+```
+
+```python
+
+>>> import reprlib
+
+>>> reprlib.repr(set('supercalifragilisticexpialidocious'))
+
+
+"{'a', 'c', 'd', 'e', 'f', 'g', 'i', 'l', 'o', 'p', 'r', 's', 't', 'u', 'x'}"
+
+>>> t = [[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]]
+
+>>> reprlib.repr(t)
+
+"[[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]]"
+
+>>> reprlib.repr(t, maxlevel=1)
+
+"[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]"
+
+>>> reprlib.repr(t, maxlevel=2)
+
+"[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]"
+
+>>> reprlib.repr(t, maxlevel=3)
+
+"[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]"
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Enum
+
+**A module that provides support for enumerations.**
+
+```python
+
+import enum
+
+enum.<function>(<object>)
+```
+
+```python
+
+>>> import enum
+
+>>> class Color(enum.Enum):
+
+...     RED = 1
+
+...     GREEN = 2
+
+...     BLUE = 3
+
+...
+
+>>> Color.RED
+
+<Color.RED: 1>
+
+>>> Color(1)
+
+<Color.RED: 1>
+
+>>> Color['RED']
+
+<Color.RED: 1>
+
+>>> Color.RED.name
+
+'RED'
+
+>>> Color.RED.value
+
+1
+
+>>> Color.RED == 1
+
+False
+
+>>> Color.RED == Color(1)
+
+True
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Pathlib
+
+**A module that provides classes representing filesystem paths with semantics appropriate for different operating systems.**
+
+```python
+
+import pathlib
+
+pathlib.<function>(<object>)
+```
+
+```python
+
+>>> import pathlib
+
+>>> p = pathlib.Path('.')
+
+>>> p
+
+PosixPath('.')
+
+>>> p.absolute()
+
+PosixPath('/home/username/Python')
+
+>>> p.cwd()
+
+PosixPath('/home/username/Python')
+
+>>> p.home()
+
+PosixPath('/home/username')
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Functools
+
+**A module that provides higher-order functions and operations on callable objects.**
+
+```python
+
+import functools
+
+functools.<function>(<object>)
+```
+
+```python
+
+>>> import functools
+
+>>> def add(a, b):
+...     return a + b
+
+...
+
+>>> add(1, 2)
+
+3
+
+>>> add = functools.partial(add, 1)
+
+>>> add(2)
+
+3
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Itertools
+
+**A module that provides functions creating iterators for efficient looping.**
+
+```python
+
+import itertools
+
+itertools.<function>(<object>)
+```
+
+```python
+
+>>> import itertools
+
+>>> for i in itertools.count(1, 0.5):
+...     print(i)
+
+1
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Contextlib
+
+**A module that provides utilities for with-statement contexts.**
+
+```python
+
+import contextlib
+
+contextlib.<function>(<object>)
+```
+
+```python
+
+>>> import contextlib
+>>> @contextlib.contextmanager
+
+... def make_context():
+...     print('entering')
+...     try:
+...         yield {}
+...     except RuntimeError as err:
+...         print('ERROR:', err)
+...     finally:
+...         print('exiting')
+
+...
+
+>>> with make_context() as value:
+...     print('inside with statement:', value)
+
+entering
+inside with statement: {}
+exiting
+
+>>> with make_context() as value:
+...     raise RuntimeError('showing example of handling an error')
+
+entering
+exiting
+ERROR: showing example of handling an error
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Atexit
+
+**A module that provides one function, register(), that is used to register cleanup functions to be executed when the interpreter exits normally or unconditionally.**
+
+```python
+
+import atexit
+
+atexit.<function>(<object>)
+```
+
+```python
+
+>>> import atexit
+
+>>> def my_cleanup(name):
+...     print('Cleaning up', name)
+...    raise RuntimeError('oops')
+
+...
+
+>>> atexit.register(my_cleanup, 'first')
+
+<function my_cleanup at 0x7f9b8c0b9d08>
+
+>>> atexit.register(my_cleanup, 'second')
+
+<function my_cleanup at 0x7f9b8c0b9d08>
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Traceback
+
+**A module that provides functions to extract, format and print stack traces of Python programs.**
+
+```python
+
+import traceback
+
+traceback.<function>(<object>)
+```
+
+```python
+
+>>> import traceback
+
+>>> def f():
+...     g()
+
+...
+
+>>> def g():
+...     h()
+
+...
+
+>>> def h():
+...     i()
+
+...
+
+>>> def i():
+...     traceback.print_stack()
+
+...
+
+>>> f()
+
+File "test.py", line 2, in f
+    g()
+File "test.py", line 5, in g
+    h()
+File "test.py", line 8, in h
+    i() 
+File "test.py", line 11, in i
+    traceback.print_stack()
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Sys
+
+**A module that provides access to some objects used or maintained by the interpreter and to functions that interact strongly with the interpreter.**
+
+```python
+
+import sys
+
+sys.<function>(<object>)
+```
+
+```python
+
+>>> import sys
+
+>>> sys.argv
+
+['/usr/bin/python3', 'test.py']
+
+>>> sys.exit()
+
+>>> sys.exit(1)
+
+>>> sys.exit(0)
+
+>>> sys.exit('Error message')
+
+>>> sys.exit(1, 'Error message')
+
+>>> sys.exit(0, 'Error message')
+
+>>> sys.exit(1, 2, 3)
+
+>>> sys.exit(0, 2, 3)
+
+>>> sys.exit('Error message', 2, 3)
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Time
+
+**A module that provides various time-related functions.**
+
+```python
+
+import time
+
+time.<function>(<object>)
+```
+
+```python
+
+>>> import time
+
+>>> time.time()
+
+1610000000.0
+
+>>> time.localtime()
+
+time.struct_time(tm_year=2021, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=0, tm_yday=1, tm_isdst=0)
+
+>>> time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+
+'2021-01-01 00:00:00'
+
+>>> time.strftime('%Y-%m-%d %H:%M:%S', time.gmtime())
+
+'2021-01-01 00:00:00'
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Datetime
+
+**A module that supplies classes for manipulating dates and times in both simple and complex ways.**
+
+```python
+
+import datetime
+
+datetime.<function>(<object>)
+```
+
+```python
+
+>>> import datetime
+
+>>> datetime.datetime.now()
+
+datetime.datetime(2021, 1, 1, 0, 0)
+
+>>> datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+'2021-01-01 00:00:00'
+
+>>> datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
+
+'2021-01-01 00:00:00.000000'
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Calendar
+
+**A module that provides general calendar related functions.**
+
+```python
+
+import calendar
+
+calendar.<function>(<object>)
+```
+
+```python
+
+>>> import calendar
+
+>>> calendar.isleap(2020)
+
+True
+
+>>> calendar.isleap(2021)
+
+False
+
+>>> calendar.isleap(2022)
+
+False
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Random
+
+**A module that implements pseudo-random number generators for various distributions.**
+
+```python
+
+import random
+
+random.<function>(<object>)
+```
+
+```python
+
+>>> import random
+
+>>> random.random()
+
+0.123456789
+
+>>> random.randint(1, 10)
+
+5
+
+>>> random.randrange(1, 10)
+
+5
+
+>>> random.randrange(1, 10, 2)
+
+5
+
+>>> random.choice([1, 2, 3, 4, 5])
+
+5
+
+>>> random.choice('Hello World')
+
+'W'
+
+>>> random.choices([1, 2, 3, 4, 5], k=3)
+
+[5, 5, 5]
+
+>>> random.choices('Hello World', k=3)
+
+['W', 'W', 'W']
+
+>>> random.sample([1, 2, 3, 4, 5], k=3)
+
+[5, 5, 5]
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Statistics
+
+**A module that provides functions for calculating mathematical statistics of numeric (Real-valued) data.**
+
+```python
+
+import statistics
+
+statistics.<function>(<object>)
+```
+
+```python
+
+>>> import statistics
+
+>>> statistics.mean([1, 2, 3, 4, 5])
+
+3.0
+
+>>> statistics.median([1, 2, 3, 4, 5])
+
+3.0
+
+>>> statistics.median_low([1, 2, 3, 4, 5])
+
+3
+
+>>> statistics.median_high([1, 2, 3, 4, 5])
+
+3
+
+>>> statistics.median_grouped([1, 2, 3, 4, 5])
+
+3.0
+
+>>> statistics.mode([1, 2, 3, 4, 5])
+
+1
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Math
+
+**A module that provides access to the mathematical functions defined by the C standard.**
+
+```python
+
+import math
+
+math.<function>(<object>)
+```
+
+```python
+
+>>> import math
+
+>>> math.pi
+
+3.141592653589793
+
+>>> math.e
+
+2.718281828459045
+
+>>> math.sin(math.pi / 2)
+
+1.0
+
+>>> math.cos(math.pi / 2)
+
+6.123233995736766e-17
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+# Cmath
+
+**A module that provides access to mathematical functions for complex numbers.**
+
+```python
+
+import cmath
+
+cmath.<function>(<object>)
+```
+
+```python
+
+>>> import cmath
+
+>>> cmath.pi
+
+3.141592653589793
+
+>>> cmath.e
+
+2.718281828459045
+
+>>> cmath.sin(cmath.pi / 2)
+
+1j
+
+>>> cmath.cos(cmath.pi / 2)
+
+6.123233995736766e-17j
+
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+
+
+
 ## Threading
 
 - **CPython interpreter can only run a single thread at a time.**
@@ -2665,6 +4460,7 @@ Processing: 100%|████████████████████| 3
 # $ pip3 install matplotlib
 import matplotlib.pyplot as plt
 plt.plot(<x_data>, <y_data> [, label=<str>])   # Or: plt.plot(<y_data>)
+plt.axis([xmin, xmax, ymin, ymax])             # Convenience method to get or set some axis properties.
 plt.legend()                                   # Adds a legend.
 plt.savefig(<path>)                            # Saves the figure.
 plt.show()                                     # Displays the figure.
@@ -3831,6 +5627,84 @@ window = sg.Window('Window Title', layout)
 event, values = window.read()
 print(f'Hello {values[0]}!' if event == 'Ok' else '')
 ```
+
+## Matplotlib
+
+**Header:**
+```python
+import numpy as np
+import random
+import matplotlib.pyplot as plt
+```
+
+**Plotting an equation:**
+```python
+fig, ax = plt.subplots()
+x = np.random.randint(1,10, size=10)
+y = x 
+plt.plot(x,y)
+plt.show()
+```
+The above code would plot the line x = y.
+
+**Plotting multiple equations:**
+```python
+fig, ax = plt.subplots()
+x = np.random.randint(1,10, size=10)
+y = x 
+plt.plot(x,y)
+plt.plot(x,x+3)
+plt.show()
+```
+
+**Changing color or style of lines:**
+```python
+plt.plot(x, y, color='ENTER COLOR NAME HERE', linestyle='DRAW LINESTYLE HERE')
+```
+Available linestyles:
+1) --
+2) :
+3) -.
+   
+**Setting graph limits:**
+```python
+plt.xlim(x1,y1)
+plt.ylim(x2, y2)
+```
+
+**Labelling the axis:**
+```python
+plt.xlabel("TITLE GOES HERE")
+plt.ylabel("TITLE GOES HERE")
+```
+
+**Title of the graph:**
+```python
+plt.title("TITLE GOES HERE")
+```
+
+**Make a scatter graph:**
+```python
+plt.scatter(x,y)
+```
+
+**Make a area chart:**
+```python
+plt.fill_between( x, y, color="ENTER COLOR HERE", alpha=ENTER ALPHA HERE)
+```
+
+**Make a bar graph**
+```python
+plt.bar(y, data, align='ENTER ALIGNMENT HERE', alpha=ENTER ALPHA HERE)
+```
+
+**Make a pie chart:**
+```python
+plt.pie(data, labels=labels, explode=(x, x, ... x))
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
 
 ## Appendix
 

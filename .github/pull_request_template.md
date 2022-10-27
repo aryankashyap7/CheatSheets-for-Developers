@@ -15,3 +15,5 @@ Provide summary of changes with issue number if any.
 ### Changes
 
 - [ ] I've read and followed the [Solution Template](https://github.com/aryankashyap7/CheatSheets-for-Developers/blob/main/docs/CONTRIBUTING.md#submission-template)
+
+**Note: To mark the checkbox, put an `x` inside the `[ ]` (like this: `[x]`).**
