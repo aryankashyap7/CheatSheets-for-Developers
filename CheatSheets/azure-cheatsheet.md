@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Microsft Azure for Developers](#microsft-azure-for-developers)
+- [Microsft Azure for Developers](#table-of-contents)
   - [Azure](#azure)
   - [Azure CLI](#azure-cli)
   - [Azure Cloud Shell](#azure-cloud-shell)
