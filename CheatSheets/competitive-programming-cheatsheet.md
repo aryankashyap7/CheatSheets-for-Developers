@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Competitive programming cheat sheet](#cp-cheatsheet-for-developers)
+- [Competitive programming cheat sheet](#competitive-programming-cheat-sheet)
 	- [Standard Template](#standard-template)
 		- [Header Files](#header-files)
 		- [Macros](#macros)
