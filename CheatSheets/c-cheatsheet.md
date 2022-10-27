@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [C for Developers](#c-for-developer)
+- [C for Developers](#c-for-developers)
 - [Data Types](#data-types)
 - [Operators](#operators)
 - [Control Flow](#control-flow)
@@ -12,13 +12,12 @@
 - [Enumerations](#enumerations)
 - [Bit Fields](#bit-fields)
 - [Typedef](#typedef)
-- [Storage Classes](#storage-classes)
-- [Preprocessor](#preprocessor)
+- [Preprocessor](#preprocessor-directives)
 - [Input/Output](#inputoutput)
-- [String](#string)
-- [Math](#math)
-- [Time](#time)
-- [File](#file)
+- [String](#string-functions)
+- [Math](#math-functions)
+- [Time](#time-functions)
+- [File](#file-functions)
 
 ## C for Developers
 

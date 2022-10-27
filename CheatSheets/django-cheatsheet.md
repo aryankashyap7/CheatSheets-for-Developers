@@ -1,9 +1,9 @@
 ## Table of Contents
 
-- [Django CLI Commands](#django-cli)
-- [Django Model Layer](#model-layer)
-- [Django View Layer](#view-layer)
-- [Django Template Layer](#template-layer)
+- [Django CLI Commands](#django-cli-commands)
+- [Django Model Layer](#django-model-layer)
+- [Django View Layer](#django-view-layer)
+- [Django Template Layer](#django-template-layer)
 
 # Django Cheatsheet
 

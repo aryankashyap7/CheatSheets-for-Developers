@@ -1,6 +1,6 @@
 ## Table of Contents
 
-- [Assembly Language for Developers](#assembly-language-for-developers)
+- [Assembly Language for Developers](#assembly-language)
   - [Assembly Language](#assembly-language)
   - [Assembly Language Instructions](#assembly-language-instructions)
   - [Assembly Language Registers](#assembly-language-registers)
@@ -210,3 +210,5 @@ Assembly language is a low-level programming language for a computer, or other p
 | JZ 0x1234            | Jumps to 0x1234 if the zero flag is set     |
 | JNZ 0x1234           | Jumps to 0x1234 if the zero flag is not set |
 | JA 0x1234            | Jumps to 0x1234 if the carry flag is set    |
+
+**[🔼Back to Top](#table-of-contents)**

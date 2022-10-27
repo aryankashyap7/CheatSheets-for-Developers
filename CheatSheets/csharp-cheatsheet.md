@@ -1,10 +1,10 @@
 ## Table of Contents
 
-- [C# for Developers](csharp-for-developers)
-- [Data Types](data-types)
-- [Variables](variables)
-- [Operators](operators)
-- [Loops](loops)
+- [C# for Developers](#table-of-contents)
+- [Data Types](#data-types)
+- [Variables](#variables)
+- [Operators](#operators)
+- [Loops](#loops)
 
 # C# for Developers
 
