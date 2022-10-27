@@ -9,6 +9,7 @@
     - [Vector sort](#vector)
     - [Vector reverse](#vector)
     - [Vector deletion](#vector)
+    - [Vector find](#vector)
   - [Set](#set)
     - [Set insertion](#set)
     - [Set Display](#set)
@@ -92,6 +93,15 @@
     for (int i = 0; i < n; i++)
     {
         cout << v[i] << " ";
+    }
+    
+    //Vector find
+    int search = 30;
+    vector<int>::iterator it;
+    it = find(v.begin(), v.end(), search);
+    if(it != v.end())
+    {
+    	cout << "Position: " << it + v.begin() << endl;
     }
 ```
 
