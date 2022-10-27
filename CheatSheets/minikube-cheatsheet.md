@@ -1,18 +1,19 @@
-#Minikube CheatSheet for Developers
+# Minikube CheatSheet for Developers
 
-##Table of Contents
+## Table of Contents
 
 - [Minikube CheatSheet for Developers](#minukube-cheatsheet-for-developers)
   - [Synopsis](#synopsis)
-  - [Basic Commands](#basic-commands)
+  - [Basic Commands](#Basic-commands)
 
 ## Synopsis
 
-Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
+Minikube is a tool that makes it easy to run Kubernetes locally.
+Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
 
 **[🔼Back to Top](#table-of-contents)**
 
-##basic-commands
+##Basic-commands
 
 | name                                         | Command                                                          |
 | -------------------------------------------- | ---------------------------------------------------------------- |
@@ -34,5 +35,8 @@ Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a
 | `Get version`                                | minikube version                                                 |
 | `Get config view`                            | minikube config view                                             |
 | `Get config set`                             | minikube config set                                              |
+| `Check latest version`                       | minikube update check                                            |
+| `minikube get service information`           | minikube service <srv-name>                                      |
+ 
 
 **[🔼Back to Top](#table-of-contents)**
