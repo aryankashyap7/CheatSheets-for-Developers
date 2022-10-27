@@ -1,6 +1,5 @@
 ## Table of Contents
 
-- [Design Philosophies](#design-philosophies)
 - [Django CLI Commands](#django-cli)
 - [Django Model Layer](#model-layer)
 - [Django View Layer](#view-layer)
@@ -9,17 +8,6 @@
 # Django Cheatsheet
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design that follows the model–template–views architectural pattern (MVT).
-
-
-## Design Philosophies
-
-- Loose coupling
-- Less code
-- Quick development
-- Don’t repeat yourself (DRY)
-- Explicit is better than implicit
-- Consistency
-
 
 
 ## Django CLI Commands
@@ -43,7 +31,7 @@ Django is a high-level Python web framework that encourages rapid development an
 | python manage.py sendtestemail [email [email ...]] | To send a test email (to confirm email sending through Django is working) to the recipient(s) specified                                                  |
 | python manage.py inspectdb [table [table ...]]     | To introspect the database tables in the database pointed-to by the NAME setting and outputs a Django model module (a models.py file) to standard output |
 | python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |                                                                                                                                                     
-
+**[🔼Back to Top](#table-of-contents)**
 
 
 ## Django Model Layer
@@ -66,7 +54,7 @@ Django is a high-level Python web framework that encourages rapid development an
 | object.update()                  | To update changes of the object in db                                                                                                       |
 | object.delete()                  | To delete the object from db                                                                                                                |
 | query = Object.objects.get()     | To query the model                                                                                                                          |
-
+**[🔼Back to Top](#table-of-contents)**
 
 ## Django View Layer
 
@@ -86,7 +74,7 @@ Django is a high-level Python web framework that encourages rapid development an
 | JsonResponse()                                                 | django.http: An HttpResponse subclass that helps to create a JSON-encoded response. It inherits most behavior from its superclass with a couple differences |
 | StreamingHttpResponse()                                        | django.http: stream chunks of data. Useful for generating large csv files                                                                             |
 | FileResponse()                                                 | django.http: FileResponse is a subclass of StreamingHttpResponse optimized for binary files                                                           |
-
+**[🔼Back to Top](#table-of-contents)**
 
 ## Django Template Layer
 
@@ -150,3 +138,4 @@ A {% comment %} tag provides multi-line comments.
     Comment 3
 {% endcomment %}
 ````
+**[🔼Back to Top](#table-of-contents)**
