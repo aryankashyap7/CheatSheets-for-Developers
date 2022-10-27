@@ -38,6 +38,7 @@ add this code in app.js
       console.log(`Example app listening on port ${port}`)
     })
 
+and run app.js to start the serve. Go to localhost:port to see the response
 
 **[🔼Back to Top](#table-of-contents)**
 
