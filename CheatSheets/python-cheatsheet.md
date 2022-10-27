@@ -4455,6 +4455,7 @@ Processing: 100%|████████████████████| 3
 # $ pip3 install matplotlib
 import matplotlib.pyplot as plt
 plt.plot(<x_data>, <y_data> [, label=<str>])   # Or: plt.plot(<y_data>)
+plt.axis([xmin, xmax, ymin, ymax])             # Convenience method to get or set some axis properties.
 plt.legend()                                   # Adds a legend.
 plt.savefig(<path>)                            # Saves the figure.
 plt.show()                                     # Displays the figure.
