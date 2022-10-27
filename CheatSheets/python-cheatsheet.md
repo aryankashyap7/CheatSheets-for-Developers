@@ -286,9 +286,14 @@ Point(x=1, y=2)
 
 ## Enumerate
 
+Enumerates is a built-in function that returns an enumerate object. enumerate() takes two parameters: iterable and start (default is 0).
+
 ```python
-for i, el in enumerate(<collection> [, i_start]):
-    ...
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+>>> list(enumerate(seasons, start=1))
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
 **[🔼Back to Top](#table-of-contents)**
