@@ -1,9 +1,9 @@
 ## Table of Contents
 
 - [Angular Code Snippets for Developers](#angular-code-snippets-for-developers)
-  - [Angular Bindings](#angular-bindings)
+  - [Angular Bindings](#angular-binding)
   - [Angular Lifecycle Hooks](#angular-lifecycle-hooks)
-  - [Angular CLI](#angular-cli)
+  - [Angular CLI](#angular-cli-commands)
 
 # Angular Cheatsheet
 
