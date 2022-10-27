@@ -22,7 +22,7 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 | 4   | Azure                   | Microsoft Azure CheatSheet           | <a href="./CheatSheets/azure-cheatsheet.md">Click Here</a>                   |
 | 5   | Bash                    | Bash Scripting CheatSheet            | <a href="./CheatSheets/bash-cheatsheet.md">Click Here</a>                    |
 | 6   | C                       | C Language CheatSheet                | <a href="./CheatSheets/c-cheatsheet.md">Click Here</a>                       |
-| 7   | Competative Programming | Competative Programming CheatSheet   | <a href="./CheatSheets/competative-programming-cheatsheet.md">Click Here</a> |
+| 7   | Competitive Programming | Competitive Programming CheatSheet   | <a href="./CheatSheets/competitive-programming-cheatsheet.md">Click Here</a> |
 | 8   | C++                     | C++ STL Based CheatSheet             | <a href="./CheatSheets/cpp-stl-cheatsheet.md">Click Here</a>                 |
 | 9   | C#                      | C Sharp CheatSheet                   | <a href="./CheatSheets/csharp-cheatsheet.md">Click Here</a>                  |
 | 10  | CSS                     | CSS CheatSheet                       | <a href="./CheatSheets/css-cheatsheet.md">Click Here</a>                     |
