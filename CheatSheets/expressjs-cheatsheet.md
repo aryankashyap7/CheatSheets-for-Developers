@@ -3,11 +3,11 @@
 - [Requirements](#requirements)
 - [Quick set-up](#quick-set-up)
 - [Start the server](#start-the-server)
-- [Routing]
-  - [Route definition]
-  - [Serve an HTML file]
-  - [Serve Static assets]
-  - [Serve JSON]
+- [Routing](#routing)
+  - [Route definition](#route-definition)
+  - [Serve an HTML file](#serve-an-html-file)
+  - [Serve Static assets](#serve-static-assets)
+  - [Serve JSON](#serve-json)
 
 
 ## Requirements
@@ -40,28 +40,32 @@ add this code in index.js
 
 **[🔼Back to Top](#table-of-contents)**
 
+## Routing
+## Route definition 
+The routing definition syntax is
 
-## Route definition
     app.METHOD(PATH, HANDLER)
+    
+Here, METHOD is an HTTP request method, and HANDLER is the function executed when the route is matched.
 
-## Send an HTML file
+## Serve an HTML file
 
     app.get('/', (req, res) => {
-          res.send('Hello World!')
+          res.sendFile(__dirname +'/views/index.html') ;
         })
 
 
 **[🔼Back to Top](#table-of-contents)**
 
 ## Serve Static assets
-
+Static assets include things like css files
     app.use('/public',express.static(__dirname + '/public'));
 
 
 **[🔼Back to Top](#table-of-contents)**
 
 ## Serve JSON
-
+Serve a JSON response
     app.get('/json',myFunction2);
       function myFunction2(req, res) {
       res.json({"message": "Hello json"}) ;
