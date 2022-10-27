@@ -154,6 +154,24 @@ function MyComponent() {
 }
 ```
 
+```
+import { useState } from "react";
+import "./styles.css";
+
+export default function App() {
+  const [title, setTitle] = useState("crash course");
+  const handleChange = () => {
+    setTitle("react crash course");
+  };
+  return (
+    <div className="App">
+      <h1>{title} useState</h1>
+      <button onClick={handleChange}>Change Title</button>
+    </div>
+  );
+}
+```
+
 **[🔼Back to Top](#react-js-for-developers)**
 
 ## React useEffect Hook
@@ -170,6 +188,25 @@ function MyComponent() {
 }
 ```
 
+```
+import {useState, useEffect} from 'react';
+
+export const App = () => {
+    const [value, setValue] = useState('');
+
+    useEffect(() => {
+      console.log('value changed: ', value);
+    }, [value])
+
+	return <div>
+        	<input
+                type="text"
+                name="username"
+                value={value}
+                onChange={(e) => setValue(e.target.value)} />
+        </div>
+}
+```
 **[🔼Back to Top](#react-js-for-developers)**
 
 ## React useRef
