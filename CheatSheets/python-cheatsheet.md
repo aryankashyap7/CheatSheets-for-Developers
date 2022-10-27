@@ -14,25 +14,25 @@
 - [2. Types](#2-types)
   - [2.1. Type](#type)
   - [2.2. String](#string)
-  - [2.3. Regular_Exp](#regular_exp)
+  - [2.3. Regular_Exp](#regex)
   - [2.4. Format](#format)
   - [2.5. Numbers](#numbers)
   - [2.6. Combinatorics](#combinatorics)
   - [2.7. Datetime](#datetime)
 - [3. Syntax](#3-syntax)
-  - [3.1. Args](#args)
+  - [3.1. Args](#arguments)
   - [3.2. Inline](#inline)
-  - [3.3. Import](#import)
+  - [3.3. Import](#imports)
   - [3.4. Decorator](#decorator)
   - [3.5. Class](#class)
-  - [3.6. Duck_Types](#duck_types)
+  - [3.6. Duck_Types](#duck-types)
   - [3.7. Enum](#enum)
   - [3.8. Exception](#sqlite)
-  - [3.9. File](#file)
+  - [3.9. File](#read-bytes-from-file)
   - [3.10 Bytes](#bytes)
   - [3.11. Struct](#struct)
   - [3.12. Array](#array)
-  - [3.13. Memory_View](#memory_view)
+  - [3.13. Memory_View](#memory-view)
   - [3.14. Deque](#deque)
 - [4. Functions](#4-functions)
   - [4.1. Lambda](#lambda)
@@ -48,7 +48,7 @@
   - [4.11. Closure](#closure)
   - [4.12. Generator](#generator)
   - [4.13. Iterator](#iterator)
-  - [4.14. Context_Manager](#context_manager)
+  - [4.14. Context_Manager](#context-manager)
   - [4.15. Decorator](#decorator)
 - [5. Modules](#5-modules)
   - [5.1. Argparse](#argparse)
@@ -93,7 +93,7 @@
   - [6.5. Eval](#eval)
   - [6.6. Coroutines](#coroutines)
 - [7. Libraries](#7-libraries)
-  - [7.1. Progress_Bar](#progress_bar)
+  - [7.1. Progress_Bar](#progress-bar)
   - [7.2. Plot](#plot)
   - [7.3. Table](#table)
   - [7.4. Curses](#curses)
@@ -106,7 +106,8 @@
   - [7.11. Audio](#audio)
   - [7.12. PyGame](#pygame)
   - [7.13. Pandas](#pandas)
-  - [7.14 Matplotlib](#matplotlib)
+  - [7.14. Matplotlib](#matplotlib)
+  - [7.15 Tkinter](#tkinter)
 
 ## Main
 
@@ -3854,6 +3855,12 @@ sys.<function>(<object>)
 
 **[🔼Back to Top](#table-of-contents)**
 
+## IO
+
+The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These are generic categories, and various backing stores can be used for each of them.
+
+**[🔼Back to Top](#table-of-contents)**
+
 ## Time
 
 **A module that provides various time-related functions.**
@@ -5704,6 +5711,72 @@ plt.pie(data, labels=labels, explode=(x, x, ... x))
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+
+## Tkinter
+
+### Essential Parts:
+
+1) **Header:**
+```python
+from Tkinter import *
+```
+2) **Making the window:**
+```python
+root = Tk()
+...
+...
+...
+root.mainloop()
+```
+
+### Widget Placement:
+
+1) **Pack:** 
+    This fits the widget into the window as a rectangular block, usually preffered for small windows.
+    ```python
+    WIDGET.pack()
+    ```
+
+2) **Grid:**
+    This fits the widget inside the table which we created.
+    ```python
+    WIDGET.grid(...)
+    ```
+
+3) **Place:**
+    This puts the widget to a specific coordinate in the window.
+    ```python
+    WIDGET.place(...)
+    ```
+
+### Tkinter Widgets:
+
+1) **Text Box:**
+    ```python
+    textBox = Label(root, text="ENTER TEXT HERE")
+    ```
+2) **Buttons:**
+    ```python
+    def cmd()
+        do_stuff
+    
+    button = Button(root, text="ENTER TEXT HERE", command=cmd)
+    ```
+3) **Canvas:**
+    ```python
+    canvas = Canvas(root, ...)
+    ```
+4) **Entry:**
+    ```python
+    entry = Entry(root, ...)
+    ```
+5 **Text:**
+    ```python
+    text = Text(root, ...)
+    ```
+
+**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Appendix
