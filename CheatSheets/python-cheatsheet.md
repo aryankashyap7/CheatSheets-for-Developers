@@ -286,9 +286,14 @@ Point(x=1, y=2)
 
 ## Enumerate
 
+Enumerates is a built-in function that returns an enumerate object. enumerate() takes two parameters: iterable and start (default is 0).
+
 ```python
-for i, el in enumerate(<collection> [, i_start]):
-    ...
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+>>> list(enumerate(seasons, start=1))
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -4455,6 +4460,7 @@ Processing: 100%|████████████████████| 3
 # $ pip3 install matplotlib
 import matplotlib.pyplot as plt
 plt.plot(<x_data>, <y_data> [, label=<str>])   # Or: plt.plot(<y_data>)
+plt.axis([xmin, xmax, ymin, ymax])             # Convenience method to get or set some axis properties.
 plt.legend()                                   # Adds a legend.
 plt.savefig(<path>)                            # Saves the figure.
 plt.show()                                     # Displays the figure.
