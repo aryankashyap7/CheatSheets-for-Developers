@@ -24,7 +24,8 @@ to install all necessary modules
 
 **[🔼Back to Top](#table-of-contents)**
 ## Start the server
-add this code in index.js
+add this code in app.js
+
     const express = require('express')
     const app = express()
     const port = 3000
