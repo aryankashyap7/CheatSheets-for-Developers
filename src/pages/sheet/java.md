@@ -22,8 +22,8 @@ title: "Java Cheatsheet"
 ### Output Methods
 
 ```java
-	system.out.print("Hello World!"); //Will not move to the next line.
-	system.out.println("Hello World!"); //Will move to the next line.
+	system.out.print("Hello World!"); // Will not move to the next line.
+	system.out.println("Hello World!"); // Will move to the next line.
 	
 	// There is another type of output method, which is similar to C language.
 	int a = 23;
@@ -36,7 +36,7 @@ title: "Java Cheatsheet"
 	import java.util.Scanner
 	Scanner s = new Scanner(System.in);
 	
-	// input for a integer.
+	// input for an integer.
 	int a = s.nextInt();
 	
 	// input for a string.
@@ -179,13 +179,13 @@ int[] number = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
 ```java
 // datatype array_name[][] = new datatype[row][column];
 int number[][] = new int[10][10];            // An Integer Array of dimensions 10 x 10
-String characters[][] = new String[10][10];  // An String Array of dimensions 10 x 10
+String characters[][] = new String[10][10];  // A String Array of dimensions 10 x 10
 ```
 
 ### Traversal
 ```java
 // Traditional for loop
-for(int i=0;i<number.length;i++) //length gives the size of the array
+for(int i=0;i<number.length;i++) // .length gives the size of the array
 { 
 System.out.println(number[i]);
 }
@@ -200,16 +200,16 @@ System.out.println(i);
 
 
 ## Strings
-#### "In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string." : Javatpoint
+#### "In Java, a string is basically an object that represents sequence of char values. An array of characters works same as Java string." : Javatpoint
 
 ### Ways to Initialise a string
 
 ### Using String Literal
 ```java
 String s = "INPUT";
-//Using the new keyword
+// Using the new keyword
 String s = new String("INPUT");
-//From a given character array
+// From a given character array
 char ch[]={'I','N','P','U','T'};    
 String s=new String(ch);   
 ```
@@ -218,8 +218,8 @@ The above mentioned methods creates a string that are immutable, to make strings
 ### Using StringBuffer
 ##### "The string represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences." : GFG
 ```java
-//Create a StringBuffer Object, i.e., empty string buffer
-//By default it can take up a sequence of 16 characters
+// Create a StringBuffer Object, i.e., empty string buffer
+// By default it can take up to a sequence of 16 characters
 StringBuffer sb = new StringBuffer();  
 // Can be initialised with a string
 StringBuffer sb2 = new StringBuffer("Input");
@@ -231,31 +231,31 @@ sb.append("Input");  //Now the empty string has been modified to "Input"
 ##### 2) insert(beginIndex, endIndex, string_data) method : Inserts a given string literal to the specified positions
 ```java
 sb.insert(2," A String");
-//Now String is "In A Stringput"
+// Now the string is "In A Stringput"
 ```
 
 ##### 3) replace(beginIndex, endIndex, string_data) method : Use to replace a sequence of characters from the specified beginIndex and endIndex-1, with another sequence
 ```java
 sb.replace(11,14," Literal");  
-//Now String is "In A String Literal"
+// Now the string is "In A String Literal"
 ```
 
 ##### 4) delete(beginIndex, endIndex) method : Use to delete a sequence of characters from the specified beginIndex and endIndex-1
 ```java
 sb.delete(11,19);
-//Now the string is "In A String"
+// Now the string is "In A String"
 ```
 ##### 5) reverse() method : Reverses the current string
 ```java
 sb.reverse();
-// Now the String is "gnirtS A nI"
+// Now the string is "gnirtS A nI"
 ```
 
 ### Using StringBuilder
 ##### Very similiar to the StringBuffer class but is not Synchronous and neither Thread-Safe. But high in performance, i.e., speedy
 ```java
 //Create a StringBuilder Object, i.e., StringBuilder with no characters
-//By default it can take up a sequence of 16 characters
+//By default it can take up to a sequence of 16 characters
 StringBuilder sb = new StringBuilder(); 
 StringBuilder sb2 = new StringBuffer("Input");
 ```
