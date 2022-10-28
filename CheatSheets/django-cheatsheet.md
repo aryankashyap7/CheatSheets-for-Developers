@@ -30,7 +30,10 @@ Django is a high-level Python web framework that encourages rapid development an
 | python manage.py dbshell                           | To run SQL queries                                                                                                                                       |
 | python manage.py sendtestemail [email [email ...]] | To send a test email (to confirm email sending through Django is working) to the recipient(s) specified                                                  |
 | python manage.py inspectdb [table [table ...]]     | To introspect the database tables in the database pointed-to by the NAME setting and outputs a Django model module (a models.py file) to standard output |
-| python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |                                                                                                                                                     
+| python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |
+| python manage.py optimizemigration app_label migration_name                           | To Optimize the operations for the named migration and overrides the existing file.    
+| python manage.py diffsettings                          | It displays differences between the current settings file and Django’s default settings (or another settings file specified by --default).
+| python manage.py dumpdata [app_label[.ModelName] [app_label[.ModelName] ...]]                          | It outputs to standard output all data in the database associated with the named application(s).   
 **[🔼Back to Top](#table-of-contents)**
 
 
