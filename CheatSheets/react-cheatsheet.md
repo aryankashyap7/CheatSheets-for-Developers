@@ -8,16 +8,17 @@
   - [React Components](#react-components)
   - [React Props](#react-props)
   - [React Children Props](#react-children-props)
-  - [React Conditional](#react-conditional)
-  - [React List](#react-list)
+  - [React Conditionals](#react-conditionals)
+  - [React Lists](#react-lists)
   - [React Context](#react-context)
   - [React Hooks](#react-hooks)
-  - [React UseState](#react-usestate)
-  - [React UseEffect](#react-useeffect)
+  - [React UseState Hooks](#react-usestate-hooks)
+  - [React UseEffect Hooks](#react-useeffect-hooks)
   - [React Useref](#react-useref)
   - [React UseContext](#react-usecontext)
   - [React UseCallback](#react-usecallback)
   - [React UseMemo](#react-usememo)
+  - [React Router](#react-router)
 
 ## Create React App
 
@@ -33,7 +34,7 @@ npm start
 
 ## React Components
 
-```
+```js
 function App() {
   return <div>Hello World</div>;
 }
@@ -45,7 +46,7 @@ export default App;
 
 ## React Props
 
-```
+```js
 function App() {
   return <User name="Dev" />
 }
@@ -59,7 +60,7 @@ function User(props) {
 
 ## React Children Props
 
-```
+```js
 function App() {
   return (
    <User>
@@ -77,7 +78,7 @@ function User({ children }) {
 
 ## React Conditionals
 
-```
+```js
 function App() {
   const isAuthUser = useAuth();
 
@@ -97,7 +98,7 @@ function App() {
 
 Lists of React components can be output using the .map() function.
 
-```
+```js
 function SoccerPlayers() {
   const players = ["Messi", "Ronaldo", "Laspada"];
 
@@ -117,7 +118,7 @@ function SoccerPlayers() {
 
 React context allows us to pass data to our component tree without using props.
 
-```
+```js
 function App() {
   return (
     <Body name="John Doe" />
@@ -140,13 +141,14 @@ function Greeting({ name }) {
 ## React Hooks
 
 React hooks were introduced in React version 16.8 as a way to easily add reusable, stateful logic to React function components.
+
 **[🔼Back to Top](#react-js-for-developers)**
 
-## React useState Hook
+## React useState Hooks
 
 it allows us to use stateful values in function components.
 
-```
+```js
 import { useState } from 'react';
 
 function MyComponent() {
@@ -156,11 +158,11 @@ function MyComponent() {
 
 **[🔼Back to Top](#react-js-for-developers)**
 
-## React useEffect Hook
+## React useEffect Hooks
 
 If we want to interact with the “outside world”, such as using an API, we use the useEffect hook.
 
-```
+```js
 import { useEffect } from 'react';
 
 function MyComponent() {
@@ -176,7 +178,7 @@ function MyComponent() {
 
 It allows us to get direct access to a JSX element.
 
-```
+```js
 import { useRef } from 'react';
 
 function MyComponent() {
@@ -194,7 +196,7 @@ It provides an easier way of consuming context than using the standard Context.C
 
 The syntax involves passing the entire Context object that we want to consume into useContext. The returned value is the value passed down to Context.
 
-```
+```js
 import { createContext, useContext } from 'react';
 
 const NameContext = createContext('');
@@ -224,9 +226,10 @@ function Greeting() {
 
 ## React useCallback
 
-It prevents functions from being recreated every time our component re-renders, which can hurt the performance of our app.
+React useCallback is a hook that is used to memoize functions. It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
 
-```
+
+```js
 function App() {
   const [player, setPlayer] = React.useState("");
   const [players, setPlayers] = React.useState(["Messi", "Ronaldo", "Laspada"]);
@@ -267,9 +270,10 @@ function PlayerList({ players, handleRemovePlayer }) {
 
 ## React useMemo
 
-It allows us to ‘memoize’ a given operation.
+React useMemo is a hook that allows us to memoize the result of a function call.
 
-```
+
+```js
 import * as React from 'react'
 import {getMDXComponent} from 'mdx-bundler/client'
 
@@ -288,6 +292,81 @@ function Post({code, frontmatter}) {
     </>
   )
 }
+```
+
+**[🔼Back to Top](#react-router)**
+
+## React Router
+
+React Router is a collection of navigational components that compose declaratively with your application. React Router keeps your UI in sync with the URL.
+
+```js
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+export default function BasicExample() {
+  return (
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div>
+      <h2>Contact</h2>
+    </div>
+  );
+}
+
 ```
 
 **[🔼Back to Top](#react-js-for-developers)**
