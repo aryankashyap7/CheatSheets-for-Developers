@@ -188,6 +188,30 @@ function MyComponent() {
 }
 ```
 
+useRef is a hook that lets you reference a value that’s not needed for rendering.
+
+In this example when we click on the button, we focus and refer to the input.
+
+```
+import { useRef } from 'react';
+
+function TextInputWithFocusButton() {
+  const inputElement = useRef(null);
+
+  const onButtonClick = () => {
+    inputElement.current.focus();
+  };
+
+  return (
+    <>
+      <input ref={inputElement} type="text" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
+```
+
+
 **[🔼Back to Top](#react-js-for-developers)**
 
 ## React useContext
