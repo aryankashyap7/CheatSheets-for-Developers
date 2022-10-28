@@ -1,59 +1,73 @@
 ## Table of Contents
 
-* [What is React Native?](#What-is-React-Native?)
-* [Features](#Features)
-* [Difference between React and React Native](#Difference-between-React-and-React-Native)
-* [Installing Expo CLI](#Installing-Expo-CLI)
-* [Creating a React Native Project](#Creating-a-React-Native-Project)
-* [Function Components](Function-Components)
-* [Class Components](Class-Components)
-* [Props](#Props)
-* [State](#State)
-* [ListView](#ListView)
-* [Touchable components](#Touchable-components)
-* [FlatList components](#FlatList-components)
-* [Routing with React Navigation in React Native](#Routing-with-React-Navigation-in-React-Native)
+- [What is React Native?](#what-is-react-native)
+- [Features](#features)
+- [Difference between React and React Native](#difference-between-react-and-react-native)
+- [Installing Expo CLI](#installing-expo-cli)
+- [Creating a React Native Project](#creating-a-react-native-project)
+- [Function Components](Function-Components)
+- [Class Components](class-components)
+- [Props](#props)
+- [State](#state)
+- [ListView](#list-view)
+- [Touchable components](#touchable-components)
+- [FlatList components](#flat-list-components)
+- [Routing with React Navigation in React Native](#routing-with-react-navigation-in-react-native)
 
-### What is React Native?
+### What is React Native
+
 React Native is an SDK for building native mobile apps using JavaScript. It's based on React, a popular front-end library for building user interfaces using composable components created by Facebook.
 Unlike the popular hybrid frameworks such as Ionic, React Native doesn't use a webview which means your mobile application is not a web application that has access to native device features like the case of Ionic but a native app that uses native components in both Android and iOS.
 React Native is essentially a bridge that allows your JavaScript app to access native device features and UI components.
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### Features
+
 Following are the features of React Native −
+
 1. React − This is a Framework for building web and mobile apps using JavaScript.
 2. Native − You can use native components controlled by JavaScript.
 3. Platforms − React Native supports IOS and Android platform.
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### Difference between React and React Native
-React | React Native
------ | ------------
-It is used for developing web applications.	| It is used for developing mobile applications.
-It uses React-router for navigating web pages. |	It has a built-in navigator library for navigating mobile applications.
-It uses HTML tags. |	It does not use HTML tags.
-It provides high security. | It provides low security in comparison to ReactJS.
-In this, the virtual DOM renders the browser code. |	In this, Native uses its API to render code for mobile applications.
 
+| React                                              | React Native                                                            |
+| -------------------------------------------------- | ----------------------------------------------------------------------- |
+| It is used for developing web applications.        | It is used for developing mobile applications.                          |
+| It uses React-router for navigating web pages.     | It has a built-in navigator library for navigating mobile applications. |
+| It uses HTML tags.                                 | It does not use HTML tags.                                              |
+| It provides high security.                         | It provides low security in comparison to ReactJS.                      |
+| In this, the virtual DOM renders the browser code. | In this, Native uses its API to render code for mobile applications.    |
 
+**[🔼Back to Top](#table-of-contents)**
 
 ### Installing Expo CLI
+
 Expo CLI is a command-line utility that allows to use Expo tools.
 
-``` 
-npm install -g expo-cli 
+```
+npm install -g expo-cli
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### Creating a React Native Project
+
 Run the following command to create a new React Native project called "AwesomeProject":
 
-``` 
+```
 npx create-expo-app AwesomeProject
 cd AwesomeProject
 npm start # you can also use: npx expo start
 
 ```
 
-### Function Components 
+**[🔼Back to Top](#table-of-contents)**
+
+### Function Components
 
 ```
 import React from 'react';
@@ -73,6 +87,8 @@ const HelloWorldApp = () => {
 
 export default HelloWorldApp;
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### Class Components
 
@@ -96,6 +112,8 @@ class HelloWorldApp extends Component {
 
 export default HelloWorldApp;
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### Props
 
@@ -132,6 +150,8 @@ const LotsOfGreetings = () => {
 export default LotsOfGreetings;
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### State
 
 Unlike props that are read-only and should not be modified, the state allows React components to change their output over time in response to user actions, network responses and anything else.
@@ -164,31 +184,36 @@ const styles = StyleSheet.create({
 });
 ```
 
-### ListView
+**[🔼Back to Top](#table-of-contents)**
+
+### List View
 
 React Native ListView is a view component that contains the list of items and displays it in a vertically scrollable list.
 
 ```
-export default class MyListComponent extends Component {  
-constructor() {  
-super();  
-const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});  
-this.state = {  
-dataSource: ds.cloneWithRows(['Android','iOS', 'Java','Php', 'Hadoop', 'Sap', 'Python','Ajax', 'C++']), 
+export default class MyListComponent extends Component {
+constructor() {
+super();
+const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+this.state = {
+dataSource: ds.cloneWithRows(['Android','iOS', 'Java','Php', 'Hadoop', 'Sap', 'Python','Ajax', 'C++']),
 };
-}  
-render() {  
-return ( 
-<ListView 
-dataSource={this.state.dataSource}  
-renderRow={  
-(rowData) =>  
-<Text style={{fontSize: 30}}>{rowData}</Text>} />  
-); }  
+}
+render() {
+return (
+<ListView
+dataSource={this.state.dataSource}
+renderRow={
+(rowData) =>
+<Text style={{fontSize: 30}}>{rowData}</Text>} />
+); }
 }
 ```
 
+**[🔼Back to Top](#table-of-contents)**
+
 ### Touchable components
+
 Tapping gestures can be captured by Touchable components and can display feedback when a gesture is recognized.
 
 ```
@@ -213,52 +238,56 @@ return (
 
 ```
 
-### FlatList components
+**[🔼Back to Top](#table-of-contents)**
+
+### Flat List components
 
 The FlatList component displays similarly structured data in a scrollable list. It works well for large lists of data where the number of list items might change over time.
 
 ```
-import React, { Component } from 'react';  
-import { AppRegistry, FlatList,  
-   StyleSheet, Text, View,Alert } from 'react-native';  
+import React, { Component } from 'react';
+import { AppRegistry, FlatList,
+   StyleSheet, Text, View,Alert } from 'react-native';
 
-export default class FlatListBasics extends Component {  
- 
-   renderSeparator = () => {  
-       return (  
-           <View  
-               style={{  
-                   height: 1,  
-                   width: "100%",  
-                   backgroundColor: "#000",  
-               }}  
-           />  
-       );  
-   };  
-   //handling onPress action  
-   getListViewItem = (item) => {  
-       Alert.alert(item.key);  
-   }  
- 
-   render() {  
-       return (  
-           <View style={styles.container}>  
-               <FlatList  
-                   data={[  
-                       {key: 'Android'},{key: 'iOS'}, {key: 'Java'},{key: 'Swift'},  
-                       {key: 'Php'},{key: 'Hadoop'},{key: 'Sap'},  
-                   ]}  
-                   renderItem={({item}) =>  
-                       <Text style={styles.item}  
-                             onPress={this.getListViewItem.bind(this, item)}>{item.key}</Text>}  
-                   ItemSeparatorComponent={this.renderSeparator}  
-               />  
-           </View>  
-       );  
-   }  
-}  
-AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics); 
+export default class FlatListBasics extends Component {
+
+   renderSeparator = () => {
+       return (
+           <View
+               style={{
+                   height: 1,
+                   width: "100%",
+                   backgroundColor: "#000",
+               }}
+           />
+       );
+   };
+   //handling onPress action
+   getListViewItem = (item) => {
+       Alert.alert(item.key);
+   }
+
+   render() {
+       return (
+           <View style={styles.container}>
+               <FlatList
+                   data={[
+                       {key: 'Android'},{key: 'iOS'}, {key: 'Java'},{key: 'Swift'},
+                       {key: 'Php'},{key: 'Hadoop'},{key: 'Sap'},
+                   ]}
+                   renderItem={({item}) =>
+                       <Text style={styles.item}
+                             onPress={this.getListViewItem.bind(this, item)}>{item.key}</Text>}
+                   ItemSeparatorComponent={this.renderSeparator}
+               />
+           </View>
+       );
+   }
+}
+AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics);
 ```
+
+**[🔼Back to Top](#table-of-contents)**
 
 ### Routing with React Navigation in React Native
 
@@ -289,3 +318,4 @@ const MyStack = () => {
 };
 ```
 
+**[🔼Back to Top](#table-of-contents)**
