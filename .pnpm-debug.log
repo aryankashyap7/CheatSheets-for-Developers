@@ -1,0 +1,19 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "errno": 1,
+    "code": "ELIFECYCLE",
+    "pkgid": "@example/basics@0.0.1",
+    "stage": "dev",
+    "script": "astro dev",
+    "pkgname": "@example/basics",
+    "err": {
+      "name": "pnpm",
+      "message": "@example/basics@0.0.1 dev: `astro dev`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "pnpm: @example/basics@0.0.1 dev: `astro dev`\nExit status 1\n    at EventEmitter.<anonymous> (C:\\Users\\dhrav\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:108415:20)\n    at EventEmitter.emit (node:events:520:28)\n    at ChildProcess.<anonymous> (C:\\Users\\dhrav\\AppData\\Roaming\\npm\\node_modules\\pnpm\\dist\\pnpm.cjs:94981:18)\n    at ChildProcess.emit (node:events:520:28)\n    at maybeClose (node:internal/child_process:1092:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)"
+    }
+  }
+}
