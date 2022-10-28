@@ -60,3 +60,30 @@ The AWS Console is a web interface that you log into to manage your AWS services
 	```
 	aws s3 rb s3://(bucket-name) --force
 	```
+
+#### Elastic Beanstalk CLI commands
+
+ - create new application configuration
+ 	```
+	eb init
+	```
+ - create new environment
+	```
+	eb create
+	```
+ - check environment status
+	```
+	eb status
+	```
+ - see list of events
+	```
+	eb events
+	```
+ - deploy the new update
+	```
+	eb deploy
+	```
+ - terminate the environment
+	```
+	eb terminate
+	```
