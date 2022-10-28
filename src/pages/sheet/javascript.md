@@ -106,7 +106,7 @@ newArray.unshift(1); //To the beginning of array
 
 ```
 newArray.pop(); //Last element of array
-newArray.shift(); //First element of array
+newArray.shift(); //First element of array and return the value of removed element
 ```
 
 ### 2.4. Loop through Array
