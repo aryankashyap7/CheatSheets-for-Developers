@@ -5,6 +5,10 @@
 - [Data Conversion](#data-conversion)
 - [Operators](#operators)
 - [Statements](#statements)
+- [Comments](#comments)
+- [Constants](#constants)
+- [Escape Sequences](#escape-sequences)
+- [Type Casting](#type-casting)
 - [Arrays](#arrays)
 - [Strings](#strings)
 - [String Methods](#string-methods)
@@ -173,6 +177,92 @@ try {
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+## Comments
+A comment is the code that is not executed by the compiler, and the programmer uses it to keep track of the code.
+### Single Line Comment
+```java
+// This is a single line command
+```
+
+### Multi-Line Comment
+```java
+/*
+This is a multi line comment
+we can add multiple lines here
+x=5
+y=c
+*/
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Constants
+Constants are like variables, except that their value never changes during program execution.
+Constants are declared using static and final keywords
+```java
+static final float pi = 3.1415;
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Escape Sequences
+
+### Tab
+
+It gives a tab space
+
+```
+\t
+```
+
+### Backslash
+
+It adds a backslash
+
+```
+\\
+```
+
+### Single quote
+
+It adds a single quotation mark
+
+```
+\'
+```
+
+### Question mark
+
+It adds a question mark
+
+`\?`
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Type Casting
+
+Type Casting is a process of converting one data type into another
+
+### Widening Type Casting (Automatically)
+
+It means converting a lower data type into a higher
+
+```java
+int x = 49;
+double new_x = x;   // Outputs 49.0
+```
+
+### Narrowing Type Casting  (Manually)
+
+It means converting a higher data type into a lower
+
+```java
+double x = 99.2  
+int new_x = (int) x;  // Outputs 99
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
 ## Arrays
 
 ### Initialisation
