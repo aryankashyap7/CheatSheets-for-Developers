@@ -187,13 +187,13 @@ int[] number = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
 ```java
 // datatype array_name[][] = new datatype[row][column];
 int number[][] = new int[10][10];            // An Integer Array of dimensions 10 x 10
-String characters[][] = new String[10][10];  // An String Array of dimensions 10 x 10
+String characters[][] = new String[10][10];  // A String Array of dimensions 10 x 10
 ```
 
 ### Traversal
 ```java
 // Traditional for loop
-for(int i=0;i<number.length;i++) //length gives the size of the array
+for(int i=0;i<number.length;i++) // .length gives the size of the array
 { 
 System.out.println(number[i]);
 }
@@ -208,7 +208,7 @@ System.out.println(i);
 
 
 ## Strings
-#### "In Java, string is basically an object that represents sequence of char values. An array of characters works same as Java string." : Javatpoint
+#### "In Java, a string is basically an object that represents sequence of char values. An array of characters works same as Java string." : Javatpoint
 
 ### Ways to Initialise a string
 
