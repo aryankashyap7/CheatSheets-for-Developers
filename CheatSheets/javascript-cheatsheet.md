@@ -90,7 +90,7 @@ const newArray = [];
 newArray.push(1);
 ```
 
-### 2.3. Remove from Array
+### 2.3. Remove Last Element from Array
 
 ```
 newArray.pop();
