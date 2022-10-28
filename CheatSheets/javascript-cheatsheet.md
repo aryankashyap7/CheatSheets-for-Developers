@@ -21,6 +21,7 @@
     - [4.2. Call Function](#42-call-function)
     - [4.3. Call Function with Parameters](#43-call-function-with-parameters)
     - [4.4. Call Function with Parameters and Return Value](#44-call-function-with-parameters-and-return-value)
+    - [4.5. bind()](#45-bind)
   - [5. Classes](#5-classes)
     - [5.1. New Class](#51-new-class)
     - [5.2. New Class with Constructor](#52-new-class-with-constructor)
@@ -197,6 +198,25 @@ function newFunctionWithParameter(parameter) {
 function newFunctionWithParameterAndReturnValue(parameter) {
   return parameter;
 }
+```
+
+### 4.5. bind() 
+With the bind() method, an object can borrow a method from another object.
+```
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
 ```
 
 **[🔼Back to Top](#table-of-contents)**
