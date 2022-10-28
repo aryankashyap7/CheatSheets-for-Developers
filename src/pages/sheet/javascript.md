@@ -23,9 +23,16 @@ title: "Javascript Cheatsheet"
     - [3.6. Loop through Object in Reverse](#36-loop-through-object-in-reverse)
   - [4. Functions](#4-functions)
     - [4.1. New Function](#41-new-function)
+<<<<<<< HEAD:src/pages/sheet/javascript.md
     - [4.2 Call Function](#42-call-function)
     - [4.3. Call Function with Parameter](#43-call-function-with-parameter)
     - [4.4. Call Function with Parameter and Return Value](#44-call-function-with-parameter-and-return-value)
+=======
+    - [4.2. Call Function](#42-call-function)
+    - [4.3. Call Function with Parameters](#43-call-function-with-parameters)
+    - [4.4. Call Function with Parameters and Return Value](#44-call-function-with-parameters-and-return-value)
+    - [4.5. bind()](#45-bind)
+>>>>>>> 5fd57f53530263c48e3a8f99fb20ec28376199c7:CheatSheets/javascript-cheatsheet.md
   - [5. Classes](#5-classes)
     - [5.1. New Class](#51-new-class)
     - [5.2. New Class with Constructor](#52-new-class-with-constructor)
@@ -94,7 +101,7 @@ const newArray = [];
 newArray.push(1);
 ```
 
-### 2.3. Remove from Array
+### 2.3. Remove Last Element from Array
 
 ```
 newArray.pop();
@@ -202,6 +209,25 @@ function newFunctionWithParameter(parameter) {
 function newFunctionWithParameterAndReturnValue(parameter) {
   return parameter;
 }
+```
+
+### 4.5. bind() 
+With the bind() method, an object can borrow a method from another object.
+```
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const member = {
+  firstName:"Hege",
+  lastName: "Nilsen",
+}
+
+let fullName = person.fullName.bind(member);
 ```
 
 **[🔼Back to Top](#table-of-contents)**

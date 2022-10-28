@@ -200,3 +200,5 @@ Assembly language is a low-level programming language for a computer, or other p
 | JZ 0x1234            | Jumps to 0x1234 if the zero flag is set     |
 | JNZ 0x1234           | Jumps to 0x1234 if the zero flag is not set |
 | JA 0x1234            | Jumps to 0x1234 if the carry flag is set    |
+
+**[🔼Back to Top](#table-of-contents)**

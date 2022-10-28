@@ -49,6 +49,7 @@ title: "Python Cheatsheet"
   - [Atexit](#atexit)
   - [Traceback](#traceback)
   - [Sys](#sys)
+  - [IO](#io)
   - [Time](#time)
   - [Datetime](#datetime-1)
   - [Calendar](#calendar)
@@ -151,6 +152,10 @@ title: "Python Cheatsheet"
       - [Confirmed covid cases, Dow Jones, Gold, and Bitcoin price:](#confirmed-covid-cases-dow-jones-gold-and-bitcoin-price)
   - [PySimpleGUI](#pysimplegui)
   - [Matplotlib](#matplotlib)
+  - [Tkinter](#tkinter)
+    - [Essential Parts:](#essential-parts)
+    - [Widget Placement:](#widget-placement)
+    - [Tkinter Widgets:](#tkinter-widgets)
   - [Appendix](#appendix)
     - [Cython](#cython)
       - [Definitions:](#definitions)
@@ -336,9 +341,14 @@ Point(x=1, y=2)
 
 ## Enumerate
 
+Enumerates is a built-in function that returns an enumerate object. enumerate() takes two parameters: iterable and start (default is 0).
+
 ```python
-for i, el in enumerate(<collection> [, i_start]):
-    ...
+>>> seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+>>> list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+>>> list(enumerate(seasons, start=1))
+[(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
 **[🔼Back to Top](#table-of-contents)**
@@ -3899,6 +3909,12 @@ sys.<function>(<object>)
 
 **[🔼Back to Top](#table-of-contents)**
 
+## IO
+
+The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These are generic categories, and various backing stores can be used for each of them.
+
+**[🔼Back to Top](#table-of-contents)**
+
 ## Time
 
 **A module that provides various time-related functions.**
@@ -4505,6 +4521,7 @@ Processing: 100%|████████████████████| 3
 # $ pip3 install matplotlib
 import matplotlib.pyplot as plt
 plt.plot(<x_data>, <y_data> [, label=<str>])   # Or: plt.plot(<y_data>)
+plt.axis([xmin, xmax, ymin, ymax])             # Convenience method to get or set some axis properties.
 plt.legend()                                   # Adds a legend.
 plt.savefig(<path>)                            # Saves the figure.
 plt.show()                                     # Displays the figure.
@@ -5748,6 +5765,72 @@ plt.pie(data, labels=labels, explode=(x, x, ... x))
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+
+## Tkinter
+
+### Essential Parts:
+
+1) **Header:**
+```python
+from Tkinter import *
+```
+2) **Making the window:**
+```python
+root = Tk()
+...
+...
+...
+root.mainloop()
+```
+
+### Widget Placement:
+
+1) **Pack:** 
+    This fits the widget into the window as a rectangular block, usually preffered for small windows.
+    ```python
+    WIDGET.pack()
+    ```
+
+2) **Grid:**
+    This fits the widget inside the table which we created.
+    ```python
+    WIDGET.grid(...)
+    ```
+
+3) **Place:**
+    This puts the widget to a specific coordinate in the window.
+    ```python
+    WIDGET.place(...)
+    ```
+
+### Tkinter Widgets:
+
+1) **Text Box:**
+    ```python
+    textBox = Label(root, text="ENTER TEXT HERE")
+    ```
+2) **Buttons:**
+    ```python
+    def cmd()
+        do_stuff
+    
+    button = Button(root, text="ENTER TEXT HERE", command=cmd)
+    ```
+3) **Canvas:**
+    ```python
+    canvas = Canvas(root, ...)
+    ```
+4) **Entry:**
+    ```python
+    entry = Entry(root, ...)
+    ```
+5 **Text:**
+    ```python
+    text = Text(root, ...)
+    ```
+
+**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Appendix
