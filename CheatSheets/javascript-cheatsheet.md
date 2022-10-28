@@ -21,7 +21,7 @@
     - [4.2. Call Function](#42-call-function)
     - [4.3. Call Function with Parameters](#43-call-function-with-parameters)
     - [4.4. Call Function with Parameters and Return Value](#44-call-function-with-parameters-and-return-value)
-    - [4.5. bind()](#45-bind())
+    - [4.5. bind()](#45-bind)
   - [5. Classes](#5-classes)
     - [5.1. New Class](#51-new-class)
     - [5.2. New Class with Constructor](#52-new-class-with-constructor)
