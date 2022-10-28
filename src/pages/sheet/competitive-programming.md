@@ -6,23 +6,25 @@ title: "Competitive Programming Cheatsheet"
 ## Table of Contents
 
 - [Competitive programming cheat sheet](#competitive-programming-cheat-sheet)
-  - [standard-template](#standard-template)
-    - [header-files](#header-files)
-    - [macros](#macros)
-    - [fast-io](#fast-io)
-  - [basic-algorithms](#basic-algorithms)
-    - [binary-search](#binary-search)
-    - [euclidean-gcd](#euclidean-gcd)
-    - [binary-exponentiation](#binary-exponentiation)
-    - [modular-inverse](#modular-inverse)
-  - [graphs](#graphs)
-    - [bfs](#bfs)
-    - [disjoint-set-union](#disjoint-set-union)
-  - [Geometry](#geometry)
-    - [linear-operations](#linear-operations)
-    - [dot-product](#dot-product)
-    - [cross-product](#cross-product)
-    - [intersection](#intersection)
+	- [Standard Template](#standard-template)
+		- [Header Files](#header-files)
+		- [Macros](#macros)
+		- [Fast IO](#fast-io)
+	- [Basic Algorithms](#basic-algorithms)
+		- [Binary Search](#binary-search)
+		- [Euclidean GCD](#euclidean-gcd)
+		- [Binary Exponentiation](#binary-exponentiation)
+		- [Modular Inverse](#modular-inverse)
+	- [Graphs](graphs)
+		- [BFS](#bfs)
+		- [Disjoint Set Union](#disjoint-set-union)
+	- [Geometry](#geometry)
+		- [Linear Operations](#linear-operations)
+		- [Dot Product](#dot-product)
+		- [Cross Product](#cross-product)
+		- [Intersection Point/Plane](#intersection)
+    - [String](#string)
+		- [Z-Algorithm](#z-algorithm)
 	
 # Competitive programming cheat sheet
 
@@ -362,5 +364,33 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
                    triple(x, y, d)) / triple(n1, n2, n3);
 }
 ```
+
+**[🔼Back to Top](#table-of-contents)**
+
+
+## String
+
+### z-algorithm
+
+**Output**: *z[i]* := length of largest string from index *i* which is a prefix of *s*.
+
+**Time complexity**: O(*n*)
+
+```cpp
+vector<int> z_function(string s) {
+	int n = (int) s.length();
+	vector<int> z(n);
+	for(int i = 1, l = 0, r = 0; i < n; ++i) {
+		if(i <= r)
+			z[i] = min(r - i + 1, z[i - l]);
+		while (i + z[i] < n && s[z[i]] == s[i + z[i]])
+			++z[i];
+		if(i + z[i] - 1 > r)
+			l = i, r = i + z[i] - 1;
+	}
+	return z;
+}
+```
+Related problem: [Codeforces 126B - Password](https://codeforces.com/contest/126/problem/B)
 
 **[🔼Back to Top](#table-of-contents)**
