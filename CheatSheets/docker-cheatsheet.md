@@ -5,6 +5,7 @@
   - [Manage Containers](#manage-containers)
   - [Manage Images](#manage-images)
   - [Info and Stats](#info-and-stats)
+  - [Docker Compose](#docker-compose)
 
 # Docker CheatSheet for Developers
 
@@ -72,5 +73,18 @@
 | `docker inspect NAME`   | Get detailed info about an object      |
 | `docker diff CONTAINER` | Show all modified files in a container |
 | `docker port CONTAINER` | Show mapped ports of a container       |
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Docker compose
+
+| Command                          | Description                                       |
+| -------------------------------- | ------------------------------------------------- |
+| `docker compose build`           | Build all services from a docker-compose.yml file |
+| `docker compose up`              | Start all services                                |
+| `docker compose up NAME`         | Start named service and all dependencies          |
+| `docker compose run NAME COMMAND`| Run COMMAND in the service NAME                   |
+| `docker compose down`            | Stop all services                                 |
+| `docker compose logs -f`         | see all logs for the services, following them     |
 
 **[🔼Back to Top](#table-of-contents)**
