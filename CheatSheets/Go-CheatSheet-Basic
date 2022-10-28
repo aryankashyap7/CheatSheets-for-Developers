@@ -1,0 +1,42 @@
+#Strings
+str := "Hello"
+str := "Multiline String"     //Strings are of type string.
+
+#Number
+//Typical Types
+num := 3             //int
+num := 3.            //float64
+num := 3=4i          //complex128
+num := byte('a')     //byte(alias for unit8)
+///Other Types
+var u unit = 7           //unit(unsigned)
+var p float32 = 22.7     3-bit float
+
+#Arrays
+// var numbers [5]int
+numbers := [...]int{0, 0, 0, 0, 0}    //Arrays have a fixed size.
+
+#Slices
+slice := []int{2, 3, 4}
+slice := []byte("Hello")     //Slices have a dynamic size, unlike arrays.
+
+#Pointers
+func main () {
+  b := *getPointer()
+  fmt.Println("Value is", b)
+}
+ 
+func getPointer () (myPointer *int) {
+  a := 234
+  return &a
+}
+ 
+a := new(int)
+*a = 234
+
+#Type conversions
+i := 2
+f := float64(i)
+u := uint(i)
+
+//feel free to correct if something worng
