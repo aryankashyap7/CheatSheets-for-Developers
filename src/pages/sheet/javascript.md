@@ -98,13 +98,15 @@ const newArray = [];
 ### 2.2. Add to Array
 
 ```
-newArray.push(1);
+newArray.push(1); //To the end of array
+newArray.unshift(1); //To the beginning of array
 ```
 
-### 2.3. Remove Last Element from Array
+### 2.3. Remove from Array
 
 ```
-newArray.pop();
+newArray.pop(); //Last element of array
+newArray.shift(); //First element of array
 ```
 
 ### 2.4. Loop through Array
