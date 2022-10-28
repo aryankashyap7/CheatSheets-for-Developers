@@ -7,6 +7,7 @@
 		- [Fast IO](#fast-io)
 	- [Basic Algorithms](#basic-algorithms)
 		- [Binary Search](#binary-search)
+		- [Linear Search](#linear-search)
 		- [Euclidean GCD](#euclidean-gcd)
 		- [Binary Exponentiation](#binary-exponentiation)
 		- [Modular Inverse](#modular-inverse)
@@ -67,6 +68,23 @@ int main()
 {
     fast();
     return 0;
+}
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## basic-algorithms
+
+### linear-search
+
+```cpp
+int search(int arr[], int N, int x)
+{
+    int i;
+    for (i = 0; i < N; i++)
+        if (arr[i] == x)
+            return i;
+    return -1;
 }
 ```
 
