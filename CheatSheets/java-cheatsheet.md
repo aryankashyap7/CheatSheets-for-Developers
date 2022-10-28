@@ -193,14 +193,12 @@ String characters[][] = new String[10][10];  // An String Array of dimensions 10
 ### Traversal
 ```java
 // Traditional for loop
-for(int i=0;i<number.length;i++) //length gives the size of the array
-{ 
-System.out.println(number[i]);
+for (int i = 0; i < number.length; i++) { //length gives the size of the array 
+­ System.out.println(number[i]);
 }
 // Advanced for loop
-for(int i:number)  
-{
-System.out.println(i);  
+for (int i: number) {
+­ System.out.println(i);
 }
 ```
 
