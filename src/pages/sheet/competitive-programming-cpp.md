@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CheatSheet.astro
-title: "Competitive Programming Cheatsheet"
+title: "Competitive Programming Cpp Cheatsheet"
 ---
 
 ## Synopsis
