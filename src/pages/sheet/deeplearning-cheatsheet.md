@@ -1,37 +1,7 @@
-# Deep Learning CheatSheet
-
-## Table of Contents
-
-- [Deep Learning CheatSheet](#deep-learning-cheatsheet)
-  - [Synopsis](#synopsis)
-  - [Neural Networks](#neural-networks)
-    - [Architecture](#architecture)
-    - [Activation Functions](#activation-functions)
-    - [Loss Functions](#loss-functions)
-    - [Optimizers](#optimizers)
-    - [Regularization](#regularization)
-    - [Backpropagation](#backpropagation)
-    - [Dropout](#dropout)
-- [Convolutional Neural Networks](#convolutional-neural-networks)
-  - [Convolution](#convolution)
-  - [Pooling](#pooling)
-  - [Padding](#padding)
-  - [Stride](#stride)
-  - [Filters/Kernels](#filterskernels)
-  - [1x1 Convolution](#1x1-convolution)
-  - [3x3 Convolution](#3x3-convolution)
-  - [Feature Maps](#feature-maps)
-  - [Receptive Field](#receptive-field)
-- [Recurrent Neural Networks](#recurrent-neural-networks)
-  - [Vanishing Gradient](#vanishing-gradient)
-  - [Exploding Gradient](#exploding-gradient)
-  - [Long Short Term Memory](#long-short-term-memory)
-  - [Gated Recurrent Unit](#gated-recurrent-unit)
-  - [Generative Adversarial Networks](#generative-adversarial-networks)
-- [Reinforcement Learning](#reinforcement-learning)
-  - [Markov Decision Process](#markov-decision-process)
-  - [Q-Learning](#q-learning)
-  - [Policy Gradient](#policy-gradient)
+---
+layout: ../../layouts/BlogLayout.astro
+title: "Deep Learning Cheatsheet"
+---
 
 ## Synopsis
 

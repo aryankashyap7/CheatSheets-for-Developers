@@ -1,18 +1,7 @@
-## Table of Contents
-
-- [What is React Native?](#what-is-react-native)
-- [Features](#features)
-- [Difference between React and React Native](#difference-between-react-and-react-native)
-- [Installing Expo CLI](#installing-expo-cli)
-- [Creating a React Native Project](#creating-a-react-native-project)
-- [Function Components](Function-Components)
-- [Class Components](class-components)
-- [Props](#props)
-- [State](#state)
-- [ListView](#list-view)
-- [Touchable components](#touchable-components)
-- [FlatList components](#flat-list-components)
-- [Routing with React Navigation in React Native](#routing-with-react-navigation-in-react-native)
+---
+layout: ../../layouts/BlogLayout.astro
+title: "React Native Cheatsheet"
+---
 
 ### What is React Native
 

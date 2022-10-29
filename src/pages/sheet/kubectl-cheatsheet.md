@@ -1,11 +1,5 @@
 ## Table of Contents
 
-- Synopsis(synopsis)
-- Kubectl Cluster Management Commands (kubectl-cluster-management-commands)
-- Kubectl Cluster Information Commands (kubectl-cluster-information-commands)
-- Kubectl Cluster Configuration Commands (kubectl-cluster-configuration-commands)
-- Kubectl Cluster Troubleshooting Commands (kubectl-cluster-troubleshooting-commands)
-
 ## Synopsis
 
 <h5>Kubectl is the command line configuration tool for Kubernetes that communicates with a Kubernetes API server. 
