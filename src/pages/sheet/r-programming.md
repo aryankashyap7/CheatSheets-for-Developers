@@ -1,42 +1,5 @@
 ﻿# R Programming CheatSheet
 
-## Table of Contents
-
- - [Vector](#vector)
-	- [Creating Vectors](#creating-vectors)
-	- [Vector Functions](#vector-functions)
-	- [Selecting Vector Elements](#selecting-vector-elements)
-- [Getting Help](#getting-help)
-	-	[Accessing the Help Files](#accessing-the-help-files)
-	-  [More About An Object](#more-about-an-object)
-- [Working Directory](#working-directory)
-- [Using Libraries](#using-libraries)
-- [Programming](#programming)
-	- [For Loop](#for-loop)
-	- [While Loop](#while-loop)
-	- [If Statements](#if-statements)
-	- [Functions](#functions)
-- [Conditions](#conditions) 
-- [Reading and Writing Data](#reading-and-writing-data)
-- [Data Type Conversions](#data-type-conversions)
-- [Matrixes](#matrixes)
-	- [Selecting Segments from a Matrix](#selecting-segments-from-a-matrix)
-	-  [Matrix Functions](#matrix-functions)
-- [Strings](#strings)
-- [Factors](#factors)
-- [Math Functions](#math-functions)
-- [Lists](#lists)
-- [Statistics](#statistics)
-- [Variable Assignment](#variable-assignment)
-	- [The Environment](#the-environment)
-- [Data Frames](#data-frames)
-	- [Understanding a data frame](#understanding-a-data-frame) 
-	- [List subsetting](#list-subsetting)
-	- [Matrix subsetting](#matrix-subsetting)
-	-  [Data Frame Functions](#data-frame-functions)
-- [Distributions](#distributions)
-- [Plotting](#plotting)
-
 ## Vector
 
 
