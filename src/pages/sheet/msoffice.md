@@ -1,12 +1,7 @@
-# Microsoft Office CheatSheet
-
-## Table of Contents
-
-- [Microsoft Office CheatSheet](#microsoft-office-cheatsheet)
-  - [Microsoft Word Shortcuts](#microsoft-word-shortcuts)
-  - [Microsoft Excel Shortcuts](#microsoft-excel-shortcuts)
-    - [Formula in Excel](#formula-in-excel)
-  - [Microsoft PowerPoint Shortcuts](#microsoft-powerpoint-shortcuts)
+---
+layout: ../../layouts/BlogLayout.astro
+title: "Microsoft Office Cheatsheet"
+---
 
 ## Microsoft Word Shortcuts
 

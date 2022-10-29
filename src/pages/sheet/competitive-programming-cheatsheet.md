@@ -23,6 +23,8 @@ title: "Competitive Programming Cheatsheet"
     - [dot-product](#dot-product)
     - [cross-product](#cross-product)
     - [intersection](#intersection)
+  - [String](#string)
+	- [z-algorithm](#z-algorithm)
 	
 # Competitive programming cheat sheet
 
@@ -363,4 +365,36 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
 }
 ```
 
+<<<<<<< HEAD:src/pages/sheet/competitive-programming.md
 
+=======
+**[🔼Back to Top](#table-of-contents)**
+
+
+## String
+
+### z-algorithm
+
+**Output**: *z[i]* := length of largest string from index *i* which is a prefix of *s*.
+
+**Time complexity**: O(*n*)
+
+```cpp
+vector<int> z_function(string s) {
+	int n = (int) s.length();
+	vector<int> z(n);
+	for(int i = 1, l = 0, r = 0; i < n; ++i) {
+		if(i <= r)
+			z[i] = min(r - i + 1, z[i - l]);
+		while (i + z[i] < n && s[z[i]] == s[i + z[i]])
+			++z[i];
+		if(i + z[i] - 1 > r)
+			l = i, r = i + z[i] - 1;
+	}
+	return z;
+}
+```
+Related problem: [Codeforces 126B - Password](https://codeforces.com/contest/126/problem/B)
+
+**[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/competitive-programming-cheatsheet.md

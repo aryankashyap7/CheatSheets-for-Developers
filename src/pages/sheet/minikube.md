@@ -1,17 +1,7 @@
-<<<<<<< HEAD:src/pages/sheet/minikube.md
 ---
 layout: ../../layouts/CheatSheet.astro
 title: "Minikube Cheatsheet"
 ---
-=======
-# Minikube CheatSheet for Developers
-
-## Table of Contents
-
-- [Minikube CheatSheet for Developers](#minukube-cheatsheet-for-developers)
-  - [Synopsis](#synopsis)
-  - [Basic Commands](#basic-commands)
->>>>>>> 5fd57f53530263c48e3a8f99fb20ec28376199c7:CheatSheets/minikube-cheatsheet.md
 
 ## Synopsis
 
@@ -44,6 +34,5 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for us
 | `Get config set`                             | minikube config set                                              |
 | `Check latest version`                       | minikube update check                                            |
 | `minikube get service information`           | minikube service <srv-name>                                      |
- 
 
 

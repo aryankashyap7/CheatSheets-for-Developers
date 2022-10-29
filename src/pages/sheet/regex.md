@@ -1,22 +1,7 @@
 ---
-Title: Regex Cheatsheet
-Description: All necessary regex commands for programming
-Created: 2022-10-27
+layout: ../../layouts/BlogLayout.astro
+title: "Regex Cheatsheet"
 ---
-
-## Table of Contents
-
-- [Regular Expressions (RegEx) CheatSheet for Developers](#regular-expressions-regex-cheatsheet-for-developers)
-  - [Regular Expressions Introduction](#regular-expressions-introduction)
-  - [Anchors](#anchors)
-  - [Quanti­fiers](#quantifiers)
-  - [Groups and Ranges](#groups-and-ranges)
-  - [Escape Sequences](#escape-sequences)
-  - [Common Meta-characters](#common-meta-characters)
-  - [Special Characters](#special-characters)
-  - [Assertions](#assertions)
-  - [String Replacement](#string-replacement)
-  - [Pattern Modifiers](#pattern-modifiers)
 
 # Regular Expressions (RegEx) CheatSheet for Developers
 

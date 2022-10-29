@@ -250,7 +250,7 @@ Bitwise operators are used to performing Bit manipulation operations in SQL. The
 | Operator                                                                                                        | Description |
 | --------------------------------------------------------------------------------------------------------------- | ----------- |
 | &                                                                                                               | Bitwise AND |
-| ![image](https://user-images.githubusercontent.com/47249568/197326193-77622f96-20cd-4f8f-b4b6-997fb54b2d69.png) | Bitwise OR  |
+| !\| | Bitwise OR  |
 | ^                                                                                                               | Bitwise XOR |
 
 
@@ -282,7 +282,7 @@ Compound operators are basically a combination of 2 or more arithmetic or relati
 | /=                                                                                                               | Divide equals   |
 | %=                                                                                                               | Modulo equals   |
 | &=                                                                                                               | AND equals      |
-| ![image](https://user-images.githubusercontent.com/47249568/197326390-7087561c-34d3-450e-aacb-0282cfd17922.png)= | OR equals       |
+| !\|= | OR equals       |
 | ^=                                                                                                               | XOR equals      |
 
 

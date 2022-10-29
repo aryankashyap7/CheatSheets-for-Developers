@@ -1,10 +1,7 @@
-## Table of Contents
-
-- [Laravel8 Cheat Sheet](#topic-name-for-developers)
-  - [CLI Commands](#cli-commands)
-    - [Project Commands](#project-commands)
-    - [Common Commands](#common-commands)
-  - [Authentication](#authentication)
+---
+layout: ../../layouts/BlogLayout.astro
+title: "Laravel8 Cheatsheet"
+---
 
 ## Laravel8 Cheatsheet
 

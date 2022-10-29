@@ -1,10 +1,7 @@
-## Table of Contents
-
-- Synopsis(synopsis)
-- Kubectl Cluster Management Commands (kubectl-cluster-management-commands)
-- Kubectl Cluster Information Commands (kubectl-cluster-information-commands)
-- Kubectl Cluster Configuration Commands (kubectl-cluster-configuration-commands)
-- Kubectl Cluster Troubleshooting Commands (kubectl-cluster-troubleshooting-commands)
+---
+layout: ../../layouts/BlogLayout.astro
+title: "Kubectl Cheatsheet"
+---
 
 ## Synopsis
 

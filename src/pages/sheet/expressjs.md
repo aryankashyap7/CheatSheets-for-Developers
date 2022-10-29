@@ -1,29 +1,31 @@
-## Table of Contents
-
-- [Requirements](#requirements)
-- [Quick set-up](#quick-set-up)
-- [Start the server](#start-the-server)
-- [Routing](#routing)
-  - [Route definition](#route-definition)
-  - [Serve an HTML file](#serve-an-html-file)
-  - [Serve Static assets](#serve-static-assets)
-  - [Serve JSON](#serve-json)
-
+---
+layout: ../../layouts/BlogLayout.astro
+title: "ExpressJs Cheatsheet"
+---
 
 ## Requirements
+
 You need to have [node.js](https://nodejs.org/) installed
 
 ## Quick set-up
+
 Run the below command to quickly create an application skeleton
 
     npx express-generator
-And then run 
+
+And then run
 
     npm i
+
 to install all necessary modules
 
+<<<<<<< HEAD:src/pages/sheet/expressjs.md
+=======
+**[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
 
 ## Start the server
+
 add this code in app.js
 
     const express = require('express')
@@ -43,11 +45,13 @@ and run app.js to start the serve. Go to localhost:port to see the response
 
 
 ## Routing
-## Route definition 
+
+## Route definition
+
 The routing definition syntax is
 
     app.METHOD(PATH, HANDLER)
-    
+
 Here, METHOD is an HTTP request method, and HANDLER is the function executed when the route is matched.
 
 ## Serve an HTML file
@@ -56,22 +60,26 @@ Here, METHOD is an HTTP request method, and HANDLER is the function executed whe
           res.sendFile(__dirname +'/views/index.html') ;
         })
 
+<<<<<<< HEAD:src/pages/sheet/expressjs.md
 
 
+=======
+**[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
 
 ## Serve Static assets
-Static assets include things like css files
-    app.use('/public',express.static(__dirname + '/public'));
 
+Static assets include things like css files
+app.use('/public',express.static(\_\_dirname + '/public'));
 
 
 
 ## Serve JSON
-Serve a JSON response
-    app.get('/json',myFunction2);
-      function myFunction2(req, res) {
-      res.json({"message": "Hello json"}) ;
-    }
 
+Serve a JSON response
+app.get('/json',myFunction2);
+function myFunction2(req, res) {
+res.json({"message": "Hello json"}) ;
+}
 
 

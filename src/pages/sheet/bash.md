@@ -6,7 +6,6 @@ title: "Bash Cheatsheet"
 Bash is a powerful scripting language that is used by many developers. This cheat sheet is a collection of Bash tips and tricks that will help you write better Bash scripts.
 
 
-
 ### Bash Basics
 
 | Command   | Description                                                |
@@ -267,4 +266,12 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `read -p "Enter a value: " -s value`   | Read input from the console without echoing the input  |
 | `read -p "Enter a value: " -n 5 value` | Read a specified number of characters from the console |
 
+#### Bash Arguments
 
+| Command | Description                                          |
+|---------|------------------------------------------------------|
+| `$#`    | Specifies number of arguments                        |
+| `$*`    | Specifies all positional arguments as a single word  |
+| `$@`    | Specifies all positional arguments as separate words |
+| `$1`    | Specifies first argument passed                      |
+| `$_`    | Specifies last argument of the previous command      |
