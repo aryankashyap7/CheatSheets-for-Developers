@@ -21,6 +21,8 @@ layout: ../../layouts/CheatSheet.astro
 title: "CHEATSHEET-NAME Cheatsheet"
 ---
 
+## Synopsis
+
 [SYNOPSIS OF TOPIC]
 
 ## Topic Name
