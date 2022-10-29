@@ -268,3 +268,15 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `read -p "Enter a value: " -n 5 value` | Read a specified number of characters from the console |
 
 **[🔼Back to Top](#table-of-contents)**
+
+#### Bash Arguments
+
+| Command | Description                                          |
+|---------|------------------------------------------------------|
+| `$#`    | Specifies number of arguments                        |
+| `$*`    | Specifies all positional arguments as a single word  |
+| `$@`    | Specifies all positional arguments as separate words |
+| `$1`    | Specifies first argument passed                      |
+| `$_`    | Specifies last argument of the previous command      |
+
+**[🔼Back to Top](#table-of-contents)**
