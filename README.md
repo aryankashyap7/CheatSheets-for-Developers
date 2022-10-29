@@ -55,7 +55,7 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 | 37  | React                   | React CheatSheet                     | <a href="./src/pages/sheet/react.md">Click Here</a>                   |
 | 38  | React Native            | React Native CheatSheet              | <a href="./src/pages/sheet/react-native-cheatsheet.md">Click Here</a>            |
 | 39  | Regex                   | Regex CheatSheet                     | <a href="./src/pages/sheet/regex-cheatsheet.md">Click Here</a>                   |
-| 40  | Security+               | CompTIA Security+ Exam               | <a href="./src/pages/sheet/security-plus.md">Click Here</a>           |
+| 40  | Security+               | CompTIA Security+ Exam               | <a href="./src/pages/sheet/securityplus.md">Click Here</a>           |
 | 41  | Vi Emacs Nano           | Vi Emacs Nano CheatSheet             | <a href="./src/pages/sheet/vi-emacs-nano.md">Click Here</a>           |
 | 42  | VSCode                  | VSCode CheatSheet                    | <a href="./src/pages/sheet/vscode.md">Click Here</a>                  |
 | 43  | VueJS                   | VueJS CheatSheet                     | <a href="./src/pages/sheet/vuejs.md">Click Here</a>                   |
