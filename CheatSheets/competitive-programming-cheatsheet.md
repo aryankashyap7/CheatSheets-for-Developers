@@ -78,8 +78,7 @@ int main()
 ### ternary-search
 
 ```cpp
-int ternarySearch(int l, int r, int key, int ar[])
-{
+int ternarySearch(int l, int r, int key, int ar[]){
     if (r >= l) {
         int mid1 = l + (r - l) / 3;
         int mid2 = r - (r - l) / 3;
