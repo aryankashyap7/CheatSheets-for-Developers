@@ -1,38 +1,74 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 
-const files =await Astro.glob('../pages/sheet/*.md');
+const files = await Astro.glob("../pages/sheet/*.md");
 
 // Get all filenames
-const filenames = files.map((file) => file.url.replace('/sheet/', '').replace('-cheatsheet', ''));
+const filenames = files.map((file) =>
+  file.url.replace("/sheet/", "").replace("-cheatsheet", "")
+);
 ---
 
 <Layout title="Cheatsheets for developers">
-	<main>
-		<h1><span class="text-gradient">Cheatsheets</span> for Developers</h1>
-		<p class="instructions">
-			This Cheat sheet list has been made to enhance the workflow and efficiency. This well curated list will save you time when you just can't remember the code.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<!-- Search -->
-			<!-- TODO: MAKE SEARCH WORK -->
-			<!-- <input class="search-bar" type="text" id="search" placeholder="Search..." /> -->
-			{filenames.map((item) => (<Card title={item.replace("-cheatsheet.md", "")} href={`/sheet/${item.replace("-cheatsheet.md", "")}`} />)
-			)}
-		</ul>
-	</main>
+  <main>
+    <h1><span class="text-gradient">Cheatsheets</span> for Developers</h1>
+    <p class="instructions">
+      This Cheat sheet list has been made to enhance the workflow and
+      efficiency. This well curated list will save you time when you just can't
+      remember the code.
+    </p>
+    <ul role="list" class="link-card-grid">
+      <!-- Search -->
+      <!-- TODO: MAKE SEARCH WORK -->
+      <input
+        class="search-bar"
+        type="text"
+        id="search"
+        placeholder="Search..."
+      />
+      {
+        filenames.map((item) => (
+          <li class="card-ele">
+            <Card
+              title={item.replace("-cheatsheet.md", "")}
+              href={`/sheet/${item.replace("-cheatsheet.md", "")}`}
+            />
+          </li>
+        ))
+      }
+    </ul>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
 </style>
+
+<script>
+  const search = document.getElementById("search");
+  let filenames = document.querySelectorAll(".card-ele");
+  search.addEventListener("change", (e) => {
+    // @ts-ignore
+    let value = e.target.value.toLowerCase();
+    console.log(value);
+    filenames.forEach((item: HTMLTextAreaElement) => {
+      if (item.innerText.toLowerCase().includes(value)) {
+        console.log(item.innerText.toLowerCase())
+        item.style.display = "block";
+      } else {
+        // Hide item
+        item.style.display = "none";
+      }
+    });
+  });
+</script>

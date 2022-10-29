@@ -9,14 +9,15 @@ export interface Props {
 const { href, title, arr = true } = Astro.props;
 ---
 
-<li class="link-card">
+<div class="link-card">
 	<a href={href}>
 		<h2>
 			{title}
 			{arr && <span>&rarr;</span>}
 		</h2>
 	</a>
-</li>
+</div>
+
 <style>
 	.link-card {
 		list-style: none;
