@@ -1,12 +1,12 @@
 ## Table of Contents
 
-- [Competitive programming cheat sheet](#competitive-programming-cheat-sheet)
+- [Competitive programming java cheat sheet](#competitive-programming-java-cheat-sheet)
 	- [Standard Java Templates](#standard-java-templates)
 		- [Template using Scanner Class](#template-using-scanner-class)
 		- [Template using Buffered Reader Class](#template-using-buffered-reader-class)
 		- [Template using custom Fast Reader Class](#template-using-custom-fast-reader-class)
 	
-# Competitive programming in Java cheat sheet
+# competitive-programming-java-cheat-sheet
 
 ## standard-java-templates
 
