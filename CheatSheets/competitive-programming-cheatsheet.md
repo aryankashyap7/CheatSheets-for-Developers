@@ -101,7 +101,6 @@ int ternarySearch(int l, int r, int key, int ar[])
     }
     return -1;
 }                    
-}
 ```
 
 **[🔼Back to Top](#table-of-contents)**
