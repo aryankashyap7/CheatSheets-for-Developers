@@ -16,32 +16,26 @@ The `CHEATSHEETS FOR DEVELOPERS` project can only grow through the contributions
 ---
 
 ```markdown
-## Table of Contents
+---
+layout: ../../layouts/CheatSheet.astro
+title: "CHEATSHEET-NAME Cheatsheet"
+---
 
-- [Topic Name for developers](#topic-name-for-developers)
-- [Subtopic Name](#subtopic-name)
-- [Sub-part1 Name](#sub-part1-name)
-- [Sub-part2 Name](#sub-part2-name)
+[SYNOPSIS OF TOPIC]
 
 ## Topic Name
 
-## Subtopic Name
+### Subtopic Name
 
 [Text for Subtopic/ Table for Subtopic]
 
-**[🔼Back to Top](#table-of-contents)**
-
-## Sub-part1 Name
+### Sub-part1 Name
 
 [Text for Sub-part1/ Table for Sub-part1]
 
-**[🔼Back to Top](#table-of-contents)**
-
-## Sub-part2 Name
+### Sub-part2 Name
 
 [Text for Sub-part2/ Table for Sub-part2]
-
-**[🔼Back to Top](#table-of-contents)**
 ```
 
 ## Submitting a pull request
