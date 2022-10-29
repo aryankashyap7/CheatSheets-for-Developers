@@ -2,6 +2,22 @@
 layout: ../../layouts/BlogLayout.astro
 title: "Java Cheatsheet"
 ---
+# Table of Content
+
+- [Data Types](#data-types)
+- [I/O methods](#I/O-methods)
+- [Data Conversion](#data-conversion)
+- [Operators](#operators)
+- [Statements](#statements)
+- [Comments](#comments)
+- [Constants](#constants)
+- [Escape Sequences](#escape-sequences)
+- [Type Casting](#type-casting)
+- [Arrays](#arrays)
+- [Strings](#strings)
+- [String Methods](#string-methods)
+- [StringTokenizer](#stringtokenizer)
+- [Collection](#Collection)
 
 ## Data Types
 
@@ -22,8 +38,8 @@ title: "Java Cheatsheet"
 ### Output Methods
 
 ```java
-	system.out.print("Hello World!"); // Will not move to the next line.
-	system.out.println("Hello World!"); // Will move to the next line.
+	system.out.print("Hello World!"); //Will not move to the next line.
+	system.out.println("Hello World!"); //Will move to the next line.
 	
 	// There is another type of output method, which is similar to C language.
 	int a = 23;
@@ -165,6 +181,92 @@ try {
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+## Comments
+A comment is the code that is not executed by the compiler, and the programmer uses it to keep track of the code.
+### Single Line Comment
+```java
+// This is a single line command
+```
+
+### Multi-Line Comment
+```java
+/*
+This is a multi line comment
+we can add multiple lines here
+x=5
+y=c
+*/
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Constants
+Constants are like variables, except that their value never changes during program execution.
+Constants are declared using static and final keywords
+```java
+static final float pi = 3.1415;
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Escape Sequences
+
+### Tab
+
+It gives a tab space
+
+```
+\t
+```
+
+### Backslash
+
+It adds a backslash
+
+```
+\\
+```
+
+### Single quote
+
+It adds a single quotation mark
+
+```
+\'
+```
+
+### Question mark
+
+It adds a question mark
+
+`\?`
+
+**[🔼Back to Top](#table-of-contents)**
+
+## Type Casting
+
+Type Casting is a process of converting one data type into another
+
+### Widening Type Casting (Automatically)
+
+It means converting a lower data type into a higher
+
+```java
+int x = 49;
+double new_x = x;   // Outputs 49.0
+```
+
+### Narrowing Type Casting  (Manually)
+
+It means converting a higher data type into a lower
+
+```java
+double x = 99.2  
+int new_x = (int) x;  // Outputs 99
+```
+
+**[🔼Back to Top](#table-of-contents)**
+
 ## Arrays
 
 ### Initialisation
@@ -185,7 +287,7 @@ String characters[][] = new String[10][10];  // A String Array of dimensions 10 
 ### Traversal
 ```java
 // Traditional for loop
-for(int i=0;i<number.length;i++) // .length gives the size of the array
+for(int i=0;i<number.length;i++) //length gives the size of the array
 { 
 System.out.println(number[i]);
 }
@@ -207,9 +309,9 @@ System.out.println(i);
 ### Using String Literal
 ```java
 String s = "INPUT";
-// Using the new keyword
+//Using the new keyword
 String s = new String("INPUT");
-// From a given character array
+//From a given character array
 char ch[]={'I','N','P','U','T'};    
 String s=new String(ch);   
 ```
@@ -218,8 +320,8 @@ The above mentioned methods creates a string that are immutable, to make strings
 ### Using StringBuffer
 ##### "The string represents fixed-length, immutable character sequences while StringBuffer represents growable and writable character sequences." : GFG
 ```java
-// Create a StringBuffer Object, i.e., empty string buffer
-// By default it can take up to a sequence of 16 characters
+//Create a StringBuffer Object, i.e., empty string buffer
+//By default it can take upto a sequence of 16 characters
 StringBuffer sb = new StringBuffer();  
 // Can be initialised with a string
 StringBuffer sb2 = new StringBuffer("Input");
@@ -231,19 +333,19 @@ sb.append("Input");  //Now the empty string has been modified to "Input"
 ##### 2) insert(beginIndex, endIndex, string_data) method : Inserts a given string literal to the specified positions
 ```java
 sb.insert(2," A String");
-// Now the string is "In A Stringput"
+//Now the string is "In A Stringput"
 ```
 
 ##### 3) replace(beginIndex, endIndex, string_data) method : Use to replace a sequence of characters from the specified beginIndex and endIndex-1, with another sequence
 ```java
 sb.replace(11,14," Literal");  
-// Now the string is "In A String Literal"
+//Now the string is "In A string Literal"
 ```
 
 ##### 4) delete(beginIndex, endIndex) method : Use to delete a sequence of characters from the specified beginIndex and endIndex-1
 ```java
 sb.delete(11,19);
-// Now the string is "In A String"
+//Now the string is "In A String"
 ```
 ##### 5) reverse() method : Reverses the current string
 ```java
@@ -255,7 +357,7 @@ sb.reverse();
 ##### Very similiar to the StringBuffer class but is not Synchronous and neither Thread-Safe. But high in performance, i.e., speedy
 ```java
 //Create a StringBuilder Object, i.e., StringBuilder with no characters
-//By default it can take up to a sequence of 16 characters
+//By default it can take upto a sequence of 16 characters
 StringBuilder sb = new StringBuilder(); 
 StringBuilder sb2 = new StringBuffer("Input");
 ```
