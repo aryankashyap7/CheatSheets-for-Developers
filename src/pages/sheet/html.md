@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "HTML Cheatsheet"
 ---
 
@@ -18,7 +18,7 @@ title: "HTML Cheatsheet"
 | `<style>...</style>`   | The style tag can be used as an alternative to an external style sheet, or complement it.Includes the webpage’s appearance information.   |
 | `<script>...</script>` | Used to add code snippets, typically in JavaScript,to make webpage dynamic. It can also be used to just link to an external script.       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tags to Structure Document
 
@@ -40,7 +40,7 @@ title: "HTML Cheatsheet"
 | `<code> … </code>`             | This is used to display code snippets within a paragraph.                                                                      |
 | `<bdo dir="rtl/ltr"> … </bdo>` | Overrides the current directionality of text, so that the text within is rendered in a different direction.                    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Semantic Elements
 
@@ -62,7 +62,7 @@ title: "HTML Cheatsheet"
 | `<time> ... </time>`             | Defines a date/time                                                                         |
 | `<pre> ... </pre>`               | Preserve both spaces and linebreaks                                                         |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Formatting
 
@@ -81,7 +81,7 @@ title: "HTML Cheatsheet"
 | `<del> ... </del>`       | Defines deleted text                                 |
 | `<mark> ... </mark>`     | Defines marked/highlighted text                      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Links
 
@@ -95,7 +95,7 @@ title: "HTML Cheatsheet"
 | `<a name=”name”> … </a>`        | This tag can be used to quickly navigate to a different part of the webpage.                                                   |
 | `<a href=”#name”> … </a>`       | A variation of the above tag, this is only meant to navigate to a div section of the webpage.                                  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Images
 
@@ -116,7 +116,7 @@ title: "HTML Cheatsheet"
 | `shape=””`               | Shape of the area.                                                                                                             |
 | `coords=””`              | The coords attribute specifies the coordinates of an area in an image map.                                                     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Lists
 
@@ -131,7 +131,7 @@ title: "HTML Cheatsheet"
 | `<dt> … </dt>` | The definition of a single term inline with body content.   |
 | `<dd> … </dd>` | The description for the defined term.                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Forms
 
@@ -153,7 +153,7 @@ title: "HTML Cheatsheet"
 </form>
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Input Types
 
@@ -169,7 +169,7 @@ title: "HTML Cheatsheet"
 |  hidden field   | `<input type="hidden">`                                 | nothing there!                                                                               |
 |  submit button  | `<input type="submit">`                                 | activates the form's submission <br/>(a `POST` request or <br/>Javascript action)            |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Important Attributes
 
@@ -192,7 +192,7 @@ title: "HTML Cheatsheet"
 | `name`    | the group to which this element is connected. For radio buttons, only one element per group (or name) can be checked. |
 | `value`   | the data or value that is returned for a specific group (a multi-element control), if this element is checked.        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Inputs
 
@@ -208,7 +208,7 @@ title: "HTML Cheatsheet"
 | `<input type="search" name=" ">` | Sets a single-line text box for searching .                     |
 | `<input type="color" name=" ">`  | Sets a single-line text box for picking a color.                |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tables
 
@@ -227,7 +227,7 @@ title: "HTML Cheatsheet"
 | `<colgroup> … </colgroup>` | Used for grouping columns together.                                |
 | `<col>`                    | Denotes a column inside a table.                                   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Graphics
 
@@ -236,7 +236,7 @@ title: "HTML Cheatsheet"
 | `<canvas> … </canvas>` | Used to draw graphics on a web page using javascript. |
 | `<svg> … </svg>`       | Used to defines vector-based graphics in XML format.  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Media
 
@@ -245,4 +245,4 @@ title: "HTML Cheatsheet"
 | `<video> … </video>` | Used to show a video on a web page.       |
 | `<audio> … </audio>` | Used to play an audio file on a web page. |
 
-**[🔼Back to Top](#table-of-contents)**
+

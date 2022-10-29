@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Java Cheatsheet"
 ---
 
@@ -15,7 +15,7 @@ title: "Java Cheatsheet"
 | float     | 4 byte |
 | double    | 8 byte |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## I/O Methods
 
@@ -47,7 +47,10 @@ title: "Java Cheatsheet"
 	double d = s.nextDouble();
 ```
 
+<<<<<<< HEAD
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
 ## Data Conversion
 
@@ -73,7 +76,7 @@ title: "Java Cheatsheet"
         long i = (long) _numeric expression_;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Operators
 
@@ -88,7 +91,7 @@ title: "Java Cheatsheet"
 | Bitwise operators                | ^, &, \|                                           |
 | Special operators                | . (dot operator to access methods of class)        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Statements
 
@@ -165,6 +168,8 @@ try {
 }
 ```
 
+<<<<<<< HEAD
+=======
 **[🔼Back to Top](#table-of-contents)**
 
 ## Comments
@@ -258,6 +263,7 @@ int new_x = (int) x;  // Outputs 99
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
 ## Arrays
 
@@ -295,7 +301,7 @@ System.out.println(i);
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Strings
 
@@ -382,7 +388,10 @@ String str = sb.toString();
 System.out.println(str);
 ```
 
+<<<<<<< HEAD
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
 ## Array Methods
 
@@ -398,7 +407,11 @@ System.out.println(str);
 | deepEquals(Object[] a1, Object[] a2)                                   | Returns true if the two specified arrays are deeply equal to one another.                                                                                                                                                                                                                                                  |
 | deepHashCode(Object[] a)                                               | Returns a hash code based on the “deep contents” of the specified Arrays.                                                                                                                                                                                                                                                  |
 | deepToString(Object[] a)                                               | Returns a string representation of the “deep contents” of the specified Arrays.                                                                                                                                                                                                                                            |
+<<<<<<< HEAD
+| equals(array1, array2)	Checks if both the arrays are equal or not.     |
+=======
 | equals(array1, array2) Checks if both the arrays are equal or not.     |
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 | fill(originalArray, fillValue)                                         | Assigns this fill value to each index of this arrays.                                                                                                                                                                                                                                                                      |
 | hashCode(originalArray)                                                | Returns an integer hashCode of this array instance.                                                                                                                                                                                                                                                                        |
 | mismatch(array1, array2)                                               | Finds and returns the index of the first unmatched element between the two specified arrays.                                                                                                                                                                                                                               |
@@ -416,7 +429,11 @@ System.out.println(str);
 | stream(originalArray)                                                  | Returns a sequential stream with the specified array as its source.                                                                                                                                                                                                                                                        |
 | toString(originalArray)                                                | Returns a string representation of the contents of this array. The string representation consists of a list of the array’s elements, enclosed in square brackets (“[]”). Adjacent elements are separated by the characters a comma followed by a space. Elements are converted to strings as by String.valueOf() function. |
 
+<<<<<<< HEAD
+
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
 ## String Methods
 
@@ -447,7 +464,17 @@ StringTokenizer st = new StringTokenizer(string_value_or_variable);
 StringTokenizer st = new StringTokenizer(string_value_or_variable, delimiter_string);
 ```
 
+<<<<<<< HEAD
+| Command           | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| countTokens()     | Returns the number of tokens present                |
+| hasMoreToken()    | Checks if there are more tokens in the string       |
+| nextElement()     | Return the object of the next element in the stream |
+| hasMoreElements() | Checks if there are more elements in the string     |
+| nextToken()       | Returns the next token from the StringTokenizer.    |
+=======
 ### Functions available in the StringTokeniser Class
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
 | Command           | Description                                         |
 | ----------------- | --------------------------------------------------- |
@@ -486,7 +513,7 @@ while (st.hasMoreTokens())
 
 The semi colon is used to seperate the tokens
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Collection
 
@@ -506,7 +533,11 @@ The semi colon is used to seperate the tokens
 | LinkedHashSet | Set<E> set = new LinkedHashSet(); |
 
 ### Operations on List and Set
+<<<<<<< HEAD
+     
+=======
 
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 | Method   | Description                               | Declaration             |
 | -------- | ----------------------------------------- | ----------------------- |
 | add      | To add an element into the list           | arr.add(element)        |
@@ -533,4 +564,4 @@ The semi colon is used to seperate the tokens
 | PriorityQueue | PriorityQueue<E> priorityQueue = new PriorityQueue(); |
 | ArrayDeque    | ArrayDeque<E> arrayDeque = new ArrayDeque();          |
 
-**[🔼Back to Top](#table-of-contents)**
+

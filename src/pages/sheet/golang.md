@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Golang Cheatsheet"
 ---
 
@@ -7,7 +7,7 @@ title: "Golang Cheatsheet"
 
 Go is a tool for managing Go source code. The Go distribution includes a command, named " go ", that automates the downloading, building, installation, and testing of Go packages and commands. It helps developers use Golang more efficiently.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Basic Commands
 
@@ -30,4 +30,8 @@ Go is a tool for managing Go source code. The Go distribution includes a command
 | `go version`  | print Go version                                    |
 | `go vet`      | report likely mistakes in packages                  |
 
+<<<<<<< HEAD
+
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a

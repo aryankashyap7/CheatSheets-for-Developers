@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "DOTNET Cheatsheet"
 ---
 
@@ -13,64 +13,64 @@ The following commands are installed by default:
 
 ## Basic commands
 
-| Command | Description |
-| --- | --- |
-| `new` | Initializes a sample .NET Core project in the current directory. |
-| `restore` | Restores the dependencies and tools of a project. |
-| `build` | Builds a project and all of its dependencies. |
+| Command   | Description                                                           |
+| --------- | --------------------------------------------------------------------- |
+| `new`     | Initializes a sample .NET Core project in the current directory.      |
+| `restore` | Restores the dependencies and tools of a project.                     |
+| `build`   | Builds a project and all of its dependencies.                         |
 | `publish` | Publishes a .NET Core project for deployment (including the runtime). |
-| `run` | Compiles and immediately executes a .NET Core project. |
-| `test` | Runs unit tests using the test runner specified in a project. |
-| `vstest` | Runs unit tests using the test runner specified in a project. |
-| `pack` | Creates a NuGet package. |
-| `migrate` | Migrates a project.json based project to a msbuild based project. |
-| `clean` | Cleans the output of a .NET Core project. |
-| `sln` | Modifies a .sln file. |
-| `help` | Displays help for a command. |
-| `store` | Stores the specified assemblies in the runtime package store. |
+| `run`     | Compiles and immediately executes a .NET Core project.                |
+| `test`    | Runs unit tests using the test runner specified in a project.         |
+| `vstest`  | Runs unit tests using the test runner specified in a project.         |
+| `pack`    | Creates a NuGet package.                                              |
+| `migrate` | Migrates a project.json based project to a msbuild based project.     |
+| `clean`   | Cleans the output of a .NET Core project.                             |
+| `sln`     | Modifies a .sln file.                                                 |
+| `help`    | Displays help for a command.                                          |
+| `store`   | Stores the specified assemblies in the runtime package store.         |
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Project modification commands
 
-| Command | Description |
-| --- | --- |
-| `add package` | Adds a NuGet package reference to a project file. |
-| `add reference` | Adds a project-to-project reference to a project file. |
-| `remove package` | Removes a NuGet package reference from a project file. |
+| Command            | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `add package`      | Adds a NuGet package reference to a project file.           |
+| `add reference`    | Adds a project-to-project reference to a project file.      |
+| `remove package`   | Removes a NuGet package reference from a project file.      |
 | `remove reference` | Removes a project-to-project reference from a project file. |
-| `list reference` | Lists all project-to-project references in a project. |
+| `list reference`   | Lists all project-to-project references in a project.       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Advanced commands
 
-| Command | Description |
-| --- | --- |
-| `nuget delete` | Deletes a package from a NuGet package source. |
-| `nuget locals` | Lists and manages local NuGet resources. |
-| `nuget push` | Pushes a package to a NuGet package source. |
-| `msbuild` | Runs Microsoft Build Engine (MSBuild) commands. |
+| Command                 | Description                                                                 |
+| ----------------------- | --------------------------------------------------------------------------- |
+| `nuget delete`          | Deletes a package from a NuGet package source.                              |
+| `nuget locals`          | Lists and manages local NuGet resources.                                    |
+| `nuget push`            | Pushes a package to a NuGet package source.                                 |
+| `msbuild`               | Runs Microsoft Build Engine (MSBuild) commands.                             |
 | `dotnet install script` | Installs the .NET CLI tools and adds them to the PATH environment variable. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tool management commands
 
-| Command | Description |
-| --- | --- |
-| `tool install` | Installs a global tool. |
-| `tool list` | Lists the installed global tools. |
-| `tool update` | Updates a global tool. |
-| `tool restore` | Restores the tools and dependencies of a project. |
-| `tool run` | Runs a global tool. |
-| `tool uninstall` | Uninstalls a global tool. |
+| Command          | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| `tool install`   | Installs a global tool.                           |
+| `tool list`      | Lists the installed global tools.                 |
+| `tool update`    | Updates a global tool.                            |
+| `tool restore`   | Restores the tools and dependencies of a project. |
+| `tool run`       | Runs a global tool.                               |
+| `tool uninstall` | Uninstalls a global tool.                         |
 
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Command structure
 
@@ -108,4 +108,4 @@ The arguments you pass on the command line are the arguments to the command invo
 
 The options you pass on the command line are the options to the command invoked. For example, when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
 
-**[🔼Back to Top](#table-of-contents)**
+

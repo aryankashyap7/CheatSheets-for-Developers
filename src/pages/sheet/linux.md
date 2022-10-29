@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Linux Cheatsheet"
 ---
 
@@ -27,7 +27,7 @@ title: "Linux Cheatsheet"
 | `rm -f`    | Force remove file                       |
 | `rm -rf`   | Force remove directory                  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## File Permissions
 
@@ -38,7 +38,7 @@ title: "Linux Cheatsheet"
 | `chmod u+x` | Change file permissions to executable for user  |
 | `chmod g+x` | Change file permissions to executable for group |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Privilege Escalation
 
@@ -50,7 +50,7 @@ title: "Linux Cheatsheet"
 | `sudo !!` | Run previous command as root |
 | `su`      | Run shell as another user    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## SSH
 
@@ -61,36 +61,36 @@ title: "Linux Cheatsheet"
 | `ssh-copy-id`           | Copy SSH key to remote host             |
 | `ssh-keygen`            | Generate SSH key                        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## System Info
 
-| Command | Description |
-| ------- | ----------- |
-| `uname` | Print system information |
-| `uname -a` | Print all system information |
-| `uname -r` | Print kernel release |
-| `uname -m` | Print machine hardware name |
-| `hostname` | Print system hostname |
-| `hostname -I` | Print all IP addresses |
-| `hostname -i` | Print IP address |
-| `date` | Print system date and time |
-| `cal` | Print calendar |
-| `uptime` | Print system uptime |
-| `whoami` | Print current user |
-| `w` | Print who is logged in |
-| `finger` | Print information about user |
-| `id` | Print effective user and group id |
-| `groups` | Print all groups current user is in |
-| `last` | Print last logged in users |
-| `lastlog` | Print when users last logged in |
-| `free` | Print free and used memory |
-| `df` | Print disk usage |
-| `du` | Print file space usage |
-| `du -h` | Print file space usage in human readable format |
-| `man` | Print manual page (exit with **q**) |
+| Command       | Description                                     |
+| ------------- | ----------------------------------------------- |
+| `uname`       | Print system information                        |
+| `uname -a`    | Print all system information                    |
+| `uname -r`    | Print kernel release                            |
+| `uname -m`    | Print machine hardware name                     |
+| `hostname`    | Print system hostname                           |
+| `hostname -I` | Print all IP addresses                          |
+| `hostname -i` | Print IP address                                |
+| `date`        | Print system date and time                      |
+| `cal`         | Print calendar                                  |
+| `uptime`      | Print system uptime                             |
+| `whoami`      | Print current user                              |
+| `w`           | Print who is logged in                          |
+| `finger`      | Print information about user                    |
+| `id`          | Print effective user and group id               |
+| `groups`      | Print all groups current user is in             |
+| `last`        | Print last logged in users                      |
+| `lastlog`     | Print when users last logged in                 |
+| `free`        | Print free and used memory                      |
+| `df`          | Print disk usage                                |
+| `du`          | Print file space usage                          |
+| `du -h`       | Print file space usage in human readable format |
+| `man`         | Print manual page (exit with **q**)             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Shortcuts
 
@@ -111,7 +111,7 @@ title: "Linux Cheatsheet"
 | `Ctrl + x` | Use the arrow keys to navigate through the command line history.                                           |
 | `Ctrl + _` | Undo.                                                                                                      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Text Editors
 
@@ -122,7 +122,7 @@ title: "Linux Cheatsheet"
 | `vi file`    | Vi is a screen-oriented text editor originally created for the Unix operating system. |
 | `emacs file` | Emacs is a family of text editors that are characterized by their extensibility.      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Archives
 
@@ -143,7 +143,7 @@ title: "Linux Cheatsheet"
 | `unrar x file.rar`                 | Extract rar file              |
 | `rar a file.rar directory`         | Create rar file               |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Disk Usage
 
@@ -160,23 +160,23 @@ title: "Linux Cheatsheet"
 | `fdisk /dev/sda` | Show disk partitions for /dev/sda                         |
 | `mount`          | Show mounted filesystems                                  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Search
 
-| Command | Description |
-| ------- | ----------- |
-| `grep pattern file` | Search for pattern in file |
-| `grep -r pattern directory` | Recursively search for pattern in directory |
-| `grep -v pattern file` | Invert match, print non-matching lines |
-| `grep -l pattern file` | Print only filenames with matches |
-| `grep -i pattern file` | Ignore case distinctions |
+| Command                        | Description                                                |
+| ------------------------------ | ---------------------------------------------------------- |
+| `grep pattern file`            | Search for pattern in file                                 |
+| `grep -r pattern directory`    | Recursively search for pattern in directory                |
+| `grep -v pattern file`         | Invert match, print non-matching lines                     |
+| `grep -l pattern file`         | Print only filenames with matches                          |
+| `grep -i pattern file`         | Ignore case distinctions                                   |
 | `grep -r -i pattern directory` | Recursively search for pattern in directory, ignoring case |
-| `locate file` | Find file |
-| `find / -name file` | Find file in / |
-| `find / -name file -type f` | Find only files in / |
+| `locate file`                  | Find file                                                  |
+| `find / -name file`            | Find file in /                                             |
+| `find / -name file -type f`    | Find only files in /                                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Networking
 
@@ -193,31 +193,31 @@ title: "Linux Cheatsheet"
 | `hostname -I`       | Get all IP addresses             |
 | `hostname -i`       | Get IP address                   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## VIM
 
-| Command   | Description   |
-| --------- | ------------  |
-| `h`       | move cursor left |
-| `j`       | move cursor down |
-| `k`       | move cursor up   |
-| `l`       | move cursor right|
-| `gg`      | go to the first line of the document |
-| `G`       | go to the last line of the document  |
-| `zz`      | center cursor on screen |
-| `0`       | jump to the start of the line |
+| Command | Description                          |
+| ------- | ------------------------------------ |
+| `h`     | move cursor left                     |
+| `j`     | move cursor down                     |
+| `k`     | move cursor up                       |
+| `l`     | move cursor right                    |
+| `gg`    | go to the first line of the document |
+| `G`     | go to the last line of the document  |
+| `zz`    | center cursor on screen              |
+| `0`     | jump to the start of the line        |
 
 # Emacs
 
-| Command   | Description   |
-| --------- | ------------  |
-| `CTRL+O`  | Write the current file to disk |
-| `CTRL+X`  | Close the current file buffer / Exit from Nano |
-| `CTRL+R`  | Insert another file into the current one       |
-| `ALT+<`   | Switch to the previous file buffer |
-| `ALT+>`   | Switch to the next file buffer     |
-| `ALT+D`   | Count the number of words, lines, and characters |
-| `CTRL+L`  | Refresh (redraw) the current screen  |
+| Command  | Description                                      |
+| -------- | ------------------------------------------------ |
+| `CTRL+O` | Write the current file to disk                   |
+| `CTRL+X` | Close the current file buffer / Exit from Nano   |
+| `CTRL+R` | Insert another file into the current one         |
+| `ALT+<`  | Switch to the previous file buffer               |
+| `ALT+>`  | Switch to the next file buffer                   |
+| `ALT+D`  | Count the number of words, lines, and characters |
+| `CTRL+L` | Refresh (redraw) the current screen              |
 
-**[🔼Back to Top](#table-of-contents)**
+

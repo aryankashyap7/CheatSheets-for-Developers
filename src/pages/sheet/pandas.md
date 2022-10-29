@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Pandas Cheatsheet"
 ---
 
@@ -13,7 +13,7 @@ Pandas is a Python library for data analysis. It provides high-performance, easy
 import pandas as pd
 import numpy as np
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Tidy Data
@@ -24,7 +24,7 @@ Tidy data is a standard way of mapping the meaning of a dataset to its structure
 - Each observation forms a row.
 - Each type of observational unit forms a table.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Input/Output
@@ -59,7 +59,7 @@ df = pd.DataFrame(np.array([[1, 2], [3, 4]]), columns=['col1', 'col2'])
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Creating DataFrames
@@ -72,10 +72,10 @@ df
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 4    |
 ```
 
 ### Reshaping Dataframes
@@ -87,10 +87,10 @@ df.T
 ```
 Output:
 
-|      | 0 | 1 |
-|------|---|---|
-| col1 | 1 | 2 |
-| col2 | 3 | 4 |
+|      | 0   | 1   |
+| ---- | --- | --- |
+| col1 | 1   | 2   |
+| col2 | 3   | 4   |
 ```
 
 ```python
@@ -100,10 +100,10 @@ df.sort_values(by='col1')
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 4    |
 ```
 
 ```python
@@ -114,10 +114,10 @@ df.sort_values(by='col1', ascending=False)
 
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 1 | 2    | 4    |
-| 0 | 1    | 3    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 1   | 2    | 4    |
+| 0   | 1    | 3    |
 ```
 
 ```python
@@ -127,13 +127,13 @@ df.sort_values(by=['col1', 'col2'])
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 4    |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Grouping DataFrames
@@ -141,14 +141,14 @@ Output:
 ```
 Assume we have a dataframe df with the following columns:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 4    |
-| 2 | 1    | 5    |
-| 3 | 2    | 6    |
-| 4 | 1    | 7    |
-| 5 | 2    | 8    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 4    |
+| 2   | 1    | 5    |
+| 3   | 2    | 6    |
+| 4   | 1    | 7    |
+| 5   | 2    | 8    |
 ```
 
 ```python
@@ -163,7 +163,7 @@ df.groupby('col1').sum()
 Output:
 
 |      | col2 |
-|------|------|
+| ---- | ---- |
 | col1 |      |
 | 1    | 15   |
 | 2    | 18   |
@@ -178,32 +178,32 @@ df.groupby('col1').mean()
 Output:
 
 |      | col2 |
-|------|------|
+| ---- | ---- |
 | col1 |      |
 | 1    | 5    |
 | 2    | 6    |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Merging DataFrames
 
 ```
 Assume we have two dataframes df1 and df2 with the following columns:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 4    |     df1
-| 2 | 1    | 5    |
-| 3 | 2    | 6    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 4    | df1 |
+| 2   | 1    | 5    |
+| 3   | 2    | 6    |
 
-|   | col1 | col3 |
-|---|------|------|
-| 0 | 1    | 7    |
-| 1 | 2    | 8    |     df2
-| 2 | 1    | 9    |
-| 3 | 2    | 10   |
+|     | col1 | col3 |
+| --- | ---- | ---- |
+| 0   | 1    | 7    |
+| 1   | 2    | 8    | df2 |
+| 2   | 1    | 9    |
+| 3   | 2    | 10   |
 ```
 
 ```python
@@ -215,12 +215,12 @@ pd.merge(df1, df2, on='col1')
 ```
 Output:
 
-|   | col1 | col2 | col3 |
-|---|------|------|------|
-| 0 | 1    | 3    | 7    |
-| 1 | 1    | 3    | 9    |
-| 2 | 1    | 5    | 7    |
-| 3 | 1    | 5    | 9    |
+|     | col1 | col2 | col3 |
+| --- | ---- | ---- | ---- |
+| 0   | 1    | 3    | 7    |
+| 1   | 1    | 3    | 9    |
+| 2   | 1    | 5    | 7    |
+| 3   | 1    | 5    | 9    |
 ```
 
 ```python
@@ -231,10 +231,10 @@ pd.merge(df1, df2, on=['col1', 'col2'])
 ```
 Output:
 
-|   | col1 | col2 | col3 |
-|---|------|------|------|
-| 0 | 1    | 3    | 7    |
-| 1 | 1    | 5    | 7    |
+|     | col1 | col2 | col3 |
+| --- | ---- | ---- | ---- |
+| 0   | 1    | 3    | 7    |
+| 1   | 1    | 5    | 7    |
 ```
 
 ```
@@ -246,20 +246,20 @@ pd.concat([df1, df2], axis=0)
 ```
 Output:
 
-|   | col1 | col2 | col3 |
-|---|------|------|------|
-| 0 | 1    | 3    |      |
-| 1 | 2    | 4    |      |
-| 2 | 1    | 5    |      |
-| 3 | 2    | 6    |      |
-| 0 | 1    |      | 7    |
-| 1 | 2    |      | 8    |
-| 2 | 1    |      | 9    |
-| 3 | 2    |      | 10   |
+|     | col1 | col2 | col3 |
+| --- | ---- | ---- | ---- |
+| 0   | 1    | 3    |      |
+| 1   | 2    | 4    |      |
+| 2   | 1    | 5    |      |
+| 3   | 2    | 6    |      |
+| 0   | 1    |      | 7    |
+| 1   | 2    |      | 8    |
+| 2   | 1    |      | 9    |
+| 3   | 2    |      | 10   |
 ```
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 
@@ -271,12 +271,12 @@ Pivot tables are a powerful tool for summarizing data. They allow you to group a
 ```
 Assume we have a dataframe df with the following columns:
 
-|   | col1 | col2 | col3 |
-|---|------|------|------|
-| 0 | 1    | 3    | 7    |
-| 1 | 1    | 3    | 9    |
-| 2 | 1    | 5    | 7    |
-| 3 | 1    | 5    | 9    |
+|     | col1 | col2 | col3 |
+| --- | ---- | ---- | ---- |
+| 0   | 1    | 3    | 7    |
+| 1   | 1    | 3    | 9    |
+| 2   | 1    | 5    | 7    |
+| 3   | 1    | 5    | 9    |
 ```
 
 ```python
@@ -287,10 +287,10 @@ df.pivot_table(index='col1', columns='col2', values='col3')
 ```
 Output:
 
-| col2 | 3 | 5 |
-|------|---|---|
-| col1 |   |   |
-| 1    | 8 | 8 |
+| col2 | 3   | 5   |
+| ---- | --- | --- |
+| col1 |     |     |
+| 1    | 8   | 8   |
 ```
 
 ```python
@@ -301,14 +301,14 @@ df.pivot_table(index='col1', columns='col2', values='col3', aggfunc=[np.mean, np
 ```
 Output:
 
-| col2 | 3       | 5       |
-|------|---------|---------|
-| col1 |         |         |
+| col2 | 3        | 5        |
+| ---- | -------- | -------- |
+| col1 |          |          |
 | 1    | mean sum | mean sum |
-|      | 8       | 8       |
+|      | 8        | 8        |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Data Visualization
 
@@ -332,7 +332,7 @@ df.plot.hist()
 df.plot.box()
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Time Series
 
@@ -358,7 +358,7 @@ df['2018-01-01':'2018-01-10']
 df['2018-01-01']
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Categorical Data
 
@@ -372,7 +372,7 @@ df['col1'] = df['col1'].astype('category')
 pd.get_dummies(df['col1'], prefix='col1')
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Missing Data
 
@@ -389,9 +389,9 @@ df.dropna()
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 1 | 2    | 3    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 1   | 2    | 3    |
 ```
 
 ```python
@@ -402,11 +402,11 @@ df.dropna(axis=1)
 ```
 Output:
 
-|   | col1 |
-|---|------|
-| 0 | 1    |
-| 1 | 2    |
-| 2 |      |
+|     | col1 |
+| --- | ---- |
+| 0   | 1    |
+| 1   | 2    |
+| 2   |      |
 ```
 
 ```python
@@ -417,11 +417,11 @@ df.fillna(0)
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 0    |
-| 1 | 2    | 3    |
-| 2 |      | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 0    |
+| 1   | 2    | 3    |
+| 2   |      | 4    |
 ```
 
 ```python
@@ -433,11 +433,11 @@ df['col2'].fillna(1)
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 1    |
-| 1 | 2    | 3    |
-| 2 | 0    | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 1    |
+| 1   | 2    | 3    |
+| 2   | 0    | 4    |
 ```
 
 ```python
@@ -448,11 +448,11 @@ df.fillna(method='ffill')
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    |      |
-| 1 | 2    | 3    |
-| 2 | 2    | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    |      |
+| 1   | 2    | 3    |
+| 2   | 2    | 4    |
 ```
 
 ```python
@@ -463,11 +463,11 @@ df.fillna(method='bfill')
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3    |
-| 1 | 2    | 3    |
-| 2 |      | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3    |
+| 1   | 2    | 3    |
+| 2   |      | 4    |
 ```
 
 ```python
@@ -478,11 +478,11 @@ df.fillna(df.mean())
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 3.5  |
-| 1 | 2    | 3    |
-| 2 | 1.5  | 4    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 3.5  |
+| 1   | 2    | 3    |
+| 2   | 1.5  | 4    |
 ```
 
 ```python
@@ -498,7 +498,7 @@ Output:
 ```
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Handling Large Datasets
@@ -527,7 +527,7 @@ df[~df['col1'].isin(df['col2'])]
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Method Chaining
 Method chaining is a way to write code in a more concise way. It allows you to string together multiple methods in a single line of code.
@@ -545,11 +545,11 @@ df['col1'].head(2).fillna(0)
 ```
 Output:
 
-| 0 | 1 |
-|---|---|
-| 1 | 2 |
+| 0   | 1   |
+| --- | --- |
+| 1   | 2   |
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Grouping and Aggregating
 
@@ -570,7 +570,7 @@ df.groupby('col1').mean()
 Output:
 
 | col1 | col2 | col3 |
-|------|------|------|
+| ---- | ---- | ---- |
 | A    | 1.5  | 150  |
 | B    | 3.5  | 350  |
 ```
@@ -584,7 +584,7 @@ df.groupby('col1').sum()
 Output:
 
 | col1 | col2 | col3 |
-|------|------|------|
+| ---- | ---- | ---- |
 | A    | 3    | 300  |
 | B    | 7    | 700  |
 ```
@@ -598,12 +598,12 @@ df.groupby('col1').max()
 Output:
 
 | col1 | col2 | col3 |
-|------|------|------|
+| ---- | ---- | ---- |
 | A    | 2    | 200  |
 | B    | 4    | 400  |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Pandas Gotchas
 
@@ -648,7 +648,7 @@ Output:
 1
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Make New Columns
 
@@ -665,11 +665,11 @@ df['col3'] = df['col1'] + df['col2']
 ```
 Output:
 
-|   | col1 | col2 | col3 |
-|---|------|------|------|
-| 0 | 1    | 4    | 5    |
-| 1 | 2    | 5    | 7    |
-| 2 | 3    | 6    | 9    |
+|     | col1 | col2 | col3 |
+| --- | ---- | ---- | ---- |
+| 0   | 1    | 4    | 5    |
+| 1   | 2    | 5    | 7    |
+| 2   | 3    | 6    | 9    |
 ```
 
 ```python
@@ -680,14 +680,14 @@ df['col4'] = np.where(df['col1'] > 2, 'high', 'low')
 ```
 Output:
 
-|   | col1 | col2 | col3 | col4 |
-|---|------|------|------|------|
-| 0 | 1    | 4    | 5    | low  |
-| 1 | 2    | 5    | 7    | low  |
-| 2 | 3    | 6    | 9    | high |
+|     | col1 | col2 | col3 | col4 |
+| --- | ---- | ---- | ---- | ---- |
+| 0   | 1    | 4    | 5    | low  |
+| 1   | 2    | 5    | 7    | low  |
+| 2   | 3    | 6    | 9    | high |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Make New Rows
 
@@ -704,15 +704,15 @@ df.loc[3] = [7, 8]
 ```
 Output:
 
-|   | col1 | col2 |
-|---|------|------|
-| 0 | 1    | 4    |
-| 1 | 2    | 5    |
-| 2 | 3    | 6    |
-| 3 | 7    | 8    |
+|     | col1 | col2 |
+| --- | ---- | ---- |
+| 0   | 1    | 4    |
+| 1   | 2    | 5    |
+| 2   | 3    | 6    |
+| 3   | 7    | 8    |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Rename Columns
 
@@ -729,14 +729,14 @@ df.rename(columns={'col1': 'column1', 'col2': 'column2'}, inplace=True)
 ```
 Output:
 
-|   | column1 | column2 |
-|---|---------|---------|
-| 0 | 1       | 4       |
-| 1 | 2       | 5       |
-| 2 | 3       | 6       |
+|     | column1 | column2 |
+| --- | ------- | ------- |
+| 0   | 1       | 4       |
+| 1   | 2       | 5       |
+| 2   | 3       | 6       |
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Exporting Data
@@ -775,4 +775,4 @@ df.to_dict('records')
 df.to_clipboard()
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

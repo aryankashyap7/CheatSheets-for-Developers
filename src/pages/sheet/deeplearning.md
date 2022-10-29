@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Deep Learning Cheatsheet"
 ---
 
@@ -7,19 +7,19 @@ title: "Deep Learning Cheatsheet"
 
 Deep Learning is a subfield of machine learning concerned with algorithms inspired by the structure and function of the brain called artificial neural networks. Learning can be supervised, semi-supervised or unsupervised.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Neural Networks
 
 Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. Neural networks can adapt to changing input; so the network generates the best possible result without needing to redesign the output criteria.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Architecture
 
 In a neural network, the nodes are organized in layers. An input layer, a hidden layer and an output layer.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Activation Functions
 
@@ -35,7 +35,7 @@ The most common activation functions are:
 | Leaky ReLU | The Leaky ReLU function is a non-linear function that maps any real value into another value between 0 and infinity. It is a straight line. |
 | Softmax    | The softmax function is a non-linear function that maps a vector of values to a vector of probabilities that sum to 1.                      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Loss Functions
 
@@ -50,7 +50,7 @@ The most common loss functions are:
 | Binary Cross-Entropy      | The binary cross-entropy is the sum of the binary cross-entropy between the target and the output.           |
 | Categorical Cross-Entropy | The categorical cross-entropy is the sum of the categorical cross-entropy between the target and the output. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Optimizers
 
@@ -68,7 +68,7 @@ The most common optimizers are:
 | RMSprop                       | RMSprop is an optimization algorithm used to find the values of parameters (coefficients) of a function (f) that minimizes a cost function (cost).                       |
 | Adam                          | Adam is an optimization algorithm used to find the values of parameters (coefficients) of a function (f) that minimizes a cost function (cost).                          |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Regularization
 
@@ -82,31 +82,31 @@ The most common regularization techniques are:
 | L2 Regularization | L2 regularization is a regularization technique where the regularization term is half the square of the magnitude of coefficients.          |
 | Dropout           | Dropout is a regularization technique where a proportion of nodes in the layer are randomly ignored (set to zero) for each training sample. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Backpropagation
 
 Backpropagation is a method used to train artificial neural networks. It is a supervised learning technique that calculates the gradient of the loss function with respect to the weights of the neural network. The gradient is used to update the weights of the neural network.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Dropout
 
 Dropout is a regularization technique where a proportion of nodes in the layer are randomly ignored (set to zero) for each training sample. This has the effect of making the training process noisy and forcing the network to learn robust features that are useful in conjunction with many different random subsets of the other neurons.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Convolutional Neural Networks
 
 Convolutional neural networks are a class of deep neural networks, most commonly applied to analyzing visual imagery. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics. They have applications in image and video recognition, recommender systems, image classification, medical image analysis, natural language processing, and financial time series.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Convolution
 
 Convolution is a mathematical operation on two functions f and g that produces a third function that expresses how the shape of one is modified by the other. Convolution is a mathematical operation on two functions f and g that produces a third function that expresses how the shape of one is modified by the other.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Pooling
 
@@ -119,7 +119,7 @@ The most common pooling operations are:
 | Max Pooling     | Max pooling is a pooling operation that calculates the maximum value for each patch of the input representation.     |
 | Average Pooling | Average pooling is a pooling operation that calculates the average value for each patch of the input representation. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Padding
 
@@ -132,19 +132,19 @@ The most common padding operations are:
 | Zero Padding   | Zero padding is a padding operation that adds zeros to the input representation.                                          |
 | Mirror Padding | Mirror padding is a padding operation that adds the mirror image of the input representation to the input representation. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Stride
 
 Stride is a technique used to control the spatial size of the output representation. It is used to control the spatial size of the output representation.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Filters/Kernels
 
 Filters are used to extract features from the input representation. They are also known as kernels.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### 1x1 Convolution
 
@@ -155,7 +155,7 @@ Filters are used to extract features from the input representation. They are als
 model.add(Conv2D(32, (1, 1), activation='relu', input_shape=(32, 32, 3)))
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### 3x3 Convolution
 
@@ -167,76 +167,76 @@ model.add(Conv2D(32, (1, 1), activation='relu', input_shape=(32, 32, 3)))
  [1, 1, 1]]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Feature Maps
 
 Feature maps are the output of a convolution operation. They are also known as activation maps.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Receptive Field
 
 The receptive field of a neuron is the region of the input representation that the neuron is sensitive to.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Recurrent Neural Networks
 
 Recurrent neural networks are a class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior for a time sequence. Unlike feedforward neural networks, RNNs can use their internal state (memory) to process sequences of inputs. This makes them applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Vanishing Gradient
 
 The vanishing gradient problem is a problem in which the gradient of the loss function with respect to the weights of the neural network becomes very small. This makes it difficult for the neural network to learn.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Exploding Gradient
 
 The exploding gradient problem is a problem in which the gradient of the loss function with respect to the weights of the neural network becomes very large. This makes it difficult for the neural network to learn.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Long Short-Term Memory
 
 Long Short-Term Memory (LSTM) is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. It can not only process single data points (such as images), but also entire sequences of data (such as speech or video). For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Gated Recurrent Unit
 
 Gated recurrent unit (GRU) is a gating mechanism in recurrent neural networks. GRU is an artificial recurrent neural network (RNN) architecture used in the field of deep learning. Unlike standard feedforward neural networks, GRU has feedback connections. It can not only process single data points (such as images), but also entire sequences of data (such as speech or video). For example, GRU is applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Generative Adversarial Network
 
 Generative adversarial network (GAN) is an unsupervised machine learning technique that uses two neural networks competing against each other to generate new data. The technique was developed by Ian Goodfellow and his colleagues at the University of Montreal in 2014.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Reinforcement Learning
 
 Reinforcement learning is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize the notion of cumulative reward.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Markov Decision Process
 
 A Markov decision process (MDP) is a mathematical framework for modeling decision making in situations where outcomes are partly random and partly under the control of a decision maker.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Q-Learning
 
 Q-learning is a model-free reinforcement learning algorithm. It can be used to find the optimal action-selection policy for a given (finite) Markov decision process (MDP).
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Policy Gradient
 
 Policy gradient is a class of reinforcement learning methods that directly optimize the policy function parameterized by a neural network.
 
-**[🔼Back to Top](#table-of-contents)**
+

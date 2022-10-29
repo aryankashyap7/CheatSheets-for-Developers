@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "MySQL Cheatsheet"
 ---
 
@@ -40,7 +40,7 @@ title: "MySQL Cheatsheet"
 
 > After getting introduced to the concept of data, databases and **DBMS/RDBMS**, we can finally learn about SQL. SQL or **Structured Query Language** is basically the language that we (the user) use to communicate with the Databases and get our required interpretation of data out of it. It is used for **storing, manipulating and retrieving** data out of a database.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # SQL Features
 
@@ -55,7 +55,7 @@ title: "MySQL Cheatsheet"
 7. `Create Views in the database`
 8. `Execute various aggregate functions`
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Basic SQL
 
@@ -66,7 +66,7 @@ title: "MySQL Cheatsheet"
 | CREATE DATABASE | CREATE DATABASE database-name | Used to create new SQL database in the server |
 | DROP DATABASE   | CREATE DATABASE database-name | Used to drop the existing database            |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## String Datatype
 
@@ -89,7 +89,7 @@ title: "MySQL Cheatsheet"
 | ENUM(val1,val2)  | String object that can have only 1 possible value from a list of size at most 65536 values in an ENUM list. If no value is inserted, a blank value is inserted. |
 | SET(val1,val2,…) | String object with 0 or more values, chosen from a list of possible values with a maximum limit of 64 values.                                                   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Numeric Datatype:
 
@@ -107,7 +107,7 @@ title: "MySQL Cheatsheet"
 | FLOAT (p)       | The floating-point number is stored. If the precision parameter is set between 0 to 24, the type is FLOAT() else if it lies between 25 to 53, the datatype is DOUBLE().                                                     |
 | DECIMAL(size,d) | Decimal number with a number of digits before decimal place set by size parameter, and a number of digits after the decimal point set by d parameter. Default values: size = 10, d = 10. Maximum Values: size = 65, d = 30. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Date/Time Datatype:
 
@@ -121,7 +121,7 @@ title: "MySQL Cheatsheet"
 | TIMESTAMP(fsp) | It stores values relative to the Unix Epoch, basically a Unix Timestamp. Values lie in the range of ‘1970-01-01 00:00:01’ UTC to ‘2038-01-09 03:14:07’ UTC. |
 | YEAR           | Stores values of years as a 4digit number format, with a range lying between -1901 to 2155.                                                                 |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Tables
 
@@ -131,7 +131,7 @@ title: "MySQL Cheatsheet"
 | DROP DATABASE  | CREATE DATABASE database-name                                                | Used to drop the existing database                                |
 | TRUNCATE TABLE | TRUNCATE TABLE table_name                                                    | used to delete the data inside a table, but not the table itself. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Alter Table
 
@@ -141,7 +141,7 @@ title: "MySQL Cheatsheet"
 | ALTER TABLE DROP   | ALTER TABLE table_name DROP COLUMN column_name            | Used to drop column in existing table   |
 | ALTER TABLE MODIFY | ALTER TABLE table_name MODIFY COLUMN column_name datatype | Used to modify column in existing table |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Insert Table
 
@@ -150,7 +150,7 @@ title: "MySQL Cheatsheet"
 | INSERT INTO | INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...); | Used to insert data for particular columnn to add new records into existing table |
 | INSERT INTO | INSERT INTO table_name VALUES (value1, value2, value3, ...);                                  | used to insert new record in existing table with all column                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Update Table
 
@@ -159,7 +159,7 @@ title: "MySQL Cheatsheet"
 | UPDATE  | UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition; | Used to update data for particular row for existing records in existing table |
 | UPDATE  | UPDATE table_name SET column1 = value1, column2 = value2, ... ;                | Used to update data for all row exist in existing table                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Delete Table
 
@@ -168,7 +168,7 @@ title: "MySQL Cheatsheet"
 | DELETE  | DELETE FROM table_name WHERE condition; | Used to delete data for particular row for existing records in existing table |
 | DELETE  | DELETE FROM table_name;                 | Used to delete data for all row exist in existing table                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Important Sql Keywords
 
@@ -208,7 +208,7 @@ title: "MySQL Cheatsheet"
 | GROUP BY        | Groups rows that have the same values into summary rows.                                                  | SELECT COUNT(StudentID), State FROM Students GROUP BY State                                      |
 | HAVING          | Enables the user to specify conditions that filter which group results appear in the results.             | HAVING COUNT(CustomerID) > 5                                                                     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Clauses in SQL
 
@@ -223,7 +223,7 @@ title: "MySQL Cheatsheet"
 | GROUP BY | Groups rows that have the same values into summary rows.                                | SELECT COUNT(StudentID), State FROM Students GROUP BY State;           |
 | HAVING   | It performs the same as the WHERE clause but can also be used with aggregate functions. | SELECT COUNT(ID), AGE FROM Students GROUP BY AGE HAVING COUNT(ID) > 5; |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # SQL Operators
 
@@ -241,7 +241,7 @@ Arithmetic Operators allows the user to perform arithmetic operations in SQL. Th
 | /        | Division       |
 | %        | Modulo         |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Bitwise Operators
 
@@ -253,7 +253,7 @@ Bitwise operators are used to performing Bit manipulation operations in SQL. The
 | !\| | Bitwise OR  |
 | ^                                                                                                               | Bitwise XOR |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Relational Operators
 
@@ -268,7 +268,7 @@ Relational operators are used to performing relational expressions in SQL, i.e t
 | <=       | Less than or equal to    |
 | <>       | Not equal to             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Compound Operators
 
@@ -285,7 +285,7 @@ Compound operators are basically a combination of 2 or more arithmetic or relati
 | !\|= | OR equals       |
 | ^=                                                                                                               | XOR equals      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Logical Operators
 
@@ -304,7 +304,7 @@ Logical operators are used to combining 2 or more relational statements into 1 c
 | OR       | Returns True if any of the conditions turn out to be True                                   |
 | SOME     | Returns True if any of the Subqueries meet the given condition.                             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Function in sql
 
@@ -325,7 +325,7 @@ The table below lists some of the Numeric functions in SQL with their descriptio
 | SQRT  | Returns the square root of a number.                     |
 | SUM   | Returns the sum of a set of values.                      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## SQL Server Date Functions
 
@@ -340,7 +340,7 @@ The table below lists some of the Date functions in SQL with their description:
 | DAY               | Returns the day of the month for a specified date.          |
 | GETDATE           | Returns the current date and time from the database.        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## SQL Server Advanced Functions
 
@@ -356,7 +356,7 @@ The table below lists some of the Advanced functions in SQL with their descripti
 | SYSTEM_USER | Returns the login name for the current user                                      |
 | USER_NAME   | Returns the database user name based on the specified id.                        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Joins in SQL
 
@@ -368,4 +368,4 @@ The table below lists some of the Advanced functions in SQL with their descripti
 | FULL JOIN  | SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name WHERE condition; | returns all records when there is a match in left (table1) or right (table2) table records.                                                                                  |
 | SELF JOIN  | SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;                                                     | A self join is a regular join, but the table is joined with itself.                                                                                                          |
 
-**[🔼Back to Top](#table-of-contents)**
+

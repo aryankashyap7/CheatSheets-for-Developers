@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Python Cheatsheet"
 ---
 
@@ -170,7 +170,7 @@ if __name__ == '__main__':     # Runs main() if file wasn't imported.
     main()
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## List
 
@@ -212,7 +212,7 @@ list_of_chars    = list(<str>)
 <list>.clear()                 # Removes all items. Also works on dictionary and set.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Dictionary
 
@@ -254,7 +254,7 @@ Counter({'blue': 3, 'red': 2, 'yellow': 1})
 ('blue', 3)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Set
 
@@ -291,7 +291,7 @@ Counter({'blue': 3, 'red': 2, 'yellow': 1})
 <frozenset> = frozenset(<collection>)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tuple
 
@@ -320,7 +320,7 @@ Point(x=1, y=2)
 2
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Range
 
@@ -337,7 +337,7 @@ Point(x=1, y=2)
 [0, 1, 2]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Enumerate
 
@@ -351,7 +351,7 @@ Enumerates is a built-in function that returns an enumerate object. enumerate() 
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Iterator
 
@@ -384,7 +384,7 @@ import itertools as it
 <iter> = it.islice(<coll>, from_inc, …)     # `to_exclusive, +step_size`. Indices can be None.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Generator
 
@@ -404,7 +404,7 @@ def count(start, step):
 (10, 12, 14)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Type
 
@@ -466,7 +466,7 @@ True
 +--------------------+----------+----------+----------+----------+----------+
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## String
 
@@ -519,7 +519,7 @@ True
 
 - **Also: `'isspace()'` checks for `'[ \t\n\r\f\v\x1c-\x1f\x85\u2000…]'`.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Regex
 
@@ -563,7 +563,7 @@ import re
 - **As shown above, it restricts all special sequence matches to the first 128 characters and prevents `'\s'` from accepting `'[\x1c-\x1f]'` (the so-called separator characters).**
 - **Use a capital letter for negation (all non-ASCII characters will be matched when used in combination with ASCII flag).**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Format
 
@@ -668,7 +668,7 @@ import re
 {90:X}                                   # '5A'
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Numbers
 
@@ -735,7 +735,7 @@ from random import random, randint, choice        # Also shuffle, gauss, triangu
 <int> = ~<int>                                    # Not. Also -<int> - 1.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Combinatorics
 
@@ -779,7 +779,7 @@ import itertools as it
  ('c', 'a'), ('c', 'b')]                          # c x  x  .
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Datetime
 
@@ -869,7 +869,7 @@ from dateutil.tz import UTC, tzlocal, gettz, datetime_exists, resolve_imaginary
 <float>  = <TD>    / <TD>                   # How many weeks/years there are in TD. Also //.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Arguments
 
@@ -962,7 +962,7 @@ def f(x, y, *, z): ...          # f(x=1, y=2, z=3) | f(1, y=2, z=3) | f(1, 2, z=
 head, *body, tail = <coll.>     # Head or tail can be omitted.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Inline
 
@@ -1035,7 +1035,7 @@ Player = make_dataclass('Player', ['loc', 'dir'])   # Creates a class.
 player = Player(point, direction)                   # Returns its instance.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Imports
 
@@ -1109,7 +1109,7 @@ def get_counter():
 (1, 2, 3)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Decorator
 
@@ -1183,7 +1183,7 @@ def add(x, y):
 
 - **Using only `'@debug'` to decorate the add() function would not work here, because debug would then receive the add() function as a 'print_result' argument. Decorators can however manually check if the argument they received is a function and act accordingly.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Class
 
@@ -1339,7 +1339,7 @@ from copy import copy, deepcopy
 <object> = deepcopy(<object>)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Duck Types
 
@@ -1590,7 +1590,7 @@ class MyAbcSequence(abc.Sequence):
 - **Other ABCs that generate missing methods are: MutableSequence, Set, MutableSet, Mapping and MutableMapping.**
 - **Names of their required methods are stored in `'<abc>.__abstractmethods__'`.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Enum
 
@@ -1648,7 +1648,7 @@ LogicOp = Enum('LogicOp', {'AND': partial(lambda l, r: l and r),
 
 - **Member names are in all caps because trying to access a member that is named after a reserved keyword raises SyntaxError.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Exceptions
 
@@ -1774,7 +1774,7 @@ class MyError(Exception): pass
 class MyInputError(MyError): pass
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Exit
 
@@ -1787,7 +1787,7 @@ sys.exit(<el>)                    # Prints to stderr and exits with 1.
 sys.exit(<int>)                   # Exits with passed exit code.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Print
 
@@ -1807,7 +1807,7 @@ pprint(<collection>, width=80, depth=None, compact=False, sort_dicts=True)
 
 - **Levels deeper than 'depth' get replaced by '...'.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Input
 
@@ -1821,7 +1821,7 @@ pprint(<collection>, width=80, depth=None, compact=False, sort_dicts=True)
 - **Prompt string is printed to the standard output before reading input.**
 - **Raises EOFError when user hits EOF (ctrl-d/ctrl-z⏎) or input stream gets exhausted.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Command Line Arguments
 
@@ -1849,7 +1849,7 @@ value = args.<name>
 - **Use `'default=<el>'` to set the default value.**
 - **Use `'type=FileType(<mode>)'` for files. Accepts 'encoding', but 'newline' is None.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Open
 
@@ -1922,7 +1922,7 @@ def write_to_file(filename, text):
         file.write(text)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Paths
 
@@ -2006,7 +2006,7 @@ from pathlib import Path
 <file> = open(<Path>)               # Also <Path>.read/write_text/bytes().
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## OS Commands
 
@@ -2065,7 +2065,7 @@ CompletedProcess(args=['bc', '-s'], returncode=0)
 '2\n'
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## JSON
 
@@ -2093,7 +2093,7 @@ def write_to_json_file(filename, an_object):
         json.dump(an_object, file, ensure_ascii=False, indent=2)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pickle
 
@@ -2121,7 +2121,7 @@ def write_to_pickle_file(filename, an_object):
         pickle.dump(an_object, file)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## CSV
 
@@ -2197,7 +2197,7 @@ def write_to_csv_file(filename, rows, dialect='excel'):
         writer.writerows(rows)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## SQLite
 
@@ -2278,7 +2278,7 @@ with <conn>.begin(): ...                        # Exits the block with commit or
 +------------+--------------+-----------+-----------------------------------+
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Bytes
 
@@ -2325,7 +2325,7 @@ def write_bytes(filename, bytes_obj):
         file.write(bytes_obj)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Struct
 
@@ -2371,7 +2371,7 @@ b'\x00\x01\x00\x02\x00\x00\x00\x03'
 - **`'f'` - float (4/4)**
 - **`'d'` - double (8/8)**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array
 
@@ -2386,7 +2386,7 @@ from array import array
 <file>.write(<array>)                          # Writes array to the binary file.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Memory View
 
@@ -2420,7 +2420,7 @@ from array import array
 '<hex>' = <mview>.hex()                        # Treats mview as a bytes object.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Deque
 
@@ -2438,7 +2438,7 @@ from collections import deque
 <deque>.rotate(n=1)                            # Rotates elements to the right.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Functions
 
@@ -2455,7 +2455,7 @@ from collections import deque
 3
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Map
 
@@ -2470,7 +2470,7 @@ from collections import deque
 [2, 3, 4]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Filter
 
@@ -2485,7 +2485,7 @@ from collections import deque
 [3]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Reduce
 
@@ -2503,7 +2503,7 @@ from functools import reduce
 6
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Zip
 
@@ -2519,7 +2519,7 @@ from functools import reduce
 [(1, 4), (2, 5), (3, 6)]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Partial
 
@@ -2540,7 +2540,7 @@ from functools import partial
 3
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Compose
 
@@ -2567,7 +2567,7 @@ from functools import reduce
 -3
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Currying
 
@@ -2586,7 +2586,7 @@ from functools import reduce
 3
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Memoize
 
@@ -2609,7 +2609,7 @@ from functools import lru_cache
 55
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Decorator
 
@@ -2640,7 +2640,7 @@ Inside
 After
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Closure
 
@@ -2666,7 +2666,7 @@ def <func>(…):
 1
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Generator
 
@@ -2687,7 +2687,7 @@ def <func>(…):
 [1, 2, 3]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Generator
 
@@ -2708,7 +2708,7 @@ def <func>(…):
 [1, 2, 3]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Iterator
 
@@ -2731,7 +2731,7 @@ def <func>(…):
 ```
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Context Manager
 
@@ -2762,7 +2762,7 @@ Inside
 Exit
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Decorator
 
@@ -2793,7 +2793,7 @@ Inside
 After
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Modules
 
@@ -2822,7 +2822,7 @@ args = parser.parse_args()
 1000
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Logging
 
@@ -2842,7 +2842,7 @@ logging.<level>(<msg>)
 2019-01-01 00:00:00,000 This is a debug message
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Sqlite
 
@@ -2875,7 +2875,7 @@ c.fetchall()
 [(1, 'a', 1.0)]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pickle
 
@@ -2902,7 +2902,7 @@ with open('<file>', 'rb') as f:
 [1, 2, 3]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Collections
 
@@ -2920,7 +2920,7 @@ from collections import <collection>
 Counter({1: 3, 2: 3, 3: 3})
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Counter
 
@@ -2938,7 +2938,7 @@ Counter(<iterable>)
 Counter({1: 3, 2: 3, 3: 3})
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## OrderedDict
 
@@ -2956,7 +2956,7 @@ OrderedDict(<iterable>)
 OrderedDict([('a', 1), ('b', 2), ('c', 3)])
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Defaultdict
 
@@ -2983,7 +2983,7 @@ d[foo]: bar
 d[bar]: default value
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Namedtuple
 
@@ -3035,7 +3035,7 @@ Point(x=11, y=22)
 Point(x=100, y=22)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## ChainMap
 
@@ -3091,7 +3091,7 @@ ChainMap(<dict1>, <dict2>, ...)
 [2, 1]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Heapq
 
@@ -3134,7 +3134,7 @@ heapq.<function>(<list>, <value>)
 (7, 'release product')
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Bisect
 
@@ -3171,7 +3171,7 @@ bisect.<function>(<list>, <value>)
 [33, 70, 77, 89, 90, 99, 100]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array
 
@@ -3198,7 +3198,7 @@ array('<typecode>', <iterable>)
 array('H', [10, 700])
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Weakref
 
@@ -3235,7 +3235,7 @@ weakref.<function>(<object>)
 True
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Types
 
@@ -3299,7 +3299,7 @@ True
 True
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Copy
 
@@ -3458,7 +3458,7 @@ copy.<function>(<object>)
 [3, [55, 44, 33, 22], (7, 8, 9)]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pprint
 
@@ -3540,7 +3540,7 @@ pprint.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Reprlib
 
@@ -3582,7 +3582,7 @@ reprlib.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Enum
 
@@ -3639,7 +3639,7 @@ True
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pathlib
 
@@ -3675,7 +3675,7 @@ PosixPath('/home/username/Python')
 PosixPath('/home/username')
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Functools
 
@@ -3708,7 +3708,7 @@ functools.<function>(<object>)
 3
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Itertools
 
@@ -3738,7 +3738,7 @@ itertools.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Contextlib
 
@@ -3783,7 +3783,7 @@ ERROR: showing example of handling an error
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Atexit
 
@@ -3816,7 +3816,7 @@ atexit.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Traceback
 
@@ -3866,7 +3866,7 @@ File "test.py", line 11, in i
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Sys
 
@@ -3907,13 +3907,13 @@ sys.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## IO
 
 The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These are generic categories, and various backing stores can be used for each of them.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Time
 
@@ -3948,7 +3948,7 @@ time.struct_time(tm_year=2021, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Datetime
 
@@ -3979,7 +3979,7 @@ datetime.datetime(2021, 1, 1, 0, 0)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Calendar
 
@@ -4010,7 +4010,7 @@ False
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Random
 
@@ -4065,7 +4065,7 @@ random.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Statistics
 
@@ -4108,7 +4108,7 @@ statistics.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Math
 
@@ -4143,7 +4143,7 @@ math.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Cmath
 
@@ -4178,7 +4178,7 @@ cmath.<function>(<object>)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 
@@ -4261,7 +4261,7 @@ from queue import Queue
 <el> = <Queue>.get_nowait()                    # Raises queue.Empty exception if empty.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Operator
 
@@ -4287,7 +4287,7 @@ first_element    = op.methodcaller('pop', 0)(<list>)
 - **Binary operators require objects to have and(), or(), xor() and invert() special methods, unlike logical operators that work on all types of objects.**
 - **Also: `'<bool> = <bool> &|^ <bool>'` and `'<int> = <bool> &|^ <int>'`.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Introspection
 
@@ -4322,7 +4322,7 @@ delattr(<object>, '<attr_name>')           # Same. Also `del <object>.<attr_name
 <type> = <Param>.annotation                # Type or <Param>.empty.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Metaprogramming
 
@@ -4417,7 +4417,7 @@ MyMetaClass.__base__ == type         # MyMetaClass is a subclass of type.
 +-------------+-------------+
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Eval
 
@@ -4429,7 +4429,7 @@ MyMetaClass.__base__ == type         # MyMetaClass is a subclass of type.
 ValueError: malformed node or string
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Coroutines
 
@@ -4498,7 +4498,7 @@ if __name__ == '__main__':
 
 <br>
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 # Libraries
 
@@ -4513,7 +4513,7 @@ if __name__ == '__main__':
 Processing: 100%|████████████████████| 3/3 [00:03<00:00,  1.00s/it]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Plot
 
@@ -4528,7 +4528,7 @@ plt.show()                                     # Displays the figure.
 plt.clf()                                      # Clears the figure.
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Table
 
@@ -4544,7 +4544,7 @@ with open('test.csv', encoding='utf-8', newline='') as file:
 print(table)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Curses
 
@@ -4575,7 +4575,7 @@ if __name__ == '__main__':
     curses.wrapper(main)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Logging
 
@@ -4628,7 +4628,7 @@ retention=<int>|<datetime.timedelta>|<str>
 - **`'<timedelta>'` - Max age of a file.**
 - **`'<str>'` - Max age as a string: `'1 week, 3 days'`, `'2 months'`, ...**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Scraping
 
@@ -4655,7 +4655,7 @@ except requests.exceptions.ConnectionError:
     print("You've got problems with connection.", file=sys.stderr)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Web
 
@@ -4712,7 +4712,7 @@ def send_json(sport):
 {'team': 'arsenal f.c.', 'odds': [2.09, 3.74, 3.68]}
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Profiling
 
@@ -4779,7 +4779,7 @@ with cg.PyCallGraph(drawer):
     <code_to_be_profiled>
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## NumPy
 
@@ -4893,7 +4893,7 @@ right = [[0.1,  0.6,  0.8],                             # Shape: (3, 3) <- !
 [1, 2, 1]
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Image
 
@@ -4997,7 +4997,7 @@ frames += reversed(frames[1:-1])
 imageio.mimsave('test.gif', frames, duration=0.03)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Audio
 
@@ -5134,7 +5134,7 @@ samples_b   = b''.join(struct.pack('<h', int(f * 30000)) for f in samples_f)
 simpleaudio.play_buffer(samples_b, 1, 2, F)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pygame
 
@@ -5296,7 +5296,7 @@ if __name__ == '__main__':
     main()
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pandas
 
@@ -5387,7 +5387,7 @@ y    2
 
 - **Last result has a hierarchical index. Use `'<Sr>[key_1, key_2]'` to get its values.**
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### DataFrame
 
@@ -5764,7 +5764,7 @@ plt.bar(y, data, align='ENTER ALIGNMENT HERE', alpha=ENTER ALPHA HERE)
 plt.pie(data, labels=labels, explode=(x, x, ... x))
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tkinter
 
@@ -5829,7 +5829,7 @@ root.mainloop()
     text = Text(root, ...)
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 
@@ -5918,4 +5918,4 @@ if __name__ == '__main__':
 - **Ctrl+F / ⌘F is usually sufficient.**
 - **Searching `'#<title>'` on the [webpage](https://gto76.github.io/python-cheatsheet/) will limit the search to the titles.**
 
-**[🔼Back to Top](#table-of-contents)**
+

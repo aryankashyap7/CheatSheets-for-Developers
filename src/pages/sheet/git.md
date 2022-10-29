@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Git Cheatsheet"
 ---
 
@@ -38,7 +38,7 @@ title: "Git Cheatsheet"
 | `cd -`  | Change directory to previous directory |
 | `pwd`   | Print working directory                |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Setting up Alias
 
@@ -48,7 +48,7 @@ title: "Git Cheatsheet"
 | `git config --global alias.br branch`   | Set `br` as alias for `branch`   |
 | `git config --global alias.ci commit`   | Set `ci` as alias for `commit`   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Git Configuration
 
@@ -61,7 +61,7 @@ title: "Git Cheatsheet"
 | `git config --global user.email "Your email"` | Configure email                                     |
 | `git config --global core.editor vim`         | Configure editor                                    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Getting & Creating Projects
 
@@ -73,7 +73,7 @@ title: "Git Cheatsheet"
 | `git clone --bare [https://url]`   | Clone source code from a remote repository without a working directory                                   |
 | `git clone --mirror [https://url]` | Clone source code from a remote repository without a working directory and without the remote repository |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Basic Commands
 
@@ -97,7 +97,7 @@ title: "Git Cheatsheet"
 | `git commit --amend --no-edit --date="`date -R`" --reset-author`               | Amend last commit with new date and new author                            |
 | `git commit --amend --no-edit --date="`date -R`" --reset-author --allow-empty` | Amend last commit with new date and new author and allow empty commit     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Branching & Merging
 
@@ -120,7 +120,7 @@ title: "Git Cheatsheet"
 | `git branch --unset-upstream [branch]`                  | Unset a local branch's upstream branch                                              |
 | `git push origin [branch]`                              | Push a branch to your remote repository                                             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Sharing & Updating Projects
 
@@ -133,7 +133,7 @@ title: "Git Cheatsheet"
 | `git push origin :[branch]`         | Delete a remote branch                                      |
 | `git push origin [branch] --force`  | Force push changes to remote repository                     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Inspection & Comparison
 
@@ -148,7 +148,7 @@ title: "Git Cheatsheet"
 | `git log --graph --oneline`       | View changes (graphical and brief)               |
 | `git log --graph --oneline --all` | View changes (graphical, brief and all branches) |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Undoing Things
 
@@ -164,7 +164,7 @@ title: "Git Cheatsheet"
 | `git revert [commit]`              | Revert a commit                                                                                            |
 | `git revert [commit] --no-commit`  | Revert a commit without committing                                                                         |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Syncing Forks
 
@@ -175,7 +175,7 @@ title: "Git Cheatsheet"
 | `git fetch upstream`                    | Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master                                     |
 | `git merge upstream/master`             | Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Rewrite History
 
@@ -187,7 +187,7 @@ title: "Git Cheatsheet"
 | `git rebase -i [SHA1]`        | Interactive rebase |
 | `git rebase -i [tag]`         | Interactive rebase |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Stashing
 
@@ -199,7 +199,7 @@ title: "Git Cheatsheet"
 | `git stash show`           | Show the changes in the last stashed changeset                 |
 | `git stash show -p`        | Show the changes in the last stashed changeset (detailed)      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tagging
 
@@ -210,7 +210,7 @@ title: "Git Cheatsheet"
 | `git tag [tag]`                   | Annotate a tag                   |
 | `git tag -a [tag] -m "[message]"` | Annotate a tag with a message    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ---
 
@@ -235,7 +235,7 @@ git branch -m main
 git push -f origin main
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Update Commit
 
@@ -248,7 +248,7 @@ git commit --amend --no-edit
 # now your last commit contains that change!
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Update commit message
 
@@ -259,7 +259,7 @@ git commit --amend
 # follow prompts to change the commit message
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Undo a commit from like 5 commits ago
 
@@ -276,4 +276,4 @@ git revert [saved hash]
 # or just save and commit
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

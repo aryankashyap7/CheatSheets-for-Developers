@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "PHP Cheatsheet"
 ---
 
@@ -13,7 +13,7 @@ echo $var;
 ?>
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Php Operators
 
@@ -77,7 +77,7 @@ print_r($x + $y); // $x and $y have the same key, so the value for that key in $
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Php Data Types
 
@@ -124,7 +124,7 @@ fclose($myfile);
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Php Functions
 
@@ -147,4 +147,4 @@ echo str_replace("World", "Dolly", "Hello World");
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

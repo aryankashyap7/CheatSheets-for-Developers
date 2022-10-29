@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Minikube Cheatsheet"
 ---
 
@@ -8,7 +8,7 @@ title: "Minikube Cheatsheet"
 Minikube is a tool that makes it easy to run Kubernetes locally.
 Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Basic Commands
 
@@ -35,4 +35,4 @@ Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for us
 | `Check latest version`                       | minikube update check                                            |
 | `minikube get service information`           | minikube service <srv-name>                                      |
 
-**[🔼Back to Top](#table-of-contents)**
+

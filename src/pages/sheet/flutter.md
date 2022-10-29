@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Flutter Cheatsheet"
 ---
 
@@ -133,7 +133,7 @@ So all the children of MaterialApp will have access to EnModel structure.
 
 In order to have access you will have still to use ScopeModelDescendant to wrap the Widget that will use that as above.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## UI
 
@@ -160,7 +160,7 @@ You can add extra style (background color, rounded corners, etc) to a widget usi
 DecorationBox(decoration: BoxDecoration());
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Layout
 
@@ -184,7 +184,7 @@ Both `Expanded` and `Flexible` accept a `flex` param, where you can pass a weigh
 MediaQuery.of(context)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Navigation
 
@@ -226,7 +226,7 @@ In certain cases is useful to trigger an action when a navigation is called,you 
 
 Also edit `Navigator.push<type>[…].then((type value) {})` adding future type.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Sidebar
 
@@ -250,7 +250,7 @@ New Scaffold(drawer:
 
 `New Scaffold(endDrawer:`
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Tabs
 
@@ -271,7 +271,7 @@ DefaultTabController(length: 2, child: Scaffold( body: TabBarView(),  appBar: Ap
 DefaultTabController(length: 2, child: Scaffold( body: TabBarView(), bottomNavigationBar:  TabBar(tabs: <Widget>[ Tab() ])
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Routing
 
@@ -315,7 +315,7 @@ Then you can call .pushNamed(context, ‘/product/‘ + index.toString())
 
 Also there’s a fallback for not registered route onUnkownRoute.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Alert
 
@@ -334,7 +334,7 @@ showDialog(context: context, builder: (BuilderContext context) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Modal
 
@@ -346,7 +346,7 @@ showModalButtonSheet(context: context, builder: (BuilderContext context) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Textfield
 
@@ -358,7 +358,7 @@ In order to handle password use `InputDecoration(obscureText: (true|false)`.
 
 In order to get the value `onChanged: (value) {}`. In order to monitor the value you need a `StatefulWidget`.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## AppBar
 
@@ -366,13 +366,13 @@ AppBar component allow you to set _title_, _back_ and _actions_ for the status b
 `title` contains the title for widget.
 `actions` is an array of widgets that stay on the right.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Gesture
 
 You can turn every widget with an action wrapping inside `GestureDetector`.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Keyboard
 
@@ -384,4 +384,4 @@ FocusScope.of(context).requestFocus(FocusNode());
 
 So basically you fake the current focus node a new one not connected to any form/textarea.
 
-**[🔼Back to Top](#table-of-contents)**
+

@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "ExpressJs Cheatsheet"
 ---
 
@@ -19,7 +19,10 @@ And then run
 
 to install all necessary modules
 
+<<<<<<< HEAD:src/pages/sheet/expressjs.md
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
 
 ## Start the server
 
@@ -39,7 +42,7 @@ add this code in app.js
 
 and run app.js to start the serve. Go to localhost:port to see the response
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Routing
 
@@ -57,14 +60,19 @@ Here, METHOD is an HTTP request method, and HANDLER is the function executed whe
           res.sendFile(__dirname +'/views/index.html') ;
         })
 
+<<<<<<< HEAD:src/pages/sheet/expressjs.md
+
+
+=======
 **[🔼Back to Top](#table-of-contents)**
+>>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
 
 ## Serve Static assets
 
 Static assets include things like css files
 app.use('/public',express.static(\_\_dirname + '/public'));
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Serve JSON
 
@@ -74,4 +82,4 @@ function myFunction2(req, res) {
 res.json({"message": "Hello json"}) ;
 }
 
-**[🔼Back to Top](#table-of-contents)**
+

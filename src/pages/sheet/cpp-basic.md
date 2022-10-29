@@ -68,7 +68,7 @@ Its main features are:
 - Extensive toolset
 - Support for multi-paradigm programming
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Structure of a C++ Program
@@ -92,7 +92,7 @@ Header files are used to include the definitions of functions, classes, etc. tha
 ```cpp
 #include <iostream>
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Namespace
@@ -102,7 +102,7 @@ A namespace is a declarative region that provides a scope to the identifiers (th
 ```cpp
 using namespace std;
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Keywords
@@ -113,7 +113,7 @@ Keywords are the reserved words in C++ that have a predefined meaning and cannot
 auto, break, case, char, const, continue, default, do, double, else, enum, extern, float, for, goto, if, int, long, register, return, short, signed, sizeof, static, struct, switch, typedef, union, unsigned, void, volatile, while
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Operators
@@ -124,7 +124,7 @@ Operators are special symbols in C++ that carry out arithmetic or logical comput
 +, -, *, /, %, ++, --, =, +=, -=, *=, /=, %=, ==, !=, >, <, >=, <=, &&, ||, !
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Comments
@@ -140,14 +140,14 @@ multi-line comment
 */
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Data Types
 
 Data types specify the different sizes and values that can be stored in the variable. C++ is a strongly typed language, and as such, every variable has a specific type, which cannot be changed once declared. The variable type must be declared before using the variable name.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 #### Primitive Data Types
@@ -166,24 +166,24 @@ Derived data types are formed by using one or more primitive types. They include
 array, pointer, reference, function
 ```
 
-|Data Type|Ranges|Description|
-|---|---|---|
-|char|1 byte|-128 to 127 or 0 to 255|
-|unsigned char|1 byte|0 to 255|
-|signed char|1 byte|-128 to 127|
-|int|2 or 4 bytes|-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647|
-|unsigned int|2 or 4 bytes|0 to 65,535 or 0 to 4,294,967,295|
-|short int|2 bytes|-32,768 to 32,767|
-|unsigned short int|2 bytes|0 to 65,535|
-|long int|4 bytes|-2,147,483,648 to 2,147,483,647|
-|unsigned long int|4 bytes|0 to 4,294,967,295|
-|float|4 bytes|1.2E-38 to 3.4E+38|
-|double|8 bytes|2.3E-308 to 1.7E+308|
-|long double|10 bytes|3.4E-4932 to 1.1E+4932|
-|bool|1 byte|true or false|
+| Data Type          | Ranges       | Description                                          |
+| ------------------ | ------------ | ---------------------------------------------------- |
+| char               | 1 byte       | -128 to 127 or 0 to 255                              |
+| unsigned char      | 1 byte       | 0 to 255                                             |
+| signed char        | 1 byte       | -128 to 127                                          |
+| int                | 2 or 4 bytes | -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 |
+| unsigned int       | 2 or 4 bytes | 0 to 65,535 or 0 to 4,294,967,295                    |
+| short int          | 2 bytes      | -32,768 to 32,767                                    |
+| unsigned short int | 2 bytes      | 0 to 65,535                                          |
+| long int           | 4 bytes      | -2,147,483,648 to 2,147,483,647                      |
+| unsigned long int  | 4 bytes      | 0 to 4,294,967,295                                   |
+| float              | 4 bytes      | 1.2E-38 to 3.4E+38                                   |
+| double             | 8 bytes      | 2.3E-308 to 1.7E+308                                 |
+| long double        | 10 bytes     | 3.4E-4932 to 1.1E+4932                               |
+| bool               | 1 byte       | true or false                                        |
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Variables
 
@@ -192,7 +192,7 @@ Variables are used to store information to be referenced and manipulated in a co
 ```cpp
 int a = 10;
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Constants
@@ -203,7 +203,7 @@ Constants are fixed values that the program may not alter during its execution. 
 const int a = 10;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Input and Output
@@ -217,7 +217,7 @@ int a;
 cin >> a;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ### Output
@@ -228,7 +228,7 @@ The C++ language provides several ways to produce output. The most common way is
 cout << "Hello World!";
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Functions
@@ -241,7 +241,7 @@ int add(int a, int b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Conditional Statements
 
@@ -257,7 +257,7 @@ if (a > b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Control Statements
 
@@ -310,13 +310,13 @@ jump:
 cout << "a is 10";
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Data Structures
 
 Data structures are used to store collections of data, for example, an array can store a list of items. C++ provides several built-in data structures that you can use in your programs.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Arrays
 
@@ -326,7 +326,7 @@ An array is a data structure consisting of a collection of elements (values or v
 int a[5] = {1, 2, 3, 4, 5};
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Vectors
 
@@ -336,7 +336,7 @@ Vectors are sequence containers representing arrays that can change in size.
 vector<int> a = {1, 2, 3, 4, 5};
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Strings
 
@@ -346,7 +346,7 @@ Strings are objects that represent sequences of characters.
 string a = "Hello World!";
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Linked Lists
 
@@ -361,7 +361,7 @@ struct Node {
 struct Node *head = NULL;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Stacks
 
@@ -371,7 +371,7 @@ Stacks are a type of container adaptors with LIFO(Last In First Out) type of wor
 stack<int> a;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Queues
 
@@ -382,7 +382,7 @@ Queues are a type of container adaptors with FIFO(First In First Out) type of wo
 queue<int> a;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Trees
 
@@ -398,7 +398,7 @@ struct Node {
 struct Node *root = NULL;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Graphs
 
@@ -414,7 +414,7 @@ struct Node {
 struct Node *head = NULL;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Hash Tables
 
@@ -436,7 +436,7 @@ class HashTable {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Structures
 
@@ -451,7 +451,7 @@ struct Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Classes
 
@@ -501,7 +501,7 @@ class Student : public Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Polymorphism
 
@@ -539,7 +539,7 @@ class Teacher : public Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Encapsulation
 
@@ -561,7 +561,7 @@ class Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Abstraction
 
@@ -583,7 +583,7 @@ class Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Constructors
 
@@ -606,7 +606,7 @@ class Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Destructors
 
@@ -630,7 +630,7 @@ class Person {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Enumerations
 
@@ -648,7 +648,7 @@ enum Day {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Unions
 
@@ -662,7 +662,7 @@ union Data {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pointers
 
@@ -685,7 +685,7 @@ Address stored in p variable: 0x7ffeeb2a5f0c
 Value of *p variable: 10
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Dynamic Memory Allocation
 
@@ -732,7 +732,7 @@ Dynamic memory allocation is a process by which a program can obtain a run-time 
     int *p = new int[5];
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Templates
 
@@ -747,7 +747,7 @@ T sum(T a, T b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Exception Handling
 
@@ -802,7 +802,7 @@ Exception Caught
 After catch (Will be executed)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## File Handling
 
@@ -866,19 +866,19 @@ John
 25
 ```
 
-| **Function** | **Description** |
-| --- | --- |
-| `open()` | This function is used to open a file. |
-| `close()` | This function is used to close a file. |
-| `eof()` | This function is used to check whether the end of file has been reached. |
-| `fail()` | This function is used to check whether a file operation has failed. |
-| `get()` | This function is used to read a character from a file. |
-| `getline()` | This function is used to read a line from a file. |
-| `put()` | This function is used to write a character to a file. |
-| `read()` | This function is used to read data from a file. |
-| `write()` | This function is used to write data to a file. |
+| **Function** | **Description**                                                          |
+| ------------ | ------------------------------------------------------------------------ |
+| `open()`     | This function is used to open a file.                                    |
+| `close()`    | This function is used to close a file.                                   |
+| `eof()`      | This function is used to check whether the end of file has been reached. |
+| `fail()`     | This function is used to check whether a file operation has failed.      |
+| `get()`      | This function is used to read a character from a file.                   |
+| `getline()`  | This function is used to read a line from a file.                        |
+| `put()`      | This function is used to write a character to a file.                    |
+| `read()`     | This function is used to read data from a file.                          |
+| `write()`    | This function is used to write data to a file.                           |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Multithreading
 
@@ -905,7 +905,7 @@ int main() {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Web Programming
 
@@ -946,5 +946,5 @@ int main(int argc, char **argv) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
