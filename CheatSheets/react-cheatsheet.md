@@ -157,26 +157,6 @@ function MyComponent() {
 }
 ```
 
-in this example, we have a title state that store string with "hello world". When we click on the button, the setTitle method update the state to "react cheatcheet"
-
-```
-import { useState } from "react";
-
-export default function App() {
-  const [title, setTitle] = useState("hello world");
-  
-  const handleChange = () => {
-    setTitle("react cheatcheet");
-  };
-  
-  return (
-    <div className="App">
-      <h1>{title} useState</h1>
-      <button onClick={handleChange}>Change Title</button>
-    </div>
-  );
-}
-```
 
 **[🔼Back to Top](#react-js-for-developers)**
 
