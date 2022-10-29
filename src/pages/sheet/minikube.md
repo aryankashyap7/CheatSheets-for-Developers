@@ -1,6 +1,6 @@
 <<<<<<< HEAD:src/pages/sheet/minikube.md
 ---
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/CheatSheet.astro
 title: "Minikube Cheatsheet"
 ---
 =======
