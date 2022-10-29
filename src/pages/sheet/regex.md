@@ -24,7 +24,7 @@ Created: 2022-10-27
 
 > Regular expressions (also referred to as rational expressions) are sequences of characters that specify a search pattern in the text. Such patterns are often used in string-searching algorithms to perform "find" and "find and replace" operations on strings, or to validate inputs.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Anchors
 
@@ -39,7 +39,7 @@ Created: 2022-10-27
 |   `\<`    |                      Start of word                      |
 |   `\>`    |                       End of word                       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Quanti­fiers
 
@@ -51,7 +51,7 @@ Created: 2022-10-27
 
 Add a `?` to a quantifier to make it ungreedy.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Groups and Ranges
 
@@ -70,7 +70,7 @@ Add a `?` to a quantifier to make it ungreedy.
 
 Ranges are inclusive.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Escape Sequences
 
@@ -82,7 +82,7 @@ Ranges are inclusive.
 
 > `Escaping` is a way of treating characters which have a special meaning in regex literally, rather than as special charac­ters.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Common Meta-characters
 
@@ -94,7 +94,7 @@ Ranges are inclusive.
 
 The escape character is usually `\`
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Special Characters
 
@@ -108,7 +108,7 @@ The escape character is usually `\`
 |  `\xxx`  | Octal character xxx |
 |  `\xhh`  |  Hex character hh   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Assertions
 
@@ -123,7 +123,7 @@ The escape character is usually `\`
 |           `?()\|`            | Condition [if then else] |
 |             `?#`             |         Comment          |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## String Replacement
 
@@ -139,7 +139,7 @@ The escape character is usually `\`
 
 Some regex implementations use `\` instead of `$`.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Pattern Modifiers
 
@@ -155,4 +155,4 @@ Some regex implementations use `\` instead of `$`.
 
 > `*` --> **_PCRE modifier_**
 
-**[🔼Back to Top](#table-of-contents)**
+

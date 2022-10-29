@@ -263,7 +263,7 @@ _Syntax_: **`property-name : value;`**
 | `writing-mode`               | Specifies whether lines of text are laid out horizontally or vertically and the direction which lines of text and blocks progress                    | `horizontal-tb / vertical-rl / vertical-lr / sideways-rl / sideways-lr`                                                                                                                                                                                                                                                                                                                                                                       |
 | `z-index`                    | Specifies the stack order of an element                                                                                                              | `auto / number`                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## CSS Selectors
 
@@ -282,7 +282,7 @@ _Syntax_: **`property-name : value;`**
 | `div#id-name`    | div with certain 'id'               |
 | `#id-name`       | all elements iside that #id-name    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## CSS Pseudo Classes
 
@@ -326,7 +326,7 @@ _Syntax_: **`property-name : value;`**
 | `::selection`             | portion selected by user     |
 | `:target`                 | highlight active anchor      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## CSS Attribute Selectors
 
@@ -341,4 +341,4 @@ _Syntax_: **`property-name : value;`**
 | `[class$="chair"]`     | class ends with chair            |
 | `input[type="button"]` | specified input type             |
 
-**[🔼Back to Top](#table-of-contents)**
+

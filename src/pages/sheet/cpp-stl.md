@@ -101,7 +101,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### set
 
@@ -125,7 +125,7 @@ title: "C++  STL Cheatsheet"
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### unordered-set
 
@@ -148,7 +148,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### map
 
@@ -170,7 +170,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Stack
 
@@ -194,7 +194,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### queue
 
@@ -218,7 +218,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### deque
 
@@ -242,7 +242,7 @@ title: "C++  STL Cheatsheet"
     d.pop_back();
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### vector-pair
 
@@ -267,7 +267,7 @@ title: "C++  STL Cheatsheet"
     cout << endl;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### List
 
@@ -299,7 +299,7 @@ title: "C++  STL Cheatsheet"
     LI.pop_front();
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Priority Queue
 
@@ -321,7 +321,7 @@ title: "C++  STL Cheatsheet"
 	// priority queue deletion
 	pq.pop();
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Hidden Functions
 
@@ -375,4 +375,4 @@ title: "C++  STL Cheatsheet"
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

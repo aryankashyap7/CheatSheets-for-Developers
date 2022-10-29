@@ -57,7 +57,7 @@ I will only mention those commands that will get you started editing with Vim:
 
 To find out more about Vim try running `vimtutor` command,which sholud be already installed in your system.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Emacs
 
@@ -121,7 +121,7 @@ There is a lot to know about Emacs. More than I am able to write in this little 
 | `Ctrl + r` | Search backwards/reverse- prompts for a search term and search from current position to the beginning of the buffer.            |
 | `ESC %`    | Replace- prompts for a search term and a replacement term and replaces the first occurrence of the word in buffer after cursor. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Nano
 
@@ -185,4 +185,4 @@ We have compiled the most useful commands to help you utilize the Nano text edit
 | **CTRL + \_**  | Lets you go to the specified line and column number.                                                                 |
 | **ALT + A**    | To select text. You can combine this command with **CTRL + K** to cut a specific part of the text to the cut buffer. |
 
-**[🔼Back to Top](#table-of-contents)**
+

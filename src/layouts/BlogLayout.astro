@@ -6,42 +6,37 @@ const {
   content: { title },
   headings,
 } = Astro.props;
-
-// domain.com/sheet/angular-cheatsheet
-
 ---
 
 <Layout title={title}>
   <Nav />
-  <div class="px-2 md:px-32 mt-8">
-    <h1 class="title text-gradient my-8">{title}</h1>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
-      <article
-        class="col-span-2 md:col-span-3 mt-12 prose prose-md prose-cactus prose-headings:font-semibold table-auto prose-headings:before:text-accent prose-headings:before:absolute prose-headings:before:-ml-4 prose-th:before:content-none"
-      >
-        <slot />
-      </article>
-
-      <aside
-        class="invisible hidden text-right sm:sticky sm:top-20 sm:block sm:visible"
-      >
+  <div class="flex-1 grid grid-cols-2 md:grid-cols-4 gap-10 px-2 md:px-32 mt-8">
+    <aside class="sticky self-start top-12 invisible hidden sm:block sm:visible overflow-y-auto max-h-80">
+      <div>
         <h2 class="font-semibold">Table of Contents</h2>
         <ul class="mt-4 text-xs space-y-2">
           {
-            headings.map(({ slug, text }) => (
+            headings.map(({ slug, text, depth }) => (
               <li class="line-clamp-2 hover:text-accent">
                 <a
                   class="text-base"
                   href={`#${slug}`}
                   aria-label={`Scroll to section: ${text}`}
                 >
-                  <span>&#35;</span> {text}
+                  <span>{"#".repeat(depth)}</span> {text}
                 </a>
               </li>
             ))
           }
         </ul>
-      </aside>
-    </div>
+      </div>
+    </aside>
+
+    <article
+      class="col-span-2 md:col-span-3 prose prose-md prose-cactus prose-headings:font-semibold table-auto prose-headings:before:text-accent prose-headings:before:absolute prose-headings:before:-ml-4 prose-th:before:content-none"
+    >
+      <h1 class="title text-gradient my-8">{title}</h1>
+      <slot />
+    </article>
   </div>
 </Layout>

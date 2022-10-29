@@ -30,7 +30,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + Alt + Up   | Move Line Up                |
 | Ctrl + Shift + Alt + Down | Move Line Down              |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Editor Shortcuts
 
@@ -49,7 +49,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Up        | Move to Beginning of File |
 | Ctrl + Down      | Move to End of File       |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## File Shortcuts
 
@@ -68,7 +68,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + K / Ctrl + T | Toggle Terminal |
 | Ctrl + K / Ctrl + X | Close Terminal  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Search Shortcuts
 
@@ -83,7 +83,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + Alt + F | Replace in Files |
 | Ctrl + Shift + Alt + G | Replace Next     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Window Shortcuts
 
@@ -93,7 +93,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + F | Open Search         |
 | Ctrl + Shift + G | Open Source Control |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## View Shortcuts
 
@@ -109,7 +109,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + J | Toggle Terminal         |
 | Ctrl + Shift + V | Toggle Markdown Preview |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Debug Shortcuts
 
@@ -121,7 +121,7 @@ title: "VS Code Cheatsheet"
 | F11         | Step Into         |
 | Shift + F11 | Step Out          |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Extension Shortcuts
 
@@ -130,7 +130,7 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + X | Open Extensions      |
 | Ctrl + Shift + P | Open Command Palette |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Git Shortcuts
 
@@ -139,4 +139,4 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + G | Open Source Control  |
 | Ctrl + Shift + P | Open Command Palette |
 
-**[🔼Back to Top](#table-of-contents)**
+

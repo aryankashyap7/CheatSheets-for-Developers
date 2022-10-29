@@ -5,7 +5,7 @@ title: "Azure Cheatsheet"
 
 Azure is a cloud computing service created by Microsoft for building, testing, deploying, and managing applications and services through Microsoft-managed data centers. It provides software as a service (SaaS), platform as a service (PaaS) and infrastructure as a service (IaaS) and supports many different programming languages, tools and frameworks, including both Microsoft-specific and third-party software and systems.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure CLI
 
@@ -21,13 +21,13 @@ Azure is a cloud computing service created by Microsoft for building, testing, d
 | `az account list-locations --query "[?displayName=='East US'].name"`        | List all Azure locations      |
 | `az account list-locations --query "[?displayName=='East US'].name" -o tsv` | List all Azure locations      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Cloud Shell
 
 Azure Cloud Shell is a browser-based shell for managing Azure resources. It is available in the Azure portal and can be accessed from any browser. It is a fully configured, authenticated, and managed environment that you can use to run the Azure CLI, PowerShell, or Bash commands.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Portal
 
@@ -35,19 +35,19 @@ Azure Cloud Shell is a browser-based shell for managing Azure resources. It is a
 | -------------------------- | ------------ |
 | `https://portal.azure.com` | Azure Portal |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager
 
 Azure Resource Manager is the deployment and management service for Azure. It provides a management layer that enables you to create, update, and delete resources in your Azure subscription. You can use the Azure portal, Azure PowerShell, Azure CLI, or Azure Resource Manager templates to manage your resources.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Templates
 
 Azure Resource Manager templates are JSON files that define the infrastructure and configuration of your cloud resources. You can use templates to deploy resources in a resource group or subscription. You can also use templates to create nested deployments, which are deployments that are deployed to a resource group that is a child of the resource group that contains the parent deployment.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Template Functions
 
@@ -60,7 +60,7 @@ Azure Resource Manager templates are JSON files that define the infrastructure a
 | `deployment()`        | Returns a deployment object.                          |
 | `deploymentOutputs()` | Returns the outputs of a deployment.                  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Template Parameters
 
@@ -85,7 +85,7 @@ Azure Resource Manager templates are JSON files that define the infrastructure a
 | `parameters.storageAccountNetworkRuleSet.virtualNetworkRules.action` | The action of the storage account.                 |
 | `parameters.storageAccountNetworkRuleSet.virtualNetworkRules.state`  | The state of the storage account.                  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Template Variables
 
@@ -100,7 +100,7 @@ Azure Resource Manager templates are JSON files that define the infrastructure a
 | `variables.storageAccountEnableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the storage account.               |
 | `variables.storageAccountAllowBlobPublicAccess`  | The allowBlobPublicAccess of the storage account.                |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Template Resources
 
@@ -118,7 +118,7 @@ Azure Resource Manager templates are JSON files that define the infrastructure a
 | `resources.properties.enableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the resource.                          |
 | `resources.properties.allowBlobPublicAccess`  | The allowBlobPublicAccess of the resource.                           |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Azure Resource Manager Template Outputs
 
@@ -132,4 +132,4 @@ Azure Resource Manager templates are JSON files that define the infrastructure a
 | `outputs.storageAccountAccessTier`             | The access tier of the storage account.                |
 | `outputs.storageAccountEnableHttpsTrafficOnly` | The enableHttpsTrafficOnly of the storage account.     |
 
-**[🔼Back to Top](#table-of-contents)**
+

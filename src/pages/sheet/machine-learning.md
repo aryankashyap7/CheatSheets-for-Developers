@@ -55,7 +55,7 @@ __________________
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Supervised Learning
 
@@ -75,7 +75,7 @@ Regression is a supervised learning task in which the model learns to predict a 
 
 Classification is a supervised learning task in which the model learns to predict a discrete value. For example, predicting whether an email is spam or not spam.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Linear Regression
 
@@ -115,7 +115,7 @@ plt.show()
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Logistic Regression
 
@@ -178,7 +178,7 @@ plt.show()
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Support Vector Machine (SVM)
 
@@ -216,7 +216,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Decision Tree
 
@@ -254,7 +254,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Random Forest
 
@@ -293,7 +293,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Neural Network
 
@@ -332,7 +332,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Unsupervised Learning
 
@@ -343,7 +343,7 @@ Examples of unsupervised learning algorithms include:
 - Customer segmentation (clustering)
 - DNA sequencing (clustering)
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### K-Means Clustering
 
@@ -395,7 +395,7 @@ plt.show()
 
 Note: Elbow method is a heuristic method of interpretation and validation of consistency within cluster analysis designed to help finding the appropriate number of clusters in a dataset.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Hierarchical Clustering
 
@@ -441,7 +441,7 @@ plt.show()
 
 Note: Dendrogram is a diagram that shows the hierarchical relationship between objects. It is most commonly created as an output from hierarchical clustering.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Principal Component Analysis (PCA)
 
@@ -512,7 +512,7 @@ plt.show()
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Independent Component Analysis (ICA)
 
@@ -557,7 +557,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Latent Dirichlet Allocation (LDA)
 
@@ -602,7 +602,7 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Reinforcement Learning
 
@@ -618,7 +618,7 @@ Example of Reinforcement Learning are:
 
 - Trading bots that learn to trade in the stock market.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Q-Learning
 
@@ -723,7 +723,7 @@ plt.show()
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Thompson Sampling
 
@@ -773,7 +773,7 @@ plt.show()
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Other Concepts
 
@@ -806,7 +806,7 @@ def gradient_descent(x, y):
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Bias-Variance Tradeoff
 
@@ -851,13 +851,13 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 ----------------------------------------------------
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Regularization
 
 Regularization is a technique used to avoid overfitting in machine learning models. It is a technique that modifies the cost function by adding a penalty term to it. The penalty term is a measure of how complex the model is. The goal of regularization is to reduce the complexity of the model by penalizing the model for having high weights.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Cross-Validation
 
@@ -882,7 +882,7 @@ def cross_validation(X, y, model, no_of_folds):
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Hyperparameter Tuning
 
@@ -903,7 +903,7 @@ grid_search = GridSearchCV(estimator = classifier,
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Feature Scaling
 
@@ -918,4 +918,4 @@ X_test = sc.transform(X_test)
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

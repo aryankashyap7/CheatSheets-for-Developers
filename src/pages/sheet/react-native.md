@@ -20,7 +20,7 @@ React Native is an SDK for building native mobile apps using JavaScript. It's ba
 Unlike the popular hybrid frameworks such as Ionic, React Native doesn't use a webview which means your mobile application is not a web application that has access to native device features like the case of Ionic but a native app that uses native components in both Android and iOS.
 React Native is essentially a bridge that allows your JavaScript app to access native device features and UI components.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Features
 
@@ -30,7 +30,7 @@ Following are the features of React Native −
 2. Native − You can use native components controlled by JavaScript.
 3. Platforms − React Native supports IOS and Android platform.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Difference between React and React Native
 
@@ -42,7 +42,7 @@ Following are the features of React Native −
 | It provides high security.                         | It provides low security in comparison to ReactJS.                      |
 | In this, the virtual DOM renders the browser code. | In this, Native uses its API to render code for mobile applications.    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Installing Expo CLI
 
@@ -52,7 +52,7 @@ Expo CLI is a command-line utility that allows to use Expo tools.
 npm install -g expo-cli
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Creating a React Native Project
 
@@ -65,7 +65,7 @@ npm start # you can also use: npx expo start
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Function Components
 
@@ -88,7 +88,7 @@ const HelloWorldApp = () => {
 export default HelloWorldApp;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Class Components
 
@@ -113,7 +113,7 @@ class HelloWorldApp extends Component {
 export default HelloWorldApp;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Props
 
@@ -150,7 +150,7 @@ const LotsOfGreetings = () => {
 export default LotsOfGreetings;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### State
 
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### List View
 
@@ -210,7 +210,7 @@ renderRow={
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Touchable components
 
@@ -238,7 +238,7 @@ return (
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Flat List components
 
@@ -287,7 +287,7 @@ export default class FlatListBasics extends Component {
 AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics);
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Routing with React Navigation in React Native
 
@@ -318,4 +318,4 @@ const MyStack = () => {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

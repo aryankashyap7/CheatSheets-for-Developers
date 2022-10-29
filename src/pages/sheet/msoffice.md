@@ -39,7 +39,7 @@
 | `Ctrl + Y` | Redo             |
 | `Ctrl + Z` | Undo             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Microsoft Excel Shortcuts
 
@@ -70,7 +70,7 @@
 | `=IF(A1>A2,"A1 is greater than A2","A1 is less than A2")` | If A1 is greater than A2, then return "A1 is greater than A2", else return "A1 is less than A2" |
 | `=IF(A1>A2,"A1 is greater than A2")`                      | If A1 is greater than A2, then return "A1 is greater than A2"                                   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Microsoft PowerPoint Shortcuts
 
@@ -87,4 +87,4 @@
 | `Ctrl + 9` | Increase indent |
 | `Ctrl + 0` | Normal view     |
 
-**[🔼Back to Top](#table-of-contents)**
+

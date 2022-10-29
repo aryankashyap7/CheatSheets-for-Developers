@@ -22,7 +22,7 @@ And then run
     npm i
 to install all necessary modules
 
-**[🔼Back to Top](#table-of-contents)**
+
 ## Start the server
 add this code in app.js
 
@@ -40,7 +40,7 @@ add this code in app.js
 
 and run app.js to start the serve. Go to localhost:port to see the response
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Routing
 ## Route definition 
@@ -57,14 +57,14 @@ Here, METHOD is an HTTP request method, and HANDLER is the function executed whe
         })
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Serve Static assets
 Static assets include things like css files
     app.use('/public',express.static(__dirname + '/public'));
 
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Serve JSON
 Serve a JSON response
@@ -74,4 +74,4 @@ Serve a JSON response
     }
 
 
-**[🔼Back to Top](#table-of-contents)**
+

@@ -85,7 +85,7 @@ title: "Javascript Cheatsheet"
 | let         | ` let a = 1;`   | Can be updated but cannot be re-declared. |
 | const       | ` const a = 1;` | Cannot be updated or re-declared.         |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 2. Lists
 
@@ -131,7 +131,7 @@ newArray.reverse().forEach((item) => {
 });
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 3. Objects
 
@@ -177,7 +177,7 @@ Object.entries(newObject).reverse().forEach(([key, value]) => {
 });
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 4. Functions
 
@@ -230,7 +230,7 @@ const member = {
 let fullName = person.fullName.bind(member);
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 5. Classes
 
@@ -303,7 +303,7 @@ class NewClassWithConstructorAndMethodsAndInheritance extends NewClassWithConstr
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 6. Conditionals
 
@@ -348,7 +348,7 @@ switch (true) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 7. Loops
 
@@ -406,7 +406,7 @@ do {
 } while (i < 10);
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 8. Try Catch
 
@@ -432,7 +432,7 @@ try {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 9. Promises
 
@@ -480,7 +480,7 @@ const newPromiseWithResolveAndRejectAndAsync = new Promise((resolve, reject) => 
 });
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 10. Async Await
 
@@ -505,7 +505,7 @@ console.log('newAsyncFunctionWithAwait');
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 11. Fetch
 
@@ -656,7 +656,7 @@ console.log(json);
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 12. Events
 

@@ -35,7 +35,7 @@ title: "Competitive Programming Cheatsheet"
 using namespace std;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### macros
 
@@ -57,7 +57,7 @@ using namespace std;
 #define trav(container, it) for (typeof (container.begin()) it = container.begin(); it != container.end(); it++)
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### fast-io
 
@@ -75,7 +75,7 @@ int main()
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## basic-algorithms
 
@@ -88,7 +88,7 @@ int binarySearch(vector<int>&arr,int value)
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### euclidean-gcd
 
@@ -101,7 +101,7 @@ int gcd(int a, int b)
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### binary-exponentiation
 
@@ -119,7 +119,7 @@ int power(int x, int y, int p)
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### modular-inverse
 
@@ -134,7 +134,7 @@ int modInverse(int a, int m){
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## graphs
 
@@ -188,7 +188,7 @@ void Graph::BFS(int s)
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### disjoint-set-union
 
@@ -213,7 +213,7 @@ struct DSU {
 };
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Geometry
 
@@ -312,7 +312,7 @@ point3d operator*(ftype a, point3d b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### dot-product
 
@@ -325,7 +325,7 @@ ftype dot(point3d a, point3d b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### cross-product
 
@@ -343,7 +343,7 @@ ftype cross(point2d a, point2d b) {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### intersection
 
@@ -363,4 +363,4 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+

@@ -25,8 +25,6 @@ Angular is an application-design framework and development platform for creating
 | `<div [ngSwitch]="switchExpression">`                                           | Structural Directive                                         |
 | `<input [value]="student.name" (input)="student.name=$event.target.value">`     | $event                                                       |
 
-**[🔼Back to Top](#table-of-contents)**
-|
 
 ## Angular Lifecycle Hooks:
 
@@ -41,7 +39,7 @@ Angular is an application-design framework and development platform for creating
 | ngAfterViewChecked()    | It get invoked after angular checks the binding of component view.        |
 | ngOnDestroy()           | It get invoked before angular destroy component or directives.            |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Angular CLI commands:
 
@@ -64,4 +62,4 @@ Angular is an application-design framework and development platform for creating
 | ng update                       | Updates workspace and its dependencies   |
 | ng version                      | Outputs Angular CLI version              |
 
-**[🔼Back to Top](#table-of-contents)**
+

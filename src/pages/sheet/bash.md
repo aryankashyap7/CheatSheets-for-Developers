@@ -5,7 +5,7 @@ title: "Bash Cheatsheet"
 
 Bash is a powerful scripting language that is used by many developers. This cheat sheet is a collection of Bash tips and tricks that will help you write better Bash scripts.
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Bash Basics
 
@@ -37,7 +37,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `clear`   | Clear the console                                          |
 | `exit`    | Exit the console                                           |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Variables
 
@@ -56,7 +56,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo "${var:+value}"`   | Print a value if the variable is set                                        |
 | `echo "${var:offset}"`   | Print a substring of a variable                                             |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Functions
 
@@ -67,7 +67,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `function_name() { echo "Hello $1"; }`    | Define a function with parameters |
 | `function_name() { echo "Hello $@"; }`    | Define a function with parameters |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Arrays
 
@@ -83,7 +83,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `unset array[0]`               | Remove an array element                  |
 | `unset array`                  | Remove an array                          |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Conditionals
 
@@ -95,7 +95,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `case value in pattern1) ... ;; pattern2) ... ;; esac`                  | Case statement                     |
 | `case value in pattern1) ... ;; pattern2) ... ;; *) ... ;; esac`        | Case statement with a default case |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Loops
 
@@ -107,7 +107,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `while [ condition ]; do ... done`             | While loop  |
 | `until [ condition ]; do ... done`             | Until loop  |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Input/Output
 
@@ -124,7 +124,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo "Hello World" >> file.txt` | Append output to a file                                |
 | `echo "Hello World" 2> file.txt` | Redirect error output to a file                        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Debugging
 
@@ -137,7 +137,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `set -n` | Read commands but do not execute them           |
 | `set +n` | Execute commands read from the command line     |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Miscellaneous
 
@@ -147,7 +147,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo -n "Hello World"`  | Print a string without a newline       |
 | `echo -e "Hello\tWorld"` | Print a string with escaped characters |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Bash Advanced
 
@@ -179,7 +179,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `cd`       | Change the current working directory                        |
 | `pushd`    | Push the current working directory onto the directory stack |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Options
 
@@ -193,7 +193,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `set -o pipefail`  | Exit on pipe failure                                    |
 | `set -o xtrace`    | Print commands and their arguments as they are executed |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Aliases
 
@@ -203,7 +203,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `alias name="command"` | Create an alias |
 | `unalias`              | Remove an alias |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Functions
 
@@ -214,7 +214,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `declare -f`            | List functions    |
 | `declare -f name`       | List a function   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Arrays
 
@@ -230,7 +230,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `declare -p`                   | List variables                     |
 | `declare -p array`             | List a variable                    |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Conditionals
 
@@ -245,7 +245,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `[[ value1 < value2 ]]`          | If statement |
 | `[[ value1 > value2 ]]`          | If statement |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Loops
 
@@ -257,7 +257,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `until [[ condition ]]; do ... done`       | Until loop  |
 | `select var in "${array[@]}"; do ... done` | Select loop |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 #### Bash Input/Output
 
@@ -267,4 +267,4 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `read -p "Enter a value: " -s value`   | Read input from the console without echoing the input  |
 | `read -p "Enter a value: " -n 5 value` | Read a specified number of characters from the console |
 
-**[🔼Back to Top](#table-of-contents)**
+

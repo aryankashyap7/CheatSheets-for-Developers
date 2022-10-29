@@ -22,7 +22,7 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `$ php artisan tinker`      | Laravel Console |
 | `$ php artisan route:list`  | Route List      |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ### Common Commands
 
@@ -39,7 +39,7 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `$ php artisan migrate:refresh`                            | Rollback all and re-migrate                                                                                         |
 | `$php artisan migrate:refresh --seed`                      | Rollback all, re-migrate and seed                                                                                   |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Authentication
 
@@ -59,4 +59,4 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `Auth::onceBasic();`                                                | Perform a stateless HTTP Basic login attempt               |
 | `Password::remind($credentials, function($message, $user){});`      | Send a password reminder to a user                         |
 
-**[🔼Back to Top](#table-of-contents)**
+

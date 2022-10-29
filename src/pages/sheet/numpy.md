@@ -10,7 +10,7 @@ title: "Numpy Cheatsheet"
     pip install numpy
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Basic Commands
 
@@ -48,7 +48,7 @@ Output:
     array([1.+0.j, 2.+0.j, 3.+0.j])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Indexing
 
@@ -63,7 +63,7 @@ Output:
     array([1, 2, 3, 4, 5, 6, 7, 8, 9])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Slicing
 
@@ -78,7 +78,7 @@ Output:
     array([1, 2, 3, 4, 5, 6, 7, 8, 9])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Reshaping
 
@@ -94,7 +94,7 @@ Output:
            [4, 5, 6]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Concatenation
 
@@ -113,7 +113,7 @@ Output:
            [7, 8]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Splitting
 
@@ -129,7 +129,7 @@ Output:
            [4, 5, 6]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Copying
 
@@ -144,7 +144,7 @@ Output:
     array([1, 2, 3, 4, 5])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Sorting
 
@@ -160,7 +160,7 @@ Output:
            [3, 1]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Searching
 
@@ -175,7 +175,7 @@ Output:
     array([1, 2, 3, 2, 3, 4, 3, 4, 5, 6])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Iterating
 
@@ -193,7 +193,7 @@ Output:
            [40, 45, 50, 55]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Joining
 
@@ -212,7 +212,7 @@ Output:
            [7, 8]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Stacking
 
@@ -231,7 +231,7 @@ Output:
            [7, 8]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Splitting
 
@@ -246,7 +246,7 @@ Output:
     array([0, 1, 2, 3, 4, 5, 6, 7, 8])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Repeating
 
@@ -261,7 +261,7 @@ Output:
     array([1, 2, 3])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Manipulation
 
@@ -277,7 +277,7 @@ Output:
            [4, 5, 6]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Math
 
@@ -292,7 +292,7 @@ Output:
         array([1, 2, 3, 4])
         array([4, 3, 2, 1])
         ```
-    **[🔼Back to Top](#table-of-contents)**
+    
 
 ## Array Statistics
 
@@ -309,4 +309,4 @@ Output:
            [2, 4, 9]])
     ```
 
-**[🔼Back to Top](#table-of-contents)**
+

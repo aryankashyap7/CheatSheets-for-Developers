@@ -10,7 +10,7 @@ Django is a high-level Python web framework that encourages rapid development an
 
 
 | Command                                            | Description                                                                                                                                              |
-|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | django-admin startproject project-name             | To create a new project                                                                                                                                  |
 | django-admin startapp app-name                     | To create a new app                                                                                                                                      |
 | python manage.py makemigrations                    | To update changes to models                                                                                                                              |
@@ -26,14 +26,14 @@ Django is a high-level Python web framework that encourages rapid development an
 | python manage.py dbshell                           | To run SQL queries                                                                                                                                       |
 | python manage.py sendtestemail [email [email ...]] | To send a test email (to confirm email sending through Django is working) to the recipient(s) specified                                                  |
 | python manage.py inspectdb [table [table ...]]     | To introspect the database tables in the database pointed-to by the NAME setting and outputs a Django model module (a models.py file) to standard output |
-| python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |                                                                                                                                                     
-**[🔼Back to Top](#table-of-contents)**
+| python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |
+
 
 
 ## Django Model Layer
 
 | Code                             | Description                                                                                                                                 |
-|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | from django.db import models     | Imports the models module, which contains models.Model class                                                                                |
 | models.Model                     | The base class for django models                                                                                                            |
 | models.ForeignKey()              | To define a many-to-one relationship                                                                                                        |
@@ -50,27 +50,27 @@ Django is a high-level Python web framework that encourages rapid development an
 | object.update()                  | To update changes of the object in db                                                                                                       |
 | object.delete()                  | To delete the object from db                                                                                                                |
 | query = Object.objects.get()     | To query the model                                                                                                                          |
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Django View Layer
 
 
-| Code                                                           | Description                                                                                                                                           |
-|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| from django.urls import path                                   | URL conf                                                                                                                                              |
-| urlpatterns = [path('blog/', views.page)]                      | Map functions to urls                                                                                                                                 |
-| from django.urls import include                                | Include other URLconf modules                                                                                                                         |
-| urlpatterns = [path('community/', include('aggregator.urls'))] | Exemple of include usage                                                                                                                              |
-| render()                                                       | django.shortcuts: render(request, template_name, context=None, content_type=None, status=None, using=None)                                            |
-| redirect()                                                     | django.shortcuts: redirect(to, *args, permanent=False, **kwargs)                                                                                      |
-| get_object_or_404()                                            | django.shortcuts: Calls get() on a given model manager, but it raises Http404 instead of the model’s DoesNotExist exception                           |
-| get_list_or_404()                                              | django.shortcuts: Returns the result of filter() on a given model manager cast to a list, raising Http404 if the resulting list is empty              |
-| HttpResponse(html)                                             | from django.http import HttpResponse                                                                                                                  |
-| HttpResponseNotFound(html)                                     | django.http.Http404                                                                                                                                   |
+| Code                                                           | Description                                                                                                                                                 |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| from django.urls import path                                   | URL conf                                                                                                                                                    |
+| urlpatterns = [path('blog/', views.page)]                      | Map functions to urls                                                                                                                                       |
+| from django.urls import include                                | Include other URLconf modules                                                                                                                               |
+| urlpatterns = [path('community/', include('aggregator.urls'))] | Exemple of include usage                                                                                                                                    |
+| render()                                                       | django.shortcuts: render(request, template_name, context=None, content_type=None, status=None, using=None)                                                  |
+| redirect()                                                     | django.shortcuts: redirect(to, *args, permanent=False, **kwargs)                                                                                            |
+| get_object_or_404()                                            | django.shortcuts: Calls get() on a given model manager, but it raises Http404 instead of the model’s DoesNotExist exception                                 |
+| get_list_or_404()                                              | django.shortcuts: Returns the result of filter() on a given model manager cast to a list, raising Http404 if the resulting list is empty                    |
+| HttpResponse(html)                                             | from django.http import HttpResponse                                                                                                                        |
+| HttpResponseNotFound(html)                                     | django.http.Http404                                                                                                                                         |
 | JsonResponse()                                                 | django.http: An HttpResponse subclass that helps to create a JSON-encoded response. It inherits most behavior from its superclass with a couple differences |
-| StreamingHttpResponse()                                        | django.http: stream chunks of data. Useful for generating large csv files                                                                             |
-| FileResponse()                                                 | django.http: FileResponse is a subclass of StreamingHttpResponse optimized for binary files                                                           |
-**[🔼Back to Top](#table-of-contents)**
+| StreamingHttpResponse()                                        | django.http: stream chunks of data. Useful for generating large csv files                                                                                   |
+| FileResponse()                                                 | django.http: FileResponse is a subclass of StreamingHttpResponse optimized for binary files                                                                 |
+
 
 ## Django Template Layer
 
@@ -134,4 +134,4 @@ A {% comment %} tag provides multi-line comments.
     Comment 3
 {% endcomment %}
 ````
-**[🔼Back to Top](#table-of-contents)**
+

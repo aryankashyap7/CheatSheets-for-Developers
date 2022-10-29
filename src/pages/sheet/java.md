@@ -15,7 +15,7 @@ title: "Java Cheatsheet"
 | float     | 4 byte |
 | double    | 8 byte |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## I/O Methods
 
@@ -46,7 +46,7 @@ title: "Java Cheatsheet"
 	// input for a double.
 	double d = s.nextDouble();
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Data Conversion
 
@@ -72,7 +72,7 @@ title: "Java Cheatsheet"
         long i = (long) _numeric expression_;
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Operators
 
@@ -87,7 +87,7 @@ title: "Java Cheatsheet"
 | Bitwise operators                | ^, &, \|                                           |
 | Special operators                | . (dot operator to access methods of class)        |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Statements
 
@@ -164,7 +164,7 @@ try {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 ## Arrays
 
 ### Initialisation
@@ -196,7 +196,7 @@ System.out.println(i);
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## Strings
@@ -265,40 +265,40 @@ StringBuilder sb2 = new StringBuffer("Input");
 String str = sb.toString();
 System.out.println(str);
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Array Methods
 ### The Arrays class of the java.util package contains several static methods that can be used to fill, sort, search, etc in arrays.
 
-| Methods		                                           | Action Performed                                                                                      |
-| ---------                                                | ----------------------------------------------------------------------------------------------------- |
-| asList()                                                 | Returns a fixed-size list backed by the specified Arrays                                              |
-| binarySearch()	              		           		   | Searches for the specified element in the array                                                       |
-| binarySearch(array, fromIndex, toIndex, key, Comparator) | Searches a range of the specified array for the specified object using the Binary Search Algorithm    |
-| copyOf(originalArray, newLength)	                       | Copies the specified array, truncating or padding with the default value (if necessary) so the copy has the specified length.                                                                                                                                              |
-| copyOfRange(originalArray, fromIndex, endIndex)	       | Copies the specified range of the specified array into a new Arrays.                                  |
-| deepEquals(Object[] a1, Object[] a2)                     | Returns true if the two specified arrays are deeply equal to one another.                             |
-| deepHashCode(Object[] a)                                 | Returns a hash code based on the “deep contents” of the specified Arrays.                             |
-| deepToString(Object[] a)                                 | Returns a string representation of the “deep contents” of the specified Arrays.
-equals(array1, array2)	Checks if both the arrays are equal or not.                                                                                                |
-| fill(originalArray, fillValue)	                       | Assigns this fill value to each index of this arrays.                                                 |
-| hashCode(originalArray)                                  | Returns an integer hashCode of this array instance.                                                   |
-| mismatch(array1, array2)                                 | Finds and returns the index of the first unmatched element between the two specified arrays.          |
-| parallelPrefix(originalArray, fromIndex, endIndex, functionalOperator)	| Performs parallelPrefix for the given range of the array with the specified functional operator.                                                                                                                                                          |
-| parallelPrefix(originalArray, operator)	               | Performs parallelPrefix for complete array with the specified functional operator. 
-| parallelSetAll(originalArray, functionalGenerator)	   | Sets all the elements of this array in parallel, using the provided generator function. 
-| parallelSort(originalArray)	                           | Sorts the specified array using parallel sort.
-| setAll(originalArray, functionalGenerator)	           | Sets all the elements of the specified array using the generator function provided. 
-| sort(originalArray)	                                   | Sorts the complete array in ascending order. 
-| sort(originalArray, fromIndex, endIndex)	               | Sorts the specified range of array in ascending order.
-| sort(T[] a, int fromIndex, int toIndex, Comparator< super T> c)	| Sorts the specified range of the specified array of objects according to the order induced by the specified comparator.
-| sort(T[] a, Comparator< super T> c)	                   | Sorts the specified array of objects according to the order induced by the specified comparator.
-| spliterator(originalArray)	                           | Returns a Spliterator covering all of the specified Arrays.
-| spliterator(originalArray, fromIndex, endIndex) 	       | Returns a Spliterator of the type of the array covering the specified range of the specified arrays.
-| stream(originalArray) 	                               | Returns a sequential stream with the specified array as its source.
-| toString(originalArray) 	                               | Returns a string representation of the contents of this array. The string representation consists of a list of the array’s elements, enclosed in square brackets (“[]”). Adjacent elements are separated by the characters a comma followed by a space. Elements are converted to strings as by String.valueOf() function.
+| Methods                                                                | Action Performed                                                                                                                                                                                                                                                                                                           |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| asList()                                                               | Returns a fixed-size list backed by the specified Arrays                                                                                                                                                                                                                                                                   |
+| binarySearch()                                                         | Searches for the specified element in the array                                                                                                                                                                                                                                                                            |
+| binarySearch(array, fromIndex, toIndex, key, Comparator)               | Searches a range of the specified array for the specified object using the Binary Search Algorithm                                                                                                                                                                                                                         |
+| copyOf(originalArray, newLength)                                       | Copies the specified array, truncating or padding with the default value (if necessary) so the copy has the specified length.                                                                                                                                                                                              |
+| copyOfRange(originalArray, fromIndex, endIndex)                        | Copies the specified range of the specified array into a new Arrays.                                                                                                                                                                                                                                                       |
+| deepEquals(Object[] a1, Object[] a2)                                   | Returns true if the two specified arrays are deeply equal to one another.                                                                                                                                                                                                                                                  |
+| deepHashCode(Object[] a)                                               | Returns a hash code based on the “deep contents” of the specified Arrays.                                                                                                                                                                                                                                                  |
+| deepToString(Object[] a)                                               | Returns a string representation of the “deep contents” of the specified Arrays.                                                                                                                                                                                                                                            |
+| equals(array1, array2)	Checks if both the arrays are equal or not.     |
+| fill(originalArray, fillValue)                                         | Assigns this fill value to each index of this arrays.                                                                                                                                                                                                                                                                      |
+| hashCode(originalArray)                                                | Returns an integer hashCode of this array instance.                                                                                                                                                                                                                                                                        |
+| mismatch(array1, array2)                                               | Finds and returns the index of the first unmatched element between the two specified arrays.                                                                                                                                                                                                                               |
+| parallelPrefix(originalArray, fromIndex, endIndex, functionalOperator) | Performs parallelPrefix for the given range of the array with the specified functional operator.                                                                                                                                                                                                                           |
+| parallelPrefix(originalArray, operator)                                | Performs parallelPrefix for complete array with the specified functional operator.                                                                                                                                                                                                                                         |
+| parallelSetAll(originalArray, functionalGenerator)                     | Sets all the elements of this array in parallel, using the provided generator function.                                                                                                                                                                                                                                    |
+| parallelSort(originalArray)                                            | Sorts the specified array using parallel sort.                                                                                                                                                                                                                                                                             |
+| setAll(originalArray, functionalGenerator)                             | Sets all the elements of the specified array using the generator function provided.                                                                                                                                                                                                                                        |
+| sort(originalArray)                                                    | Sorts the complete array in ascending order.                                                                                                                                                                                                                                                                               |
+| sort(originalArray, fromIndex, endIndex)                               | Sorts the specified range of array in ascending order.                                                                                                                                                                                                                                                                     |
+| sort(T[] a, int fromIndex, int toIndex, Comparator< super T> c)        | Sorts the specified range of the specified array of objects according to the order induced by the specified comparator.                                                                                                                                                                                                    |
+| sort(T[] a, Comparator< super T> c)                                    | Sorts the specified array of objects according to the order induced by the specified comparator.                                                                                                                                                                                                                           |
+| spliterator(originalArray)                                             | Returns a Spliterator covering all of the specified Arrays.                                                                                                                                                                                                                                                                |
+| spliterator(originalArray, fromIndex, endIndex)                        | Returns a Spliterator of the type of the array covering the specified range of the specified arrays.                                                                                                                                                                                                                       |
+| stream(originalArray)                                                  | Returns a sequential stream with the specified array as its source.                                                                                                                                                                                                                                                        |
+| toString(originalArray)                                                | Returns a string representation of the contents of this array. The string representation consists of a list of the array’s elements, enclosed in square brackets (“[]”). Adjacent elements are separated by the characters a comma followed by a space. Elements are converted to strings as by String.valueOf() function. |
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## String Methods
 
@@ -329,13 +329,13 @@ StringTokenizer st = new StringTokenizer(string_value_or_variable, delimiter_str
 ```
 ### Functions available in the StringTokeniser Class
 
-| Command                    | Description                                         |
-| -------------------------- | --------------------------------------------------- |
-| countTokens()              | Returns the number of tokens present                |
-| hasMoreToken()             | Checks if there are more tokens in the string       |
-| nextElement()              | Return the object of the next element in the stream |
-| hasMoreElements()          | Checks if there are more elements in the string     |
-| nextToken()                | Returns the next token from the StringTokenizer.    |
+| Command           | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| countTokens()     | Returns the number of tokens present                |
+| hasMoreToken()    | Checks if there are more tokens in the string       |
+| nextElement()     | Return the object of the next element in the stream |
+| hasMoreElements() | Checks if there are more elements in the string     |
+| nextToken()       | Returns the next token from the StringTokenizer.    |
 
 
 #### Example to break the string at whitespaces
@@ -361,7 +361,7 @@ while (st.hasMoreTokens())
 #### Output : Hy ; there ; how ; are ; you ; Hoping ; you ; are ; doing ; great ;
 The semi colon is used to seperate the tokens
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## Collection
 
@@ -383,15 +383,15 @@ The semi colon is used to seperate the tokens
      
 ### Operations on List and Set
      
-| Method     | Description                               | Declaration               |
-| ---------- | ----------------------------------------- | ------------------------- |
-| add        | To add an element into the list           | arr.add(element)          |
-| remove     | To remove an element into the list        | arr.remove(element)       |
-| get        | To get an element at particular index     | arr.get(element)          |
-| set        | To set the element at a particular index  | arr.set(index, element)   |
-| size       | To get size of the list                   | arr.size()                |
-| contains   | To check if the list contains the element | arr.contains(element)     |
-| indexOf    | To get the index of the element           | arr.indexOf(element)      |
+| Method   | Description                               | Declaration             |
+| -------- | ----------------------------------------- | ----------------------- |
+| add      | To add an element into the list           | arr.add(element)        |
+| remove   | To remove an element into the list        | arr.remove(element)     |
+| get      | To get an element at particular index     | arr.get(element)        |
+| set      | To set the element at a particular index  | arr.set(index, element) |
+| size     | To get size of the list                   | arr.size()              |
+| contains | To check if the list contains the element | arr.contains(element)   |
+| indexOf  | To get the index of the element           | arr.indexOf(element)    |
 
 ### Map
 
@@ -409,4 +409,4 @@ The semi colon is used to seperate the tokens
 | PriorityQueue | PriorityQueue<E> priorityQueue = new PriorityQueue(); |
 | ArrayDeque    | ArrayDeque<E> arrayDeque = new ArrayDeque();          |
 
-**[🔼Back to Top](#table-of-contents)**
+

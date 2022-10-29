@@ -84,7 +84,7 @@ npm run dev
 # project will be available at http://localhost:5173/
 
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 # II. Templates
 
@@ -169,7 +169,7 @@ Built-in directives:
 - `v-memo` memoize a sub-tree of the template
 - `v-cloak` hide un-compiled template until it is ready
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 2. Reactivity
 
@@ -229,7 +229,7 @@ const publishedBooksMessage = computed(() => {
 </template>
 
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 3. Conditional Rendering
 
@@ -252,7 +252,7 @@ const publishedBooksMessage = computed(() => {
 ```vue
 <h1 v-show="ok">Hello!</h1>
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 4. List Rendering
 #### `v-for`
@@ -306,7 +306,7 @@ const myObject = reactive({
 </template>
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## 5. Class & Style Binding
@@ -374,7 +374,7 @@ const styleObject = reactive({
 
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 6. Event Handling
 - Inline Handlers
@@ -431,7 +431,7 @@ function say(message) {
 <div @click.self="doThat">...</div>
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 
 ## 7. Form Inputs 
@@ -515,7 +515,7 @@ const checkedNames = ref([])
 <input v-model.trim="msg" />
 ```
 
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 8. Lifecycle Hooks
 
@@ -541,7 +541,7 @@ onMounted(() => {
 - `onActivated()` is called after the component instance is inserted into the DOM as part of a tree cached by <KeepAlive>.
 -  `onDeactivated()` is called after the component instance is removed from the DOM as part of a tree cached by <KeepAlive>.
 
-**[🔼Back to Top](#table-of-contents)**
+
   
 ## 9. Watchers
 `watch`  triggers a callback whenever a piece of reactive state changes
@@ -585,7 +585,7 @@ export default {
 };
 <script setup>
 ```
-**[🔼Back to Top](#table-of-contents)**
+
 
 ## 10. Template Refs
 - `ref` is a special attribute that can be used to access to a DOM element directly.
