@@ -61,6 +61,7 @@ This `CHEATSHEETS FOR DEVELOPERS` list has been made to enhance the workflow and
 | 43  | VueJS                   | VueJS CheatSheet                     | <a href="./CheatSheets/vuejs-cheatsheet.md">Click Here</a>                   |
 | 44  | Windows                 | Windows Shortcuts CheatSheet         | <a href="./CheatSheets/windows-cheatsheet.md">Click Here</a>                 |
 | 45  | Windows Terminal        | Windows Terminal Commands CheatSheet | <a href="./CheatSheets/windows-terminal-cheatsheet.md">Click Here</a>        |
+| 46  | Yaml                    | Yaml basics Cheatsheet               | <a href="./CheatSheets/YAML.-cheetsheet.md">Click Here</a>                   |
 
 ---
 
