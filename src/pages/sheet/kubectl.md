@@ -1,4 +1,7 @@
-## Table of Contents
+---
+layout: ../../layouts/BlogLayout.astro
+title: "Kubectl Cheatsheet"
+---
 
 ## Synopsis
 
