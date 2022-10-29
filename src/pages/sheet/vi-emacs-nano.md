@@ -57,8 +57,6 @@ I will only mention those commands that will get you started editing with Vim:
 
 To find out more about Vim try running `vimtutor` command,which sholud be already installed in your system.
 
-
-
 ## Emacs
 
 `emacs` is an awesome editor and it's historically regarded as the editor for UNIX systems. Famously vi vs emacs flame wars and heated discussions caused many unproductive hours for developers around the world. emacs is very powerful.
@@ -121,8 +119,6 @@ There is a lot to know about Emacs. More than I am able to write in this little 
 | `Ctrl + r` | Search backwards/reverse- prompts for a search term and search from current position to the beginning of the buffer.            |
 | `ESC %`    | Replace- prompts for a search term and a replacement term and replaces the first occurrence of the word in buffer after cursor. |
 
-
-
 ## Nano
 
 This is a another powerful command line text editor.This is also powerful and quite a useful text editor.
@@ -184,5 +180,3 @@ We have compiled the most useful commands to help you utilize the Nano text edit
 | **CTRL + T**   | Invokes the spell checker, if available.                                                                             |
 | **CTRL + \_**  | Lets you go to the specified line and column number.                                                                 |
 | **ALT + A**    | To select text. You can combine this command with **CTRL + K** to cut a specific part of the text to the cut buffer. |
-
-

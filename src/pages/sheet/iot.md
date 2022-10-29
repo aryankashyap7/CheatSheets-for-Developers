@@ -3,13 +3,11 @@ layout: ../../layouts/CheatSheet.astro
 title: "IoT Cheatsheet"
 ---
 
-## A brief introduction
+## Synopsis
 
 IoT stands for Internet of Things, which means accessing and controlling daily usable equipments and devices using Internet. Let's us look closely at our mobile device which contains GPS Tracking, Mobile Gyroscope, Adaptive brightness, Voice detection, Face detection etc. These components have their own individual features, but what about if these all communicate with each other to provide a better environment? For example, the phone brightness is adjusted based on my GPS location or my direction.
 Connecting everyday things embedded with electronics, software, and sensors to internet enabling to collect and exchange data without human interaction called as the Internet of Things (IoT). The term "Things" in the Internet of Things refers to anything and everything in day to day life which is accessed or connected through the internet.
 IoT is an advanced automation and analytics system which deals with artificial intelligence, sensor, networking, electronic, cloud messaging etc. to deliver complete systems for the product or services. The system created by IoT has greater transparency, control, and performance.
-
-**[🔼Back to Top](#table-of-contents)**
 
 ### Types of IoT devices
 
@@ -29,15 +27,11 @@ Basing on the devices that connect over the internet, IoT has three categories
 6. <ins>The devices that can equip both of the above features:</ins>
    The actual power of IoT is from these kinds of devices that can do both of the above-discussed features. The sensor will collect the information and the devices intelligently should respond with the intervention of humans. Like depending on the output of the moisture sensor from the soil, the irrigation system should by default try to operate on the motor without the involvement of the actual farmer. And if this irrigation system is connected to the internet and is able to receive the whether details then it will be smarter and action on the motor will be more efficient now. Achieving this kind of efficiency is the target of these organizations which work on IoT.
 
-**[🔼Back to Top](#table-of-contents)**
-
 ## How does IoT works
 
 An IoT ecosystem consists of web-enabled smart devices that use embedded systems, such as processors, sensors and communication hardware, to collect, send and act on data they acquire from their environments. IoT devices share the sensor data they collect by connecting to an IoT gateway or other edge device where data is either sent to the cloud to be analyzed or analyzed locally. Sometimes, these devices communicate with other related devices and act on the information they get from one another. The devices do most of the work without human intervention, although people can interact with the devices -- for instance, to set them up, give them instructions or access the data.
 
 <p align="center"><img src="https://cdn.ttgtmedia.com/rms/onlineimages/iota-iot_system.png" width="600" height="500" alt="" /></p>
-
-**[🔼Back to Top](#table-of-contents)**
 
 ## IoT and security
 
@@ -64,8 +58,6 @@ Hackers have and continue to become cleverer over the years, which is very disad
 4. Use encrypted protocols
 
 Very few devices use encrypted communications as part of their initial configuration. They are more likely to use normal web protocols that communicate in plain text, which makes it easy for hackers to observe them and spot weaknesses. This is why it is crucial for all web traffic to use HTTPS, transport layer security (TLS), Secure File Transfer Protocol (SFTP), DNS security extensions, and other secure protocols when communicating over the internet. Devices that connect to mobile apps should also use encrypted protocols and data stored on flash drives should be encrypted as an IoT security measure. Only by encrypting data can you be sure that malware hasn’t infected the device.
-
-**[🔼Back to Top](#table-of-contents)**
 
 ## What does an IoT developer do
 
@@ -132,8 +124,6 @@ IoT developers possess the skills of machine learning and big data management th
   In most of the automated solution, sensors are responsible for exchanging the live data to a digitally connected system. Developers working with IoT development platforms have detailed knowledge and precise understanding of how sensors operate and integrate into the IoT-powered architecture. IoT developers are skilled in wireless solutions and embedded systems and related functionalities
 </p>
 
-**[🔼Back to Top](#table-of-contents)**
-
 ## List of IoT Tools and Platforms for IoT Development and Developers
 
 Here are the top IoT tools and platforms for IoT developers and development.
@@ -180,5 +170,3 @@ Based on Data Art’s AllJyone, Device Hive is a free open-source Machine to Mac
 ### Home Assistant
 
 Home Assistant is an open-source tool that is used for home automation and functions with a Python-based coding system. Mobile or desktop browser can easily have their control over the IoT system developed with this tool. It’s very easy to set up and is trusted for operations, security, and privacy. The software supports any systems which are running on Python 3.
-
-**[🔼Back to Top](#table-of-contents)**

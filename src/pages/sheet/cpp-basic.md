@@ -1,53 +1,7 @@
-# C++ Basic for Developers
-
-## Table of Contents
-
-- [Cpp Basic CheatSheet for Developers](#cpp-basic-cheatsheet-for-developers)
-  - [Synopsis](#synopsis)
-  - [Structure of a C++ Program](#structure-of-a-c-program)
-    - [Header Files](#header-files)
-    - [Namespace](#namespace)
-    - [Keywords](#keywords)
-    - [Operators](#operators)
-    - [Comments](#comments)
-    - [Data Types](#data-types)
-      - [Primitive Data Types](#primitive-data-types)
-      - [Derived Data Types](#derived-data-types)
-      - [Modifiers](#modifiers)
-    - [Variables](#variables)
-    - [Constants](#constants)
-  - [Input and Output](#input-and-output)
-  - [Functions](#functions)
-  - [Conditional Statements](#conditional-statements)
-  - [Control Statements](#control-statements)
-  - [Data Structures](#data-structures)
-    - [Arrays](#arrays)
-    - [Vectors](#vectors)
-    - [Strings](#strings)
-    - [Linked Lists](#linked-lists)
-    - [Stacks](#stacks)
-    - [Queues](#queues)
-    - [Trees](#trees)
-    - [Graphs](#graphs)
-    - [Hash Tables](#hash-tables)
-  - [Structures](#structures)
-  - [Classes](#classes)
-    - [Inheritance](#inheritance)
-    - [Polymorphism](#polymorphism)
-    - [Encapsulation](#encapsulation)
-    - [Abstraction](#abstraction)
-    - [Constructor](#constructor)
-    - [Destructor](#destructor)
-  - [Enumerations](#enumerations)
-  - [Unions](#unions)
-  - [Pointers](#pointers)
-  - [Dynamic Memory Allocation](#dynamic-memory-allocation)
-  - [Templates](#templates)
-  - [Exception Handling](#exception-handling)
-  - [File Handling](#file-handling)
-  - [Multithreading](#multithreading)
-  - [Web Programming](#web-programming)
-
+---
+layout: ../../layouts/CheatSheet.astro
+title: "Cpp Basic Cheatsheet"
+---
 
 ## Synopsis
 
@@ -67,9 +21,6 @@ Its main features are:
 - Extensive standard library
 - Extensive toolset
 - Support for multi-paradigm programming
-
-
-
 
 ## Structure of a C++ Program
 
@@ -93,8 +44,6 @@ Header files are used to include the definitions of functions, classes, etc. tha
 #include <iostream>
 ```
 
-
-
 ### Namespace
 
 A namespace is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it. Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries. Namespaces are also used in C++ to implement packages, which are a grouping of related classes, functions, variables, and other components.
@@ -102,8 +51,6 @@ A namespace is a declarative region that provides a scope to the identifiers (th
 ```cpp
 using namespace std;
 ```
-
-
 
 ### Keywords
 
@@ -113,9 +60,6 @@ Keywords are the reserved words in C++ that have a predefined meaning and cannot
 auto, break, case, char, const, continue, default, do, double, else, enum, extern, float, for, goto, if, int, long, register, return, short, signed, sizeof, static, struct, switch, typedef, union, unsigned, void, volatile, while
 ```
 
-
-
-
 ### Operators
 
 Operators are special symbols in C++ that carry out arithmetic or logical computations. The value that the operator operates on is called the operand.
@@ -123,9 +67,6 @@ Operators are special symbols in C++ that carry out arithmetic or logical comput
 ```cpp
 +, -, *, /, %, ++, --, =, +=, -=, *=, /=, %=, ==, !=, >, <, >=, <=, &&, ||, !
 ```
-
-
-
 
 ### Comments
 
@@ -140,15 +81,9 @@ multi-line comment
 */
 ```
 
-
-
-
 ### Data Types
 
 Data types specify the different sizes and values that can be stored in the variable. C++ is a strongly typed language, and as such, every variable has a specific type, which cannot be changed once declared. The variable type must be declared before using the variable name.
-
-
-
 
 #### Primitive Data Types
 
@@ -182,9 +117,6 @@ array, pointer, reference, function
 | long double        | 10 bytes     | 3.4E-4932 to 1.1E+4932                               |
 | bool               | 1 byte       | true or false                                        |
 
-
-
-
 ### Variables
 
 Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
@@ -193,8 +125,6 @@ Variables are used to store information to be referenced and manipulated in a co
 int a = 10;
 ```
 
-
-
 ### Constants
 
 Constants are fixed values that the program may not alter during its execution. Constants are useful for giving names to numbers, so that a program is easier to read and maintain. Constants can be declared with the const keyword.
@@ -202,9 +132,6 @@ Constants are fixed values that the program may not alter during its execution. 
 ```cpp
 const int a = 10;
 ```
-
-
-
 
 ## Input and Output
 
@@ -217,9 +144,6 @@ int a;
 cin >> a;
 ```
 
-
-
-
 ### Output
 
 The C++ language provides several ways to produce output. The most common way is to use the cout object together with the insertion operator (<<).
@@ -227,9 +151,6 @@ The C++ language provides several ways to produce output. The most common way is
 ```cpp
 cout << "Hello World!";
 ```
-
-
-
 
 ## Functions
 
@@ -240,8 +161,6 @@ int add(int a, int b) {
     return a + b;
 }
 ```
-
-
 
 ## Conditional Statements
 
@@ -256,8 +175,6 @@ if (a > b) {
     cout << "a is equal to b";
 }
 ```
-
-
 
 ## Control Statements
 
@@ -310,13 +227,9 @@ jump:
 cout << "a is 10";
 ```
 
-
-
 ## Data Structures
 
 Data structures are used to store collections of data, for example, an array can store a list of items. C++ provides several built-in data structures that you can use in your programs.
-
-
 
 ### Arrays
 
@@ -326,8 +239,6 @@ An array is a data structure consisting of a collection of elements (values or v
 int a[5] = {1, 2, 3, 4, 5};
 ```
 
-
-
 ### Vectors
 
 Vectors are sequence containers representing arrays that can change in size.
@@ -336,8 +247,6 @@ Vectors are sequence containers representing arrays that can change in size.
 vector<int> a = {1, 2, 3, 4, 5};
 ```
 
-
-
 ### Strings
 
 Strings are objects that represent sequences of characters.
@@ -345,8 +254,6 @@ Strings are objects that represent sequences of characters.
 ```cpp
 string a = "Hello World!";
 ```
-
-
 
 ### Linked Lists
 
@@ -361,8 +268,6 @@ struct Node {
 struct Node *head = NULL;
 ```
 
-
-
 ### Stacks
 
 Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end and (top) an element is removed from that end only.
@@ -370,8 +275,6 @@ Stacks are a type of container adaptors with LIFO(Last In First Out) type of wor
 ```cpp
 stack<int> a;
 ```
-
-
 
 ### Queues
 
@@ -381,8 +284,6 @@ Queues are a type of container adaptors with FIFO(First In First Out) type of wo
 
 queue<int> a;
 ```
-
-
 
 ### Trees
 
@@ -398,8 +299,6 @@ struct Node {
 struct Node *root = NULL;
 ```
 
-
-
 ### Graphs
 
 A graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph.
@@ -413,8 +312,6 @@ struct Node {
 
 struct Node *head = NULL;
 ```
-
-
 
 ### Hash Tables
 
@@ -436,8 +333,6 @@ class HashTable {
 };
 ```
 
-
-
 ## Structures
 
 A structure is a user-defined data type in C++ that can be used to group items of possibly different types into a single type.
@@ -450,8 +345,6 @@ struct Person {
     float salary;
 };
 ```
-
-
 
 ## Classes
 
@@ -501,8 +394,6 @@ class Student : public Person {
 };
 ```
 
-
-
 ### Polymorphism
 
 Polymorphism is the ability of a message to be displayed in more than one form.
@@ -539,8 +430,6 @@ class Teacher : public Person {
 };
 ```
 
-
-
 ### Encapsulation
 
 Encapsulation is the mechanism that binds together code and the data it manipulates, and keeps both safe from outside interference and misuse.
@@ -560,8 +449,6 @@ class Person {
         float getSalary();
 };
 ```
-
-
 
 ### Abstraction
 
@@ -583,8 +470,6 @@ class Person {
 };
 ```
 
-
-
 ### Constructors
 
 A constructor is a special member function of a class that is executed whenever we create new objects of that class.
@@ -605,8 +490,6 @@ class Person {
         float getSalary();
 };
 ```
-
-
 
 ### Destructors
 
@@ -630,8 +513,6 @@ class Person {
 };
 ```
 
-
-
 ## Enumerations
 
 An enumeration is a user-defined data type in C++ which consists of integral constants that can be used to assign names to the integral constants.
@@ -648,8 +529,6 @@ enum Day {
 };
 ```
 
-
-
 ## Unions
 
 A union is a special data type available in C that allows to store different data types in the same memory location. You can define a union with many members, but only one member can contain a value at any given time. Unions provide an efficient way of using the same memory location for multiple-purpose.
@@ -661,8 +540,6 @@ union Data {
     char str[20];
 };
 ```
-
-
 
 ## Pointers
 
@@ -685,54 +562,57 @@ Address stored in p variable: 0x7ffeeb2a5f0c
 Value of *p variable: 10
 ```
 
-
-
 ## Dynamic Memory Allocation
 
 Dynamic memory allocation is a process by which a program can obtain a run-time storage during the execution of a program. The C++ language supports two types of dynamic memory allocation:
 
--   **Dynamic memory allocation using new operator**
+- **Dynamic memory allocation using new operator**
 
-    ```cpp
-    int *p = new int;
-    ```
--   **Dynamic memory allocation using malloc()**
+  ```cpp
+  int *p = new int;
+  ```
 
-    ```cpp
-    int *p = (int *)malloc(sizeof(int));
-    ```
--   **Dynamic memory allocation using calloc()**
+- **Dynamic memory allocation using malloc()**
 
-    ```cpp
-    int *p = (int *)calloc(5, sizeof(int));
-    ```
--   **Dynamic memory allocation using realloc()**
+  ```cpp
+  int *p = (int *)malloc(sizeof(int));
+  ```
 
-    ```cpp
-    int *p = (int *)realloc(p, 10 * sizeof(int));
-    ```
--   **Dynamic memory allocation using free()**
+- **Dynamic memory allocation using calloc()**
 
-    ```cpp
-    free(p);
-    ```
--   **Dynamic memory allocation using delete operator**
+  ```cpp
+  int *p = (int *)calloc(5, sizeof(int));
+  ```
 
-    ```cpp
-    delete p;
-    ```
--   **Dynamic memory allocation using delete[] operator**
+- **Dynamic memory allocation using realloc()**
 
-    ```cpp
-    delete[] p;
-    ```
--   **Dynamic memory allocation using new[] operator**
+  ```cpp
+  int *p = (int *)realloc(p, 10 * sizeof(int));
+  ```
 
-    ```cpp
-    int *p = new int[5];
-    ```
+- **Dynamic memory allocation using free()**
 
+  ```cpp
+  free(p);
+  ```
 
+- **Dynamic memory allocation using delete operator**
+
+  ```cpp
+  delete p;
+  ```
+
+- **Dynamic memory allocation using delete[] operator**
+
+  ```cpp
+  delete[] p;
+  ```
+
+- **Dynamic memory allocation using new[] operator**
+
+  ```cpp
+  int *p = new int[5];
+  ```
 
 ## Templates
 
@@ -746,8 +626,6 @@ T sum(T a, T b) {
     return result;
 }
 ```
-
-
 
 ## Exception Handling
 
@@ -801,8 +679,6 @@ Inside try
 Exception Caught
 After catch (Will be executed)
 ```
-
-
 
 ## File Handling
 
@@ -878,8 +754,6 @@ John
 | `read()`     | This function is used to read data from a file.                          |
 | `write()`    | This function is used to write data to a file.                           |
 
-
-
 ## Multithreading
 
 Multithreading is a process of executing multiple threads simultaneously within a process. A thread is a light-weight process. It is a separate flow of control within a process.
@@ -904,8 +778,6 @@ int main() {
     return 0;
 }
 ```
-
-
 
 ## Web Programming
 
@@ -945,6 +817,3 @@ int main(int argc, char **argv) {
     return 0;
 }
 ```
-
-
-

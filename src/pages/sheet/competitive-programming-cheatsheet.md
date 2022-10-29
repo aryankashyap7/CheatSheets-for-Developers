@@ -3,30 +3,19 @@ layout: ../../layouts/CheatSheet.astro
 title: "Competitive Programming Cheatsheet"
 ---
 
-## Table of Contents
+## Synopsis
 
-- [Competitive programming cheat sheet](#competitive-programming-cheat-sheet)
-  - [standard-template](#standard-template)
-    - [header-files](#header-files)
-    - [macros](#macros)
-    - [fast-io](#fast-io)
-  - [basic-algorithms](#basic-algorithms)
-    - [binary-search](#binary-search)
-    - [euclidean-gcd](#euclidean-gcd)
-    - [binary-exponentiation](#binary-exponentiation)
-    - [modular-inverse](#modular-inverse)
-  - [graphs](#graphs)
-    - [bfs](#bfs)
-    - [disjoint-set-union](#disjoint-set-union)
-  - [Geometry](#geometry)
-    - [linear-operations](#linear-operations)
-    - [dot-product](#dot-product)
-    - [cross-product](#cross-product)
-    - [intersection](#intersection)
-  - [String](#string)
-	- [z-algorithm](#z-algorithm)
-	
-# Competitive programming cheat sheet
+Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Competitive programming is recognized and supported by several multinational software and Internet companies.
+
+There are many different types of competitive programming competitions, including:
+
+| Type                                                                          | Description                                                                                                                                                      |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ACM-ICPC](https://icpc.baylor.edu/)                                          | The ACM International Collegiate Programming Contest (ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.   |
+| [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam)          | Google Code Jam is a programming competition organized and run by Google.                                                                                        |
+| [Google Kick Start](https://codingcompetitions.withgoogle.com/kickstart)      | Google Kick Start is a global online coding competition, consisting of three-hour rounds of algorithmic puzzles designed by Google engineers and held virtually. |
+| [Google Hash Code](https://codingcompetitions.withgoogle.com/hashcode)        | Google Hash Code is a team-based programming competition, organized by Google for students and professionals around the world.                                   |
+| [Facebook Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup) | Facebook Hacker Cup is a worldwide programming competition organized by Facebook.                                                                                |
 
 ## standard-template
 
@@ -36,8 +25,6 @@ title: "Competitive Programming Cheatsheet"
 #include <bits/stdc++.h>
 using namespace std;
 ```
-
-
 
 ### macros
 
@@ -59,8 +46,6 @@ using namespace std;
 #define trav(container, it) for (typeof (container.begin()) it = container.begin(); it != container.end(); it++)
 ```
 
-
-
 ### fast-io
 
 ```cpp
@@ -77,8 +62,6 @@ int main()
 }
 ```
 
-
-
 ## basic-algorithms
 
 ### binary-search
@@ -90,8 +73,6 @@ int binarySearch(vector<int>&arr,int value)
 }
 ```
 
-
-
 ### euclidean-gcd
 
 ```cpp
@@ -102,8 +83,6 @@ int gcd(int a, int b)
     return gcd(b % a, a);
 }
 ```
-
-
 
 ### binary-exponentiation
 
@@ -121,22 +100,18 @@ int power(int x, int y, int p)
 }
 ```
 
-
-
 ### modular-inverse
 
 ```cpp
-int modInverse(int a, int m){ 
-    int g = gcd(a, m); 
+int modInverse(int a, int m){
+    int g = gcd(a, m);
     if (g != 1){
         return -1;
-    }else{ 
+    }else{
         return power(a, m-2, m);
-    } 
+    }
 };
 ```
-
-
 
 ## graphs
 
@@ -147,32 +122,32 @@ class Graph
 {
 	public:
     int V;
-    vector<list<int>> adj;  
+    vector<list<int>> adj;
     Graph(int V);
     void addEdge(int v, int w);
-    void BFS(int s); 
+    void BFS(int s);
 };
 Graph::Graph(int V)
 {
     this->V = V;
     adj.resize(V);
 }
- 
+
 void Graph::addEdge(int v, int w)
 {
     adj[v].push_back(w);
 }
- 
+
 void Graph::BFS(int s)
 {
     vector<bool> visited;
     visited.resize(V,false);
- 
+
     list<int> queue;
- 
+
     visited[s] = true;
     queue.push_back(s);
- 
+
     while(!queue.empty())
     {
         s = queue.front();
@@ -190,8 +165,6 @@ void Graph::BFS(int s)
 }
 ```
 
-
-
 ### disjoint-set-union
 
 ```cpp
@@ -205,7 +178,7 @@ struct DSU {
 
 	int size(int x) { return -e[get(x)]; }
 
-	bool unite(int x, int y) {  
+	bool unite(int x, int y) {
 		x = get(x), y = get(y);
 		if (x == y) return false;
 		if (e[x] > e[y]) swap(x, y);
@@ -215,13 +188,12 @@ struct DSU {
 };
 ```
 
-
-
 ## Geometry
 
 ### linear-operations
 
 1. 2d plane.
+
 ```cpp
 struct point2d {
     ftype x, y;
@@ -314,8 +286,6 @@ point3d operator*(ftype a, point3d b) {
 }
 ```
 
-
-
 ### dot-product
 
 ```cpp
@@ -326,8 +296,6 @@ ftype dot(point3d a, point3d b) {
     return a.x * b.x + a.y * b.y + a.z * b.z;
 }
 ```
-
-
 
 ### cross-product
 
@@ -345,8 +313,6 @@ ftype cross(point2d a, point2d b) {
 }
 ```
 
-
-
 ### intersection
 
 ```cpp
@@ -357,7 +323,7 @@ point2d intersect(point2d a1, point2d d1, point2d a2, point2d d2) {
 point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, point3d n3) {
     point3d x(n1.x, n2.x, n3.x);
     point3d y(n1.y, n2.y, n3.y);
-    point3d z(n1.z, n2.z, n3.z); 
+    point3d z(n1.z, n2.z, n3.z);
     point3d d(dot(a1, n1), dot(a2, n2), dot(a3, n3));
     return point3d(triple(d, y, z),
                    triple(x, d, z),
@@ -370,14 +336,13 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
 =======
 **[🔼Back to Top](#table-of-contents)**
 
-
 ## String
 
 ### z-algorithm
 
-**Output**: *z[i]* := length of largest string from index *i* which is a prefix of *s*.
+**Output**: _z[i]_ := length of largest string from index _i_ which is a prefix of _s_.
 
-**Time complexity**: O(*n*)
+**Time complexity**: O(_n_)
 
 ```cpp
 vector<int> z_function(string s) {
@@ -394,7 +359,9 @@ vector<int> z_function(string s) {
 	return z;
 }
 ```
+
 Related problem: [Codeforces 126B - Password](https://codeforces.com/contest/126/problem/B)
 
 **[🔼Back to Top](#table-of-contents)**
->>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/competitive-programming-cheatsheet.md
+
+> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/competitive-programming-cheatsheet.md

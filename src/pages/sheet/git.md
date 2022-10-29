@@ -3,28 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Git Cheatsheet"
 ---
 
-## Table of Contents
+## Synopsis
 
-- [Git CheatSheet for Developers](#git-cheatsheet-for-developers)
-  - [Changing Directory](#changing-directory)
-  - [Setting up Alias](#setting-up-alias)
-  - [Git Configuration](#git-configuration)
-  - [Getting & Creating Projects](#getting--creating-projects)
-  - [Basic Commands](#basic-commands)
-  - [Branching & Merging](#branching--merging)
-  - [Sharing & Updating Projects](#sharing--updating-projects)
-  - [Inspection & Comparison](#inspection--comparison)
-  - [Undoing Things](#undoing-things)
-  - [Syncing Forks](#syncing-forks)
-  - [Rewrite History](#rewrite-history)
-  - [Stashing](#stashing)
-  - [Tagging](#tagging)
-- [Common Problems Resolution](#common-problems-resolution)
-  - [Delete All Commit](#delete-all-commit)
-  - [Update Commit](#update-commit)
-  - [Update commit message](#update-commit-message)
-  - [Undo a commit from like 5 commits ago](#undo-a-commit-from-like-5-commits-ago)
----
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
 
 # Git CheatSheet for Developers
 
@@ -38,8 +19,6 @@ title: "Git Cheatsheet"
 | `cd -`  | Change directory to previous directory |
 | `pwd`   | Print working directory                |
 
-
-
 ## Setting up Alias
 
 | Command                                 | Description                      |
@@ -47,8 +26,6 @@ title: "Git Cheatsheet"
 | `git config --global alias.co checkout` | Set `co` as alias for `checkout` |
 | `git config --global alias.br branch`   | Set `br` as alias for `branch`   |
 | `git config --global alias.ci commit`   | Set `ci` as alias for `commit`   |
-
-
 
 ## Git Configuration
 
@@ -61,8 +38,6 @@ title: "Git Cheatsheet"
 | `git config --global user.email "Your email"` | Configure email                                     |
 | `git config --global core.editor vim`         | Configure editor                                    |
 
-
-
 ## Getting & Creating Projects
 
 | Command                            | Description                                                                                              |
@@ -72,8 +47,6 @@ title: "Git Cheatsheet"
 | `git clone [https://url] [folder]` | Clone source code from a remote repository into a specific folder                                        |
 | `git clone --bare [https://url]`   | Clone source code from a remote repository without a working directory                                   |
 | `git clone --mirror [https://url]` | Clone source code from a remote repository without a working directory and without the remote repository |
-
-
 
 ## Basic Commands
 
@@ -97,8 +70,6 @@ title: "Git Cheatsheet"
 | `git commit --amend --no-edit --date="`date -R`" --reset-author`               | Amend last commit with new date and new author                            |
 | `git commit --amend --no-edit --date="`date -R`" --reset-author --allow-empty` | Amend last commit with new date and new author and allow empty commit     |
 
-
-
 ## Branching & Merging
 
 | Command                                                 | Description                                                                         |
@@ -120,8 +91,6 @@ title: "Git Cheatsheet"
 | `git branch --unset-upstream [branch]`                  | Unset a local branch's upstream branch                                              |
 | `git push origin [branch]`                              | Push a branch to your remote repository                                             |
 
-
-
 ## Sharing & Updating Projects
 
 | Command                             | Description                                                 |
@@ -132,8 +101,6 @@ title: "Git Cheatsheet"
 | `git push origin --delete [branch]` | Delete a remote branch                                      |
 | `git push origin :[branch]`         | Delete a remote branch                                      |
 | `git push origin [branch] --force`  | Force push changes to remote repository                     |
-
-
 
 ## Inspection & Comparison
 
@@ -147,8 +114,6 @@ title: "Git Cheatsheet"
 | `git log --graph`                 | View changes (graphical)                         |
 | `git log --graph --oneline`       | View changes (graphical and brief)               |
 | `git log --graph --oneline --all` | View changes (graphical, brief and all branches) |
-
-
 
 ## Undoing Things
 
@@ -164,8 +129,6 @@ title: "Git Cheatsheet"
 | `git revert [commit]`              | Revert a commit                                                                                            |
 | `git revert [commit] --no-commit`  | Revert a commit without committing                                                                         |
 
-
-
 ## Syncing Forks
 
 | Command                                 | Description                                                                                                                                                                           |
@@ -174,8 +137,6 @@ title: "Git Cheatsheet"
 | `git remote add upstream [https://url]` | Specify a new remote upstream repository that will be synced with the fork                                                                                                            |
 | `git fetch upstream`                    | Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, upstream/master                                     |
 | `git merge upstream/master`             | Merge the changes from upstream/master into your local master branch. This brings your fork's master branch into sync with the upstream repository, without losing your local changes |
-
-
 
 ## Rewrite History
 
@@ -187,8 +148,6 @@ title: "Git Cheatsheet"
 | `git rebase -i [SHA1]`        | Interactive rebase |
 | `git rebase -i [tag]`         | Interactive rebase |
 
-
-
 ## Stashing
 
 | Command                    | Description                                                    |
@@ -199,8 +158,6 @@ title: "Git Cheatsheet"
 | `git stash show`           | Show the changes in the last stashed changeset                 |
 | `git stash show -p`        | Show the changes in the last stashed changeset (detailed)      |
 
-
-
 ## Tagging
 
 | Command                           | Description                      |
@@ -209,8 +166,6 @@ title: "Git Cheatsheet"
 | `git tag -l "v1.8.5*"`            | List all tags matching a pattern |
 | `git tag [tag]`                   | Annotate a tag                   |
 | `git tag -a [tag] -m "[message]"` | Annotate a tag with a message    |
-
-
 
 ---
 
@@ -235,8 +190,6 @@ git branch -m main
 git push -f origin main
 ```
 
-
-
 ## Update Commit
 
 If you have commited and realized that there is small change needed.
@@ -248,8 +201,6 @@ git commit --amend --no-edit
 # now your last commit contains that change!
 ```
 
-
-
 ## Update commit message
 
 If you want to update previous commit message.
@@ -258,8 +209,6 @@ If you want to update previous commit message.
 git commit --amend
 # follow prompts to change the commit message
 ```
-
-
 
 ## Undo a commit from like 5 commits ago
 
@@ -275,5 +224,3 @@ git revert [saved hash]
 # follow prompts to edit the commit message
 # or just save and commit
 ```
-
-

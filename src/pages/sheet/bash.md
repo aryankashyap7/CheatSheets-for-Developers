@@ -3,8 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Bash Cheatsheet"
 ---
 
-Bash is a powerful scripting language that is used by many developers. This cheat sheet is a collection of Bash tips and tricks that will help you write better Bash scripts.
+## Synopsis
 
+Bash is a powerful scripting language that is used by many developers. This cheat sheet is a collection of Bash tips and tricks that will help you write better Bash scripts.
 
 ### Bash Basics
 
@@ -36,8 +37,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `clear`   | Clear the console                                          |
 | `exit`    | Exit the console                                           |
 
-
-
 #### Variables
 
 | Command                  | Description                                                                 |
@@ -55,8 +54,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo "${var:+value}"`   | Print a value if the variable is set                                        |
 | `echo "${var:offset}"`   | Print a substring of a variable                                             |
 
-
-
 #### Functions
 
 | Command                                   | Description                       |
@@ -65,8 +62,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `function_name() { echo "Hello World"; }` | Define a function                 |
 | `function_name() { echo "Hello $1"; }`    | Define a function with parameters |
 | `function_name() { echo "Hello $@"; }`    | Define a function with parameters |
-
-
 
 #### Arrays
 
@@ -82,8 +77,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `unset array[0]`               | Remove an array element                  |
 | `unset array`                  | Remove an array                          |
 
-
-
 #### Conditionals
 
 | Command                                                                 | Description                        |
@@ -94,8 +87,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `case value in pattern1) ... ;; pattern2) ... ;; esac`                  | Case statement                     |
 | `case value in pattern1) ... ;; pattern2) ... ;; *) ... ;; esac`        | Case statement with a default case |
 
-
-
 #### Loops
 
 | Command                                        | Description |
@@ -105,8 +96,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `for (( i=0; i<10; i++ )); do ... done`        | For loop    |
 | `while [ condition ]; do ... done`             | While loop  |
 | `until [ condition ]; do ... done`             | Until loop  |
-
-
 
 #### Input/Output
 
@@ -123,8 +112,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo "Hello World" >> file.txt` | Append output to a file                                |
 | `echo "Hello World" 2> file.txt` | Redirect error output to a file                        |
 
-
-
 #### Debugging
 
 | Command  | Description                                     |
@@ -136,8 +123,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `set -n` | Read commands but do not execute them           |
 | `set +n` | Execute commands read from the command line     |
 
-
-
 #### Miscellaneous
 
 | Command                  | Description                            |
@@ -145,8 +130,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `echo "Hello World"`     | Print a string                         |
 | `echo -n "Hello World"`  | Print a string without a newline       |
 | `echo -e "Hello\tWorld"` | Print a string with escaped characters |
-
-
 
 ## Bash Advanced
 
@@ -178,8 +161,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `cd`       | Change the current working directory                        |
 | `pushd`    | Push the current working directory onto the directory stack |
 
-
-
 #### Bash Options
 
 | Command            | Description                                             |
@@ -192,8 +173,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `set -o pipefail`  | Exit on pipe failure                                    |
 | `set -o xtrace`    | Print commands and their arguments as they are executed |
 
-
-
 #### Bash Aliases
 
 | Command                | Description     |
@@ -201,8 +180,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `alias`                | List aliases    |
 | `alias name="command"` | Create an alias |
 | `unalias`              | Remove an alias |
-
-
 
 #### Bash Functions
 
@@ -212,8 +189,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `name() { ... }`        | Define a function |
 | `declare -f`            | List functions    |
 | `declare -f name`       | List a function   |
-
-
 
 #### Bash Arrays
 
@@ -229,8 +204,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `declare -p`                   | List variables                     |
 | `declare -p array`             | List a variable                    |
 
-
-
 #### Bash Conditionals
 
 | Command                          | Description  |
@@ -244,8 +217,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `[[ value1 < value2 ]]`          | If statement |
 | `[[ value1 > value2 ]]`          | If statement |
 
-
-
 #### Bash Loops
 
 | Command                                    | Description |
@@ -255,8 +226,6 @@ Bash is a powerful scripting language that is used by many developers. This chea
 | `while [[ condition ]]; do ... done`       | While loop  |
 | `until [[ condition ]]; do ... done`       | Until loop  |
 | `select var in "${array[@]}"; do ... done` | Select loop |
-
-
 
 #### Bash Input/Output
 
@@ -269,7 +238,7 @@ Bash is a powerful scripting language that is used by many developers. This chea
 #### Bash Arguments
 
 | Command | Description                                          |
-|---------|------------------------------------------------------|
+| ------- | ---------------------------------------------------- |
 | `$#`    | Specifies number of arguments                        |
 | `$*`    | Specifies all positional arguments as a single word  |
 | `$@`    | Specifies all positional arguments as separate words |

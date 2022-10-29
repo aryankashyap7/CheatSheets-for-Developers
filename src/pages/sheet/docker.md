@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "Docker Cheatsheet"
 ---
 
+## Synopsis
+
+Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating-system kernel and are thus more lightweight than virtual machines. Containers are created from images that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
+
 ## Run a new Container
 
 Container is a running instance of an image. You can run a container from an image using the `docker run` command.
@@ -27,8 +31,6 @@ docker run -it [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 | `docker run -v HOSTDIR:TARGETDIR IMAGE`        | Map a local Directory into the Container |
 | `docker run -it --entrypoint EXECUTABLE IMAGE` | Change the Entrypoint                    |
 
-
-
 ## Manage Containers
 
 | Command                                | Description                              |
@@ -45,8 +47,6 @@ docker run -it [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 | `docker exec -it CONTAINER EXECUTABLE` | Start a shell inside a running container |
 | `docker rename OLD_NAME NEW_NAME`      | Rename a container                       |
 | `docker commit CONTAINER`              | Create an image out of a container       |
-
-
 
 ## Manage Images
 
@@ -66,8 +66,6 @@ Images are the building blocks of containers. You can manage images using the `d
 | `docker save IMAGE > FILE`        | Save an image to a .tar file             |
 | `docker load -i TARFILE`          | Load an image from a .tar file           |
 
-
-
 ## Info and Stats
 
 | Command                 | Description                            |
@@ -79,8 +77,6 @@ Images are the building blocks of containers. You can manage images using the `d
 | `docker inspect NAME`   | Get detailed info about an object      |
 | `docker diff CONTAINER` | Show all modified files in a container |
 | `docker port CONTAINER` | Show mapped ports of a container       |
-
-
 
 ## Docker compose
 
@@ -110,8 +106,6 @@ docker-compose -f FILENAME.yml --env-file .env up
 | `docker compose down`             | Stop all services                                 |
 | `docker compose logs -f`          | see all logs for the services, following them     |
 
-
-
 ## Docker Swarm
 
 Docker Swarm is a native clustering tool for Docker. It turns a pool of Docker hosts into a single, virtual Docker host.
@@ -136,8 +130,6 @@ Docker Swarm is a native clustering tool for Docker. It turns a pool of Docker h
 | `docker service rm`       | Remove a service                    |
 | `docker service scale`    | Scale a service                     |
 | `docker service update`   | Update a service                    |
-
-
 
 ## Docker Machine
 
@@ -164,8 +156,6 @@ Docker Machine is a tool for provisioning Docker hosts on your computer, on clou
 | `docker-machine url`              | Get the URL of a machine                                             |
 | `docker-machine help`             | Shows a list of commands or help for one command                     |
 
-
-
 ## Docker Registry
 
 Dockers Registry is a tool to store and distribute Docker images. It is the default registry for Docker Hub.
@@ -178,8 +168,6 @@ Dockers Registry is a tool to store and distribute Docker images. It is the defa
 | `docker push`   | Push an image or a repository to a registry           |
 | `docker search` | Search the Docker Hub for images                      |
 | `docker tag`    | Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE |
-
-
 
 ## Dockerfile
 
@@ -205,8 +193,6 @@ A Dockerfile is a text document that contains all the commands a user could call
 | `HEALTHCHECK` | Configure a test to perform to check that the container is still working                                                                                                                |
 | `SHELL`       | Set the default shell for the shell-form of commands                                                                                                                                    |
 
-
-
 ## Docker Hub
 
 Docker Hub is a cloud-based registry service which allows you to link code repositories to Docker images. It offers automated builds, webhooks, and team collaboration features.
@@ -219,8 +205,6 @@ Docker Hub is a cloud-based registry service which allows you to link code repos
 | `docker push`   | Push an image or a repository to a registry           |
 | `docker search` | Search the Docker Hub for images                      |
 | `docker tag`    | Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE |
-
-
 
 ## Docker Networking
 
@@ -236,8 +220,6 @@ Docker networking is a feature that allows you to connect containers to each oth
 | `docker network prune`      | Remove all unused networks                           |
 | `docker network rm`         | Remove one or more networks                          |
 
-
-
 ## Docker Volumes
 
 Docker volumes are the preferred mechanism for persisting data generated by and used by Docker containers. While bind mounts are dependent on the directory structure of the host machine, volumes are completely managed by Docker.
@@ -250,8 +232,6 @@ Docker volumes are the preferred mechanism for persisting data generated by and 
 | `docker volume prune`   | Remove all unused local volumes                     |
 | `docker volume rm`      | Remove one or more volumes                          |
 
-
-
 ## Docker Secrets
 
 Docker secrets are sensitive data which you don’t want to store in a Dockerfile or in your application’s source code unencrypted. Docker secrets are encrypted during transit and at rest in a Docker swarm. A given secret is only accessible to those services which have been granted explicit access to it, and only while those service tasks are running.
@@ -262,8 +242,6 @@ Docker secrets are sensitive data which you don’t want to store in a Dockerfil
 | `docker secret inspect` | Display detailed information on one or more secrets |
 | `docker secret ls`      | List secrets                                        |
 | `docker secret rm`      | Remove one or more secrets                          |
-
-
 
 ## Docker Stack
 
@@ -277,8 +255,6 @@ Docker stack is a set of interrelated services that share dependencies, and can 
 | `docker stack rm`       | Remove one or more stacks                    |
 | `docker stack services` | List the services in the stack               |
 
-
-
 ## Docker BuildKit
 
 Docker BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner. It provides a common set of operations for building container images and artifacts.
@@ -288,8 +264,6 @@ Docker BuildKit is a toolkit for converting source code to build artifacts in an
 | `docker build`  | Build an image from a Dockerfile |
 | `docker buildx` | Build with BuildKit              |
 
-
-
 ## Docker Security
 
 Docker security is a set of features that allow you to secure your Docker containers and images.
@@ -297,5 +271,3 @@ Docker security is a set of features that allow you to secure your Docker contai
 | Command       | Description                        |
 | ------------- | ---------------------------------- |
 | `docker scan` | Scan the image for vulnerabilities |
-
-

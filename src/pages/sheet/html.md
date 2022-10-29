@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "HTML Cheatsheet"
 ---
 
+## Synopsis
+
+HTML is a markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
 ## Basic Tags of HTML
 
 > Tags are like keywords which defines that how web browser will format and display the content.
@@ -17,8 +21,6 @@ title: "HTML Cheatsheet"
 | `<link/>`              | This is used to link to scripts external to the webpage. Typically utilized for including stylesheets.                                    |
 | `<style>...</style>`   | The style tag can be used as an alternative to an external style sheet, or complement it.Includes the webpage’s appearance information.   |
 | `<script>...</script>` | Used to add code snippets, typically in JavaScript,to make webpage dynamic. It can also be used to just link to an external script.       |
-
-
 
 ## Tags to Structure Document
 
@@ -40,8 +42,6 @@ title: "HTML Cheatsheet"
 | `<code> … </code>`             | This is used to display code snippets within a paragraph.                                                                      |
 | `<bdo dir="rtl/ltr"> … </bdo>` | Overrides the current directionality of text, so that the text within is rendered in a different direction.                    |
 
-
-
 ## Semantic Elements
 
 > Semantic element clearly describes its meaning to both the browser and the developer.
@@ -62,8 +62,6 @@ title: "HTML Cheatsheet"
 | `<time> ... </time>`             | Defines a date/time                                                                         |
 | `<pre> ... </pre>`               | Preserve both spaces and linebreaks                                                         |
 
-
-
 ## Formatting
 
 > Formatting elements were designed to display special types of text:
@@ -81,8 +79,6 @@ title: "HTML Cheatsheet"
 | `<del> ... </del>`       | Defines deleted text                                 |
 | `<mark> ... </mark>`     | Defines marked/highlighted text                      |
 
-
-
 ## Links
 
 > Links allow users to click their way from page to page.
@@ -94,8 +90,6 @@ title: "HTML Cheatsheet"
 | `<a href=”tel:###-###”> … </a>` | Anchor tag for mentioning contact numbers. As the numbers are clickable, this can be particularly beneficial for mobile users. |
 | `<a name=”name”> … </a>`        | This tag can be used to quickly navigate to a different part of the webpage.                                                   |
 | `<a href=”#name”> … </a>`       | A variation of the above tag, this is only meant to navigate to a div section of the webpage.                                  |
-
-
 
 ## Images
 
@@ -116,8 +110,6 @@ title: "HTML Cheatsheet"
 | `shape=””`               | Shape of the area.                                                                                                             |
 | `coords=””`              | The coords attribute specifies the coordinates of an area in an image map.                                                     |
 
-
-
 ## Lists
 
 > Lists allow web developers to group a set of related items in lists.
@@ -130,8 +122,6 @@ title: "HTML Cheatsheet"
 | `<dl> … </dl>` | Tag for list of items with definitions.                     |
 | `<dt> … </dt>` | The definition of a single term inline with body content.   |
 | `<dd> … </dd>` | The description for the defined term.                       |
-
-
 
 ## Forms
 
@@ -153,8 +143,6 @@ title: "HTML Cheatsheet"
 </form>
 ```
 
-
-
 ## Input Types
 
 |   Field Type    | HTML Code Notes                                         |
@@ -168,8 +156,6 @@ title: "HTML Cheatsheet"
 |   file picker   | `<input type="file">`                                   | pops up an “open file” dialog                                                                |
 |  hidden field   | `<input type="hidden">`                                 | nothing there!                                                                               |
 |  submit button  | `<input type="submit">`                                 | activates the form's submission <br/>(a `POST` request or <br/>Javascript action)            |
-
-
 
 ### Important Attributes
 
@@ -192,8 +178,6 @@ title: "HTML Cheatsheet"
 | `name`    | the group to which this element is connected. For radio buttons, only one element per group (or name) can be checked. |
 | `value`   | the data or value that is returned for a specific group (a multi-element control), if this element is checked.        |
 
-
-
 ## Inputs
 
 | Command                          | Description                                                     |
@@ -207,8 +191,6 @@ title: "HTML Cheatsheet"
 | `<input type="time" name=" ">`   | Sets a single-line text box with a calendar showing the time .  |
 | `<input type="search" name=" ">` | Sets a single-line text box for searching .                     |
 | `<input type="color" name=" ">`  | Sets a single-line text box for picking a color.                |
-
-
 
 ## Tables
 
@@ -227,8 +209,6 @@ title: "HTML Cheatsheet"
 | `<colgroup> … </colgroup>` | Used for grouping columns together.                                |
 | `<col>`                    | Denotes a column inside a table.                                   |
 
-
-
 ## Graphics
 
 | Command                | Description                                           |
@@ -236,13 +216,9 @@ title: "HTML Cheatsheet"
 | `<canvas> … </canvas>` | Used to draw graphics on a web page using javascript. |
 | `<svg> … </svg>`       | Used to defines vector-based graphics in XML format.  |
 
-
-
 ## Media
 
 | Command              | Description                               |
 | -------------------- | ----------------------------------------- |
 | `<video> … </video>` | Used to show a video on a web page.       |
 | `<audio> … </audio>` | Used to play an audio file on a web page. |
-
-
