@@ -60,10 +60,8 @@ const filenames = files.map((file) =>
   search.addEventListener("change", (e) => {
     // @ts-ignore
     let value = e.target.value.toLowerCase();
-    console.log(value);
     filenames.forEach((item: HTMLTextAreaElement) => {
       if (item.innerText.toLowerCase().includes(value)) {
-        console.log(item.innerText.toLowerCase())
         item.style.display = "block";
       } else {
         // Hide item
