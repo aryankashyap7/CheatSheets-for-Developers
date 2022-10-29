@@ -19,6 +19,7 @@
   - [React UseCallback](#react-usecallback)
   - [React UseMemo](#react-usememo)
   - [React Router](#react-router)
+  - [React Fragment](#react-fragment)
 
 ## Create React App
 
@@ -412,6 +413,17 @@ function Contact() {
   );
 }
 
+```
+
+## React Fragment
+
+The Fragment component, which is often used via the <>...</> syntax, lets you render and group multiple elements in place of one, without wrapping them in any other container element.
+
+```
+<>
+  <FirstChild />
+  <SecondChild />
+</>
 ```
 
 **[🔼Back to Top](#react-js-for-developers)**
