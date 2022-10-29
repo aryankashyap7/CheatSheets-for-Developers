@@ -1,0 +1,33 @@
+---
+import Layout from "./Layout.astro";
+import Nav from "../components/Nav.astro";
+import ToC from "../components/ToC.astro";
+
+const {
+  content: { title },
+  headings,
+} = Astro.props;
+---
+
+<Layout title={title}>
+  <Nav />
+  <div class="md:grid md:grid-cols-4 gap-10 px-4 md:px-32 mt-8">
+    <aside
+      class="md:sticky md:self-start md:top-12 md:block md:visible overflow-y-auto md:max-h-80"
+    >
+      <details class="mt-4 md:hidden">
+        <summary class="font-semibold">Table of Contents</summary>
+        <ToC headings={headings} />
+      </details>
+
+      <div class="hidden md:block"><ToC headings={headings} /></div>
+    </aside>
+
+    <article
+      class="col-span-2 md:col-span-3 prose prose-md prose-cactus prose-headings:font-semibold table-auto prose-headings:before:text-accent prose-headings:before:absolute prose-headings:before:-ml-4 prose-th:before:content-none"
+    >
+      <h1 class="title text-gradient my-8">{title}</h1>
+      <slot />
+    </article>
+  </div>
+</Layout>

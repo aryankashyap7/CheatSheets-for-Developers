@@ -1,0 +1,29 @@
+---
+interface Heading {
+  slug: string;
+  text: string;
+  depth: number;
+}
+
+export interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+---
+
+<ul class="mt-4 text-xs space-y-2">
+  {
+    headings.map(({ slug, text, depth }) => (
+      <li class="line-clamp-2 hover:text-accent">
+        <a
+          class="text-base"
+          href={`#${slug}`}
+          aria-label={`Scroll to section: ${text}`}
+        >
+          <span>{"#".repeat(depth)}</span> {text}
+        </a>
+      </li>
+    ))
+  }
+</ul>
