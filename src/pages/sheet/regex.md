@@ -3,13 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Regex Cheatsheet"
 ---
 
-# Regular Expressions (RegEx) CheatSheet for Developers
-
-## Regular Expressions Introduction
+## Synopsis
 
 > Regular expressions (also referred to as rational expressions) are sequences of characters that specify a search pattern in the text. Such patterns are often used in string-searching algorithms to perform "find" and "find and replace" operations on strings, or to validate inputs.
-
-
 
 ## Anchors
 
@@ -24,8 +20,6 @@ title: "Regex Cheatsheet"
 |   `\<`    |                      Start of word                      |
 |   `\>`    |                       End of word                       |
 
-
-
 ## Quanti­fiers
 
 | Operators |  Occurrence   |  Example  |  Description  |
@@ -35,8 +29,6 @@ title: "Regex Cheatsheet"
 |    `+`    | **1 or more** | **{3,}**  | **3 or more** |
 
 Add a `?` to a quantifier to make it ungreedy.
-
-
 
 ## Groups and Ranges
 
@@ -55,8 +47,6 @@ Add a `?` to a quantifier to make it ungreedy.
 
 Ranges are inclusive.
 
-
-
 ## Escape Sequences
 
 | Operator |        Description         |
@@ -67,8 +57,6 @@ Ranges are inclusive.
 
 > `Escaping` is a way of treating characters which have a special meaning in regex literally, rather than as special charac­ters.
 
-
-
 ## Common Meta-characters
 
 | `^` | `[` | `.`  | `$` |
@@ -78,8 +66,6 @@ Ranges are inclusive.
 | `<` | `>` |      |     |
 
 The escape character is usually `\`
-
-
 
 ## Special Characters
 
@@ -93,8 +79,6 @@ The escape character is usually `\`
 |  `\xxx`  | Octal character xxx |
 |  `\xhh`  |  Hex character hh   |
 
-
-
 ## Assertions
 
 |           Operator           |       Description        |
@@ -107,8 +91,6 @@ The escape character is usually `\`
 |            `?()`             |   Condition [if then]    |
 |           `?()\|`            | Condition [if then else] |
 |             `?#`             |         Comment          |
-
-
 
 ## String Replacement
 
@@ -124,8 +106,6 @@ The escape character is usually `\`
 
 Some regex implementations use `\` instead of `$`.
 
-
-
 ## Pattern Modifiers
 
 | Operator |               Description                |
@@ -139,5 +119,3 @@ Some regex implementations use `\` instead of `$`.
 |  `U *`   |             Ungreedy pattern             |
 
 > `*` --> **_PCRE modifier_**
-
-

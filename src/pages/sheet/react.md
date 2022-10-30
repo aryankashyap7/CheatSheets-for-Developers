@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "ReactJS Cheatsheet"
 ---
 
+## Synopsis
+
+ReactJS is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
+
 ## Create React App
 
 Create React App is a comfortable environment for learning React, and is the best way to start building a new single-page application in React.
@@ -12,8 +16,6 @@ npx create-react-app my-app
 cd my-app
 npm start
 ```
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Components
 
@@ -25,13 +27,11 @@ function App() {
 export default App;
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React Props
 
 ```js
 function App() {
-  return <User name="Dev" />
+  return <User name="Dev" />;
 }
 
 function User(props) {
@@ -39,16 +39,14 @@ function User(props) {
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React Children Props
 
 ```js
 function App() {
   return (
-   <User>
-     <h1>Hello, John Doe!</h1>
-   </User>
+    <User>
+      <h1>Hello, John Doe!</h1>
+    </User>
   );
 }
 
@@ -56,8 +54,6 @@ function User({ children }) {
   return children; // Hello, John Doe!
 }
 ```
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Conditionals
 
@@ -74,8 +70,6 @@ function App() {
   return <UnAuthApp />;
 }
 ```
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React Lists
 
@@ -95,23 +89,17 @@ function SoccerPlayers() {
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React Context
 
 React context allows us to pass data to our component tree without using props.
 
 ```js
 function App() {
-  return (
-    <Body name="John Doe" />
-  );
+  return <Body name="John Doe" />;
 }
 
 function Body({ name }) {
-  return (
-    <Greeting name={name} />
-  );
+  return <Greeting name={name} />;
 }
 
 function Greeting({ name }) {
@@ -119,55 +107,47 @@ function Greeting({ name }) {
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React Hooks
 
 React hooks were introduced in React version 16.8 as a way to easily add reusable, stateful logic to React function components.
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useState Hooks
 
 it allows us to use stateful values in function components.
 
 ```js
-import { useState } from 'react';
+import { useState } from "react";
 
 function MyComponent() {
   const [stateValue, setStateValue] = useState(initialValue);
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React useEffect Hooks
 
 If we want to interact with the “outside world”, such as using an API, we use the useEffect hook.
 
 ```js
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 function MyComponent() {
-   useEffect(() => {
-     // perform side effect here
-   }, []);
+  useEffect(() => {
+    // perform side effect here
+  }, []);
 }
 ```
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useRef
 
 It allows us to get direct access to a JSX element.
 
 ```js
-import { useRef } from 'react';
+import { useRef } from "react";
 
 function MyComponent() {
   const ref = useRef();
 
-  return <div ref={ref} />
+  return <div ref={ref} />;
 }
 ```
 
@@ -193,9 +173,6 @@ function TextInputWithFocusButton() {
   );
 }
 ```
-
-
-**[🔼Back to Top](#react-js-for-developers)**
 
 ## React useContext
 
@@ -229,12 +206,9 @@ function Greeting() {
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React useCallback
 
 React useCallback is a hook that is used to memoize functions. It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
-
 
 ```js
 function App() {
@@ -247,9 +221,12 @@ function App() {
   function handleAddPlayer() {
     setPlayers(players.concat(player));
   }
-  const handleRemovePlayer = useCallback(player => {
-    setPlayers(players.filter((p) => p !== player));
-  }, [players])
+  const handleRemovePlayer = useCallback(
+    (player) => {
+      setPlayers(players.filter((p) => p !== player));
+    },
+    [players]
+  );
 
   return (
     <>
@@ -273,18 +250,15 @@ function PlayerList({ players, handleRemovePlayer }) {
 }
 ```
 
-**[🔼Back to Top](#react-js-for-developers)**
-
 ## React useMemo
 
 React useMemo is a hook that allows us to memoize the result of a function call.
 
-
 ```js
-import * as React from 'react'
-import {getMDXComponent} from 'mdx-bundler/client'
+import * as React from "react";
+import { getMDXComponent } from "mdx-bundler/client";
 
-function Post({code, frontmatter}) {
+function Post({ code, frontmatter }) {
   const Component = React.useMemo(() => getMDXComponent(code), [code]);
 
   return (
@@ -297,7 +271,7 @@ function Post({code, frontmatter}) {
         <Component />
       </main>
     </>
-  )
+  );
 }
 ```
 
@@ -309,12 +283,7 @@ React Router is a collection of navigational components that compose declarative
 
 ```js
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function BasicExample() {
   return (
@@ -373,7 +342,38 @@ function Contact() {
     </div>
   );
 }
-
 ```
+# Configure-React CheatSheet for Developers
 
-**[🔼Back to Top](#react-js-for-developers)**
+
+## Create React Cluster App (Multiple React App in One Project) Build new React App in Second
+Watch this video to create React Cluster App (Multiple React App in One Project) 
+
+| Command | Description |
+| :-------: | :-----------: |
+|`npx configure-react create-cluster <clustername>`|Create Big React Project with Tailwind, React Router Dom, Chakra UI, Context API, Redux, Redux Thunk, Redux Saga, Redux Persist, Utils, Axios |
+|`npx configure-react cluster-app <projectname>`|Create Cluster App with Tailwind, React Router Dom, Chakra UI, Context API, Redux, Redux Thunk, Redux Saga, Redux Persist, Utils, Axios |
+|`npx configure-react ic <package-name>`|Install package in Cluster App |
+|`npx configure-react help`|Display help for command |
+
+For more information about the package visit [Configure-React](https://www.npmjs.com/package/configure-react)
+Watch the video on [Youtube](https://www.youtube.com/watch?v=2MO1_mCXuds&t=3s)
+
+
+
+## React Commands to Configure React App Faster (Specially for Beginners)
+| Command | Description |
+| :-------: | :-----------: |
+| `npx configure-react axios . ` | Install axios and create a folder named `api` and create a file named `axios.js` login.js, register.js, post.js getdata.js |
+|`npx configure-react react-redux-app <projectname>`| Install react-redux and create a folder named `redux` and create a file named `store.js` and `actions.js` and `reducers.js` and `types.js` |
+|`npx configure-react tailwind . `|Configure Exsisting React App with Tailwind Configuration to use Tailwind class |
+|`npx configure-react browser-router . `|Configure Exsisting React App with React Router Dom Configuration to use React Router Dom also create a folder named `routes` and create a file named `index.js` and `AppRouter.js` and edit `App.js` file and index.js file |
+|`npx configure-react chakra-ui . `|Configure Exsisting React App with Chakra UI Configuration to use Chakra UI also edit `index.js` file to wrap the App with ChakraProvider |
+|`npx configure-react context-api . `|Configure Exsisting React App with Context API Configuration to use Context API also create a folder named `context` and create a file named `context.js` and `reducer.js` and edit `App.js` file |
+|`npx configure-react redux . `|Configure Exsisting React App with Redux Configuration to use Redux also create a folder named `redux` and create a file named `store.js` and `actions.js` and `reducers.js` and `types.js` |
+|`npx configure-react utils . `|Configure Exsisting React App with Utils Configuration to use Utils also create a folder named `utils` and create a file named `utils.js` |
+|`npx configure-react redux-thunk . `|Configure Exsisting React App with Redux Thunk Configuration to use Redux Thunk also create a folder named `redux` and create a file named `store.js` and `actions.js` and `reducers.js` and `types.js` |
+|`npx configure-react redux-saga . `|Configure Exsisting React App with Redux Saga Configuration to use Redux Saga also create a folder named `redux` and create a file named `store.js` and `actions.js` and `reducers.js` and `types.js` |
+|`npx configure-react redux-persist . `|Configure Exsisting React App with Redux Persist Configuration to use Redux Persist also create a folder named `redux` and create a file named `store.js` and `actions.js` and `reducers.js` and `types.js` |
+|`npx configure-react refresh . `|Refresh the files and update the files if any changes in the package |
+|`npx configure-react help`|Display help for command |

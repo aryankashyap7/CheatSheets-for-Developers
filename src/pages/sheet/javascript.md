@@ -3,79 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Javascript Cheatsheet"
 ---
 
-# Table of Contents
+## Synopsis
 
-- [Table of Contents](#table-of-contents)
-  - [1. Declaring Variables](#1-declaring-variables)
-  - [2. Lists](#2-lists)
-    - [2.1. New Array](#21-new-array)
-    - [2.2. Add to Array](#22-add-to-array)
-    - [2.3. Remove from Array](#23-remove-from-array)
-    - [2.4. Loop through Array](#24-loop-through-array)
-    - [2.5. Loop through Array with Index](#25-loop-through-array-with-index)
-    - [2.6. Loop through Array in Reverse](#26-loop-through-array-in-reverse)
-  - [3. Objects](#3-objects)
-    - [3.1. New Object](#31-new-object)
-    - [3.2. Add to Object](#32-add-to-object)
-    - [3.3. Remove from Object](#33-remove-from-object)
-    - [3.4. Loop through Object](#34-loop-through-object)
-    - [3.5. Loop through Object with Index](#35-loop-through-object-with-index)
-    - [3.6. Loop through Object in Reverse](#36-loop-through-object-in-reverse)
-  - [4. Functions](#4-functions)
-    - [4.1. New Function](#41-new-function)
-<<<<<<< HEAD:src/pages/sheet/javascript.md
-    - [4.2 Call Function](#42-call-function)
-    - [4.3. Call Function with Parameter](#43-call-function-with-parameter)
-    - [4.4. Call Function with Parameter and Return Value](#44-call-function-with-parameter-and-return-value)
-=======
-    - [4.2. Call Function](#42-call-function)
-    - [4.3. Call Function with Parameters](#43-call-function-with-parameters)
-    - [4.4. Call Function with Parameters and Return Value](#44-call-function-with-parameters-and-return-value)
-    - [4.5. bind()](#45-bind)
->>>>>>> 5fd57f53530263c48e3a8f99fb20ec28376199c7:CheatSheets/javascript-cheatsheet.md
-  - [5. Classes](#5-classes)
-    - [5.1. New Class](#51-new-class)
-    - [5.2. New Class with Constructor](#52-new-class-with-constructor)
-    - [5.3. New Class with Constructor and Method](#53-new-class-with-constructor-and-method)
-    - [5.4. New Class with Constructor and Method and Property and Getter](#54-new-class-with-constructor-and-method-and-property-and-getter)
-    - [5.5. New Class with Constructor and Methods and Inheritance](#55-new-class-with-constructor-and-methods-and-inheritance)
-  - [6. Conditionals](#6-conditionals)
-    - [6.1. If](#61-if)
-    - [6.2. If Else](#62-if-else)
-    - [6.3. If Else If](#63-if-else-if)
-    - [6.4. Switch](#64-switch)
-  - [7. Loops](#7-loops)
-    - [7.1. For](#71-for)
-    - [7.2. For In](#72-for-in)
-    - [7.3. For Of](#73-for-of)
-    - [7.4. While](#74-while)
-    - [7.5. Do While](#75-do-while)
-  - [8. Try Catch](#8-try-catch)
-    - [8.1. Try Catch](#81-try-catch)
-    - [8.2. Try Catch Finally](#82-try-catch-finally)
-  - [9. Promises](#9-promises)
-    - [9.1. New Promise](#91-new-promise)
-    - [9.2. New Promise with Resolve](#92-new-promise-with-resolve)
-    - [9.3. New Promise with Reject](#93-new-promise-with-reject)
-    - [9.4. New Promise with Resolve and Reject](#94-new-promise-with-resolve-and-reject)
-    - [9.5. New Promise with Resolve and Reject and Async](#95-new-promise-with-resolve-and-reject-and-async)
-  - [10. Async Await](#10-async-await)
-    - [10.1. New Async Function](#101-new-async-function)
-    - [10.2. New Async Function with Await](#102-new-async-function-with-await)
-  - [11. Fetch](#11-fetch)
-    - [11.1. New Fetch](#111-new-fetch)
-    - [11.2. New Fetch with URL](#112-new-fetch-with-url)
-    - [11.3. New Fetch with URL and Method](#113-new-fetch-with-url-and-method)
-    - [11.4. New Fetch with URL and Method and Headers](#114-new-fetch-with-url-and-method-and-headers)
-    - [11.5. New Fetch with URL and Method and Headers and Body](#115-new-fetch-with-url-and-method-and-headers-and-body)
-    - [11.6. New Fetch with URL and Method and Headers and Body and Async](#116-new-fetch-with-url-and-method-and-headers-and-body-and-async)
-    - [11.7. New Fetch with URL and Method and Headers and Body and Async and Await](#117-new-fetch-with-url-and-method-and-headers-and-body-and-async-and-await)
-    - [11.8. New Fetch with URL and Method and Headers and Body and Async and Await and Response](#118-new-fetch-with-url-and-method-and-headers-and-body-and-async-and-await-and-response)
-    - [11.9. New Fetch with URL and Method and Headers and Body and Async and Await and Response and Json](#119-new-fetch-with-url-and-method-and-headers-and-body-and-async-and-await-and-response-and-json)
-  - [12. Events](#12-events)
-    - [12.1. New Event](#121-new-event)
-    - [12.2. New Event with Type](#122-new-event-with-type)
-    - [12.3. New Event with Type and Options](#123-new-event-with-type-and-options)
+Javascript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
 
 ## 1. Declaring Variables
 
@@ -84,8 +14,6 @@ title: "Javascript Cheatsheet"
 | var         | ` var a = 1;`   | Can be updated and re-declared.           |
 | let         | ` let a = 1;`   | Can be updated but cannot be re-declared. |
 | const       | ` const a = 1;` | Cannot be updated or re-declared.         |
-
-
 
 ## 2. Lists
 
@@ -133,8 +61,6 @@ newArray.reverse().forEach((item) => {
 });
 ```
 
-
-
 ## 3. Objects
 
 ### 3.1. New Object
@@ -179,8 +105,6 @@ Object.entries(newObject).reverse().forEach(([key, value]) => {
 });
 ```
 
-
-
 ## 4. Functions
 
 ### 4.1. New Function
@@ -213,8 +137,10 @@ function newFunctionWithParameterAndReturnValue(parameter) {
 }
 ```
 
-### 4.5. bind() 
+### 4.5. bind()
+
 With the bind() method, an object can borrow a method from another object.
+
 ```
 const person = {
   firstName:"John",
@@ -231,8 +157,6 @@ const member = {
 
 let fullName = person.fullName.bind(member);
 ```
-
-
 
 ## 5. Classes
 
@@ -305,8 +229,6 @@ class NewClassWithConstructorAndMethodsAndInheritance extends NewClassWithConstr
 }
 ```
 
-
-
 ## 6. Conditionals
 
 ### 6.1. If
@@ -349,8 +271,6 @@ switch (true) {
     break;
 }
 ```
-
-
 
 ## 7. Loops
 
@@ -408,8 +328,6 @@ do {
 } while (i < 10);
 ```
 
-
-
 ## 8. Try Catch
 
 ### 8.1. Try Catch
@@ -433,8 +351,6 @@ try {
   console.log('finally');
 }
 ```
-
-
 
 ## 9. Promises
 
@@ -482,8 +398,6 @@ const newPromiseWithResolveAndRejectAndAsync = new Promise((resolve, reject) => 
 });
 ```
 
-
-
 ## 10. Async Await
 
 ### 10.1. New Async Function
@@ -506,8 +420,6 @@ console.log('newAsyncFunctionWithAwait');
 }
 
 ```
-
-
 
 ## 11. Fetch
 
@@ -658,8 +570,6 @@ console.log(json);
 
 ```
 
-
-
 ## 12. Events
 
 ### 12.1. New Event
@@ -686,9 +596,5 @@ const newEventWithTypeAndOptions = new Event('build', {
 bubbles: true,
 cancelable: true,
 });
-
-```
-
-```
 
 ```

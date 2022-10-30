@@ -1,7 +1,9 @@
 ---
 layout: ../../layouts/CheatSheet.astro
-title: "DOTNET Cheatsheet"
+title: "DOTNET CLI Cheatsheet"
 ---
+
+## Synopsis
 
 The .NET command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET applications.
 
@@ -29,9 +31,6 @@ The following commands are installed by default:
 | `help`    | Displays help for a command.                                          |
 | `store`   | Stores the specified assemblies in the runtime package store.         |
 
-
-
-
 ## Project modification commands
 
 | Command            | Description                                                 |
@@ -42,8 +41,6 @@ The following commands are installed by default:
 | `remove reference` | Removes a project-to-project reference from a project file. |
 | `list reference`   | Lists all project-to-project references in a project.       |
 
-
-
 ## Advanced commands
 
 | Command                 | Description                                                                 |
@@ -53,8 +50,6 @@ The following commands are installed by default:
 | `nuget push`            | Pushes a package to a NuGet package source.                                 |
 | `msbuild`               | Runs Microsoft Build Engine (MSBuild) commands.                             |
 | `dotnet install script` | Installs the .NET CLI tools and adds them to the PATH environment variable. |
-
-
 
 ## Tool management commands
 
@@ -67,14 +62,11 @@ The following commands are installed by default:
 | `tool run`       | Runs a global tool.                               |
 | `tool uninstall` | Uninstalls a global tool.                         |
 
-
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools.
-
-
 
 ## Command structure
 
-CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was run from a directory named *my_app*:
+CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app, and running it from the command line. The following commands show when the console app was run from a directory named _my_app_:
 
 ```dotnetcli
 dotnet new console
@@ -107,5 +99,3 @@ The arguments you pass on the command line are the arguments to the command invo
 ### Options
 
 The options you pass on the command line are the options to the command invoked. For example, when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
-
-

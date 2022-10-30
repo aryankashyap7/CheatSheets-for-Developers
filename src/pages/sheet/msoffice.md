@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "Microsoft Office Cheatsheet"
 ---
 
+## Synopsis
+
+Microsoft Office is a family of client software, server software, and services developed by Microsoft. It was first announced by Bill Gates on August 1, 1988, at COMDEX in Las Vegas. It has various applications, including Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Access, Microsoft Outlook, Microsoft OneNote, Microsoft Publisher, Microsoft Teams, Microsoft OneDrive, and Microsoft SharePoint.
+
 ## Microsoft Word Shortcuts
 
 | Shortcut   | Description      |
@@ -34,8 +38,6 @@ title: "Microsoft Office Cheatsheet"
 | `Ctrl + Y` | Redo             |
 | `Ctrl + Z` | Undo             |
 
-
-
 ## Microsoft Excel Shortcuts
 
 | Shortcut               | Description                   |
@@ -65,8 +67,6 @@ title: "Microsoft Office Cheatsheet"
 | `=IF(A1>A2,"A1 is greater than A2","A1 is less than A2")` | If A1 is greater than A2, then return "A1 is greater than A2", else return "A1 is less than A2" |
 | `=IF(A1>A2,"A1 is greater than A2")`                      | If A1 is greater than A2, then return "A1 is greater than A2"                                   |
 
-
-
 ## Microsoft PowerPoint Shortcuts
 
 | Shortcut   | Description     |
@@ -81,5 +81,3 @@ title: "Microsoft Office Cheatsheet"
 | `Ctrl + 8` | Decrease indent |
 | `Ctrl + 9` | Increase indent |
 | `Ctrl + 0` | Normal view     |
-
-

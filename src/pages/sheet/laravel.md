@@ -3,9 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Laravel8 Cheatsheet"
 ---
 
-## Laravel8 Cheatsheet
+## Synopsis
 
-Laravel is a web application framework with expressive, elegant syntax. [ (Reference)](https://laravel.com/#:~:text=Laravel%20is%20a%20web%20application%20framework%20with%20expressive%2C%20elegant%20syntax.%20We%E2%80%99ve%20already%20laid%20the%20foundation%20%E2%80%94%20freeing%20you%20to%20create%20without%20sweating%20the%20small%20things.)
+Laravel is a web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things. Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
 ## CLI Commands
 
@@ -18,8 +18,6 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `$ php artisan list`        | Commands list   |
 | `$ php artisan tinker`      | Laravel Console |
 | `$ php artisan route:list`  | Route List      |
-
-
 
 ### Common Commands
 
@@ -35,8 +33,6 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `$ php artisan migrate:reset`                              | Rollback all migrations                                                                                             |
 | `$ php artisan migrate:refresh`                            | Rollback all and re-migrate                                                                                         |
 | `$php artisan migrate:refresh --seed`                      | Rollback all, re-migrate and seed                                                                                   |
-
-
 
 ## Authentication
 
@@ -55,5 +51,3 @@ Laravel is a web application framework with expressive, elegant syntax. [ (Refer
 | `Auth::basic('username');`                                          | Attempt to authenticate using HTTP Basic Auth              |
 | `Auth::onceBasic();`                                                | Perform a stateless HTTP Basic login attempt               |
 | `Password::remind($credentials, function($message, $user){});`      | Send a password reminder to a user                         |
-
-

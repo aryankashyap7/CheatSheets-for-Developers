@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "PHP Cheatsheet"
 ---
 
+## Synopsis
+
+PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. PHP is now installed on more than 244 million websites and 2.1 million web servers.
+
 ## Php Variables
 
 ```php
@@ -12,8 +16,6 @@ $var = "Hello World";
 echo $var;
 ?>
 ```
-
-
 
 ## Php Operators
 
@@ -77,8 +79,6 @@ print_r($x + $y); // $x and $y have the same key, so the value for that key in $
 
 ```
 
-
-
 ## Php Data Types
 
 ```php
@@ -124,8 +124,6 @@ fclose($myfile);
 
 ```
 
-
-
 ## Php Functions
 
 ```php
@@ -146,5 +144,3 @@ echo strpos("Hello World", "World");
 echo str_replace("World", "Dolly", "Hello World");
 
 ```
-
-

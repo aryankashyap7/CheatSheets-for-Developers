@@ -3,43 +3,13 @@ layout: ../../layouts/CheatSheet.astro
 title: "Machine learning Cheatsheet"
 ---
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Introduction](#introduction)
-- [Supervised Learning](#supervised-learning)
-- [Types of Supervised Learning](#types-of-supervised-learning)
-  - [Linear Regression](#linear-regression)
-  - [Logistic Regression](#logistic-regression)
-  - [Support Vector Machine (SVM)](#support-vector-machine-svm)
-  - [Decision Tree](#decision-tree)
-  - [Random Forest](#random-forest)
-  - [Neural Network](#neural-network)
-- [Unsupervised Learning](#unsupervised-learning)
-  - [K-Means Clustering](#k-means-clustering)
-  - [Hierarchical Clustering](#hierarchical-clustering)
-  - [Principal Component Analysis (PCA)](#principal-component-analysis-pca)
-  - [Independent Component Analysis (ICA)](#independent-component-analysis-ica)
-  - [Latent Dirichlet Allocation (LDA)](#latent-dirichlet-allocation-lda)
-- [Reinforcement Learning](#reinforcement-learning)
-  - [Q-Learning](#q-learning)
-  - [Upper Confidence Bound (UCB)](#upper-confidence-bound-ucb)
-  - [Thompson Sampling](#thompson-sampling)
-- [Other Concepts](#other-concepts)
-  - [Gradient Descent](#gradient-descent)
-  - [Bias-Variance Tradeoff](#bias-variance-tradeoff)
-  - [Regularization](#regularization)
-  - [Cross-Validation](#cross-validation)
-  - [Hyperparameter Tuning](#hyperparameter-tuning)
-  - [Feature Scaling](#feature-scaling)
-
-## Introduction
+## Synopsis
 
 Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence.
 
 Machine learning explores the study and construction of algorithms that can learn from and make predictions on data. Such algorithms operate by building a model from example inputs in order to make data-driven predictions or decisions, rather than following strictly static program instructions.
 
-<!-- Make a digram using box to show the relation between AI, Ml and DL. -->
+<!-- Make a diagram using box to show the relation between AI, Ml and DL. -->
 
 ```
 Relation between AI -> ML -> DL
@@ -54,8 +24,6 @@ __________________
 |________________|
 
 ```
-
-
 
 ## Supervised Learning
 
@@ -74,8 +42,6 @@ Regression is a supervised learning task in which the model learns to predict a 
 - Classification
 
 Classification is a supervised learning task in which the model learns to predict a discrete value. For example, predicting whether an email is spam or not spam.
-
-
 
 ### Linear Regression
 
@@ -114,8 +80,6 @@ plt.ylabel('Salary')
 plt.show()
 
 ```
-
-
 
 ### Logistic Regression
 
@@ -178,8 +142,6 @@ plt.show()
 
 ```
 
-
-
 ### Support Vector Machine (SVM)
 
 Support vector machines (SVMs, also support vector networks) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples into one category or the other, making it a non-probabilistic binary linear classifier.
@@ -216,8 +178,6 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-
-
 ### Decision Tree
 
 Decision trees are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
@@ -253,8 +213,6 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
 ```
-
-
 
 ### Random Forest
 
@@ -293,8 +251,6 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-
-
 ### Neural Network
 
 Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated.
@@ -332,8 +288,6 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-
-
 ## Unsupervised Learning
 
 Unsupervised learning is a type of machine learning algorithm used to draw inferences from datasets consisting of input data without labeled responses. The most common unsupervised learning method is cluster analysis, which is used for exploratory data analysis to find hidden patterns or grouping in data.
@@ -342,8 +296,6 @@ Examples of unsupervised learning algorithms include:
 
 - Customer segmentation (clustering)
 - DNA sequencing (clustering)
-
-
 
 ### K-Means Clustering
 
@@ -395,8 +347,6 @@ plt.show()
 
 Note: Elbow method is a heuristic method of interpretation and validation of consistency within cluster analysis designed to help finding the appropriate number of clusters in a dataset.
 
-
-
 ### Hierarchical Clustering
 
 Hierarchical clustering is a method of cluster analysis which seeks to build a hierarchy of clusters. It is a way of organizing objects so that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters).
@@ -440,8 +390,6 @@ plt.show()
 ```
 
 Note: Dendrogram is a diagram that shows the hierarchical relationship between objects. It is most commonly created as an output from hierarchical clustering.
-
-
 
 ### Principal Component Analysis (PCA)
 
@@ -512,8 +460,6 @@ plt.show()
 
 ```
 
-
-
 ### Independent Component Analysis (ICA)
 
 Independent component analysis (ICA) is a technique for separating a multivariate signal into additive subcomponents, such that the independent components are statistically independent from each other, and as independent as possible from the original source signals.
@@ -556,8 +502,6 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
 ```
-
-
 
 ### Latent Dirichlet Allocation (LDA)
 
@@ -602,8 +546,6 @@ y_pred = classifier.predict(X_test)
 
 ```
 
-
-
 ## Reinforcement Learning
 
 Reinforcement learning (RL) is an area of machine learning concerned with how software agents ought to take actions in an environment in order to maximize the notion of cumulative reward. Reinforcement learning is one of three basic machine learning paradigms, alongside supervised learning and unsupervised learning.
@@ -617,8 +559,6 @@ Example of Reinforcement Learning are:
 - How a computer learns to play a game like chess, Go, or Dota.
 
 - Trading bots that learn to trade in the stock market.
-
-
 
 ### Q-Learning
 
@@ -723,8 +663,6 @@ plt.show()
 
 ```
 
-
-
 ### Thompson Sampling
 
 Thompson sampling is a statistical method for choosing the next action in an unknown environment. It is a model-free reinforcement learning algorithm that can be used when the probability distribution of the possible rewards is unknown. It is a special case of the Bayesian bandit problem.
@@ -773,8 +711,6 @@ plt.show()
 
 ```
 
-
-
 ## Other Concepts
 
 ### Gradient Descent
@@ -805,8 +741,6 @@ def gradient_descent(x, y):
         print("m {}, b {}, cost {} iteration {}".format(m_curr, b_curr, cost, i))
 
 ```
-
-
 
 ### Bias-Variance Tradeoff
 
@@ -851,13 +785,9 @@ The bias-variance tradeoff is a property of statistical learning methods that st
 ----------------------------------------------------
 ```
 
-
-
 ### Regularization
 
 Regularization is a technique used to avoid overfitting in machine learning models. It is a technique that modifies the cost function by adding a penalty term to it. The penalty term is a measure of how complex the model is. The goal of regularization is to reduce the complexity of the model by penalizing the model for having high weights.
-
-
 
 ### Cross-Validation
 
@@ -882,8 +812,6 @@ def cross_validation(X, y, model, no_of_folds):
 
 ```
 
-
-
 ### Hyperparameter Tuning
 
 Hyperparameter tuning is the process of finding the optimal values for a model's hyperparameters. Hyperparameters are parameters that are not directly learnt within estimators. In scikit-learn, they are passed as arguments to the constructor of the estimator classes.
@@ -903,8 +831,6 @@ grid_search = GridSearchCV(estimator = classifier,
 
 ```
 
-
-
 ### Feature Scaling
 
 Feature scaling is a method used to standardize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step.
@@ -917,5 +843,3 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 ```
-
-

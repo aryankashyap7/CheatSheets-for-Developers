@@ -3,7 +3,7 @@ layout: ../../layouts/CheatSheet.astro
 title: "Pandas Cheatsheet"
 ---
 
-## Pandas For Data Analysis
+## Synopsis
 
 Pandas is a Python library for data analysis. It provides high-performance, easy-to-use data structures and data analysis tools. Pandas is built on top of NumPy, which provides efficient storage and manipulation of dense data.
 
@@ -14,8 +14,6 @@ import pandas as pd
 import numpy as np
 ```
 
-
-
 ### Tidy Data
 
 Tidy data is a standard way of mapping the meaning of a dataset to its structure. A dataset is tidy when:
@@ -23,9 +21,6 @@ Tidy data is a standard way of mapping the meaning of a dataset to its structure
 - Each variable forms a column.
 - Each observation forms a row.
 - Each type of observational unit forms a table.
-
-
-
 
 ### Input/Output
 
@@ -59,9 +54,6 @@ df = pd.DataFrame(np.array([[1, 2], [3, 4]]), columns=['col1', 'col2'])
 
 ```
 
-
-
-
 ### Creating DataFrames
 
 ```python
@@ -69,6 +61,7 @@ df = pd.DataFrame(np.array([[1, 2], [3, 4]]), columns=['col1', 'col2'])
 df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
 df
 ```
+
 ```
 Output:
 
@@ -84,6 +77,7 @@ Output:
 # Transpose a dataframe
 df.T
 ```
+
 ```
 Output:
 
@@ -97,6 +91,7 @@ Output:
 # Sort a dataframe by a column
 df.sort_values(by='col1')
 ```
+
 ```
 Output:
 
@@ -110,6 +105,7 @@ Output:
 # Sort a dataframe by a column in descending order
 df.sort_values(by='col1', ascending=False)
 ```
+
 ```
 
 Output:
@@ -124,6 +120,7 @@ Output:
 # Sort a dataframe by multiple columns
 df.sort_values(by=['col1', 'col2'])
 ```
+
 ```
 Output:
 
@@ -132,9 +129,6 @@ Output:
 | 0   | 1    | 3    |
 | 1   | 2    | 4    |
 ```
-
-
-
 
 ### Grouping DataFrames
 
@@ -183,8 +177,6 @@ Output:
 | 1    | 5    |
 | 2    | 6    |
 ```
-
-
 
 ### Merging DataFrames
 
@@ -258,15 +250,9 @@ Output:
 | 3   | 2    |      | 10   |
 ```
 
-
-
-
-
-
 ### Pivot Tables
 
 Pivot tables are a powerful tool for summarizing data. They allow you to group and aggregate data in different ways.
-
 
 ```
 Assume we have a dataframe df with the following columns:
@@ -308,8 +294,6 @@ Output:
 |      | 8        | 8        |
 ```
 
-
-
 ### Data Visualization
 
 ```python
@@ -331,8 +315,6 @@ df.plot.hist()
 # Create a box plot
 df.plot.box()
 ```
-
-
 
 ### Time Series
 
@@ -358,8 +340,6 @@ df['2018-01-01':'2018-01-10']
 df['2018-01-01']
 ```
 
-
-
 ### Categorical Data
 
 Categorical data is a special type of data that takes on a limited number of possible values. Pandas has a special data type for working with categorical data.
@@ -371,8 +351,6 @@ df['col1'] = df['col1'].astype('category')
 # Create dummy variables
 pd.get_dummies(df['col1'], prefix='col1')
 ```
-
-
 
 ### Missing Data
 
@@ -497,10 +475,6 @@ Output:
 | col2 | 1 |
 ```
 
-
-
-
-
 ### Handling Large Datasets
 
 ```python
@@ -527,9 +501,8 @@ df[~df['col1'].isin(df['col2'])]
 
 ```
 
-
-
 ### Method Chaining
+
 Method chaining is a way to write code in a more concise way. It allows you to string together multiple methods in a single line of code.
 
 ```python
@@ -549,7 +522,6 @@ Output:
 | --- | --- |
 | 1   | 2   |
 ```
-
 
 ### Grouping and Aggregating
 
@@ -603,8 +575,6 @@ Output:
 | B    | 4    | 400  |
 ```
 
-
-
 ### Pandas Gotchas
 
 Pandas Gotchas are common mistakes that new users make when using Pandas. Here are some common gotchas to avoid.
@@ -648,8 +618,6 @@ Output:
 1
 ```
 
-
-
 ### Make New Columns
 
 ```python
@@ -687,8 +655,6 @@ Output:
 | 2   | 3    | 6    | 9    | high |
 ```
 
-
-
 ## Make New Rows
 
 ```python
@@ -712,8 +678,6 @@ Output:
 | 3   | 7    | 8    |
 ```
 
-
-
 ### Rename Columns
 
 ```python
@@ -736,9 +700,6 @@ Output:
 | 2   | 3       | 6       |
 ```
 
-
-
-
 ### Exporting Data
 
 ```python
@@ -760,6 +721,7 @@ df.to_excel('data.xlsx', index=False)
 # Export to json
 df.to_json('data.json', orient='records')
 ```
+
 ```python
 # Export to pickle
 df.to_pickle('data.pkl')
@@ -774,5 +736,3 @@ df.to_dict('records')
 # Export to clipboard
 df.to_clipboard()
 ```
-
-

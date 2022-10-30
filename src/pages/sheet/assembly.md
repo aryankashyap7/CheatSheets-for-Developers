@@ -3,9 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Assembly Cheatsheet"
 ---
 
+## Synopsis
+
 Assembly language is a low-level programming language for a computer, or other programmable device, in which there is a very strong (but often not one-to-one) correspondence between the language and the architecture's machine code instructions. Each assembly language is specific to a particular computer architecture in use. In contrast, most high-level programming languages are generally portable across multiple architectures but require interpreting or compiling.
-
-
 
 ## Assembly Language Instructions
 
@@ -39,8 +39,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | JCXZ        | Jumps if CX register is 0                  |
 | JE          | Jumps if equal (ZF=1)                      |
 
-
-
 ## Assembly Language Registers
 
 | Register | Description         |
@@ -59,8 +57,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | ES       | Extra Segment       |
 | IP       | Instruction Pointer |
 | FLAGS    | Flags               |
-
-
 
 ## Assembly Language Directives
 
@@ -88,8 +84,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | STRUC     | Defines a structure               |
 | SUBSTRUC  | Defines a substructure            |
 | ENDS      | Ends a structure                  |
-
-
 
 ## Assembly Language Macros
 
@@ -123,8 +117,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | %substrtrimleft  | Trims the left side of a string  |
 | %substrtrimright | Trims the right side of a string |
 
-
-
 ## Assembly Language Data Types
 
 | Data Type | Description              |
@@ -137,8 +129,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | OWORD     | 128-bit unsigned integer |
 | YWORD     | 256-bit unsigned integer |
 | ZWORD     | 512-bit unsigned integer |
-
-
 
 ## Assembly Language Operators
 
@@ -165,8 +155,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | !        | Logical NOT           |
 | ?        | Ternary operator      |
 
-
-
 ## Assembly Language Comments
 
 | Comment | Description |
@@ -175,8 +163,6 @@ Assembly language is a low-level programming language for a computer, or other p
 | //      | Comment     |
 | /\*     | Comment     |
 | \*/     | Comment     |
-
-
 
 ## Assembly Language Examples
 
@@ -200,5 +186,3 @@ Assembly language is a low-level programming language for a computer, or other p
 | JZ 0x1234            | Jumps to 0x1234 if the zero flag is set     |
 | JNZ 0x1234           | Jumps to 0x1234 if the zero flag is not set |
 | JA 0x1234            | Jumps to 0x1234 if the carry flag is set    |
-
-

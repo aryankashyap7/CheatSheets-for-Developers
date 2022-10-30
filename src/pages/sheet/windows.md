@@ -3,7 +3,11 @@ layout: ../../layouts/CheatSheet.astro
 title: "Windows Cheatsheet"
 ---
 
+## Synopsis
+
 This page contains all the most useful commands and shortcut-keys for windows.
+
+Windows is a series of operating systems produced by Microsoft for use on personal computers, including home and business desktops, laptops, tablets, and media center PCs. Its current lineup consists of Windows 11, Windows 10, Windows 8.1, and Windows 7. Windows 10 receives new builds on an ongoing basis, which are available at no additional cost to users.
 
 ---
 
@@ -30,8 +34,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | <kbd>F5</kbd>                | Refresh                       |
 | <kbd>Alt</kbd>+<kbd>F4</kbd> | Shutdown System               |
 
-
-
 ## Advanced System Commands
 
 | Command                                                    | Description                                                                          |
@@ -45,8 +47,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | <kbd>Ctrl</kbd>+<kbd>Win</kbd>+<kbd>Right/Left Arrow</kbd> | Iterate to the next virtual desktop                                                  |
 | <kbd>Win</kbd>+<kbd>I</kbd>                                | Open Settings                                                                        |
 | <kbd>Win</kbd>+<kbd>PrtScn</kbd>                           | Save a screenshot, as a PNG file in a Screenshots folder inside your Pictures folder |
-
-
 
 ## Windows navigation shortcuts
 
@@ -66,8 +66,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | <kbd>Win</kbd>+<kbd>,</kbd>                  | Peek Desktop Quickly                                                                                          |
 | <kbd>Win</kbd>+<kbd>V</kbd>                  | Open the Clipboard Application (to view & utilized your recent copied text & images)                          |
 
-
-
 ## File explorer Shortcuts
 
 | Command                                       | Description                                             |
@@ -78,8 +76,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | <kbd>Ctrl</kbd>+<kbd>W</kbd>                  | Close the current window                                |
 | <kbd>Ctrl</kbd>+<kbd>mouse scroll wheel</kbd> | Change the size and appearance of file and folder icons |
 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> | Create a new folder                                     |
-
-
 
 ## Basic Command Prompt Commands
 
@@ -104,8 +100,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | `ver`                                            | Displays the Windows version                                                                                                                                                                                                                                                |
 | `cd . > [filename]`                              | An alternative to touch command in unix, creates a null full with specified name                                                                                                                                                                                            |
 
-
-
 ## System Commands
 
 | Command                                       | Description                                                                                                                                                                                                                                                                                                                 |
@@ -120,8 +114,6 @@ This page contains all the most useful commands and shortcut-keys for windows.
 | `format [drive letter]: /fs:[file system] /q` | Format Drive, The /q argument allows you to do a quick format, but you can leave it out if you want to run a regular format. eg: format h: /fs:ntfs /q                                                                                                                                                                      |
 | `diskpart`                                    | It allows you to see, manage, create, and delete partitions from your drives.                                                                                                                                                                                                                                               |
 | `systeminfo`                                  | It collects and displays information about your computer hardware (like the processor, RAM, and network cards installed) and Windows installation (version, install date, hotfixes applied, etc.).                                                                                                                          |
-
-
 
 ## Networking Commands
 

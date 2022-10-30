@@ -3,9 +3,7 @@ layout: ../../layouts/CheatSheet.astro
 title: "Node JS Cheatsheet"
 ---
 
-This page contains commands, syntax, and functions for Node JS.
-
-## About Node JS
+## Synopsis
 
 **Node.js** is an open-source, cross-platform, back-end JavaScript runtime environment that runs on a JavaScript Engine
 and executes JavaScript code outside a web browser, which was designed to build scalable network applications.
@@ -24,9 +22,7 @@ For running Node JS:
 
 ---
 
-**[🔼Back to Top](#table-of-contents)**
-
-## NODE JS GLOBAL OBJECT
+## Node JS Global Object
 
 In Node, we have a `global` object that we can always access. Features that we expect to be available everywhere live in this `global` object.
 For example, to have some code execute after 5 seconds we can use either `global.setTimeout` or just `setTimeout`. The `global` keyword is optional.
@@ -39,9 +35,7 @@ For example, to have some code execute after 5 seconds we can use either `global
 >
 > The most famous global is `global.console.log` which we write as just `console.log`.
 
-**[🔼Back to Top](#table-of-contents)**
-
-## Node JS MODULE SYSTEM
+## Node JS Module System
 
 In Node.js, each file is treated as a separate module. Modules provide us a way of re-using existing code
 
@@ -114,9 +108,7 @@ The imports above use a syntax known as CommonJS (CJS) modules. Node treats Java
 
 We tell Node to treat JavaScript code as an ECMAScript module by using the .mjs file extension. Pick one approach and use it consistently throughout your Node project.
 
-**[🔼Back to Top](#table-of-contents)**
-
-## NODE JS PACKAGES
+## Node JS Package Manager
 
 Node developers often publicly share packages, that other developers can use to help solve common problems. A package is a collection of Node modules along with a package.json file describing the package.
 
@@ -126,20 +118,20 @@ To work with Node packages we use NPM. NPM includes two things:
 2. The NPM tool that you installed when you installed Node.
 
 **NPM COMMANDS**  
-| Command                  | Description                                                                                           |
+| Command | Description |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- |
-| npm start                | Execute the current Node package defined by package.json <br> Defaults to executing `node server.js`  |
-| npm init                 | Initialize a fresh package.json file                                                                  |
-| npm init -y              | Initialize a fresh package.json file, accepting all default options. <br> Equivalent to npm init —yes |
-| npm install              | Equivalent to npm i                                                                                   |
-| npm install <package>    | Install a package from the NPM registry at www.npmjs.com <br> Equivalent to npm i <package>           |
-| npm install -D <package> | Install a package as a development dependency <br> Equivalent to npm install —save-dev <package>      |
-| npm install -g <package> | Install a package globally.                                                                           |
-| npm update <package>     | Update an already installed package <br> Equivalent to npm up <package>                               |
-| npm uninstall <package>  | Uninstall a package from your node_modules/ folder <br> Equivalent to npm un <package>                |
-| npm outdated             | Check for outdated package dependencies                                                               |
-| npm audit                | Check for security vulnerabilities in package dependencies                                            |
-| npm audit fix            | Try to fix any security vulnerabilities by automatically updating vulnerable packages                 |
+| npm start | Execute the current Node package defined by package.json <br> Defaults to executing `node server.js` |
+| npm init | Initialize a fresh package.json file |
+| npm init -y | Initialize a fresh package.json file, accepting all default options. <br> Equivalent to npm init —yes |
+| npm install | Equivalent to npm i |
+| npm install <package> | Install a package from the NPM registry at www.npmjs.com <br> Equivalent to npm i <package> |
+| npm install -D <package> | Install a package as a development dependency <br> Equivalent to npm install —save-dev <package> |
+| npm install -g <package> | Install a package globally. |
+| npm update <package> | Update an already installed package <br> Equivalent to npm up <package> |
+| npm uninstall <package> | Uninstall a package from your node_modules/ folder <br> Equivalent to npm un <package> |
+| npm outdated | Check for outdated package dependencies |
+| npm audit | Check for security vulnerabilities in package dependencies |
+| npm audit fix | Try to fix any security vulnerabilities by automatically updating vulnerable packages |
 
 **package.json**  
  Most Node applications we create include a package.json file, which means our Node applications are also Node packages.
@@ -157,9 +149,7 @@ _The package.json file contains:_
 **package-lock.json**  
  The package-lock.json file is automatically created by NPM to track the exact versions of packages that are installed in your node_modules folder. Share your package-lock.json with other developers on your team to ensure that everyone is running the exact same versions of every package in the dependency tree.
 
-**[🔼Back to Top](#table-of-contents)**
-
-## NODE JS EVENT EMITTER
+## Node JS Event Emitter
 
 Node JS provides a built-in module to work with events.
 
@@ -188,9 +178,7 @@ For example, we can listen for the exit event on the current running process. In
 > });
 > ```
 
-**[🔼Back to Top](#table-of-contents)**
-
-## BACKEND CONCEPTS
+## Backends with Node JS
 
 **Client-server architecture**  
  Your frontend is usually the client. Your backend is usually the server.  
@@ -221,8 +209,6 @@ For example, we can listen for the exit event on the current running process. In
   | Read           | GET                        | **GET /cards** (get the whole cards collection) or **GET /cards/:cardId** (get an individual card)                             |
   | Update         | PUT (or more rarely PATCH) | **PUT /cards/:cardId** (update an individual card)                                                                             |
   | Delete         | DELETE                     | **DELETE /cards/:cardId** (delete an individual card) or more rarely **DELETE /cards** (delete the entire collection of cards) |
-
-  **[🔼Back to Top](#table-of-contents)**
 
   ## EXPRESS.JS
 
@@ -286,9 +272,7 @@ For example, we can listen for the exit event on the current running process. In
   > api.use("/cards", cardsRouter);
   > ```
 
-  **[🔼Back to Top](#table-of-contents)**
-
-  ## NODE JS FOLDER STRUCTURE
+  ## Node JS Folder Structure
 
   One typical folder structure for an API following RESTful architecture and using the Express framework can be found below. Node servers typically follow the Model View Controller pattern. Models live together in one folder. Controllers are grouped together based on which feature or collection they are related to. Views are typically managed by the front end, although some Node servers may serve static HTML or use templating engines like Handlebars.
 
@@ -320,8 +304,6 @@ For example, we can listen for the exit event on the current running process. In
 
   This is just a reference. In the real world, every project will have differences in the requirements and the ideal project structure.
 
-  **[🔼Back to Top](#table-of-contents)**
-
   ## CROSS ORIGIN RESOURCE SHARING
 
   Something all web developers soon come across is **Cross Origin Resource Sharing (CORS)**.
@@ -332,9 +314,7 @@ For example, we can listen for the exit event on the current running process. In
 
   In Express we commonly set up CORS using the following middleware package: https://www.npmjs.com/package/cors.
 
-  **[🔼Back to Top](#table-of-contents)**
-
-  ## PM2 COMMANDS
+  ## PM2 Configuration
 
   PM2 is a tool we use to create and manage Node.js clusters. It allows us to create clusters of processes, to manage those processes in production, and to keep our applications running forever. We can install the PM2 tool globally using `npm install -g pm2`.
 
@@ -351,5 +331,3 @@ For example, we can listen for the exit event on the current running process. In
   | pm2 delete 0             | Remove process with ID 0 from PM2's list of managed processes.                                                              |
   | pm2 delete all           | Remove all processes from PM2's list.                                                                                       |
   | pm2 reload all           | Zero downtime reload of all processes managed by PM2. For updating and reloading server code already running in production. |
-
-  **[🔼Back to Top](#table-of-contents)**

@@ -9,8 +9,6 @@ title: "Kubectl Cheatsheet"
 Using Kubectl allows you to create, inspect, update, and delete Kubernetes objects.
 This cheatsheet will serve as a quick reference to make commands on many common Kubernetes components and resources. </h5>
 
-
-
 ## Kubectl Cluster Management Commands
 
 | Command                    | Description                                                                                                         |
@@ -26,8 +24,6 @@ This cheatsheet will serve as a quick reference to make commands on many common 
 | kubectl label -f <file>    | Update the labels on a resource.                                                                                    |
 | kubectl annotate -f <file> | Update the annotations on a resource.                                                                               |
 | kubectl get namespaces     | List all namespaces in the current context.                                                                         |
-
-
 
 ## Kubectl Cluster Information Commands
 
@@ -47,8 +43,6 @@ This cheatsheet will serve as a quick reference to make commands on many common 
 | kubectl get daemonsets          | Display a list of all daemonsets in the cluster                                                       |
 | kubectl get daemonsets -o wide  | Display a list of all daemonsets in the cluster, with more details                                    |
 
-
-
 ## Kubectl Cluster Configuration Commands
 
 | Command                                                                                | Description                                           |
@@ -65,8 +59,6 @@ This cheatsheet will serve as a quick reference to make commands on many common 
 | kubectl config set-cluster [cluster-name] --server=[server-address]                    | Set a cluster entry in kubeconfig                     |
 | kubectl config set-credentials [user-name] --username=[username] --password=[password] | Set a user entry in kubeconfig                        |
 | kubectl config set-credentials [user-name] --token=[token]                             | Set a user entry in kubeconfig                        |
-
-
 
 ## Kubectl Cluster Troubleshooting Commands
 
@@ -85,5 +77,3 @@ This cheatsheet will serve as a quick reference to make commands on many common 
 | kubectl logs -f [pod-name] -c [container-name]           | Display the logs for a particular container in a pod, and follow the log stream |
 | kubectl exec [pod-name] -- [command]                     | Execute a command on a particular pod                                           |
 | kubectl exec -it [pod-name] -- [command]                 | Execute a command on a particular pod, with an interactive terminal             |
-
-

@@ -2,10 +2,15 @@
 layout: ../../layouts/CheatSheet.astro
 title: "MacOS Cheatsheet"
 ---
- 
+
+## Synopsis
+
 This page contains all the most useful commands and shortcut-keys for MacOS.
 
+MacOS is a Unix-based operating system developed by Apple Inc. for Macintosh computers. It is the primary operating system for Apple's Mac computers. Since 2006, Apple has been using the OS X name for releases of Mac OS X. The latest version of MacOS is Big Sur.
+
 ## Basic MacOS Keyboard Shortcuts
+
 Here are some of the popularly known and handiest keyboard shortcuts for macOS from various categories.
 
 | Command                                              | Description                                                       |
@@ -49,9 +54,8 @@ Here are some of the popularly known and handiest keyboard shortcuts for macOS f
 | Command (⌘) + Option (⌥) + Control (⌃) + Comma(,)    | Decrease screen contrast                                          |
 | Command (⌘) + Option (⌥) + Control (⌃) + Fullstop(.) | Increase screen contrast                                          |
 
-
-
 ## Mac Screenshot Keyboard Shortcuts
+
 There are 3 ways you can capture a screenshot on macOS using keyboard shortcuts.
 
 | Command                                                      | Description                                                                   |
@@ -63,104 +67,102 @@ There are 3 ways you can capture a screenshot on macOS using keyboard shortcuts.
 | Command (⌘) + Shift (⇧) + 6                                  | Take a screenshot of the Touchbar                                             |
 | Command (⌘) + Shift (⇧) + Control (⌃) + 3                    | Capture the screen to the Clipboard                                           |
 
-
-
 ## Mac Finder Keyboard Shortcuts
+
 Below is the list of useful keyboard shortcuts that you can use while using the Mac Finder.
-| Command                                                   | Description                                                                          |
+| Command | Description |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| Command (⌘) + 1                                           | View Finder window items as icons                                                    |
-| Command (⌘) + 2                                           | View Finder window items as a list                                                   |
-| Command (⌘) + 3                                           | View Finder window items as columns                                                  |
-| Command (⌘) + 4                                           | View Finder window items in the gallery                                              |
-| Command (⌘) + Click                                       | Open the Sidebar item in a Window                                                    |
-| Command (⌘) + Click the window title                      | See the folders that contain the currently open folder                               |
-| Command (⌘) + Comma                                       | Open preferences for the app you are using                                           |
-| Command (⌘) + Double-click                                | Open a folder in a separate window                                                   |
-| Command (⌘) + Up arrow                                    | Go to the parent folder                                                              |
-| Command (⌘) + Down Arrow                                  | Open a highlighted file or app                                                       |
-| Command (⌘) + E                                           | Eject                                                                                |
-| Command (⌘) + H                                           | Hide the currently active window                                                     |
-| Command (⌘) + I                                           | Get Info about an item                                                               |
-| Command (⌘) + J                                           | Show View Options                                                                    |
-| Command (⌘) + K                                           | Connect to the Server                                                                |
-| Command (⌘) + L                                           | Make an alias for the selected item                                                  |
-| Command (⌘) + Left Bracket ([)                            | Return to the previous folder                                                        |
-| Command (⌘) + Right Bracket (])                           | Go to the next folder                                                                |
-| Command (⌘) + N                                           | New Finder window                                                                    |
-| Command (⌘) + O                                           | Open the selected item                                                               |
-| Command (⌘) + T                                           | Show or hide the tab bar when a single tab is open in the current Finder window      |
-| Command (⌘) + Option (⌥) + A                              | Deselect all items                                                                   |
-| Command (⌘) + Option (⌥) + F                              | Go to the search field in an open Spotlight window                                   |
-| Command (⌘) + Option (⌥) + H + M                          | Hide all windows except the window in use and minimize it                            |
-| Command (⌘) + Option (⌥) + H                              | Hide all windows except the front window                                             |
-| Command (⌘) + Option (⌥) + I                              | Access File Inspector                                                                |
-| Command (⌘) + Option (⌥) + M                              | Minimize all open windows at once                                                    |
-| Command (⌘) + Option (⌥) + T                              | Show or hide the Toolbar/Sidebar                                                     |
-| Command (⌘) + Option (⌥) + W                              | Close all open windows                                                               |
-| Command (⌘) + Option (⌥) + Y                              | View a slideshow of the selected files                                               |
-| Command (⌘) + Option (⌥) + dragging                       | Make an alias of the dragged item                                                    |
-| Command (⌘) + R                                           | Show the original file for the selected alias in the Finder                          | \                                           |
-| Command (⌘) + Shift (⇧) + A                               | Open the Applications folder                                                         |
-| Command (⌘) + Shift (⇧) + C                               | Open the Computer window in Finder                                                   |
-| Command (⌘) + Shift (⇧) + D                               | Open Desktop folder                                                                  |
-| Command (⌘) + Shift (⇧) + F                               | Find Spotlight filename matches                                                      |
-| Command (⌘) + Shift (⇧) + G                               | Go to Folder                                                                         |
-| Command (⌘) + Shift (⇧) + H                               | Open the Home folder                                                                 |
-| Command (⌘) + Shift (⇧) + I                               | Compose an email                                                                     |
-| Command (⌘) + Shift (⇧) + K                               | Open the Network window                                                              |
-| Command (⌘) + Shift (⇧) + N                               | New folder                                                                           |
-| Command (⌘) + Shift (⇧) + Option (⌥) + Q                  | Log out instantly                                                                    |
-| Command (⌘) + Shift (⇧) + Q                               | Log out                                                                              |
-| Command (⌘) + Shift (⇧) + Question Mark (?)               | Open the Help menu                                                                   |
-| Command (⌘) + Shift (⇧) + T                               | Show the Tab Bar                                                                     |
-| Command (⌘) + Shift (⇧) + Tab                             | Cycle through applications without touching the trackpad                             |
-| Command (⌘) + Shift (⇧) + U                               | Open Utilities folder                                                                |
-| Command (⌘) + Shift (⇧) + Up Arrow                        | Open the Computer pane in a new Finder window                                        |
-| Command (⌘) + T                                           | Open the current location in a new tab                                               |
-| Command (⌘) + Up Arrow                                    | Open the folder that contains the current folder                                     |
-| Command (⌘) + dragging                                    | Move the selected item to another location                                           |
-| Command (⌘) + F3                                          | Show or hide all open windows                                                        |
-| F4                                                        | Open the Launchpad                                                                   |
-| Control (⌃) + F3                                          | Show the open windows for the frontmost application                                  |
-| Left Arrow (in List view)                                 | Close the selected folder                                                            |
-| Right Arrow (in List view)                                | Expand a folder                                                                      |
-| Option (⌥) + Click the disclosure triangle (in List view) | Open all folders within the selected folder                                          |
-| Option (⌥) + Double-click                                 | Open a folder in a separate window, closing the current window                       |
-| Option (⌥) + Dragging                                     | Copy dragged item                                                                    |
-| Option (⌥) + Command (⌘) + D                              | Show or hide the Dock                                                                |
-| Option (⌥) + Command (⌘) + L                              | Open the Downloads folder                                                            |
-| Option (⌥) + Command (⌘) + N                              | Create a new Smart Folder                                                            |
-| Option (⌥) + Command (⌘) + P                              | Hide or show the path bar in the Finder window                                       |
-| Option (⌥) + Command (⌘) + S                              | Hide or show the Sidebar in Finder windows                                           |
-| Option (⌥) + Command (⌘) + T                              | Show or hide the toolbar when a single tab is open in the current Finder window      |
-| Option (⌥) + Command (⌘) + V                              | Move the files in the Clipboard from their original location to the current location |
-| Option (⌥) + Command (⌘) + Y                              | View a Quick Look slideshow of the selected files                                    |
-| Option (⌥) + Command (⌘) + dragging                       | Make an alias of the dragged item                                                    | The pointer changes while you drag the item |
-| Option (⌥) + Click a disclosure triangle                  | Open all folders within the selected folder while in list view                       |
-| Spacebar/Command (⌘) + Y                                  | Open Quick Look                                                                      |
-| Shift (⇧) + Command (⌘) + C                               | Open the Computer window                                                             |
-| Shift (⇧) + Command (⌘) + D                               | Open the desktop folder                                                              |
-| Shift (⇧) + Command (⌘) + F                               | Open the Recents window, showing all of the files you viewed or changed recently     |
-| Shift (⇧) + Command (⌘) + G                               | Open a Go to Folder window                                                           |
-| Shift (⇧) + Command (⌘) + H                               | Open the Home folder of the current macOS user account                               |
-| Shift (⇧) + Command (⌘) + I                               | Open iCloud Drive                                                                    |
-| Shift (⇧) + Command (⌘) + K                               | Open the Network window                                                              |
-| Shift (⇧) + Command (⌘) + N                               | Create a new folder                                                                  |
-| Shift (⇧) + Command (⌘) + O                               | Open the Documents folder                                                            |
-| Shift (⇧) + Command (⌘) + P                               | Show or hide the Preview pane in Finder windows                                      |
-| Shift (⇧) + Command (⌘) + R                               | Open the AirDrop window                                                              |
-| Shift (⇧) + Command (⌘) + T                               | Show or hide the tab bar in the Finder window                                        |
-| Shift (⇧) + Command (⌘) + U                               | Open the Utilities folder                                                            |
-| Shift (⇧) + Minimize Window                               | Minimize a window in slow motion                                                     |
-
-
+| Command (⌘) + 1 | View Finder window items as icons |
+| Command (⌘) + 2 | View Finder window items as a list |
+| Command (⌘) + 3 | View Finder window items as columns |
+| Command (⌘) + 4 | View Finder window items in the gallery |
+| Command (⌘) + Click | Open the Sidebar item in a Window |
+| Command (⌘) + Click the window title | See the folders that contain the currently open folder |
+| Command (⌘) + Comma | Open preferences for the app you are using |
+| Command (⌘) + Double-click | Open a folder in a separate window |
+| Command (⌘) + Up arrow | Go to the parent folder |
+| Command (⌘) + Down Arrow | Open a highlighted file or app |
+| Command (⌘) + E | Eject |
+| Command (⌘) + H | Hide the currently active window |
+| Command (⌘) + I | Get Info about an item |
+| Command (⌘) + J | Show View Options |
+| Command (⌘) + K | Connect to the Server |
+| Command (⌘) + L | Make an alias for the selected item |
+| Command (⌘) + Left Bracket ([) | Return to the previous folder |
+| Command (⌘) + Right Bracket (]) | Go to the next folder |
+| Command (⌘) + N | New Finder window |
+| Command (⌘) + O | Open the selected item |
+| Command (⌘) + T | Show or hide the tab bar when a single tab is open in the current Finder window |
+| Command (⌘) + Option (⌥) + A | Deselect all items |
+| Command (⌘) + Option (⌥) + F | Go to the search field in an open Spotlight window |
+| Command (⌘) + Option (⌥) + H + M | Hide all windows except the window in use and minimize it |
+| Command (⌘) + Option (⌥) + H | Hide all windows except the front window |
+| Command (⌘) + Option (⌥) + I | Access File Inspector |
+| Command (⌘) + Option (⌥) + M | Minimize all open windows at once |
+| Command (⌘) + Option (⌥) + T | Show or hide the Toolbar/Sidebar |
+| Command (⌘) + Option (⌥) + W | Close all open windows |
+| Command (⌘) + Option (⌥) + Y | View a slideshow of the selected files |
+| Command (⌘) + Option (⌥) + dragging | Make an alias of the dragged item |
+| Command (⌘) + R | Show the original file for the selected alias in the Finder | \ |
+| Command (⌘) + Shift (⇧) + A | Open the Applications folder |
+| Command (⌘) + Shift (⇧) + C | Open the Computer window in Finder |
+| Command (⌘) + Shift (⇧) + D | Open Desktop folder |
+| Command (⌘) + Shift (⇧) + F | Find Spotlight filename matches |
+| Command (⌘) + Shift (⇧) + G | Go to Folder |
+| Command (⌘) + Shift (⇧) + H | Open the Home folder |
+| Command (⌘) + Shift (⇧) + I | Compose an email |
+| Command (⌘) + Shift (⇧) + K | Open the Network window |
+| Command (⌘) + Shift (⇧) + N | New folder |
+| Command (⌘) + Shift (⇧) + Option (⌥) + Q | Log out instantly |
+| Command (⌘) + Shift (⇧) + Q | Log out |
+| Command (⌘) + Shift (⇧) + Question Mark (?) | Open the Help menu |
+| Command (⌘) + Shift (⇧) + T | Show the Tab Bar |
+| Command (⌘) + Shift (⇧) + Tab | Cycle through applications without touching the trackpad |
+| Command (⌘) + Shift (⇧) + U | Open Utilities folder |
+| Command (⌘) + Shift (⇧) + Up Arrow | Open the Computer pane in a new Finder window |
+| Command (⌘) + T | Open the current location in a new tab |
+| Command (⌘) + Up Arrow | Open the folder that contains the current folder |
+| Command (⌘) + dragging | Move the selected item to another location |
+| Command (⌘) + F3 | Show or hide all open windows |
+| F4 | Open the Launchpad |
+| Control (⌃) + F3 | Show the open windows for the frontmost application |
+| Left Arrow (in List view) | Close the selected folder |
+| Right Arrow (in List view) | Expand a folder |
+| Option (⌥) + Click the disclosure triangle (in List view) | Open all folders within the selected folder |
+| Option (⌥) + Double-click | Open a folder in a separate window, closing the current window |
+| Option (⌥) + Dragging | Copy dragged item |
+| Option (⌥) + Command (⌘) + D | Show or hide the Dock |
+| Option (⌥) + Command (⌘) + L | Open the Downloads folder |
+| Option (⌥) + Command (⌘) + N | Create a new Smart Folder |
+| Option (⌥) + Command (⌘) + P | Hide or show the path bar in the Finder window |
+| Option (⌥) + Command (⌘) + S | Hide or show the Sidebar in Finder windows |
+| Option (⌥) + Command (⌘) + T | Show or hide the toolbar when a single tab is open in the current Finder window |
+| Option (⌥) + Command (⌘) + V | Move the files in the Clipboard from their original location to the current location |
+| Option (⌥) + Command (⌘) + Y | View a Quick Look slideshow of the selected files |
+| Option (⌥) + Command (⌘) + dragging | Make an alias of the dragged item | The pointer changes while you drag the item |
+| Option (⌥) + Click a disclosure triangle | Open all folders within the selected folder while in list view |
+| Spacebar/Command (⌘) + Y | Open Quick Look |
+| Shift (⇧) + Command (⌘) + C | Open the Computer window |
+| Shift (⇧) + Command (⌘) + D | Open the desktop folder |
+| Shift (⇧) + Command (⌘) + F | Open the Recents window, showing all of the files you viewed or changed recently |
+| Shift (⇧) + Command (⌘) + G | Open a Go to Folder window |
+| Shift (⇧) + Command (⌘) + H | Open the Home folder of the current macOS user account |
+| Shift (⇧) + Command (⌘) + I | Open iCloud Drive |
+| Shift (⇧) + Command (⌘) + K | Open the Network window |
+| Shift (⇧) + Command (⌘) + N | Create a new folder |
+| Shift (⇧) + Command (⌘) + O | Open the Documents folder |
+| Shift (⇧) + Command (⌘) + P | Show or hide the Preview pane in Finder windows |
+| Shift (⇧) + Command (⌘) + R | Open the AirDrop window |
+| Shift (⇧) + Command (⌘) + T | Show or hide the tab bar in the Finder window |
+| Shift (⇧) + Command (⌘) + U | Open the Utilities folder |
+| Shift (⇧) + Minimize Window | Minimize a window in slow motion |
 
 ## Mac Keyboard Shortcuts for Safari
+
 Keyboard Shortcut keys in using SAFARI
 
 | Command                                                               | Description                                                                                                                    |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
 | Shift (⇧) + Click a Link                                              | Add a webpage to Reading List                                                                                                  |
 | Press Escape/Command (⌘) + Full stop(.)                               | Cancel the current Find                                                                                                        |
 | Command (⌘) + Up/Down arrow                                           | Scroll to the top-left or bottom-left corner of a webpage                                                                      |
@@ -198,6 +200,3 @@ Keyboard Shortcut keys in using SAFARI
 | Control (⌃) + Tab or Command (⌘) + Shift (⇧) + Right Arrow            | Switch to the Next Tab                                                                                                         |
 | Control (⌃) + Shift (⇧) + Tab or Command (⌘) + Shift (⇧) + Left Arrow | Switch to the Previous Tab                                                                                                     |
 | Control (⌃) + Command (⌘) + 1                                         | Show or Hide the Bookmarks sidebar                                                                                             |
-
-
-

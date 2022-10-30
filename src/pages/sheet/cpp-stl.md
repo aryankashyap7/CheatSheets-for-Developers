@@ -1,53 +1,13 @@
 ---
 layout: ../../layouts/CheatSheet.astro
-title: "C++  STL Cheatsheet"
+title: "Cpp STL Cheatsheet"
 ---
 
+## Synopsis
 
-## Table of Contents
+Cpp Stl is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized. C++ STL is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. It is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized. C++ STL is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc.
 
-- [CPP STL CheatSheet for Developers](#cpp-stl-cheatsheet-for-developers)
-  - [Vector](#vector)
-    - [Vector insertion](#vector)
-    - [Vector Display](#vector)
-    - [Vector Maximum element](#vector)
-    - [Vector Minimum element](#vector)
-    - [Vector sort](#vector)
-    - [Vector reverse](#vector)
-    - [Vector deletion](#vector)
-  - [Set](#set)
-    - [Set insertion](#set)
-    - [Set Display](#set)
-  - [Unordered Set](#unordered-set)
-    - [Unordered insertion](#unordered-set)
-    - [Unordered Display](#unordered-set)
-  - [Map](#map)
-    - [Map insertion](#map)
-    - [Map Display](#map)
-  - [Stack](#stack)
-    - [Stack insertion](#stack)
-    - [Stack Display](#stack)
-  - [Queue](#queue)
-    - [Queue insertion](#queue)
-    - [Queue Display](#queue)
-  - [Deque](#deque)
-    - [DeQue insertion](#deque)
-    - [DeQue Display](#deque)
-  - [Vector pair](#vector-pair)
-    - [Vector pair insertion](#vector-pair)
-    - [Vector pair Display](#vector-pair)
-  - [List](#list)
-    - [List insertion](#list)
-    - [List Display](#list)
-    - [List deletion](#list)
-  - [Priority Queue](#priority-queue)
-    - [Priority Queue insertion](#priority-queue)
-    - [Priority Queue Display](#priority-queue)
-  - [Hidden Functions](#hidden-functions)
-
-# C++ STL CheatSheet for Developers
-
-### vector
+## vector
 
 ```cpp
     // Vector  initialization
@@ -101,9 +61,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-
-
-### set
+## Set
 
 ```cpp
      // Set initialization
@@ -125,9 +83,7 @@ title: "C++  STL Cheatsheet"
 
 ```
 
-
-
-### unordered-set
+## Unordered Set
 
 ```cpp
 
@@ -148,9 +104,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-
-
-### map
+## Map
 
 ```cpp
    // Map initialization
@@ -170,9 +124,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-
-
-### Stack
+## Stack
 
 ```cpp
 
@@ -194,9 +146,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-
-
-### queue
+## Queue
 
 ```queue
     // Queue initialization
@@ -218,9 +168,7 @@ title: "C++  STL Cheatsheet"
     }
 ```
 
-
-
-### deque
+## Deque
 
 ```deque
     // Deque initialization
@@ -242,9 +190,7 @@ title: "C++  STL Cheatsheet"
     d.pop_back();
 ```
 
-
-
-### vector-pair
+## Vector Pair
 
 ```cpp
 
@@ -267,9 +213,7 @@ title: "C++  STL Cheatsheet"
     cout << endl;
 ```
 
-
-
-### List
+## List
 
 ```cpp
     list <int> LI;
@@ -299,9 +243,7 @@ title: "C++  STL Cheatsheet"
     LI.pop_front();
 ```
 
-
-
-### Priority Queue
+## Priority Queue
 
 ```cpp
 	priority_queue<int> pq;
@@ -322,8 +264,7 @@ title: "C++  STL Cheatsheet"
 	pq.pop();
 ```
 
-
-### Hidden Functions
+## Hidden Functions
 
 ```cpp
 
@@ -374,5 +315,3 @@ title: "C++  STL Cheatsheet"
 
 
 ```
-
-
