@@ -25,8 +25,6 @@ C Sharp is a general-purpose, multi-paradigm programming language encompassing s
 | ulong     | Unsigned long integer           | 8 bytes  |
 | ushort    | Unsigned short integer          | 2 bytes  |
 
-**[🔼Back to Top](#data-collections)**
-
 ## Collections
 Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
 
