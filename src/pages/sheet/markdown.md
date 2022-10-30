@@ -169,3 +169,12 @@ This is a list of all the emojis that are supported by GitHub. For more informat
 - [x] this is a complete item
 - [ ] this is an incomplete item
 ```
+
+## Dropdowns
+
+```markdown
+<details open>
+  Text goes here
+</details>
+```
+
