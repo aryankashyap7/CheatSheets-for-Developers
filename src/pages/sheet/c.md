@@ -3,9 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "C Cheatsheet"
 ---
 
+## Synopsis
+
 C is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
-
-
 
 ## Data Types
 
@@ -16,8 +16,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | float     | Floating point | 4 bytes      |
 | double    | Floating point | 8 bytes      |
 | void      | Void           | 1 byte       |
-
-
 
 ## Operators
 
@@ -36,8 +34,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | >        | Greater than   | a > b   |
 | <        | Less than      | a < b   |
 
-
-
 ## Control Flow
 
 | Statement  | Description                                                                               |
@@ -47,8 +43,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | switch     | Executes a block of code depending on the value of a variable                             |
 | while      | Executes a block of code while a condition is true                                        |
 | do...while | Executes a block of code while a condition is true, and then executes the code once more  |
-
-
 
 ## Functions
 
@@ -67,8 +61,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | getche() | Reads a character from the keyboard and displays it on the screen |
 | putch()  | Writes a character to the screen                                  |
 
-
-
 ## Arrays
 
 | Function                    | Description                                                          |
@@ -77,8 +69,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | int a[5] = {1, 2, 3, 4, 5}; | Declares an array of 5 integers and initializes it                   |
 | int a[] = {1, 2, 3, 4, 5};  | Declares an array of 5 integers and initializes it                   |
 | int a[5] = {1, 2, 3};       | Declares an array of 5 integers and initializes the first 3 elements |
-
-
 
 ## Pointers
 
@@ -92,8 +82,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | p++;            | Increments the pointer p by 1                                           |
 | p--;            | Decrements the pointer p by 1                                           |
 
-
-
 ## Structures
 
 | Function                                                   | Description                                               |
@@ -104,8 +92,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | struct student s1 = {.name = "John", .rollno = 1};         | Declares a variable s1 of type student and initializes it |
 | struct student s1; s1.rollno = 1; strcpy(s1.name, "John"); | Declares a variable s1 of type student and initializes it |
 
-
-
 ## Unions
 
 | Function                                      | Description                                               |
@@ -113,8 +99,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | union student { int rollno; char name[20]; }; | Declares a union named student                            |
 | union student s1;                             | Declares a variable s1 of type student                    |
 | union student s1 = {1};                       | Declares a variable s1 of type student and initializes it |
-
-
 
 ## Enumerations
 
@@ -124,8 +108,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | enum week day;                                                                | Declares a variable day of type week                    |
 | enum week day = Tuesday;                                                      | Declares a variable day of type week and initializes it |
 
-
-
 ## Bit Fields
 
 | Function                                                                               | Description                              |
@@ -133,16 +115,12 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | struct { unsigned int widthValidated; unsigned int heightValidated; } status1;         | Declares a structure with two bit fields |
 | struct { unsigned int widthValidated : 1; unsigned int heightValidated : 1; } status1; | Declares a structure with two bit fields |
 
-
-
 ## Typedef
 
 | Function                                               | Description                       |
 | :----------------------------------------------------- | :-------------------------------- |
 | typedef int INTEGER;                                   | Declares a new type named INTEGER |
 | typedef struct { int rollno; char name[20]; } STUDENT; | Declares a new type named STUDENT |
-
-
 
 ## Preprocessor Directives
 
@@ -160,8 +138,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | #error    | Generates an error                               |
 | #pragma   | Generates a compiler directive                   |
 
-
-
 ## Input/Output
 
 | Function  | Description                         |
@@ -177,8 +153,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | putchar() | Prints a character                  |
 | getchar() | Reads a character                   |
 
-
-
 ## String Functions
 
 | Function | Description                    |
@@ -189,8 +163,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | strcmp() | Compares two strings           |
 | strrev() | Reverses a string              |
 | strlwr() | Converts a string to lowercase |
-
-
 
 ## Math Functions
 
@@ -204,8 +176,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | pow()    | Returns the value of a number raised to a power                               |
 | exp()    | Returns the value of e raised to a power                                      |
 
-
-
 ## Time Functions
 
 | Function    | Description                                                              |
@@ -218,8 +188,6 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | ctime()     | Converts a time value to a string                                        |
 | gmtime()    | Converts a time value to a time structure in UTC                         |
 | localtime() | Converts a time value to a time structure in the local time zone         |
-
-
 
 ## File Functions
 
@@ -240,5 +208,3 @@ C is a general-purpose, procedural, imperative computer programming language dev
 | rename()  | Renames a file                                                                  |
 | tmpfile() | Creates a temporary file                                                        |
 | tmpnam()  | Generates a temporary file name                                                 |
-
-

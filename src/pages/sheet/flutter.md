@@ -3,7 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "Flutter Cheatsheet"
 ---
 
-A quick cheatsheet of useful snippet for Flutter
+## Synopsis
+
+Flutter is an open-source UI software development kit created by Google. It is used to develop applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase. The first version of Flutter was known as codename "Sky" and ran on the Android operating system.
 
 ## Widget
 
@@ -133,8 +135,6 @@ So all the children of MaterialApp will have access to EnModel structure.
 
 In order to have access you will have still to use ScopeModelDescendant to wrap the Widget that will use that as above.
 
-
-
 ## UI
 
 ### Icon & Splashpage
@@ -160,8 +160,6 @@ You can add extra style (background color, rounded corners, etc) to a widget usi
 DecorationBox(decoration: BoxDecoration());
 ```
 
-
-
 ## Layout
 
 `ListView` acts like a good stack for put elements in colums.
@@ -183,8 +181,6 @@ Both `Expanded` and `Flexible` accept a `flex` param, where you can pass a weigh
 ```dart
 MediaQuery.of(context)
 ```
-
-
 
 ## Navigation
 
@@ -226,8 +222,6 @@ In certain cases is useful to trigger an action when a navigation is called,you 
 
 Also edit `Navigator.push<type>[…].then((type value) {})` adding future type.
 
-
-
 ## Sidebar
 
 ### Add left drawer
@@ -250,8 +244,6 @@ New Scaffold(drawer:
 
 `New Scaffold(endDrawer:`
 
-
-
 ## Tabs
 
 Body of Scaffold needs to have TabBarView to manage switch between tabs contents.
@@ -270,8 +262,6 @@ DefaultTabController(length: 2, child: Scaffold( body: TabBarView(),  appBar: Ap
 ```dart
 DefaultTabController(length: 2, child: Scaffold( body: TabBarView(), bottomNavigationBar:  TabBar(tabs: <Widget>[ Tab() ])
 ```
-
-
 
 ## Routing
 
@@ -315,8 +305,6 @@ Then you can call .pushNamed(context, ‘/product/‘ + index.toString())
 
 Also there’s a fallback for not registered route onUnkownRoute.
 
-
-
 ## Alert
 
 showDialog using an AlertDialog as Widget.
@@ -334,8 +322,6 @@ showDialog(context: context, builder: (BuilderContext context) {
 }
 ```
 
-
-
 ## Modal
 
 ```dart
@@ -345,8 +331,6 @@ showModalButtonSheet(context: context, builder: (BuilderContext context) {
 	);
 }
 ```
-
-
 
 ## Textfield
 
@@ -358,21 +342,15 @@ In order to handle password use `InputDecoration(obscureText: (true|false)`.
 
 In order to get the value `onChanged: (value) {}`. In order to monitor the value you need a `StatefulWidget`.
 
-
-
 ## AppBar
 
 AppBar component allow you to set _title_, _back_ and _actions_ for the status bar.
 `title` contains the title for widget.
 `actions` is an array of widgets that stay on the right.
 
-
-
 ## Gesture
 
 You can turn every widget with an action wrapping inside `GestureDetector`.
-
-
 
 ## Keyboard
 
@@ -383,5 +361,3 @@ FocusScope.of(context).requestFocus(FocusNode());
 ```
 
 So basically you fake the current focus node a new one not connected to any form/textarea.
-
-

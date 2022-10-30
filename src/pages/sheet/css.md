@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "CSS Cheatsheet"
 ---
 
+## Synopsis
+
+CSS is a language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+
 ## CSS Properties
 
 _Syntax_: **`property-name : value;`**
@@ -263,8 +267,6 @@ _Syntax_: **`property-name : value;`**
 | `writing-mode`               | Specifies whether lines of text are laid out horizontally or vertically and the direction which lines of text and blocks progress                    | `horizontal-tb / vertical-rl / vertical-lr / sideways-rl / sideways-lr`                                                                                                                                                                                                                                                                                                                                                                       |
 | `z-index`                    | Specifies the stack order of an element                                                                                                              | `auto / number`                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-
-
 ## CSS Selectors
 
 | Command          | Description                         |
@@ -281,8 +283,6 @@ _Syntax_: **`property-name : value;`**
 | `div.class-name` | divs with certain classname         |
 | `div#id-name`    | div with certain 'id'               |
 | `#id-name`       | all elements iside that #id-name    |
-
-
 
 ## CSS Pseudo Classes
 
@@ -326,8 +326,6 @@ _Syntax_: **`property-name : value;`**
 | `::selection`             | portion selected by user     |
 | `:target`                 | highlight active anchor      |
 
-
-
 ## CSS Attribute Selectors
 
 | Command                | Description                      |
@@ -340,5 +338,3 @@ _Syntax_: **`property-name : value;`**
 | `[class*="chair"]`     | class contains chair             |
 | `[class$="chair"]`     | class ends with chair            |
 | `input[type="button"]` | specified input type             |
-
-

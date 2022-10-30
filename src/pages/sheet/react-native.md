@@ -3,13 +3,11 @@ layout: ../../layouts/CheatSheet.astro
 title: "React Native Cheatsheet"
 ---
 
-### What is React Native
+## Synopsis
 
 React Native is an SDK for building native mobile apps using JavaScript. It's based on React, a popular front-end library for building user interfaces using composable components created by Facebook.
 Unlike the popular hybrid frameworks such as Ionic, React Native doesn't use a webview which means your mobile application is not a web application that has access to native device features like the case of Ionic but a native app that uses native components in both Android and iOS.
 React Native is essentially a bridge that allows your JavaScript app to access native device features and UI components.
-
-
 
 ### Features
 
@@ -18,8 +16,6 @@ Following are the features of React Native −
 1. React − This is a Framework for building web and mobile apps using JavaScript.
 2. Native − You can use native components controlled by JavaScript.
 3. Platforms − React Native supports IOS and Android platform.
-
-
 
 ### Difference between React and React Native
 
@@ -31,8 +27,6 @@ Following are the features of React Native −
 | It provides high security.                         | It provides low security in comparison to ReactJS.                      |
 | In this, the virtual DOM renders the browser code. | In this, Native uses its API to render code for mobile applications.    |
 
-
-
 ### Installing Expo CLI
 
 Expo CLI is a command-line utility that allows to use Expo tools.
@@ -40,8 +34,6 @@ Expo CLI is a command-line utility that allows to use Expo tools.
 ```
 npm install -g expo-cli
 ```
-
-
 
 ### Creating a React Native Project
 
@@ -53,8 +45,6 @@ cd AwesomeProject
 npm start # you can also use: npx expo start
 
 ```
-
-
 
 ### Function Components
 
@@ -76,8 +66,6 @@ const HelloWorldApp = () => {
 
 export default HelloWorldApp;
 ```
-
-
 
 ### Class Components
 
@@ -101,8 +89,6 @@ class HelloWorldApp extends Component {
 
 export default HelloWorldApp;
 ```
-
-
 
 ### Props
 
@@ -139,8 +125,6 @@ const LotsOfGreetings = () => {
 export default LotsOfGreetings;
 ```
 
-
-
 ### State
 
 Unlike props that are read-only and should not be modified, the state allows React components to change their output over time in response to user actions, network responses and anything else.
@@ -173,8 +157,6 @@ const styles = StyleSheet.create({
 });
 ```
 
-
-
 ### List View
 
 React Native ListView is a view component that contains the list of items and displays it in a vertically scrollable list.
@@ -198,8 +180,6 @@ renderRow={
 ); }
 }
 ```
-
-
 
 ### Touchable components
 
@@ -226,8 +206,6 @@ return (
 }
 
 ```
-
-
 
 ### Flat List components
 
@@ -276,8 +254,6 @@ export default class FlatListBasics extends Component {
 AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics);
 ```
 
-
-
 ### Routing with React Navigation in React Native
 
 One of the popular libraries for routing and navigation in a React Native application is React Navigation.
@@ -306,5 +282,3 @@ const MyStack = () => {
  );
 };
 ```
-
-

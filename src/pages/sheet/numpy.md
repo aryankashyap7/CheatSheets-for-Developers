@@ -3,14 +3,16 @@ layout: ../../layouts/CheatSheet.astro
 title: "Numpy Cheatsheet"
 ---
 
+## Synopsis
+
+Numpy is the fundamental package for scientific computing with Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.
+
 ## Installation
 
     ```bash
     # Install
     pip install numpy
     ```
-
-
 
 ## Basic Commands
 
@@ -48,8 +50,6 @@ Output:
     array([1.+0.j, 2.+0.j, 3.+0.j])
     ```
 
-
-
 ## Array Indexing
 
     ```python
@@ -62,8 +62,6 @@ Output:
     ```python
     array([1, 2, 3, 4, 5, 6, 7, 8, 9])
     ```
-
-
 
 ## Array Slicing
 
@@ -78,8 +76,6 @@ Output:
     array([1, 2, 3, 4, 5, 6, 7, 8, 9])
     ```
 
-
-
 ## Array Reshaping
 
     ```python
@@ -93,8 +89,6 @@ Output:
     array([[1, 2, 3],
            [4, 5, 6]])
     ```
-
-
 
 ## Array Concatenation
 
@@ -113,8 +107,6 @@ Output:
            [7, 8]])
     ```
 
-
-
 ## Array Splitting
 
     ```python
@@ -129,8 +121,6 @@ Output:
            [4, 5, 6]])
     ```
 
-
-
 ## Array Copying
 
     ```python
@@ -143,8 +133,6 @@ Output:
     ```python
     array([1, 2, 3, 4, 5])
     ```
-
-
 
 ## Array Sorting
 
@@ -160,8 +148,6 @@ Output:
            [3, 1]])
     ```
 
-
-
 ## Array Searching
 
     ```python
@@ -174,8 +160,6 @@ Output:
     ```python
     array([1, 2, 3, 2, 3, 4, 3, 4, 5, 6])
     ```
-
-
 
 ## Array Iterating
 
@@ -192,8 +176,6 @@ Output:
            [20, 25, 30, 35],
            [40, 45, 50, 55]])
     ```
-
-
 
 ## Array Joining
 
@@ -212,8 +194,6 @@ Output:
            [7, 8]])
     ```
 
-
-
 ## Array Stacking
 
     ```python
@@ -231,8 +211,6 @@ Output:
            [7, 8]])
     ```
 
-
-
 ## Array Splitting
 
     ```python
@@ -246,8 +224,6 @@ Output:
     array([0, 1, 2, 3, 4, 5, 6, 7, 8])
     ```
 
-
-
 ## Array Repeating
 
     ```python
@@ -260,8 +236,6 @@ Output:
     ```python
     array([1, 2, 3])
     ```
-
-
 
 ## Array Manipulation
 
@@ -277,8 +251,6 @@ Output:
            [4, 5, 6]])
     ```
 
-
-
 ## Array Math
 
         ```python
@@ -292,7 +264,6 @@ Output:
         array([1, 2, 3, 4])
         array([4, 3, 2, 1])
         ```
-    
 
 ## Array Statistics
 
@@ -308,5 +279,3 @@ Output:
            [8, 4, 3],
            [2, 4, 9]])
     ```
-
-

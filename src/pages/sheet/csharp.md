@@ -3,8 +3,9 @@ layout: ../../layouts/CheatSheet.astro
 title: "C# Cheatsheet"
 ---
 
-C Sharp is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of the programming languages designed for the Common Language Infrastructure.
+## Synopsis
 
+C Sharp is a general-purpose, multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines. It was developed around 2000 by Microsoft within its .NET initiative and later approved as a standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). C# is one of the programming languages designed for the Common Language Infrastructure.
 
 ## Data Types
 
@@ -24,8 +25,6 @@ C Sharp is a general-purpose, multi-paradigm programming language encompassing s
 | ulong     | Unsigned long integer           | 8 bytes  |
 | ushort    | Unsigned short integer          | 2 bytes  |
 
-
-
 ## Variables
 
 Variables are containers for storing data values.
@@ -42,8 +41,6 @@ string myText = "Hello";     // String
 bool myBool = true;          // Boolean
 ```
 
-
-
 ## Operators
 
 | Operator | Description    | Example |
@@ -55,8 +52,6 @@ bool myBool = true;          // Boolean
 | %        | Modulus        | x % y   |
 | ++       | Increment      | ++x     |
 | --       | Decrement      | --x     |
-
-
 
 ## Loops
 
@@ -114,5 +109,3 @@ for (int i = 0; i < 10; i++) {
   Console.WriteLine(i);
 }
 ```
-
-

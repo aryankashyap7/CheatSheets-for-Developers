@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "VS Code Cheatsheet"
 ---
 
+## Synopsis
+
+VS Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.
+
 ## Terminal Shortcuts
 
 | Shortcut                  | Description                 |
@@ -30,8 +34,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + Alt + Up   | Move Line Up                |
 | Ctrl + Shift + Alt + Down | Move Line Down              |
 
-
-
 ## Editor Shortcuts
 
 | Shortcut         | Description               |
@@ -48,8 +50,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + Right     | Move to End of Word       |
 | Ctrl + Up        | Move to Beginning of File |
 | Ctrl + Down      | Move to End of File       |
-
-
 
 ## File Shortcuts
 
@@ -68,8 +68,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + K / Ctrl + T | Toggle Terminal |
 | Ctrl + K / Ctrl + X | Close Terminal  |
 
-
-
 ## Search Shortcuts
 
 | Shortcut               | Description      |
@@ -83,8 +81,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + Alt + F | Replace in Files |
 | Ctrl + Shift + Alt + G | Replace Next     |
 
-
-
 ## Window Shortcuts
 
 | Shortcut         | Description         |
@@ -92,8 +88,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + E | Open Explorer       |
 | Ctrl + Shift + F | Open Search         |
 | Ctrl + Shift + G | Open Source Control |
-
-
 
 ## View Shortcuts
 
@@ -109,8 +103,6 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + J | Toggle Terminal         |
 | Ctrl + Shift + V | Toggle Markdown Preview |
 
-
-
 ## Debug Shortcuts
 
 | Shortcut    | Description       |
@@ -121,8 +113,6 @@ title: "VS Code Cheatsheet"
 | F11         | Step Into         |
 | Shift + F11 | Step Out          |
 
-
-
 ## Extension Shortcuts
 
 | Shortcut         | Description          |
@@ -130,13 +120,9 @@ title: "VS Code Cheatsheet"
 | Ctrl + Shift + X | Open Extensions      |
 | Ctrl + Shift + P | Open Command Palette |
 
-
-
 ## Git Shortcuts
 
 | Shortcut         | Description          |
 | ---------------- | -------------------- |
 | Ctrl + Shift + G | Open Source Control  |
 | Ctrl + Shift + P | Open Command Palette |
-
-

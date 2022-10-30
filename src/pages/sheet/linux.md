@@ -3,6 +3,10 @@ layout: ../../layouts/CheatSheet.astro
 title: "Linux Cheatsheet"
 ---
 
+## Synopsis
+
+Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
+
 ## File Commands
 
 | Command    | Description                             |
@@ -27,8 +31,6 @@ title: "Linux Cheatsheet"
 | `rm -f`    | Force remove file                       |
 | `rm -rf`   | Force remove directory                  |
 
-
-
 ## File Permissions
 
 | Command     | Description                                     |
@@ -37,8 +39,6 @@ title: "Linux Cheatsheet"
 | `chmod 777` | Change file permissions to 777                  |
 | `chmod u+x` | Change file permissions to executable for user  |
 | `chmod g+x` | Change file permissions to executable for group |
-
-
 
 ## Privilege Escalation
 
@@ -50,8 +50,6 @@ title: "Linux Cheatsheet"
 | `sudo !!` | Run previous command as root |
 | `su`      | Run shell as another user    |
 
-
-
 ## SSH
 
 | Command                 | Description                             |
@@ -60,8 +58,6 @@ title: "Linux Cheatsheet"
 | `ssh -p port user@host` | Connect to remote host on specific port |
 | `ssh-copy-id`           | Copy SSH key to remote host             |
 | `ssh-keygen`            | Generate SSH key                        |
-
-
 
 ## System Info
 
@@ -90,8 +86,6 @@ title: "Linux Cheatsheet"
 | `du -h`       | Print file space usage in human readable format |
 | `man`         | Print manual page (exit with **q**)             |
 
-
-
 ## Shortcuts
 
 | Command    | Description                                                                                                |
@@ -111,8 +105,6 @@ title: "Linux Cheatsheet"
 | `Ctrl + x` | Use the arrow keys to navigate through the command line history.                                           |
 | `Ctrl + _` | Undo.                                                                                                      |
 
-
-
 ## Text Editors
 
 | Command      | Description                                                                           |
@@ -121,8 +113,6 @@ title: "Linux Cheatsheet"
 | `vim file`   | Vim is a highly configurable text editor built to enable efficient text editing.      |
 | `vi file`    | Vi is a screen-oriented text editor originally created for the Unix operating system. |
 | `emacs file` | Emacs is a family of text editors that are characterized by their extensibility.      |
-
-
 
 ## Archives
 
@@ -143,8 +133,6 @@ title: "Linux Cheatsheet"
 | `unrar x file.rar`                 | Extract rar file              |
 | `rar a file.rar directory`         | Create rar file               |
 
-
-
 ## Disk Usage
 
 | Command          | Description                                               |
@@ -160,8 +148,6 @@ title: "Linux Cheatsheet"
 | `fdisk /dev/sda` | Show disk partitions for /dev/sda                         |
 | `mount`          | Show mounted filesystems                                  |
 
-
-
 ## Search
 
 | Command                        | Description                                                |
@@ -175,8 +161,6 @@ title: "Linux Cheatsheet"
 | `locate file`                  | Find file                                                  |
 | `find / -name file`            | Find file in /                                             |
 | `find / -name file -type f`    | Find only files in /                                       |
-
-
 
 ## Networking
 
@@ -192,8 +176,6 @@ title: "Linux Cheatsheet"
 | `host -t mx domain` | Get MX records for domain        |
 | `hostname -I`       | Get all IP addresses             |
 | `hostname -i`       | Get IP address                   |
-
-
 
 ## VIM
 
@@ -219,5 +201,3 @@ title: "Linux Cheatsheet"
 | `ALT+>`  | Switch to the next file buffer                   |
 | `ALT+D`  | Count the number of words, lines, and characters |
 | `CTRL+L` | Refresh (redraw) the current screen              |
-
-

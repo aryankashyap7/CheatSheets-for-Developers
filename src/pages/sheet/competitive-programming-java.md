@@ -3,7 +3,19 @@ layout: ../../layouts/CheatSheet.astro
 title: "Competitive Programming Java Cheatsheet"
 ---
 
-# competitive-programming-java-cheat-sheet
+## Synopsis
+
+Competitive programming is a mind sport usually held over the Internet or a local network, involving participants trying to program according to provided specifications. Competitive programming is recognized and supported by several multinational software and Internet companies.
+
+There are many different types of competitive programming competitions, including:
+
+| Type                                                                          | Description                                                                                                                                                      |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ACM-ICPC](https://icpc.baylor.edu/)                                          | The ACM International Collegiate Programming Contest (ICPC) is an annual multi-tiered competitive programming competition among the universities of the world.   |
+| [Google Code Jam](https://codingcompetitions.withgoogle.com/codejam)          | Google Code Jam is a programming competition organized and run by Google.                                                                                        |
+| [Google Kick Start](https://codingcompetitions.withgoogle.com/kickstart)      | Google Kick Start is a global online coding competition, consisting of three-hour rounds of algorithmic puzzles designed by Google engineers and held virtually. |
+| [Google Hash Code](https://codingcompetitions.withgoogle.com/hashcode)        | Google Hash Code is a team-based programming competition, organized by Google for students and professionals around the world.                                   |
+| [Facebook Hacker Cup](https://www.facebook.com/codingcompetitions/hacker-cup) | Facebook Hacker Cup is a worldwide programming competition organized by Facebook.                                                                                |
 
 ## standard-java-templates
 

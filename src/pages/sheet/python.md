@@ -3,165 +3,17 @@ layout: ../../layouts/CheatSheet.astro
 title: "Python Cheatsheet"
 ---
 
-## Table of Contents
+## Synopsis
 
-- [Functions](#functions)
-  - [Lambda](#lambda-1)
-  - [Map](#map)
-  - [Filter](#filter)
-  - [Reduce](#reduce)
-  - [Zip](#zip)
-  - [Partial](#partial-1)
-  - [Compose](#compose)
-  - [Currying](#currying)
-  - [Memoize](#memoize)
-  - [Decorator](#decorator-1)
-  - [Closure](#closure-1)
-  - [Generator](#generator-1)
-  - [Generator](#generator-2)
-  - [Iterator](#iterator-2)
-  - [Context Manager](#context-manager-1)
-  - [Decorator](#decorator-2)
-- [Modules](#modules)
-  - [Argparse](#argparse)
-  - [Logging](#logging)
-  - [Sqlite](#sqlite-1)
-  - [Pickle](#pickle-1)
-  - [Collections](#collections)
-  - [Counter](#counter-1)
-  - [OrderedDict](#ordereddict)
-  - [Defaultdict](#defaultdict)
-  - [Namedtuple](#namedtuple)
-  - [ChainMap](#chainmap)
-  - [Heapq](#heapq)
-  - [Bisect](#bisect)
-  - [Array](#array-1)
-  - [Weakref](#weakref)
-  - [Types](#types)
-  - [Copy](#copy-1)
-  - [Pprint](#pprint)
-  - [Reprlib](#reprlib)
-  - [Enum](#enum-1)
-  - [Pathlib](#pathlib)
-  - [Functools](#functools)
-  - [Itertools](#itertools-1)
-  - [Contextlib](#contextlib)
-  - [Atexit](#atexit)
-  - [Traceback](#traceback)
-  - [Sys](#sys)
-  - [IO](#io)
-  - [Time](#time)
-  - [Datetime](#datetime-1)
-  - [Calendar](#calendar)
-  - [Random](#random-1)
-  - [Statistics](#statistics-1)
-  - [Math](#math-1)
-- [Cmath](#cmath)
-  - [Threading](#threading)
-    - [Thread](#thread)
-    - [Lock](#lock)
-      - [Or:](#or-1)
-    - [Semaphore, Event, Barrier](#semaphore-event-barrier)
-    - [Thread Pool Executor](#thread-pool-executor)
-    - [Queue](#queue)
-  - [Operator](#operator)
-  - [Introspection](#introspection)
-    - [Variables](#variables)
-    - [Attributes](#attributes-1)
-    - [Parameters](#parameters-1)
-  - [Metaprogramming](#metaprogramming)
-    - [Type](#type-1)
-    - [Meta Class](#meta-class)
-      - [Or:](#or-2)
-    - [Metaclass Attribute](#metaclass-attribute)
-    - [Type Diagram](#type-diagram)
-    - [Inheritance Diagram](#inheritance-diagram)
-  - [Eval](#eval)
-  - [Coroutines](#coroutines)
-      - [Runs a terminal game where you control an asterisk that must avoid numbers:](#runs-a-terminal-game-where-you-control-an-asterisk-that-must-avoid-numbers)
-- [Libraries](#libraries)
-  - [Progress Bar](#progress-bar)
-  - [Plot](#plot)
-  - [Table](#table)
-      - [Prints a CSV file as an ASCII table:](#prints-a-csv-file-as-an-ascii-table)
-  - [Curses](#curses)
-      - [Runs a basic file explorer in the terminal:](#runs-a-basic-file-explorer-in-the-terminal)
-  - [Logging](#logging-1)
-    - [Exceptions](#exceptions-2)
-    - [Rotation](#rotation)
-    - [Retention](#retention)
-  - [Scraping](#scraping)
-      - [Scrapes Python's URL, version number and logo from its Wikipedia page:](#scrapes-pythons-url-version-number-and-logo-from-its-wikipedia-page)
-  - [Web](#web)
-    - [Run](#run)
-    - [Static Request](#static-request)
-    - [Dynamic Request](#dynamic-request)
-    - [REST Request](#rest-request)
-      - [Test:](#test)
-  - [Profiling](#profiling)
-    - [Stopwatch](#stopwatch)
-    - [Timing a Snippet](#timing-a-snippet)
-    - [Profiling by Line](#profiling-by-line)
-    - [Call Graph](#call-graph)
-      - [Generates a PNG image of the call graph with highlighted bottlenecks:](#generates-a-png-image-of-the-call-graph-with-highlighted-bottlenecks)
-  - [NumPy](#numpy)
-    - [Indexing](#indexing)
-    - [Broadcasting](#broadcasting)
-      - [1. If array shapes differ in length, left-pad the shorter shape with ones:](#1-if-array-shapes-differ-in-length-left-pad-the-shorter-shape-with-ones)
-      - [2. If any dimensions differ in size, expand the ones that have size 1 by duplicating their elements:](#2-if-any-dimensions-differ-in-size-expand-the-ones-that-have-size-1-by-duplicating-their-elements)
-      - [3. If neither non-matching dimension has size 1, raise an error.](#3-if-neither-non-matching-dimension-has-size-1-raise-an-error)
-    - [Example](#example-1)
-      - [For each point returns index of its nearest point (`[0.1, 0.6, 0.8] => [1, 2, 1]`):](#for-each-point-returns-index-of-its-nearest-point-01-06-08--1-2-1)
-  - [Image](#image)
-    - [Modes](#modes-1)
-    - [Examples](#examples)
-      - [Creates a PNG image of a rainbow gradient:](#creates-a-png-image-of-a-rainbow-gradient)
-      - [Adds noise to a PNG image:](#adds-noise-to-a-png-image)
-    - [Image Draw](#image-draw)
-  - [Animation](#animation)
-      - [Creates a GIF of a bouncing ball:](#creates-a-gif-of-a-bouncing-ball)
-  - [Audio](#audio)
-    - [Sample Values](#sample-values)
-    - [Read Float Samples from WAV File](#read-float-samples-from-wav-file)
-    - [Write Float Samples to WAV File](#write-float-samples-to-wav-file)
-    - [Examples](#examples-1)
-      - [Saves a 440 Hz sine wave to a mono WAV file:](#saves-a-440-hz-sine-wave-to-a-mono-wav-file)
-      - [Adds noise to a mono WAV file:](#adds-noise-to-a-mono-wav-file)
-      - [Plays a WAV file:](#plays-a-wav-file)
-    - [Text to Speech](#text-to-speech)
-  - [Synthesizer](#synthesizer)
-      - [Plays Popcorn by Gershon Kingsley:](#plays-popcorn-by-gershon-kingsley)
-  - [Pygame](#pygame)
-    - [Rectangle](#rectangle)
-    - [Surface](#surface)
-    - [Font](#font)
-    - [Sound](#sound)
-    - [Basic Mario Brothers Example](#basic-mario-brothers-example)
-  - [Pandas](#pandas)
-    - [Series](#series)
-      - [Series — Aggregate, Transform, Map:](#series--aggregate-transform-map)
-    - [DataFrame](#dataframe)
-      - [DataFrame — Merge, Join, Concat:](#dataframe--merge-join-concat)
-      - [DataFrame — Aggregate, Transform, Map:](#dataframe--aggregate-transform-map)
-      - [DataFrame — Plot, Encode, Decode:](#dataframe--plot-encode-decode)
-    - [GroupBy](#groupby)
-      - [GroupBy — Aggregate, Transform, Map:](#groupby--aggregate-transform-map)
-    - [Rolling](#rolling)
-  - [Plotly](#plotly)
-      - [Covid deaths by continent:](#covid-deaths-by-continent)
-      - [Confirmed covid cases, Dow Jones, Gold, and Bitcoin price:](#confirmed-covid-cases-dow-jones-gold-and-bitcoin-price)
-  - [PySimpleGUI](#pysimplegui)
-  - [Matplotlib](#matplotlib)
-  - [Tkinter](#tkinter)
-    - [Essential Parts:](#essential-parts)
-    - [Widget Placement:](#widget-placement)
-    - [Tkinter Widgets:](#tkinter-widgets)
-  - [Appendix](#appendix)
-    - [Cython](#cython)
-      - [Definitions:](#definitions)
-    - [PyInstaller](#pyinstaller)
-    - [Basic Script Template](#basic-script-template)
-  - [Index](#index)
+Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+
+The features of Python are:
+
+- **Interpreted**: Python is processed at runtime by the interpreter. You do not need to compile your program before executing it. This is similar to PERL and PHP.
+- **Interactive**: You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
+- **Object-Oriented**: Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+- **A broad standard library**: Python's bulk of the library is very portable and cross-platform compatible on UNIX, Windows, and Macintosh.
+- **Free and Open Source**: Python is free to use, even for commercial products.
 
 ## Main
 
@@ -169,8 +21,6 @@ title: "Python Cheatsheet"
 if __name__ == '__main__':     # Runs main() if file wasn't imported.
     main()
 ```
-
-
 
 ## List
 
@@ -212,8 +62,6 @@ list_of_chars    = list(<str>)
 <list>.clear()                 # Removes all items. Also works on dictionary and set.
 ```
 
-
-
 ## Dictionary
 
 ```python
@@ -254,8 +102,6 @@ Counter({'blue': 3, 'red': 2, 'yellow': 1})
 ('blue', 3)
 ```
 
-
-
 ## Set
 
 ```python
@@ -291,8 +137,6 @@ Counter({'blue': 3, 'red': 2, 'yellow': 1})
 <frozenset> = frozenset(<collection>)
 ```
 
-
-
 ## Tuple
 
 **Tuple is an immutable and hashable list.**
@@ -320,8 +164,6 @@ Point(x=1, y=2)
 2
 ```
 
-
-
 ## Range
 
 **Immutable and hashable sequence of integers.**
@@ -337,8 +179,6 @@ Point(x=1, y=2)
 [0, 1, 2]
 ```
 
-
-
 ## Enumerate
 
 Enumerates is a built-in function that returns an enumerate object. enumerate() takes two parameters: iterable and start (default is 0).
@@ -350,8 +190,6 @@ Enumerates is a built-in function that returns an enumerate object. enumerate() 
 >>> list(enumerate(seasons, start=1))
 [(1, 'Spring'), (2, 'Summer'), (3, 'Fall'), (4, 'Winter')]
 ```
-
-
 
 ## Iterator
 
@@ -384,8 +222,6 @@ import itertools as it
 <iter> = it.islice(<coll>, from_inc, …)     # `to_exclusive, +step_size`. Indices can be None.
 ```
 
-
-
 ## Generator
 
 - **Any function that contains a yield statement returns a generator.**
@@ -403,8 +239,6 @@ def count(start, step):
 >>> next(counter), next(counter), next(counter)
 (10, 12, 14)
 ```
-
-
 
 ## Type
 
@@ -466,8 +300,6 @@ True
 +--------------------+----------+----------+----------+----------+----------+
 ```
 
-
-
 ## String
 
 ```python
@@ -519,8 +351,6 @@ True
 
 - **Also: `'isspace()'` checks for `'[ \t\n\r\f\v\x1c-\x1f\x85\u2000…]'`.**
 
-
-
 ## Regex
 
 ```python
@@ -562,8 +392,6 @@ import re
 - **By default, decimal characters, alphanumerics and whitespaces from all alphabets are matched unless `'flags=re.ASCII'` argument is used.**
 - **As shown above, it restricts all special sequence matches to the first 128 characters and prevents `'\s'` from accepting `'[\x1c-\x1f]'` (the so-called separator characters).**
 - **Use a capital letter for negation (all non-ASCII characters will be matched when used in combination with ASCII flag).**
-
-
 
 ## Format
 
@@ -668,8 +496,6 @@ import re
 {90:X}                                   # '5A'
 ```
 
-
-
 ## Numbers
 
 ```python
@@ -735,8 +561,6 @@ from random import random, randint, choice        # Also shuffle, gauss, triangu
 <int> = ~<int>                                    # Not. Also -<int> - 1.
 ```
 
-
-
 ## Combinatorics
 
 - **Every function returns an iterator.**
@@ -778,8 +602,6 @@ import itertools as it
  ('b', 'a'), ('b', 'c'),                          # b x  .  x
  ('c', 'a'), ('c', 'b')]                          # c x  x  .
 ```
-
-
 
 ## Datetime
 
@@ -868,8 +690,6 @@ from dateutil.tz import UTC, tzlocal, gettz, datetime_exists, resolve_imaginary
 <TD>     = <TD>    * <real>                 # Also: <TD> = abs(<TD>) and <TD> = <TD> ±% <TD>.
 <float>  = <TD>    / <TD>                   # How many weeks/years there are in TD. Also //.
 ```
-
-
 
 ## Arguments
 
@@ -962,8 +782,6 @@ def f(x, y, *, z): ...          # f(x=1, y=2, z=3) | f(1, y=2, z=3) | f(1, 2, z=
 head, *body, tail = <coll.>     # Head or tail can be omitted.
 ```
 
-
-
 ## Inline
 
 ### Lambda
@@ -1034,8 +852,6 @@ from dataclasses import make_dataclass
 Player = make_dataclass('Player', ['loc', 'dir'])   # Creates a class.
 player = Player(point, direction)                   # Returns its instance.
 ```
-
-
 
 ## Imports
 
@@ -1109,8 +925,6 @@ def get_counter():
 (1, 2, 3)
 ```
 
-
-
 ## Decorator
 
 - **A decorator takes a function, adds some functionality and returns it.**
@@ -1182,8 +996,6 @@ def add(x, y):
 ```
 
 - **Using only `'@debug'` to decorate the add() function would not work here, because debug would then receive the add() function as a 'print_result' argument. Decorators can however manually check if the argument they received is a function and act accordingly.**
-
-
 
 ## Class
 
@@ -1338,8 +1150,6 @@ from copy import copy, deepcopy
 <object> = copy(<object>)
 <object> = deepcopy(<object>)
 ```
-
-
 
 ## Duck Types
 
@@ -1590,8 +1400,6 @@ class MyAbcSequence(abc.Sequence):
 - **Other ABCs that generate missing methods are: MutableSequence, Set, MutableSet, Mapping and MutableMapping.**
 - **Names of their required methods are stored in `'<abc>.__abstractmethods__'`.**
 
-
-
 ## Enum
 
 ```python
@@ -1647,8 +1455,6 @@ LogicOp = Enum('LogicOp', {'AND': partial(lambda l, r: l and r),
 ```
 
 - **Member names are in all caps because trying to access a member that is named after a reserved keyword raises SyntaxError.**
-
-
 
 ## Exceptions
 
@@ -1774,8 +1580,6 @@ class MyError(Exception): pass
 class MyInputError(MyError): pass
 ```
 
-
-
 ## Exit
 
 **Exits the interpreter by raising SystemExit exception.**
@@ -1786,8 +1590,6 @@ sys.exit()                        # Exits with exit code 0 (success).
 sys.exit(<el>)                    # Prints to stderr and exits with 1.
 sys.exit(<int>)                   # Exits with passed exit code.
 ```
-
-
 
 ## Print
 
@@ -1807,8 +1609,6 @@ pprint(<collection>, width=80, depth=None, compact=False, sort_dicts=True)
 
 - **Levels deeper than 'depth' get replaced by '...'.**
 
-
-
 ## Input
 
 **Reads a line from user input or pipe if present.**
@@ -1820,8 +1620,6 @@ pprint(<collection>, width=80, depth=None, compact=False, sort_dicts=True)
 - **Trailing newline gets stripped.**
 - **Prompt string is printed to the standard output before reading input.**
 - **Raises EOFError when user hits EOF (ctrl-d/ctrl-z⏎) or input stream gets exhausted.**
-
-
 
 ## Command Line Arguments
 
@@ -1848,8 +1646,6 @@ value = args.<name>
 - **Use `'help=<str>'` to set argument description that will be displayed in help message.**
 - **Use `'default=<el>'` to set the default value.**
 - **Use `'type=FileType(<mode>)'` for files. Accepts 'encoding', but 'newline' is None.**
-
-
 
 ## Open
 
@@ -1921,8 +1717,6 @@ def write_to_file(filename, text):
     with open(filename, 'w', encoding='utf-8') as file:
         file.write(text)
 ```
-
-
 
 ## Paths
 
@@ -2006,8 +1800,6 @@ from pathlib import Path
 <file> = open(<Path>)               # Also <Path>.read/write_text/bytes().
 ```
 
-
-
 ## OS Commands
 
 ```python
@@ -2065,8 +1857,6 @@ CompletedProcess(args=['bc', '-s'], returncode=0)
 '2\n'
 ```
 
-
-
 ## JSON
 
 **Text file format for storing collections of strings and numbers.**
@@ -2093,8 +1883,6 @@ def write_to_json_file(filename, an_object):
         json.dump(an_object, file, ensure_ascii=False, indent=2)
 ```
 
-
-
 ## Pickle
 
 **Binary file format for storing Python objects.**
@@ -2120,8 +1908,6 @@ def write_to_pickle_file(filename, an_object):
     with open(filename, 'wb') as file:
         pickle.dump(an_object, file)
 ```
-
-
 
 ## CSV
 
@@ -2196,8 +1982,6 @@ def write_to_csv_file(filename, rows, dialect='excel'):
         writer = csv.writer(file, dialect)
         writer.writerows(rows)
 ```
-
-
 
 ## SQLite
 
@@ -2278,8 +2062,6 @@ with <conn>.begin(): ...                        # Exits the block with commit or
 +------------+--------------+-----------+-----------------------------------+
 ```
 
-
-
 ## Bytes
 
 **Bytes object is an immutable sequence of single bytes. Mutable version is called bytearray.**
@@ -2325,8 +2107,6 @@ def write_bytes(filename, bytes_obj):
         file.write(bytes_obj)
 ```
 
-
-
 ## Struct
 
 - **Module that performs conversions between a sequence of numbers and a bytes object.**
@@ -2371,8 +2151,6 @@ b'\x00\x01\x00\x02\x00\x00\x00\x03'
 - **`'f'` - float (4/4)**
 - **`'d'` - double (8/8)**
 
-
-
 ## Array
 
 **List that can only hold numbers of a predefined type. Available types and their minimum sizes in bytes are listed above. Sizes and byte order are always determined by the system.**
@@ -2385,8 +2163,6 @@ from array import array
 <bytes> = bytes(<array>)                       # Or: <array>.tobytes()
 <file>.write(<array>)                          # Writes array to the binary file.
 ```
-
-
 
 ## Memory View
 
@@ -2420,8 +2196,6 @@ from array import array
 '<hex>' = <mview>.hex()                        # Treats mview as a bytes object.
 ```
 
-
-
 ## Deque
 
 **A thread-safe list with efficient appends and pops from either side. Pronounced "deck".**
@@ -2438,8 +2212,6 @@ from collections import deque
 <deque>.rotate(n=1)                            # Rotates elements to the right.
 ```
 
-
-
 # Functions
 
 ## Lambda
@@ -2455,8 +2227,6 @@ from collections import deque
 3
 ```
 
-
-
 ## Map
 
 **Applies a function to each element of a collection.**
@@ -2470,8 +2240,6 @@ from collections import deque
 [2, 3, 4]
 ```
 
-
-
 ## Filter
 
 **Returns a collection of elements that satisfy a condition.**
@@ -2484,8 +2252,6 @@ from collections import deque
 >>> list(filter(lambda x: x > 2, [1, 2, 3]))
 [3]
 ```
-
-
 
 ## Reduce
 
@@ -2503,8 +2269,6 @@ from functools import reduce
 6
 ```
 
-
-
 ## Zip
 
 **Returns a collection of tuples, where each tuple contains the i-th element from each of the argument sequences or iterables.**
@@ -2518,8 +2282,6 @@ from functools import reduce
 >>> list(zip([1, 2, 3], [4, 5, 6]))
 [(1, 4), (2, 5), (3, 6)]
 ```
-
-
 
 ## Partial
 
@@ -2539,8 +2301,6 @@ from functools import partial
 >>> add_1(2)
 3
 ```
-
-
 
 ## Compose
 
@@ -2567,8 +2327,6 @@ from functools import reduce
 -3
 ```
 
-
-
 ## Currying
 
 **Returns a function that takes one argument and returns another function that takes the next argument, and so on.**
@@ -2585,8 +2343,6 @@ from functools import reduce
 >>> add_1(2)
 3
 ```
-
-
 
 ## Memoize
 
@@ -2608,8 +2364,6 @@ from functools import lru_cache
 >>> fib(10)
 55
 ```
-
-
 
 ## Decorator
 
@@ -2640,8 +2394,6 @@ Inside
 After
 ```
 
-
-
 ## Closure
 
 **A function that remembers the values from the enclosing lexical scope even when the program flow is no longer in that scope.**
@@ -2666,8 +2418,6 @@ def <func>(…):
 1
 ```
 
-
-
 ## Generator
 
 **A function that returns an iterator object.**
@@ -2687,8 +2437,6 @@ def <func>(…):
 [1, 2, 3]
 ```
 
-
-
 ## Generator
 
 **A function that returns an iterator object.**
@@ -2707,8 +2455,6 @@ def <func>(…):
 >>> list(func())
 [1, 2, 3]
 ```
-
-
 
 ## Iterator
 
@@ -2729,9 +2475,6 @@ def <func>(…):
 >>> next(iter)
 3
 ```
-
-
-
 
 ## Context Manager
 
@@ -2762,8 +2505,6 @@ Inside
 Exit
 ```
 
-
-
 ## Decorator
 
 **A function that takes another function and extends the behavior of the latter function without explicitly modifying it.**
@@ -2793,8 +2534,6 @@ Inside
 After
 ```
 
-
-
 # Modules
 
 ## Argparse
@@ -2822,8 +2561,6 @@ args = parser.parse_args()
 1000
 ```
 
-
-
 ## Logging
 
 **A module that provides a set of convenience functions for simple logging usage.**
@@ -2841,8 +2578,6 @@ logging.<level>(<msg>)
 >>> logging.debug('This is a debug message')
 2019-01-01 00:00:00,000 This is a debug message
 ```
-
-
 
 ## Sqlite
 
@@ -2875,8 +2610,6 @@ c.fetchall()
 [(1, 'a', 1.0)]
 ```
 
-
-
 ## Pickle
 
 **A module that implements binary protocols for serializing and de-serializing a Python object structure.**
@@ -2902,8 +2635,6 @@ with open('<file>', 'rb') as f:
 [1, 2, 3]
 ```
 
-
-
 ## Collections
 
 **A module that implements specialized container datatypes providing alternatives to Python’s general purpose built-in containers, dict, list, set, and tuple.**
@@ -2919,8 +2650,6 @@ from collections import <collection>
 >>> Counter([1, 2, 3, 1, 2, 3, 1, 2, 3])
 Counter({1: 3, 2: 3, 3: 3})
 ```
-
-
 
 ## Counter
 
@@ -2938,8 +2667,6 @@ Counter(<iterable>)
 Counter({1: 3, 2: 3, 3: 3})
 ```
 
-
-
 ## OrderedDict
 
 **A dict subclass that remembers the order entries were added.**
@@ -2955,8 +2682,6 @@ OrderedDict(<iterable>)
 >>> OrderedDict([('a', 1), ('b', 2), ('c', 3)])
 OrderedDict([('a', 1), ('b', 2), ('c', 3)])
 ```
-
-
 
 ## Defaultdict
 
@@ -2982,8 +2707,6 @@ d[foo]: bar
 >>> print('d[bar]:', d['bar'])
 d[bar]: default value
 ```
-
-
 
 ## Namedtuple
 
@@ -3034,8 +2757,6 @@ Point(x=11, y=22)
 
 Point(x=100, y=22)
 ```
-
-
 
 ## ChainMap
 
@@ -3091,8 +2812,6 @@ ChainMap(<dict1>, <dict2>, ...)
 [2, 1]
 ```
 
-
-
 ## Heapq
 
 **A module for implementing heaps based on regular lists.**
@@ -3134,8 +2853,6 @@ heapq.<function>(<list>, <value>)
 (7, 'release product')
 ```
 
-
-
 ## Bisect
 
 **A module for maintaining a list in sorted order without having to sort the list after each insertion.**
@@ -3171,8 +2888,6 @@ bisect.<function>(<list>, <value>)
 [33, 70, 77, 89, 90, 99, 100]
 ```
 
-
-
 ## Array
 
 **An array is a container that holds a fixed number of items of a single type.**
@@ -3197,8 +2912,6 @@ array('<typecode>', <iterable>)
 
 array('H', [10, 700])
 ```
-
-
 
 ## Weakref
 
@@ -3234,8 +2947,6 @@ weakref.<function>(<object>)
 
 True
 ```
-
-
 
 ## Types
 
@@ -3298,8 +3009,6 @@ True
 
 True
 ```
-
-
 
 ## Copy
 
@@ -3373,7 +3082,7 @@ copy.<function>(<object>)
 
 >>> l3
 
-[3, [44], (7, 8, 9, 10, 11), 100]   
+[3, [44], (7, 8, 9, 10, 11), 100]
 
 >>> l1.append(100)
 
@@ -3458,8 +3167,6 @@ copy.<function>(<object>)
 [3, [55, 44, 33, 22], (7, 8, 9)]
 ```
 
-
-
 ## Pprint
 
 **A module that provides a capability to “pretty-print” arbitrary Python data structures in a form which can be used as input to the interpreter.**
@@ -3540,8 +3247,6 @@ pprint.<function>(<object>)
 
 ```
 
-
-
 ## Reprlib
 
 **A module that provides a version of repr() which can be used to produce abbreviated, recursive representations of large or deeply nested containers.**
@@ -3581,8 +3286,6 @@ reprlib.<function>(<object>)
 "[[['black', 'cyan'], 'white', ['green', 'red']], [['magenta', 'yellow'], 'blue']]"
 
 ```
-
-
 
 ## Enum
 
@@ -3639,8 +3342,6 @@ True
 
 ```
 
-
-
 ## Pathlib
 
 **A module that provides classes representing filesystem paths with semantics appropriate for different operating systems.**
@@ -3675,8 +3376,6 @@ PosixPath('/home/username/Python')
 PosixPath('/home/username')
 ```
 
-
-
 ## Functools
 
 **A module that provides higher-order functions and operations on callable objects.**
@@ -3708,8 +3407,6 @@ functools.<function>(<object>)
 3
 ```
 
-
-
 ## Itertools
 
 **A module that provides functions creating iterators for efficient looping.**
@@ -3737,8 +3434,6 @@ itertools.<function>(<object>)
 4.0
 
 ```
-
-
 
 ## Contextlib
 
@@ -3783,8 +3478,6 @@ ERROR: showing example of handling an error
 
 ```
 
-
-
 ## Atexit
 
 **A module that provides one function, register(), that is used to register cleanup functions to be executed when the interpreter exits normally or unconditionally.**
@@ -3815,8 +3508,6 @@ atexit.<function>(<object>)
 <function my_cleanup at 0x7f9b8c0b9d08>
 
 ```
-
-
 
 ## Traceback
 
@@ -3860,13 +3551,11 @@ File "test.py", line 2, in f
 File "test.py", line 5, in g
     h()
 File "test.py", line 8, in h
-    i() 
+    i()
 File "test.py", line 11, in i
     traceback.print_stack()
 
 ```
-
-
 
 ## Sys
 
@@ -3907,13 +3596,9 @@ sys.<function>(<object>)
 
 ```
 
-
-
 ## IO
 
 The io module provides Python’s main facilities for dealing with various types of I/O. There are three main types of I/O: text I/O, binary I/O and raw I/O. These are generic categories, and various backing stores can be used for each of them.
-
-
 
 ## Time
 
@@ -3948,8 +3633,6 @@ time.struct_time(tm_year=2021, tm_mon=1, tm_mday=1, tm_hour=0, tm_min=0, tm_sec=
 
 ```
 
-
-
 ## Datetime
 
 **A module that supplies classes for manipulating dates and times in both simple and complex ways.**
@@ -3979,8 +3662,6 @@ datetime.datetime(2021, 1, 1, 0, 0)
 
 ```
 
-
-
 ## Calendar
 
 **A module that provides general calendar related functions.**
@@ -4009,8 +3690,6 @@ False
 False
 
 ```
-
-
 
 ## Random
 
@@ -4065,8 +3744,6 @@ random.<function>(<object>)
 
 ```
 
-
-
 ## Statistics
 
 **A module that provides functions for calculating mathematical statistics of numeric (Real-valued) data.**
@@ -4108,8 +3785,6 @@ statistics.<function>(<object>)
 
 ```
 
-
-
 ## Math
 
 **A module that provides access to the mathematical functions defined by the C standard.**
@@ -4143,8 +3818,6 @@ math.<function>(<object>)
 
 ```
 
-
-
 # Cmath
 
 **A module that provides access to mathematical functions for complex numbers.**
@@ -4177,11 +3850,6 @@ cmath.<function>(<object>)
 6.123233995736766e-17j
 
 ```
-
-
-
-
-
 
 ## Threading
 
@@ -4261,8 +3929,6 @@ from queue import Queue
 <el> = <Queue>.get_nowait()                    # Raises queue.Empty exception if empty.
 ```
 
-
-
 ## Operator
 
 **Module of functions that provide the functionality of operators.**
@@ -4286,8 +3952,6 @@ first_element    = op.methodcaller('pop', 0)(<list>)
 
 - **Binary operators require objects to have and(), or(), xor() and invert() special methods, unlike logical operators that work on all types of objects.**
 - **Also: `'<bool> = <bool> &|^ <bool>'` and `'<int> = <bool> &|^ <int>'`.**
-
-
 
 ## Introspection
 
@@ -4321,8 +3985,6 @@ delattr(<object>, '<attr_name>')           # Same. Also `del <object>.<attr_name
 <obj>  = <Param>.default                   # Default value or <Param>.empty.
 <type> = <Param>.annotation                # Type or <Param>.empty.
 ```
-
-
 
 ## Metaprogramming
 
@@ -4417,8 +4079,6 @@ MyMetaClass.__base__ == type         # MyMetaClass is a subclass of type.
 +-------------+-------------+
 ```
 
-
-
 ## Eval
 
 ```python
@@ -4428,8 +4088,6 @@ MyMetaClass.__base__ == type         # MyMetaClass is a subclass of type.
 >>> literal_eval('1 + 2')
 ValueError: malformed node or string
 ```
-
-
 
 ## Coroutines
 
@@ -4498,8 +4156,6 @@ if __name__ == '__main__':
 
 <br>
 
-
-
 # Libraries
 
 ## Progress Bar
@@ -4512,8 +4168,6 @@ if __name__ == '__main__':
 ...     sleep(1)
 Processing: 100%|████████████████████| 3/3 [00:03<00:00,  1.00s/it]
 ```
-
-
 
 ## Plot
 
@@ -4528,8 +4182,6 @@ plt.show()                                     # Displays the figure.
 plt.clf()                                      # Clears the figure.
 ```
 
-
-
 ## Table
 
 #### Prints a CSV file as an ASCII table:
@@ -4543,8 +4195,6 @@ with open('test.csv', encoding='utf-8', newline='') as file:
     table  = tabulate.tabulate(rows, header)
 print(table)
 ```
-
-
 
 ## Curses
 
@@ -4574,8 +4224,6 @@ def main(screen):
 if __name__ == '__main__':
     curses.wrapper(main)
 ```
-
-
 
 ## Logging
 
@@ -4628,8 +4276,6 @@ retention=<int>|<datetime.timedelta>|<str>
 - **`'<timedelta>'` - Max age of a file.**
 - **`'<str>'` - Max age as a string: `'1 week, 3 days'`, `'2 months'`, ...**
 
-
-
 ## Scraping
 
 #### Scrapes Python's URL, version number and logo from its Wikipedia page:
@@ -4654,8 +4300,6 @@ try:
 except requests.exceptions.ConnectionError:
     print("You've got problems with connection.", file=sys.stderr)
 ```
-
-
 
 ## Web
 
@@ -4711,8 +4355,6 @@ def send_json(sport):
 >>> response.json()
 {'team': 'arsenal f.c.', 'odds': [2.09, 3.74, 3.68]}
 ```
-
-
 
 ## Profiling
 
@@ -4778,8 +4420,6 @@ drawer = cg.output.GraphvizOutput(output_file=filename)
 with cg.PyCallGraph(drawer):
     <code_to_be_profiled>
 ```
-
-
 
 ## NumPy
 
@@ -4893,8 +4533,6 @@ right = [[0.1,  0.6,  0.8],                             # Shape: (3, 3) <- !
 [1, 2, 1]
 ```
 
-
-
 ## Image
 
 ```python
@@ -4996,8 +4634,6 @@ for velocity in range(1, 16):
 frames += reversed(frames[1:-1])
 imageio.mimsave('test.gif', frames, duration=0.03)
 ```
-
-
 
 ## Audio
 
@@ -5133,8 +4769,6 @@ samples_f   = it.chain.from_iterable(get_samples(n) for n in f'{P1},{P1},{P2}'.s
 samples_b   = b''.join(struct.pack('<h', int(f * 30000)) for f in samples_f)
 simpleaudio.play_buffer(samples_b, 1, 2, F)
 ```
-
-
 
 ## Pygame
 
@@ -5296,8 +4930,6 @@ if __name__ == '__main__':
     main()
 ```
 
-
-
 ## Pandas
 
 ```python
@@ -5386,8 +5018,6 @@ y    2
 ```
 
 - **Last result has a hierarchical index. Use `'<Sr>[key_1, key_2]'` to get its values.**
-
-
 
 ### DataFrame
 
@@ -5692,6 +5322,7 @@ print(f'Hello {values[0]}!' if event == 'Ok' else '')
 ## Matplotlib
 
 **Header:**
+
 ```python
 import numpy as np
 import random
@@ -5699,82 +5330,96 @@ import matplotlib.pyplot as plt
 ```
 
 **Plotting an equation:**
+
 ```python
 fig, ax = plt.subplots()
 x = np.random.randint(1,10, size=10)
-y = x 
+y = x
 plt.plot(x,y)
 plt.show()
 ```
+
 The above code would plot the line x = y.
 
 **Plotting multiple equations:**
+
 ```python
 fig, ax = plt.subplots()
 x = np.random.randint(1,10, size=10)
-y = x 
+y = x
 plt.plot(x,y)
 plt.plot(x,x+3)
 plt.show()
 ```
 
 **Changing color or style of lines:**
+
 ```python
 plt.plot(x, y, color='ENTER COLOR NAME HERE', linestyle='DRAW LINESTYLE HERE')
 ```
+
 Available linestyles:
-1) --
-2) :
-3) -.
-   
+
+1. --
+2. :
+3. -.
+
 **Setting graph limits:**
+
 ```python
 plt.xlim(x1,y1)
 plt.ylim(x2, y2)
 ```
 
 **Labelling the axis:**
+
 ```python
 plt.xlabel("TITLE GOES HERE")
 plt.ylabel("TITLE GOES HERE")
 ```
 
 **Title of the graph:**
+
 ```python
 plt.title("TITLE GOES HERE")
 ```
 
 **Make a scatter graph:**
+
 ```python
 plt.scatter(x,y)
 ```
 
 **Make a area chart:**
+
 ```python
 plt.fill_between( x, y, color="ENTER COLOR HERE", alpha=ENTER ALPHA HERE)
 ```
 
 **Make a bar graph**
+
 ```python
 plt.bar(y, data, align='ENTER ALIGNMENT HERE', alpha=ENTER ALPHA HERE)
 ```
 
 **Make a pie chart:**
+
 ```python
 plt.pie(data, labels=labels, explode=(x, x, ... x))
 ```
-
-
 
 ## Tkinter
 
 ### Essential Parts:
 
-1) **Header:**
+1. **Header:**
+
 ```python
 from Tkinter import *
 ```
-2) **Making the window:**
+
+2. **Making the window:**
+
 ```python
 root = Tk()
 ...
@@ -5785,53 +5430,49 @@ root.mainloop()
 
 ### Widget Placement:
 
-1) **Pack:** 
-    This fits the widget into the window as a rectangular block, usually preffered for small windows.
-    ```python
-    WIDGET.pack()
-    ```
+1. **Pack:**
+   This fits the widget into the window as a rectangular block, usually preffered for small windows.
 
-2) **Grid:**
-    This fits the widget inside the table which we created.
-    ```python
-    WIDGET.grid(...)
-    ```
+   ```python
+   WIDGET.pack()
+   ```
 
-3) **Place:**
-    This puts the widget to a specific coordinate in the window.
-    ```python
-    WIDGET.place(...)
-    ```
+2. **Grid:**
+   This fits the widget inside the table which we created.
+
+   ```python
+   WIDGET.grid(...)
+   ```
+
+3. **Place:**
+   This puts the widget to a specific coordinate in the window.
+   ```python
+   WIDGET.place(...)
+   ```
 
 ### Tkinter Widgets:
 
-1) **Text Box:**
-    ```python
-    textBox = Label(root, text="ENTER TEXT HERE")
-    ```
-2) **Buttons:**
-    ```python
-    def cmd()
-        do_stuff
-    
-    button = Button(root, text="ENTER TEXT HERE", command=cmd)
-    ```
-3) **Canvas:**
-    ```python
-    canvas = Canvas(root, ...)
-    ```
-4) **Entry:**
-    ```python
-    entry = Entry(root, ...)
-    ```
-5 **Text:**
-    ```python
-    text = Text(root, ...)
-    ```
+1. **Text Box:**
+   ```python
+   textBox = Label(root, text="ENTER TEXT HERE")
+   ```
+2. **Buttons:**
 
+   ```python
+   def cmd()
+       do_stuff
 
+   button = Button(root, text="ENTER TEXT HERE", command=cmd)
+   ```
 
-
+3. **Canvas:**
+   ```python
+   canvas = Canvas(root, ...)
+   ```
+4. **Entry:**
+   `python entry = Entry(root, ...) `
+   5 **Text:**
+   `python text = Text(root, ...) `
 
 ## Appendix
 
@@ -5917,5 +5558,3 @@ if __name__ == '__main__':
 - **Only available in the [PDF](https://transactions.sendowl.com/products/78175486/4422834F/view).**
 - **Ctrl+F / ⌘F is usually sufficient.**
 - **Searching `'#<title>'` on the [webpage](https://gto76.github.io/python-cheatsheet/) will limit the search to the titles.**
-
-

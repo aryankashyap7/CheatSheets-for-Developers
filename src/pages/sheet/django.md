@@ -2,20 +2,12 @@
 layout: ../../layouts/CheatSheet.astro
 title: "Django Cheatsheet"
 ---
-## Table of Contents
 
-- [Django CLI Commands](#django-cli-commands)
-- [Django Model Layer](#django-model-layer)
-- [Django View Layer](#django-view-layer)
-- [Django Template Layer](#django-template-layer)
-
-# Django Cheatsheet
+## Synopsis
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design that follows the model–template–views architectural pattern (MVT).
 
-
 ## Django CLI Commands
-
 
 | Command                                            | Description                                                                                                                                              |
 | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,15 +27,16 @@ Django is a high-level Python web framework that encourages rapid development an
 | python manage.py sendtestemail [email [email ...]] | To send a test email (to confirm email sending through Django is working) to the recipient(s) specified                                                  |
 | python manage.py inspectdb [table [table ...]]     | To introspect the database tables in the database pointed-to by the NAME setting and outputs a Django model module (a models.py file) to standard output |
 | python manage.py createcachetable                  | To Creates the cache tables for use with the database cache backend using the information from your settings file                                        |
+
 <<<<<<< HEAD
 
 =======
-| python manage.py optimizemigration app_label migration_name                           | To Optimize the operations for the named migration and overrides the existing file.    
-| python manage.py diffsettings                          | It displays differences between the current settings file and Django’s default settings (or another settings file specified by --default).
-| python manage.py dumpdata [app_label[.ModelName] [app_label[.ModelName] ...]]                          | It outputs to standard output all data in the database associated with the named application(s).   
+| python manage.py optimizemigration app_label migration_name | To Optimize the operations for the named migration and overrides the existing file.  
+| python manage.py diffsettings | It displays differences between the current settings file and Django’s default settings (or another settings file specified by --default).
+| python manage.py dumpdata [app_label[.ModelName] [app_label[.ModelName] ...]] | It outputs to standard output all data in the database associated with the named application(s).  
 **[🔼Back to Top](#table-of-contents)**
->>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
 
+> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a
 
 ## Django Model Layer
 
@@ -66,9 +59,7 @@ Django is a high-level Python web framework that encourages rapid development an
 | object.delete()                  | To delete the object from db                                                                                                                |
 | query = Object.objects.get()     | To query the model                                                                                                                          |
 
-
 ## Django View Layer
-
 
 | Code                                                           | Description                                                                                                                                                 |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,7 +68,7 @@ Django is a high-level Python web framework that encourages rapid development an
 | from django.urls import include                                | Include other URLconf modules                                                                                                                               |
 | urlpatterns = [path('community/', include('aggregator.urls'))] | Exemple of include usage                                                                                                                                    |
 | render()                                                       | django.shortcuts: render(request, template_name, context=None, content_type=None, status=None, using=None)                                                  |
-| redirect()                                                     | django.shortcuts: redirect(to, *args, permanent=False, **kwargs)                                                                                            |
+| redirect()                                                     | django.shortcuts: redirect(to, \*args, permanent=False, \*\*kwargs)                                                                                         |
 | get_object_or_404()                                            | django.shortcuts: Calls get() on a given model manager, but it raises Http404 instead of the model’s DoesNotExist exception                                 |
 | get_list_or_404()                                              | django.shortcuts: Returns the result of filter() on a given model manager cast to a list, raising Http404 if the resulting list is empty                    |
 | HttpResponse(html)                                             | from django.http import HttpResponse                                                                                                                        |
@@ -86,26 +77,28 @@ Django is a high-level Python web framework that encourages rapid development an
 | StreamingHttpResponse()                                        | django.http: stream chunks of data. Useful for generating large csv files                                                                                   |
 | FileResponse()                                                 | django.http: FileResponse is a subclass of StreamingHttpResponse optimized for binary files                                                                 |
 
-
 ## Django Template Layer
 
 **Variables**
 
 Variables are surrounded by {{ and }}:
-````markdown
+
+```markdown
 <p>User name is {{ user_name }}. User age is {{ user_age }}.</p>
-````
+```
 
 <br>
 
 **Tags**
 Tags provide arbitrary logic in the rendering process
 Tags are surrounded by {% and %}:
-````markdown
+
+```markdown
 {% if condition %}
-    <p>hello</p>
+
+<p>hello</p>
 {% endif %}
-````
+```
 
 <br>
 
@@ -114,43 +107,50 @@ Tags are surrounded by {% and %}:
 Filters transform the values of variables and tag arguments:
 
 Add 3 to the value of an integer:
-````markdown
+
+```markdown
 {{ int_value | "add: 3" }}
-````
+```
 
 <br>
 
 Capitalize the first letter of the string:
-````markdown
+
+```markdown
 {{ text_value | capfirst }}
-````
+```
 
 <br>
 
 Format a date:
-````markdown
+
+```markdown
 {{ date_value | date:"D d M Y" }}
-````
+```
 
 <br>
 
 **Comments**
 
 Comments are surrounded by {# and #}
-````markdown
+
+```markdown
 {# This is a comment #}
-````
+```
 
 A {% comment %} tag provides multi-line comments.
-````markdown
+
+```markdown
 {% comment %}
-    Comment 1
-    Comment 2
-    Comment 3
+Comment 1
+Comment 2
+Comment 3
 {% endcomment %}
-````
+```
+
 <<<<<<< HEAD
 
 =======
 **[🔼Back to Top](#table-of-contents)**
->>>>>>> b00d371e1e1a7274c54964b33b95484ba97e282a
+
+> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a

@@ -3,29 +3,32 @@ layout: ../../layouts/CheatSheet.astro
 title: "Kotlin Cheatsheet"
 ---
 
-## Basic 
+## Synopsis
+
+Kotlin is a statically typed programming language that runs on the Java Virtual Machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. It is developed by JetBrains.
+
+## Basic
+
 - You do not need ; to break statements since it is an interpreted language
 - The keyword void common in Java or C# is called Unit in Kotlin
 - Unlike Java or C#, you declare the type of a variable after the name, e.g. var firstName : String
 
-
-
 ## Variables
+
 - There are two keywords for variable declaration, var and val
 - var : var is like a general variable and can be assigned multiple times and is known as the mutable variable in Kotlin
 - val : val is a constant variable and can not be assigned multiple times and can be Initialized only a single time and is known as the immutable variable in Kotlin
- 
-
 
 ## Print
+
 ```kotlin
 fun main() {
   println("Hello World")
 }
 ```
 
-
 ## Strings
+
 ```kotlin
 fun main(args : Array<String>) {
     val name = "Adam"
@@ -34,8 +37,8 @@ fun main(args : Array<String>) {
 }
 ```
 
-
 ## Booleans
+
 ```kotlin
 val trueBoolean = true
 val falseBoolean = false
@@ -43,8 +46,8 @@ val andCondition = trueBoolean && falseBoolean
 val orCondition = trueBoolean || falseBoolean
 ```
 
-
 ## Floats
+
 ```kotlin
 val intNumber = 10
 val doubleNumber = 10.0
@@ -52,8 +55,8 @@ val longNumbe = 10L
 val floatNum = 10.0F
 ```
 
-
 ## If Else
+
 Kotlin supports the usual logical conditions from mathematics:
 
 - Less than: a < b
@@ -80,31 +83,33 @@ if (time < 18) {
 //output - "Bye"
 ```
 
-
 ## While Loop
+
 The while loop loops through a block of code as long as a specified condition is true
+
 ```kotlin
 var i = 0
 while (i < 5) {
   println(i)
   i++
-} 
+}
 //Will print i from 0 t0 4 (i<5)
 ```
 
-
 ## Classes
-Classes in Kotlin are declared using the keyword class
-```class Student{ /*...*/ }```
 
+Classes in Kotlin are declared using the keyword class
+`class Student{ /*...*/ }`
 
 #### Primary Constructor
+
 ```kotlin
 class Student(val name: String, val age: Int)
 val student1 = Student("Peter", 11)
 ```
 
 #### Secondary Constructor
+
 ```kotlin
 class Student(val name: String) {
     private var age: Int? = null
@@ -117,6 +122,7 @@ class Student(val name: String, val age: Int? = null)
 ```
 
 #### Enum Class
+
 ```kotlin
 enum class Color(val rgb: Int) {
     RED(0xFF0000),
@@ -124,14 +130,17 @@ enum class Color(val rgb: Int) {
     BLUE(0x0000FF)
 }
 ```
+
 #### Data Class
+
 ```kotlin
 data class Student(val name: String, val age: Int)
 ```
 
-
 ## Functions
+
 Kotlin functions are declared using the **fun** keyword
+
 ```kotlin
 fun printStudentName() {
     print("Richa")
@@ -139,25 +148,26 @@ fun printStudentName() {
 ```
 
 #### Parameters & Return Types
+
 ```kotlin
 fun printStudentName(student: Student) {
     print(student.name)
 }
 ```
+
 #### Default Parameters
+
 ```kotlin
 fun getStudentName(student: Student, intro: String = "Hello,") {
     return "$intro ${student.name}"
 }
 ```
 
-
 ## Collections
+
 A collection is a group of related items
-| Collections | Syntax                                                                     |
+| Collections | Syntax |
 | ----------- | -------------------------------------------------------------------------- |
-| List        | val numbers = listOf("one", "two", "three", "four")                        |
-| Set         | val numbers = setOf(1, 2, 3, 4)                                            |
-| Map         | val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1) |
-
-
+| List | val numbers = listOf("one", "two", "three", "four") |
+| Set | val numbers = setOf(1, 2, 3, 4) |
+| Map | val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1) |

@@ -3,6 +3,8 @@ layout: ../../layouts/CheatSheet.astro
 title: "Angular Cheatsheet"
 ---
 
+## Synopsis
+
 Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
 
 ## Angular Binding:
@@ -25,7 +27,6 @@ Angular is an application-design framework and development platform for creating
 | `<div [ngSwitch]="switchExpression">`                                           | Structural Directive                                         |
 | `<input [value]="student.name" (input)="student.name=$event.target.value">`     | $event                                                       |
 
-
 ## Angular Lifecycle Hooks:
 
 | Lifecycle Hook          | Description                                                               |
@@ -38,8 +39,6 @@ Angular is an application-design framework and development platform for creating
 | ngAfterViewInit()       | It get invoked after angular create component view.                       |
 | ngAfterViewChecked()    | It get invoked after angular checks the binding of component view.        |
 | ngOnDestroy()           | It get invoked before angular destroy component or directives.            |
-
-
 
 ## Angular CLI commands:
 
@@ -61,5 +60,3 @@ Angular is an application-design framework and development platform for creating
 | ng add                          | Adds support for an external library     |
 | ng update                       | Updates workspace and its dependencies   |
 | ng version                      | Outputs Angular CLI version              |
-
-
