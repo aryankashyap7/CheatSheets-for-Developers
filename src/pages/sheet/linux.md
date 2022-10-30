@@ -201,3 +201,19 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `ALT+>`  | Switch to the next file buffer                   |
 | `ALT+D`  | Count the number of words, lines, and characters |
 | `CTRL+L` | Refresh (redraw) the current screen              |
+
+
+# Tree
+
+| Command                  | Description                                                                                          |
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| `tree`                   | It will display the contents of the working directory recursively showing sub-directories and files  |
+| `tree -a`                | Display also the hidden files                                                                        |
+| `tree -f`                | Display contents with the full path prefix                                                           |
+| `tree -d`                | Display only the subdirectories                                                                      |
+| `tree -df`               | Display subdirectories with their paths                                                              |
+| `tree -L 2`              | Specifying depth of the directory                                                                    |
+| `tree -P init.py*`       | Display only those files that match the pattern                                                      |
+| `tree --du`              | Reports the size of each element                                                                     |
+| `tree -J`                | Outputs the directory tree as an JSON formatted array                                                |
+| `tree -o direc_tree.txt` | Redirect the tree’s output to filename                                                               |
