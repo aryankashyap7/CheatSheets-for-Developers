@@ -30,23 +30,33 @@ _You **can** combine them_
 ```
 
 ## Strikethrough
+
 ```markdown
 ~~ Text goes here ~~
 ```
 
 ## Subscript
+
 ```markdown
 <sub>This is a subscript text</sub>
 ```
 
 ## Superscript
+
 ```markdown
 <sup>This is a superscript text</sup>
 ```
 
 ## Comments
+
 ```markdown
 <!-- This content will not appear in the rendered Markdown -->
+```
+
+## Escape Character
+
+```markdown
+Use a backslash (\) to ignore \*markdown formatting\*
 ```
 
 ## Lists
