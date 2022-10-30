@@ -123,7 +123,7 @@ public class Main {
 
 **[🔼Back to Top](#table-of-contents)**
 
-## basic-data-structures-and-algorithms
+## Basic Data Structures And Algorithms
 
 ### graph representation using Adjacency list
 
@@ -257,3 +257,57 @@ public class UnionFind {
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+
+## Java specific competitive programming utility methods
+
+```java
+public class JavaUtil {
+
+    /**
+     * checks if a number is a power of 2.
+     * @param num
+     */
+    static boolean isPowerOfTwo(long num) {
+        return num != 0 && ((num & (num - 1)) == 0);
+    }
+
+    /**
+     * Returns sorted array
+     * Why this function:
+     * because default sorting method in java (Arrays.sort) uses quick sort to sort array which in worst case have O(n^2) complexity.
+     * using below function will reduce worst case complexity from quadratic to logarithmic
+     *
+     * @param arr
+     */
+    static void sort(int[] arr) {
+        List<Integer> list = new ArrayList<>();
+        for (int i : arr) list.add(i);
+        Collections.sort(list); // uses merge sort internally
+        int pt = 0;
+        for (int i : list) {
+            arr[pt++] = i;
+        }
+    }
+
+    /**
+     * greatest common divisor of two numbers
+     */
+    static long gcd(long a, long b) {
+        return b == 0 ? a : gcd(b, a % b);
+    }
+
+    /**
+     * Converts a number to any base value.
+     * @param num
+     * @param base
+     * @return String in the converted base format
+     */
+    static String convertNumToBase(long num, int base) {
+        if (base < 2 || base > 36) {
+            throw new IllegalArgumentException("Invalid Base Value (allowed values are from 2 to 36)");
+        }
+        return Long.toString(num, base);
+    }
+}
+
+```
