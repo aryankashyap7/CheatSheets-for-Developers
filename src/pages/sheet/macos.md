@@ -159,17 +159,17 @@ Below is the list of useful keyboard shortcuts that you can use while using the 
 
 ## Mac Keyboard Shortcuts for Safari
 
-Keyboard Shortcut keys in using Safari
+Keyboard Shortcut keys in using SAFARI
 
 | Command                                                               | Description                                                                                                                    |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------- |
 | Shift (⇧) + Click a Link                                              | Add a webpage to Reading List                                                                                                  |
 | Press Escape/Command (⌘) + Full stop(.)                               | Cancel the current Find                                                                                                        |
 | Command (⌘) + Up/Down arrow                                           | Scroll to the top-left or bottom-left corner of a webpage                                                                      |
 | Command (⌘) + Comma(,)                                                | Change Safari preferences                                                                                                      |
 | Command (⌘) + Left Bracket([)                                         | Return to the previous webpage                                                                                                 |
 | Command (⌘) + Right Bracket(])                                        | Go to the next webpage                                                                                                         |
-| Command (⌘) + D                                                       | Bookmark a webpage                                                                                                             |
+| Command (⌘) + D                                                       | Bookmark a webpage                                                                                                             | You can also save a webpage as a PDF on iOS or macOS |
 | Command (⌘) + L                                                       | Highlight the Search Field or URL                                                                                              |
 | Command (⌘) + F                                                       | Search the active web page                                                                                                     |
 | Shift (⇧) + Return                                                    | Move backward                                                                                                                  |
