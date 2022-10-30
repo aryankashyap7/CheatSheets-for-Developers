@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/CheatSheet.astro
-title: "Golang Cheatsheet"
+title: "Spring Boot Cheatsheet"
 ---
 
 ## Synopsis
@@ -34,7 +34,7 @@ Spring Boot is an open source Java-based framework used to create a micro Servic
 | `@PathVariable `                                                | It automatically retrieves a Path variable into the method parameter of REST end point.                                                                    |
 | `@RequestParam `                                                | It automatically retrieves a Query parameter into the method parameter of REST end point.                                                                  |
 
-## Spring Boot Data JPA related annotations:
+## Spring Boot Data JPA related annotations
 
 | Annotation        | Description                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------|
