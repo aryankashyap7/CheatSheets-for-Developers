@@ -30,7 +30,8 @@ Here are just a few of the features in Spring Boot:
 
 Spring Annotations are a form of metadata that provides data about a program. Annotations are used to provide supplemental information about a program.
 It does not change the action of the compiled program.
-Below is the list of most commonly used spring boot annotations
+Below is the list of most commonly used spring boot annotations.
+
 Here is the [pdf](../../../assets/spring-annotations-cheatsheet.pdf) which shows most of the annotations with the level of usage(at which level it is used like class, method, etc)
 
 ## Commonly used spring boot annotations
