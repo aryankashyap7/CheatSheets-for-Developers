@@ -117,9 +117,11 @@ As Kanye West said:
 ## Horizontal Rule
 
 ```markdown
-Three or more...
-
----
+Three or more of these (any):
+... Periods
+*** Asterisks
+--- Hypens
+___ Underscores
 ```
 
 ## Line Breaks
