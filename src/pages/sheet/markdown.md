@@ -93,6 +93,15 @@ function fancyAlert(arg) {
 ```
 ````
 
+## Color Models
+
+Only supported in issues, pull requests, and discussions
+```markdown
+`#0969DA`
+`rgb(9, 105, 218)`
+`hsl(212, 92%, 45%)`
+```
+
 ## Tables
 
 ```markdown
