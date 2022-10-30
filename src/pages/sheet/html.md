@@ -163,7 +163,7 @@ title: "HTML Cheatsheet"
 | password field  | `<input type="password">`                               | echoes dots instead of characters                                                            |
 |    text area    | `<textarea></textarea>`                                 | a more customizable plain text area                                                          |
 |    checkbox     | `<input type="checkbox">`                               | can be toggled on or off                                                                     |
-|  radio button   | `<input type="radio">` can be grouped with other inputs |                                                                                              |
+|  radio button   | `<input type="radio">`| can be grouped with other inputs |
 | drop-down lists | `<select><option>`                                      | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
 |   file picker   | `<input type="file">`                                   | pops up an “open file” dialog                                                                |
 |  hidden field   | `<input type="hidden">`                                 | nothing there!                                                                               |
