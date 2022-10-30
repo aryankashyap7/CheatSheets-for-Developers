@@ -44,6 +44,11 @@ _You **can** combine them_
 <sup>This is a superscript text</sup>
 ```
 
+## Comments
+```markdown
+<!-- This content will not appear in the rendered Markdown -->
+```
+
 ## Lists
 
 ```markdown
