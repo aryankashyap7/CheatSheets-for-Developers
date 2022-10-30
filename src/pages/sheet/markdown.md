@@ -29,6 +29,21 @@ _This will also be italic_
 _You **can** combine them_
 ```
 
+## Strikethrough
+```markdown
+~~
+```
+
+## Subscript
+```markdown
+<sub>This is a subscript text</sub>
+```
+
+## Superscript
+```markdown
+<sup>This is a superscript text</sup>
+```
+
 ## Lists
 
 ```markdown
