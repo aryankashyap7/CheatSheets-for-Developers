@@ -2,6 +2,7 @@
 
 - [C# for Developers](#table-of-contents)
 - [Data Types](#data-types)
+- [Collections](#data-collections)
 - [Variables](#variables)
 - [Operators](#operators)
 - [Loops](#loops)
@@ -28,6 +29,25 @@ C Sharp is a general-purpose, multi-paradigm programming language encompassing s
 | uint      | Unsigned integer                | 4 bytes  |
 | ulong     | Unsigned long integer           | 8 bytes  |
 | ushort    | Unsigned short integer          | 2 bytes  |
+
+**[🔼Back to Top](#data-collections)**
+
+## Collections
+Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects you work with can grow and shrink dynamically as the needs of the application change. For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.
+
+```csharp
+var exampleStringList = new List<string>();   // To create and initialize a list of strings
+
+var exampleDictionary = new Dictionary<string,string>();   // To create and initialize a dictionary which holds the key as a string and value as a string
+
+var exampleHashset = new HashSet<int>(); // To create and initialize a HashSet of integers
+
+var exampleArraylist = new ArrayList(); // To create and initialize an ArrayList object
+
+var exampleHashtable = new Hashtable(); // To create and initialize a hashtable
+
+var exampleSortedList = new SortedList<int,string>(); // To create and initialize a SortedList
+```
 
 **[🔼Back to Top](#table-of-contents)**
 
