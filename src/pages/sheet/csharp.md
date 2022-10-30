@@ -43,15 +43,17 @@ bool myBool = true;          // Boolean
 
 ## Operators
 
-| Operator | Description    | Example |
-| -------- | -------------- | ------- |
-| +        | Addition       | x + y   |
-| -        | Subtraction    | x - y   |
-| \*       | Multiplication | x \* y  |
-| /        | Division       | x / y   |
-| %        | Modulus        | x % y   |
-| ++       | Increment      | ++x     |
-| --       | Decrement      | --x     |
+| Operator | Description     | Example |
+| -------- | --------------- | ------- |
+| +        | Addition        | x + y   |
+| -        | Subtraction     | x - y   |
+| \*       | Multiplication  | x \* y  |
+| /        | Division        | x / y   |
+| %        | Modulus         | x % y   |
+| ++       | Increment       | ++x     |
+| --       | Decrement       | --x     |
+| ??       | Null-coalescing | x ?? y  |
+
 
 ## Loops
 
