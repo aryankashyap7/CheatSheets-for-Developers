@@ -39,8 +39,6 @@ public class Main {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
-
 ### template-using-buffered-reader-class
 
 ```java
@@ -62,8 +60,6 @@ public class Main {
 }
 
 ```
-
-**[🔼Back to Top](#table-of-contents)**
 
 ### template-using-custom-fast-reader-class
 
@@ -120,5 +116,3 @@ public class Main {
 	}
 }
 ```
-
-**[🔼Back to Top](#table-of-contents)**
