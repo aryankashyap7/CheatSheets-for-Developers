@@ -54,6 +54,14 @@ Microsoft Office is a family of client software, server software, and services d
 | `Ctrl + Shift + F7`    | Insert a workbook name        |
 | `Ctrl + Shift + F8`    | Insert a column reference     |
 | `Ctrl + Shift + F1`    | Insert a row reference        |
+| `Ctrl + N`    | Create a new workbook |
+| `Ctrl + O`    | Open an existing workbook |
+| `Ctrl + S`    | Save a workbook/spreadsheet |
+| `Ctrl + W`    | Close the current workbook |
+| `Ctrl + F4`    | Close Excel |
+| `Ctrl + PageDown`    | Move to the next sheet |
+| `Ctrl + PageUp`    | Move to the previous sheet |
+| `Alt + A`    | Go to the Data tab |
 
 ### Formula in Excel
 
