@@ -3,6 +3,13 @@ layout: ../../layouts/CheatSheet.astro
 title: "Configure Cheatsheet"
 ---
 
+## Synopsis
+
+Configure-React is a library that allows you to configure your React components using a declarative API.
+This is use to configure the react app faster and easily.Specially for beginners it is very helpful to configure the react app for Any UI Library like Tailwind, Chakra UI, Material UI, Bootstrap, etc.
+Also it is helpful to configure the react app for any state management library like Redux.
+To Setup Axios for API calls, to setup React Router for routing, Context API for state management, etc. many more to come in recent update.
+
 ## Table of Contents
 
 - [Configure-React CheatSheet for Developers](#configure-react-cheatsheet-for-developers)
