@@ -31,7 +31,7 @@ _You **can** combine them_
 
 ## Strikethrough
 ```markdown
-~~
+~~ Text goes here ~~
 ```
 
 ## Subscript
