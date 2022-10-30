@@ -9,7 +9,7 @@ Machine learning is a subfield of computer science that evolved from the study o
 
 Machine learning explores the study and construction of algorithms that can learn from and make predictions on data. Such algorithms operate by building a model from example inputs in order to make data-driven predictions or decisions, rather than following strictly static program instructions.
 
-<!-- Make a digram using box to show the relation between AI, Ml and DL. -->
+<!-- Make a diagram using box to show the relation between AI, Ml and DL. -->
 
 ```
 Relation between AI -> ML -> DL

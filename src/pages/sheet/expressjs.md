@@ -23,12 +23,6 @@ And then run
 
 to install all necessary modules
 
-# <<<<<<< HEAD:src/pages/sheet/expressjs.md
-
-**[🔼Back to Top](#table-of-contents)**
-
-> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
-
 ## Start the server
 
 add this code in app.js
@@ -62,13 +56,6 @@ Here, METHOD is an HTTP request method, and HANDLER is the function executed whe
     app.get('/', (req, res) => {
           res.sendFile(__dirname +'/views/index.html') ;
         })
-
-<<<<<<< HEAD:src/pages/sheet/expressjs.md
-
-=======
-**[🔼Back to Top](#table-of-contents)**
-
-> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/expressjs-cheatsheet.md
 
 ## Serve Static assets
 

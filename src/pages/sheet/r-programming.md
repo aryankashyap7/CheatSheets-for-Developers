@@ -59,8 +59,6 @@ R is a programming language and free software environment for statistical comput
 | ---------- | -------------------------- |
 | x[‘apple’] | Element with name ‘apple’. |
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Getting Help
 
 ### Accessing the help files
@@ -82,8 +80,6 @@ R is a programming language and free software environment for statistical comput
     class(iris)
     #Find the class an object belongs to.
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Working Directory
 
     getwd()
@@ -93,8 +89,6 @@ R is a programming language and free software environment for statistical comput
     #Change the current working directory
 
 > Use projects in RStudio to set the working directory to the folder you are working in.
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Using Libraries
 
@@ -106,8 +100,6 @@ R is a programming language and free software environment for statistical comput
 
     dplyr::select
     #Use a particular function from a package. data(iris) Load a built-in dataset into the environment
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Programming
 
@@ -175,8 +167,6 @@ R is a programming language and free software environment for statistical comput
     return(squared)
     }
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Conditions
 
 | Condition    | Definition               |
@@ -190,8 +180,6 @@ R is a programming language and free software environment for statistical comput
 | `is.na(a)`   | Is missing               |
 | `is.null(a)` | Is null                  |
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Reading and Writing Data
 
 | Input                          | Output                          | Description                                                                                     |
@@ -199,8 +187,6 @@ R is a programming language and free software environment for statistical comput
 | `df <- read.table(‘file.txt’)` | `write.table(df, ‘file.txt’)`   | Read and write a delimited text file.                                                           |
 | `df <- read.csv(‘file.csv’)`   | `write.csv(df, ‘file.csv’)`     | Read and write a comma separated value file. This is a special case of read.table/ write.table. |
 | `load(‘file.RData’)`           | `save(df, file = ’file.Rdata’)` | Read and write an R data file, a file type special for R.                                       |
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Data Type Conversions
 
@@ -212,8 +198,6 @@ R is a programming language and free software environment for statistical comput
 | as.numeric   | 1, 0, 0                         | Integers or floating point numbers.                                       |
 | as.character | '1', '0', '0'                   | Character strings. Generally preferred to factors.                        |
 | as.factor    | '1', '0', '1', levels: '1', '0' | Character strings with preset levels. Needed for some statistical models. |
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Matrixes
 
@@ -259,8 +243,6 @@ m[2,3] - Select an element
     solve(m, n)
     #Find x in: m * x = n
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Strings
 
     paste(x, y, sep = ' ')
@@ -286,8 +268,6 @@ m[2,3] - Select an element
 
 > Also see the stringr library
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Factors
 
     factor(x)
@@ -295,8 +275,6 @@ m[2,3] - Select an element
 
     cut(x, breaks = 4)
     #Turn a numeric vector into a factor but ‘cutting’ into sections.
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Math Functions
 
@@ -314,8 +292,6 @@ m[2,3] - Select an element
     var(x) 			-	The variance.
     cor(x, y) 		- 	Correlation.
     sd(x) 			- 	The standard deviation.
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Lists
 
@@ -336,8 +312,6 @@ m[2,3] - Select an element
     l['y']
     #New list with only element named y.
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Statistics
 
 | Model               | Definition.                                |
@@ -345,8 +319,6 @@ m[2,3] - Select an element
 | lm(x ~ y, data=df)  | Linear model.                              |
 | glm(x ~ y, data=df) | Generalised linear model.                  |
 | summary( )          | Get more detailed information out a model. |
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Variable Assignment
 
@@ -363,8 +335,6 @@ m[2,3] - Select an element
 | rm(list = ls() | Remove all variables from the environment. |
 
 > You can use the environment panel in RStudio to browse variables in your environment.
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Data Frames
 
@@ -434,8 +404,6 @@ m[2,3] - Select an element
 
 > Also see the dplyr library.
 
-#### [Back To Top🔼](#table-of-contents)
-
 ## Distributions
 
 |              | Random Variates | Density Function | Cumulative Distribution | Quantile |
@@ -444,8 +412,6 @@ m[2,3] - Select an element
 | **Poison**   | rpois           | dpois            | cpois                   | qpois    |
 | **Binomlal** | rbinom          | dbinom           | cbinom                  | qbinom   |
 | **Uniform**  | runif           | dunif            | cunif                   | qunif    |
-
-#### [Back To Top🔼](#table-of-contents)
 
 ## Plotting
 
@@ -459,5 +425,3 @@ plot(x, y)
 hist(x)
 #Histogram of x.
 ![enter image description here](https://i.postimg.cc/FFyKCppw/p.png)
-
-#### [Back To Top🔼](#table-of-contents)

@@ -39,8 +39,6 @@ public class Main {
 }
 ```
 
-**[🔼Back to Top](#table-of-contents)**
-
 ### template-using-buffered-reader-class
 
 ```java
@@ -62,8 +60,6 @@ public class Main {
 }
 
 ```
-
-**[🔼Back to Top](#table-of-contents)**
 
 ### template-using-custom-fast-reader-class
 
@@ -125,7 +121,7 @@ public class Main {
 
 ## Basic Data Structures And Algorithms
 
-### graph representation using Adjacency list
+### graph-representation-using-Adjacency-list
 
 ```java
 import java.util.ArrayList;
@@ -258,7 +254,7 @@ public class UnionFind {
 
 **[🔼Back to Top](#table-of-contents)**
 
-## Java specific competitive programming utility methods
+## java-specific-competitive-programming-utility-methods
 
 ```java
 public class JavaUtil {
@@ -311,3 +307,5 @@ public class JavaUtil {
 }
 
 ```
+
+**[🔼Back to Top](#table-of-contents)**
