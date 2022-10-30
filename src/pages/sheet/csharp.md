@@ -286,30 +286,19 @@ Here's a list of a few common System exceptions:
 |ArgumentNullException|A null argument was passed to a method that does not accept it|
 |ArgumentOutOfRangeException|Argument value is out of range|
 |ArithmeticException|Arithmetic over or underflow has occurred|
-|ArrayTypeMismatchException|Attempt to store the wrong type of object in an array|
-|BadImageFormatException|Image is in wrong format|
-|CoreException|Base class for exceptions thrown by the runtime|
-|DevideByZeroException|An attempt was made to divide by zero|
 |FormatException|The format of an argument is wrong|
 |IndexOutofRangeException|An Array index is out of range|
 |InvalidCastException|An attempt was made to cast to an invalid class|
 |InvalidOperationException|A method was called at an invalid time|
-|MissingmemberException|An invalid version of a DLL was accessed|
 |NotFiniteException|A number is not valid|
 |NotSupportedException|Indicates that a method is not implemented by a class|
 |NullReferenceException|Attempt to use an unassigned reference|
-|OutofmemoryException|Not enough memory to continue execution|
 |StackOverFlowException|A Stack has overflowed|
 
 ### Custom Exceptions
 
+You can create your own custom exceptions by inheriting from the Exception class.
+  
 ```csharp
-private static void ValidateStudent(Student std)
-{
-    Regex regexOnlyLetters = new Regex("^[a-zA-Z]+$");
-
-    if (!regex.IsMatch(std.StudentName))
-          throw new InvalidStudentNameException(std.StudentName);
-    // catch (InvalidStudentNameException ex) to catch our custom exception    
-}
-```    
+throw new CustomException("This is a custom exception");
+```
