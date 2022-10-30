@@ -122,3 +122,138 @@ public class Main {
 ```
 
 **[🔼Back to Top](#table-of-contents)**
+
+## basic-data-structures-and-algorithms
+
+### graph representation using Adjacency list
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class Graph {
+    void AdjacencyArrayGraph(int nodes) { // representation of graph using adjacency array
+        // nodes represent number of nodes in the graph
+        List<Integer>[] graph = new ArrayList[nodes];
+        for (int i = 0; i < nodes; i++)
+            graph[i] = new ArrayList<>();
+
+        // example adding edges
+        int m = 2; // number of edges
+        for (int i = 0; i < m; i++) {
+            // if edge is present from u to v;
+            int u = 1; // takes input
+            int v = 2; // takes input
+
+            // add in both nodes (u, v) if the edge is bidirectional
+            graph[u].add(v);
+            graph[v].add(u);
+        }
+    }
+
+    void AdjacencyList(int nodes) { // representation of graph using adjacency list
+        // nodes represent number of nodes in the graph
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < nodes; i++)
+            graph.add(new ArrayList<>());
+
+        // example adding edges
+        int m = 2; // number of edges
+        for (int i = 0; i < m; i++) {
+            // if edge is present from u to v;
+            int u = 1; // takes input
+            int v = 2; // takes input
+
+            // add in both nodes (u, v) if the edge is bidirectional
+            graph.get(u).add(v);
+            graph.get(v).add(u);
+        }
+    }
+}
+
+```
+
+### disjoint-set-union
+
+```java
+public class UnionFind {
+
+    private int size;
+
+    private int[] sz;
+
+    private int[] id;
+
+    private int numComponents;
+
+    public UnionFind(int size) {
+
+        if (size <= 0) throw new IllegalArgumentException("Size <= 0 is not allowed");
+
+        this.size = numComponents = size;
+        sz = new int[size];
+        id = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            id[i] = i; // Link to itself (self root)
+            sz[i] = 1; // Each component is originally of size one
+        }
+    }
+
+    public int find(int p) { // finds the root of the component
+
+        // Find the root of the component/set
+        int root = p;
+        while (root != id[root]) root = id[root];
+
+        // path-compression
+        while (p != root) {
+            int next = id[p];
+            id[p] = root;
+            p = next;
+        }
+        return root;
+    }
+
+    public boolean connected(int p, int q) { // check if element belongs to same component
+        return find(p) == find(q);
+    }
+
+    public int componentSize(int p) { // check if element belongs to same component
+        return sz[find(p)];
+    }
+
+    public int size() { // returns number of elements
+        return size;
+    }
+
+    public int components() { // returns number of components
+        return numComponents;
+    }
+
+    public void unify(int p, int q) { // joins the two components
+
+        if (connected(p, q)) return;
+
+        int root1 = find(p);
+        int root2 = find(q);
+
+        if (root1 == root2) return;
+
+        // Merge smaller component into the larger one.
+        if (sz[root1] < sz[root2]) {
+            sz[root2] += sz[root1];
+            id[root1] = root2;
+            sz[root1] = 0;
+        } else {
+            sz[root1] += sz[root2];
+            id[root2] = root1;
+            sz[root2] = 0;
+        }
+
+        numComponents--;
+    }
+}
+```
+
+**[🔼Back to Top](#table-of-contents)**
