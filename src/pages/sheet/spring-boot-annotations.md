@@ -3,11 +3,35 @@ layout: ../../layouts/CheatSheet.astro
 title: "Spring Boot Cheatsheet"
 ---
 
-## Synopsis
+## What is Spring Boot
+Spring Framework is a popular, open source, enterprise-level framework for creating standalone, production-grade applications that run on the Java Virtual Machine (JVM).
+Spring Boot helps you to create stand-alone, production-grade Spring-based applications that you can run. We take an opinionated view of the Spring platform and third-party libraries, so that you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
+You can use Spring Boot to create Java applications that can be started by using java -jar or more traditional war deployments. We also provide a command line tool that runs “spring scripts”.
 
-Spring Boot is an open source Java-based framework used to create a micro Service. Spring Boot Annotations is a form of metadata that provides data about a program. In other words, annotations are used to provide supplemental information about a program. Spring uses dependancy injection to configure and bind your application together.
+Java Spring Boot (Spring Boot) is a tool that makes developing web application and microservices with Spring Framework faster and easier through three core capabilities:
 
-## Important Spring Boot Annotations
+1. Autoconfiguration
+2. An opinionated approach to configuration
+3. The ability to create standalone applications
+
+## Why Spring Boot
+Spring’s focus on speed, simplicity, and productivity has made it the world's most popular Java framework.
+Spring Boot is basically an extension of the Spring framework, which eliminates the boilerplate configurations required for setting up a Spring application.
+Here are just a few of the features in Spring Boot:
+
+ - Opinionated ‘starter' dependencies to simplify the build and application configuration.
+ - Embedded server to avoid complexity in application deployment. 
+ - Metrics, Health check, and externalized configuration.
+ - Automatic config for Spring functionality – whenever possible
+
+## What are Spring Boot Annotations
+Spring Annotations are a form of metadata that provides data about a program. Annotations are used to provide supplemental information about a program.
+It does not change the action of the compiled program.
+Below is the list of most commonly used spring boot annotations
+
+## Commonly used spring boot annotations
+
+### Important Spring Boot Annotations
 
 | Annotation                 | Description                                                                                                                                                                                        |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,7 +47,7 @@ Spring Boot is an open source Java-based framework used to create a micro Servic
 | `@Primary`                 | It gives higher preference to a bean when there are multiple beans of the same type.                                                                                                               |
 | `@Required`                | Shows that the setter method must be configured to be dependency-injected with a value at configuration time.                                                                                      |
 
-## REST API related Annotations
+### REST API related Annotations
 
 | Annotation                                                      | Description                                                                                                                                                |
 |-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -34,7 +58,7 @@ Spring Boot is an open source Java-based framework used to create a micro Servic
 | `@PathVariable `                                                | It automatically retrieves a Path variable into the method parameter of REST end point.                                                                    |
 | `@RequestParam `                                                | It automatically retrieves a Query parameter into the method parameter of REST end point.                                                                  |
 
-## Spring Boot Data JPA related annotations
+### Spring Boot Data JPA related annotations
 
 | Annotation        | Description                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------|
