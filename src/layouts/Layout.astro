@@ -1,4 +1,6 @@
 ---
+import DarkToggle from "../components/DarkToggle.astro";
+
 export interface Props {
   title: string;
 }
@@ -16,6 +18,12 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <!-- Dark mode toggle -->
+    <div
+      class="fixed top-0 right-0 md:right-20 z-50 flex items-center justify-center w-12 m-4 cursor-pointer"
+    >
+      <DarkToggle />
+    </div>
     <slot />
     <style is:global>
       :root {
@@ -26,11 +34,44 @@ const { title } = Astro.props;
           #da62c4 30%,
           white 60%
         );
+        --slider-bg: #dddddd;
+        --slider-bg-before: #fff;
+        --slider-input-bg: #8758ff;
       }
+
+      [data-theme="light"] {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+
+      [data-theme="dark"] {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+        color: white;
+      }
+
       html {
         font-family: system-ui, sans-serif;
-        background-color: #f6f6f6;
       }
+
+      [data-theme="light"] {
+        background-color: #fff;
+      }
+
+      [data-theme="dark"] {
+        background-color: #212121;
+      }
+
       code {
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
@@ -43,6 +84,15 @@ const { title } = Astro.props;
         background-size: 400%;
         background-position: 0%;
       }
+
+      [data-theme="dark"] .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+      }
+
       .instructions {
         line-height: 1.6;
         margin: 1rem 0;
@@ -50,7 +100,19 @@ const { title } = Astro.props;
         background-color: white;
         padding: 1rem;
         border-radius: 0.4rem;
+        width: 100%;
       }
+
+      [data-theme="dark"] .instructions {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 1px solid rgba(var(--accent), 25%);
+        background-color: #212121;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        color: #fff;
+      }
+
       .instructions code {
         font-size: 0.875em;
         font-weight: bold;
@@ -81,6 +143,40 @@ const { title } = Astro.props;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
           0 2px 4px -2px rgba(0, 0, 0, 0.1);
         text-transform: capitalize;
+      }
+
+      /* Dark mode */
+      [data-theme="dark"] .search-bar {
+        background-color: #212121;
+        background-image: var(--accent-gradient);
+        background-size: 400%;
+        border-radius: 0.5rem;
+        background-position: 0%;
+        transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        text-transform: capitalize;
+      }
+
+      .link-card > a {
+        width: 100%;
+        text-decoration: none;
+        line-height: 1.4;
+        padding: 1rem 1.3rem;
+        border-radius: 0.35rem;
+        opacity: 0.8;
+        margin: 0;
+        font-size: 1.25rem;
+        transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      [data-theme="dark"] .link-card > a {
+        color: #fff;
+        background-color: #111;
+      }
+
+      [data-theme="light"] .link-card > a {
+        color: #111;
+        background-color: white;
       }
     </style>
   </body>

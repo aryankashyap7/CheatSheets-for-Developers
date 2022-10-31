@@ -3,6 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/react': ^1.2.1
   '@astrojs/tailwind': ^2.1.1
+  '@nanostores/preact': ^0.3.1
+  '@nanostores/react': ^0.4.0
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/line-clamp': ^0.4.2
   '@tailwindcss/typography': ^0.5.7
@@ -11,6 +13,7 @@ specifiers:
   '@types/react-dom': ^18.0.7
   astro: ^1.5.3
   marked: ^4.1.1
+  nanostores: ^0.7.0
   react: ^18.2.0
   react-dom: ^18.2.0
   remark-toc: ^8.0.1
@@ -19,6 +22,8 @@ specifiers:
 dependencies:
   '@astrojs/react': 1.2.1_nsgh7lqw2e2kb5wanadocemtdi
   '@astrojs/tailwind': 2.1.1_tailwindcss@3.2.1
+  '@nanostores/preact': 0.3.1_nanostores@0.7.0
+  '@nanostores/react': 0.4.0_kumziggp74xxkphhh7wyh33hzm
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.1
   '@tailwindcss/line-clamp': 0.4.2_tailwindcss@3.2.1
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
@@ -26,6 +31,7 @@ dependencies:
   '@types/react-dom': 18.0.8
   astro: 1.5.3
   marked: 4.1.1
+  nanostores: 0.7.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   remark-toc: 8.0.1
@@ -487,6 +493,30 @@ packages:
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
+    dev: false
+
+  /@nanostores/preact/0.3.1_nanostores@0.7.0:
+    resolution: {integrity: sha512-D5lC1tNhwlVURCFJUTlnRkQ3LRNt6Sc2XHByBwgHPaKLBUPJxAaNAL7kz2dAEhge1fk9dNXAexCdepwiIFodOQ==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      nanostores: ^0.7.0
+      preact: '>=10.0.0'
+    dependencies:
+      nanostores: 0.7.0
+    dev: false
+
+  /@nanostores/react/0.4.0_kumziggp74xxkphhh7wyh33hzm:
+    resolution: {integrity: sha512-u7Y3s1B4hwsBxpIxClx0F/Q7TF1AsCU/F7Tt3n+tWeCebQ0cs2spthmskJY689XIMTRJXfBZF83kJDaDZeavVA==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      nanostores: ^0.7.0
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    dependencies:
+      nanostores: 0.7.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2816,6 +2846,11 @@ packages:
     hasBin: true
     dev: false
 
+  /nanostores/0.7.0:
+    resolution: {integrity: sha512-y+ma9MVXuPzXKEXaRYW/iL/xG/HtMwB8fmFcMfUqt5fCNR/na2kDubbZGV4furUMTgmxfySJs0cQjORWhaPDyA==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    dev: false
+
   /nlcst-to-string/2.0.4:
     resolution: {integrity: sha512-3x3jwTd6UPG7vi5k4GEzvxJ5rDA7hVUIRNHPblKuMVP9Z3xmlsd9cgLcpAMkc5uPOBna82EeshROFhsPkbnTZg==}
     dev: false
@@ -3810,6 +3845,14 @@ packages:
       browserslist: 4.21.4
       escalade: 3.1.1
       picocolors: 1.0.0
+    dev: false
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /util-deprecate/1.0.2:

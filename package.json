@@ -13,6 +13,8 @@
   "dependencies": {
     "@astrojs/react": "^1.2.1",
     "@astrojs/tailwind": "^2.1.1",
+    "@nanostores/preact": "^0.3.1",
+    "@nanostores/react": "^0.4.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.7",
@@ -20,6 +22,7 @@
     "@types/react-dom": "^18.0.7",
     "astro": "^1.5.3",
     "marked": "^4.1.1",
+    "nanostores": "^0.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark-toc": "^8.0.1",

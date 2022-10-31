@@ -14,15 +14,33 @@ const { headings } = Astro.props;
 
 <ul class="mt-4 text-xs space-y-2">
   {
-    headings.map(({ slug, text, depth }) => (
-      <li class="line-clamp-2 hover:text-accent">
-        <a
-          class="text-base"
-          href={`#${slug}`}
-          aria-label={`Scroll to section: ${text}`}
-        >
-          <span>{"#".repeat(depth)}</span> {text}
-        </a>
+    headings.reduce((acc, heading) => {
+      const { slug, text, depth } = heading;
+      if (depth === 2) {
+        acc.push({
+          slug,
+          text,
+          children: [],
+        });
+      } else if (depth === 3) {
+        acc[acc.length - 1].children.push({
+          slug,
+          text,
+        });
+      }
+      return acc;
+    }, []).map(({ slug, text, children }) => (
+      <li class="ml-2">
+        <a class="font-bold" href={`#${slug}`}>• {text}</a>
+        {children.length > 0 && (
+          <ul class="mt-2 ml-2 space-y-2">
+            {children.map(({ slug, text }) => (
+              <li>
+                <a href={`#${slug}`}> ○ {text}</a>
+              </li>
+            ))}
+          </ul>
+        )}
       </li>
     ))
   }
