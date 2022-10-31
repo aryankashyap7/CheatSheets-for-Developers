@@ -26,6 +26,8 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `Ctrl +  C`       | Kill any running task in terminal  |
 | `exit`            | Close / exit from a from terminal  |
 
+/// Also press up & down arrow to get the former & latter exicuted commands in a terminal  
+
 ## File Commands
 
 | Command    | Description                             |
