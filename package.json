@@ -2,7 +2,7 @@
   "name": "@aryankashyap7/cheatsheets-for-developers",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
