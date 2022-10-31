@@ -41,9 +41,10 @@ module.exports = {
               fontWeight: "700",
             },
             code: {
-              padding: "0.2em 0.4em",
-              backgroundColor: "rgba(33, 33, 33, 0.1)",
-              font: "monospace",
+              // border: "1px dotted #666",
+              borderRadius: "2px",
+              // a little background color
+              backgroundColor: 
             },
             blockquote: {
               borderLeftWidth: "none",

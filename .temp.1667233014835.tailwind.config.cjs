@@ -42,8 +42,8 @@ module.exports = {
             },
             code: {
               padding: "0.2em 0.4em",
-              backgroundColor: "rgba(33, 33, 33, 0.1)",
-              font: "monospace",
+              font:"mono"
+              backgroundColor: "rgba(33, 33, 33, 0.1)"
             },
             blockquote: {
               borderLeftWidth: "none",
