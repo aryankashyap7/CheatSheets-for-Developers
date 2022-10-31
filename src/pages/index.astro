@@ -29,7 +29,7 @@ const filenames = files.map((file) =>
         filenames.map((item) => (
           <li class="card-ele">
             <Card
-              title={item.replace("-cheatsheet.md", "")}
+              title={item.replace("-cheatsheet.md", "").replaceAll("-", " ")}
               href={`/sheet/${item.replace("-cheatsheet.md", "")}`}
             />
           </li>

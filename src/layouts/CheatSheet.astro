@@ -13,7 +13,7 @@ const {
   <Nav />
   <div class="md:grid md:grid-cols-4 gap-10 px-4 md:px-32 mt-8">
     <aside
-      class="md:sticky md:self-start md:top-12 md:block md:visible overflow-y-auto md:max-h-80"
+      class="md:sticky md:self-start md:top-12 md:block md:visible overflow-y-auto md:max-h-80 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-slate-200"
     >
       <details class="mt-4 md:hidden">
         <summary class="font-semibold">Table of Contents</summary>
@@ -26,7 +26,9 @@ const {
     <article
       class="col-span-2 md:col-span-3 prose prose-md prose-cactus prose-headings:font-semibold table-auto prose-headings:before:text-accent prose-headings:before:absolute prose-headings:before:-ml-4 prose-th:before:content-none"
     >
-      <h1 class="title text-gradient my-8">{title}</h1>
+      <h1 class="title text-gradient my-8 capitalize">
+        {title.toLowerCase().replace("cheatsheet", "")}
+      </h1>
       <slot />
     </article>
   </div>
