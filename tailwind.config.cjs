@@ -50,8 +50,7 @@ module.exports = {
             hr: {
               borderTopStyle: "dashed",
             },
-            table:{
-            },
+            table: {},
             thead: {
               borderBottomWidth: "none",
             },
@@ -84,6 +83,7 @@ module.exports = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
+    require("tailwind-scrollbar"),
     plugin(function ({ addComponents }) {
       addComponents({
         ".cactus-link": {
