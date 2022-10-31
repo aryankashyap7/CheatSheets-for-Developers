@@ -83,6 +83,19 @@ int gcd(int a, int b)
     return gcd(b % a, a);
 }
 ```
+### LCM of Two Numbers
+
+```cpp
+#define ll long long int
+ll gcd(ll a, ll b){
+  if (b == 0)
+    return a;
+  return gcd(b, a % b);
+}
+ll lcm(ll a, ll b){
+    return (a / gcd(a, b)) * b;
+}
+```
 
 ### binary-exponentiation
 
