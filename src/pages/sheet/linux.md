@@ -164,18 +164,24 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 
 ## Networking
 
-| Command             | Description                      |
-| ------------------- | -------------------------------- |
-| `ifconfig`          | Configure a network interface    |
-| `ifconfig -a`       | Configure all network interfaces |
-| `ifconfig eth0`     | Configure eth0 network interface |
-| `whois domain`      | Get whois information for domain |
-| `dig domain`        | Get DNS information for domain   |
-| `dig -x host`       | Get DNS information for host     |
-| `host domain`       | Get DNS information for domain   |
-| `host -t mx domain` | Get MX records for domain        |
-| `hostname -I`       | Get all IP addresses             |
-| `hostname -i`       | Get IP address                   |
+| Command                           | Description                      |
+| ----------------------------------| -------------------------------- |
+| `ifconfig`                        | Configure a network interface    |
+| `ifconfig -a`                     | Configure all network interfaces |
+| `ifconfig eth0`                   | Configure eth0 network interface |
+| `iwconfig`                        | Get information for WiFi adapters|
+| `nmcli networking off`            | Turn off network connections     |
+| `nmcli networking on`             | Turn on network connections      |
+| `systemctl stop NetworkManager`   | Turn off network connections     |
+| `systemctl start NetworkManager`  | Turn on network connections      |
+| `systemctl restart NetworkManager`| Restart network connectionss     |
+| `whois domain`                    | Get whois information for domain |
+| `dig domain`                      | Get DNS information for domain   |
+| `dig -x host`                     | Get DNS information for host     |
+| `host domain`                     | Get DNS information for domain   |
+| `host -t mx domain`               | Get MX records for domain        |
+| `hostname -I`                     | Get all IP addresses             |
+| `hostname -i`                     | Get IP address                   |
 
 ## VIM
 
