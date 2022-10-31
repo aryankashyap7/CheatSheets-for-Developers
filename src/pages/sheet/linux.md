@@ -14,6 +14,18 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `poweroff`       | Turn off the system using terminal       |
 | `reboot`         | Restart the system using terminal        |
 
+## Basic Terminal Commands
+
+| Command           | Description                              |
+| ----------------- | -----------------------------------------|
+| `Ctrl + Alt + T`  | Open terminal using keyboard       |
+| `Ctrl + Shift + N`| Open new terminal window           |
+| `Ctrl + Shift + T`| Open new tab in terminal           |
+| `Ctrl + Shift + C`| Copy selected text from terminal   |
+| `Ctrl + Shift + V`| Paste any coppied text in terminal |
+| `Ctrl +  C`       | Kill any running task in terminal  |
+| `exit`            | Close / exit from a from terminal  |
+
 ## File Commands
 
 | Command    | Description                             |
