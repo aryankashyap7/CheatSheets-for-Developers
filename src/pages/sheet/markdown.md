@@ -29,6 +29,36 @@ _This will also be italic_
 _You **can** combine them_
 ```
 
+## Strikethrough
+
+```markdown
+~~ Text goes here ~~
+```
+
+## Subscript
+
+```markdown
+<sub>This is a subscript text</sub>
+```
+
+## Superscript
+
+```markdown
+<sup>This is a superscript text</sup>
+```
+
+## Comments
+
+```markdown
+<!-- This content will not appear in the rendered Markdown -->
+```
+
+## Escape Character
+
+```markdown
+Use a backslash (\) to ignore \*markdown formatting\*
+```
+
 ## Lists
 
 ```markdown
@@ -78,6 +108,15 @@ function fancyAlert(arg) {
 ```
 ````
 
+## Color Models
+
+Only supported in issues, pull requests, and discussions
+```markdown
+`#0969DA`
+`rgb(9, 105, 218)`
+`hsl(212, 92%, 45%)`
+```
+
 ## Tables
 
 ```markdown
@@ -117,9 +156,11 @@ As Kanye West said:
 ## Horizontal Rule
 
 ```markdown
-Three or more...
-
----
+Three or more of these (any):
+... Periods
+*** Asterisks
+--- Hypens
+___ Underscores
 ```
 
 ## Line Breaks
@@ -168,4 +209,29 @@ This is a list of all the emojis that are supported by GitHub. For more informat
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
+```
+
+## Dropdowns
+
+```markdown
+<details open>
+  Text goes here
+</details>
+```
+
+## Footnotes
+
+```markdown
+Here is a simple footnote[^1].
+
+A footnote can also have multiple lines[^2].  
+
+You can also use words, to fit your writing style more closely[^note].
+
+[^1]: My reference.
+[^2]: Every new line should be prefixed with 2 spaces.  
+  This allows you to have a footnote with multiple lines.
+[^note]:
+    Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
+    This footnote also has been made with a different syntax using 4 spaces for new lines.
 ```
