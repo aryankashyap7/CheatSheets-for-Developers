@@ -123,7 +123,24 @@ Cpp Stl is a library of container classes, algorithms, and iterators. It is a ge
         cout << i->first << " " << i->second << endl;
     }
 ```
-
+## Unordered_Map
+```cpp
+   // Unordered_Map initialization
+    unordered_map<int, int> um;
+    cout << endl;
+       // Unordered_Map insertion
+    cout << "Insertion in Unordered_Map " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        um[a[i]]++;
+    }
+    cout << "Display of map element" << endl;
+    // Unordered_Map display
+    for (auto i = um.begin(); i != um.end(); i++)
+    {
+        cout << i->first << " " << i->second << endl;
+    }
+```
 ## Stack
 
 ```cpp
