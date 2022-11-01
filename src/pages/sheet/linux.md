@@ -7,6 +7,16 @@ title: "Linux Cheatsheet"
 
 Linux is a family of open source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is typically packaged in a Linux distribution.
 
+## Basic System Commands
+
+| Command          | Description                              |
+| ---------------- | -----------------------------------------|
+| `exit`           | Close / exit from a from terminal        |
+| `xkill`          | After right click on any window to close |
+| `poweroff`       | Turn off the system using terminal       |
+| `reboot`         | Restart the system using terminal        |
+
+
 ## File Commands
 
 | Command    | Description                             |
@@ -85,26 +95,33 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `du`          | Print file space usage                          |
 | `du -h`       | Print file space usage in human readable format |
 | `man`         | Print manual page (exit with **q**)             |
+| `top`         | Get all running procsee & hardware consumptions |
 
 ## Shortcuts
 
-| Command    | Description                                                                                                |
-| ---------- | ---------------------------------------------------------------------------------------------------------- |
-| `Ctrl + a` | Go to the beginning of the line you are currently typing on                                                |
-| `Ctrl + e` | Go to the end of the line you are currently typing on                                                      |
-| `Ctrl + u` | Clear the line before the cursor position. If you are at the end of the line, clears the entire line.      |
-| `Ctrl + k` | Clear the line after the cursor position. If you are at the beginning of the line, clears the entire line. |
-| `Ctrl + w` | Delete the word before the cursor.                                                                         |
-| `Ctrl + r` | Let you search through previously used commands.                                                           |
-| `Ctrl + l` | Clears the Screen, similar to the clear command.                                                           |
-| `Ctrl + c` | Kill whatever you are running.                                                                             |
-| `Ctrl + d` | Exit the current shell.                                                                                    |
-| `Ctrl + z` | Puts whatever you are running into a suspended background process. fg restores it.                         |
-| `Ctrl + s` | Stop output to the screen (for long running command).                                                      |
-| `Ctrl + q` | Allow output to the screen (for long running command).                                                     |
-| `Ctrl + x` | Use the arrow keys to navigate through the command line history.                                           |
-| `Ctrl + _` | Undo.                                                                                                      |
+| Command           | Description                                                                                                |
+| ----------------- | ---------------------------------------------------------------------------------------------------------- |
+| `Ctrl + a`        | Go to the beginning of the line you are currently typing on                                                |
+| `Ctrl + e`        | Go to the end of the line you are currently typing on                                                      |
+| `Ctrl + u`        | Clear the line before the cursor position. If you are at the end of the line, clears the entire line.      |
+| `Ctrl + k`        | Clear the line after the cursor position. If you are at the beginning of the line, clears the entire line. |
+| `Ctrl + w`        | Delete the word before the cursor.                                                                         |
+| `Ctrl + r`        | Let you search through previously used commands.                                                           |
+| `Ctrl + l`        | Clears the Screen, similar to the clear command.                                                           |
+| `Ctrl + c`        | Kill whatever you are running.                                                                             |
+| `Ctrl + d`        | Exit the current shell.                                                                                    |
+| `Ctrl + z`        | Puts whatever you are running into a suspended background process. fg restores it.                         |
+| `Ctrl + s`        | Stop output to the screen (for long running command).                                                      |
+| `Ctrl + q`        | Allow output to the screen (for long running command).                                                     |
+| `Ctrl + x`        | Use the arrow keys to navigate through the command line history.                                           |
+| `Ctrl + _`        | Undo.                                                                                                      |
+| `Ctrl + Alt + T`  | Open terminal using keyboard                                                                               |              
+| `Ctrl + Shift + N`| Open new terminal window                                                                                   |
+| `Ctrl + Shift + T`| Open new tab in terminal                                                                                   |
+| `Ctrl + Shift + C`| Copy selected text from terminal                                                                           |
+| `Ctrl + Shift + V`| Paste any coppied text in terminal                                                                         |
 
+// Also press up & down arrow respectively to get the former & latter executed commands in a terminal . 
 ## Text Editors
 
 | Command      | Description                                                                           |
@@ -164,18 +181,24 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 
 ## Networking
 
-| Command             | Description                      |
-| ------------------- | -------------------------------- |
-| `ifconfig`          | Configure a network interface    |
-| `ifconfig -a`       | Configure all network interfaces |
-| `ifconfig eth0`     | Configure eth0 network interface |
-| `whois domain`      | Get whois information for domain |
-| `dig domain`        | Get DNS information for domain   |
-| `dig -x host`       | Get DNS information for host     |
-| `host domain`       | Get DNS information for domain   |
-| `host -t mx domain` | Get MX records for domain        |
-| `hostname -I`       | Get all IP addresses             |
-| `hostname -i`       | Get IP address                   |
+| Command                           | Description                      |
+| ----------------------------------| -------------------------------- |
+| `ifconfig`                        | Configure a network interface    |
+| `ifconfig -a`                     | Configure all network interfaces |
+| `ifconfig eth0`                   | Configure eth0 network interface |
+| `iwconfig`                        | Get information for WiFi adapters|
+| `nmcli networking off`            | Turn off network connections     |
+| `nmcli networking on`             | Turn on network connections      |
+| `systemctl stop NetworkManager`   | Turn off network connections     |
+| `systemctl start NetworkManager`  | Turn on network connections      |
+| `systemctl restart NetworkManager`| Restart network connectionss     |
+| `whois domain`                    | Get whois information for domain |
+| `dig domain`                      | Get DNS information for domain   |
+| `dig -x host`                     | Get DNS information for host     |
+| `host domain`                     | Get DNS information for domain   |
+| `host -t mx domain`               | Get MX records for domain        |
+| `hostname -I`                     | Get all IP addresses             |
+| `hostname -i`                     | Get IP address                   |
 
 ## VIM
 
