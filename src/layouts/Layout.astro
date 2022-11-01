@@ -1,5 +1,4 @@
 ---
-import DarkToggle from "../components/DarkToggle.astro";
 import Footer from "../components/Footer.astro";
 
 export interface Props {
@@ -14,34 +13,45 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
     <title>{title}</title>
 
     <!-- SEO -->
-    <meta name="description" content="Cheatsheet list for developers. Made by the community, for the community." />
+    <meta
+      name="description"
+      content="Cheatsheet list for developers. Made by the community, for the community."
+    />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@dhravyashah" />
     <meta name="twitter:title" content="Cheatsheets for developers" />
-    <meta name="twitter:description" content="Cheatsheet list for developers. Made by the community, for the community." />
-    <meta name="twitter:image" content="https://github.com/aryankashyap7/CheatSheets-for-Developers/blob/main/assets/CheatSheet.png?raw=true" />
+    <meta
+      name="twitter:description"
+      content="Cheatsheet list for developers. Made by the community, for the community."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cheats.dhr.wtf/android-chrome-512x512.png"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Cheatsheets for developers" />
-    <meta property="og:description" content="Cheatsheet list for developers. Made by the community, for the community." />
+    <meta
+      property="og:description"
+      content="Cheatsheet list for developers. Made by the community, for the community."
+    />
     <meta property="og:site_name" content="Cheatsheets for developers" />
     <meta property="og:url" content="https://cheats.dhr.wtf" />
-    <meta property="og:image" content="https://github.com/aryankashyap7/CheatSheets-for-Developers/blob/main/assets/CheatSheet.png?raw=true" />
+    <meta property="og:image" content="/android-chrome-512x512.png" />
 
+    <script
+      async
+      defer
+      data-website-id="c46d9a62-ef91-4793-a170-3ee5eb8a6a44"
+      src="https://umami.dhravya.dev/umami.js"
+    ></script>
   </head>
   <body>
-    <!-- Dark mode toggle -->
-    <div
-      class="fixed top-0 right-0 md:right-20 z-50 flex items-center justify-center w-12 m-4 cursor-pointer"
-    >
-      <DarkToggle />
-    </div>
     <slot />
-
     <Footer />
 
     <style is:global>
@@ -83,11 +93,11 @@ const { title } = Astro.props;
         font-family: system-ui, sans-serif;
       }
 
-      [data-theme="light"] {
+      [data-theme="light"] body {
         background-color: rgb(250, 250, 250);
       }
 
-      [data-theme="dark"] {
+      [data-theme="dark"] body {
         background-color: #212121;
       }
 
@@ -115,7 +125,7 @@ const { title } = Astro.props;
       .instructions {
         line-height: 1.6;
         margin: 1rem 0;
-        border: 1px solid rgba(var(--accent), 25%);
+        border: 5px solid rgba(var(--accent), 25%);
         background-color: white;
         padding: 1rem;
         border-radius: 0.4rem;
@@ -125,7 +135,7 @@ const { title } = Astro.props;
       [data-theme="dark"] .instructions {
         line-height: 1.6;
         margin: 1rem 0;
-        border: 1px solid rgba(var(--accent), 25%);
+        border: 5px solid rgba(var(--accent), 25%);
         background-color: #212121;
         padding: 1rem;
         border-radius: 0.4rem;
@@ -145,33 +155,33 @@ const { title } = Astro.props;
       }
       .link-card-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
         gap: 1rem;
         padding: 0;
       }
       .search-bar {
-        list-style: none;
+        width: 100%;
+        margin-bottom: 20px;
         display: flex;
         padding: 1rem;
         background-color: white;
-        background-image: var(--accent-gradient);
         background-size: 400%;
-        border-radius: 0.5rem;
+        border-radius: 5px;
         background-position: 100%;
         transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
           0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        text-transform: capitalize;
       }
 
       /* Dark mode */
       [data-theme="dark"] .search-bar {
         background-color: #212121;
-        background-image: var(--accent-gradient);
+        /* background-image: var(--accent-gradient); */
         background-size: 400%;
         border-radius: 0.5rem;
         background-position: 0%;
         transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        border: 5px solid rgba(var(--accent), 25%);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
           0 2px 4px -2px rgba(0, 0, 0, 0.1);
         text-transform: capitalize;
@@ -187,6 +197,8 @@ const { title } = Astro.props;
         margin: 0;
         font-size: 1.25rem;
         transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        color: #111;
+        background-color: white;
       }
       [data-theme="dark"] .link-card > a {
         color: #fff;
