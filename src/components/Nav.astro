@@ -1,9 +1,18 @@
 ---
-import Card from "./Card.astro";
+import DarkToggle from "./DarkToggle.astro";
 ---
 
-<nav class="h-8 px-2 md:px-32">
-  <ul class="justify-start flex gap-4 mt-4">
-    <a class="rounded-md shadow-md hover:border-2 px-4 text-xl" href="/">Cheatsheets</a>
-  </ul>
+<nav
+  class="flex sticky justify-between items-center top-0 h-16 bg-inherit px-2 md:px-32 w-full z-10"
+>
+  <a
+    class="px-4 text-xl flex justify-center content-center text-gradient gap-2"
+    href="/"
+  >
+    <img class="h-8 w-8" src="/android-chrome-512x512.png" alt="logo" />
+
+    <span class="hidden md:block">Cheatsheets</span>
+  </a>
+
+  <DarkToggle />
 </nav>

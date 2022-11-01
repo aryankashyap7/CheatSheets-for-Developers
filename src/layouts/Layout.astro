@@ -1,5 +1,4 @@
 ---
-import DarkToggle from "../components/DarkToggle.astro";
 import Footer from "../components/Footer.astro";
 
 export interface Props {
@@ -15,7 +14,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2"  />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
     <title>{title}</title>
 
     <!-- SEO -->
@@ -42,18 +41,9 @@ const { title } = Astro.props;
     />
     <meta property="og:site_name" content="Cheatsheets for developers" />
     <meta property="og:url" content="https://cheats.dhr.wtf" />
-    <meta
-      property="og:image"
-      content="/android-chrome-512x512.png"
-    />
+    <meta property="og:image" content="/android-chrome-512x512.png" />
   </head>
   <body>
-    <!-- Dark mode toggle -->
-    <div
-      class="fixed top-0 right-0 md:right-20 z-50 flex items-center justify-center w-12 m-4 cursor-pointer"
-    >
-      <DarkToggle />
-    </div>
     <slot />
 
     <Footer />
@@ -97,11 +87,11 @@ const { title } = Astro.props;
         font-family: system-ui, sans-serif;
       }
 
-      [data-theme="light"] {
+      [data-theme="light"] body {
         background-color: rgb(250, 250, 250);
       }
 
-      [data-theme="dark"] {
+      [data-theme="dark"] body {
         background-color: #212121;
       }
 
