@@ -82,7 +82,16 @@ if (time < 18) {
 }
 //output - "Bye"
 ```
+## For loop
 
+```kotlin
+for (i in 0..5 step 1) 
+    {
+        print("$i ")
+    }
+//Will print i from 0 t0 4 (i<5)
+```
+    
 ## While Loop
 
 The while loop loops through a block of code as long as a specified condition is true
@@ -95,7 +104,17 @@ while (i < 5) {
 }
 //Will print i from 0 t0 4 (i<5)
 ```
+## Do While Loop
 
+The do while loop loops through a block of code atleast once even when the condition is not true
+```kotlin
+var i = 0
+do {
+  println(i)
+  i++
+}while (i < 5)
+//Will print i from 0 t0 4 (i<5)
+```
 ## Classes
 
 Classes in Kotlin are declared using the keyword class
