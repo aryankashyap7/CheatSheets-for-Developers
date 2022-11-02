@@ -1,5 +1,5 @@
-import { defineConfig } from 'astro/config';
-import remarkToc from 'remark-toc';
+import { defineConfig } from "astro/config";
+import remarkToc from "remark-toc";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 
@@ -10,7 +10,10 @@ export default defineConfig({
     // Preserve Astro's default plugins: GitHub-flavored Markdown and Smartypants
     // default: false
     extendDefaultPlugins: true,
-    syntaxHighlight: "prism"
+    syntaxHighlight: "shiki",
+    shikiConfig: {
+      theme: "github-dark",
+    },
   },
-  integrations: [tailwind(), react()]
+  integrations: [tailwind(), react()],
 });
