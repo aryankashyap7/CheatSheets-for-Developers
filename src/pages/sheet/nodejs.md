@@ -118,20 +118,20 @@ To work with Node packages we use NPM. NPM includes two things:
 2. The NPM tool that you installed when you installed Node.
 
 **NPM COMMANDS**  
-| Command | Description |
+| Command                  | Description                                                                                           |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- |
-| npm start | Execute the current Node package defined by package.json <br> Defaults to executing `node server.js` |
-| npm init | Initialize a fresh package.json file |
-| npm init -y | Initialize a fresh package.json file, accepting all default options. <br> Equivalent to npm init —yes |
-| npm install | Equivalent to npm i |
-| npm install <package> | Install a package from the NPM registry at www.npmjs.com <br> Equivalent to npm i <package> |
-| npm install -D <package> | Install a package as a development dependency <br> Equivalent to npm install —save-dev <package> |
-| npm install -g <package> | Install a package globally. |
-| npm update <package> | Update an already installed package <br> Equivalent to npm up <package> |
-| npm uninstall <package> | Uninstall a package from your node_modules/ folder <br> Equivalent to npm un <package> |
-| npm outdated | Check for outdated package dependencies |
-| npm audit | Check for security vulnerabilities in package dependencies |
-| npm audit fix | Try to fix any security vulnerabilities by automatically updating vulnerable packages |
+| npm start                | Execute the current Node package defined by package.json <br> Defaults to executing `node server.js`  |
+| npm init                 | Initialize a fresh package.json file                                                                  |
+| npm init -y              | Initialize a fresh package.json file, accepting all default options. <br> Equivalent to npm init —yes |
+| npm install              | Equivalent to npm i                                                                                   |
+| npm install <package>    | Install a package from the NPM registry at www.npmjs.com <br> Equivalent to npm i <package>           |
+| npm install -D <package> | Install a package as a development dependency <br> Equivalent to npm install —save-dev <package>      |
+| npm install -g <package> | Install a package globally.                                                                           |
+| npm update <package>     | Update an already installed package <br> Equivalent to npm up <package>                               |
+| npm uninstall <package>  | Uninstall a package from your node_modules/ folder <br> Equivalent to npm un <package>                |
+| npm outdated             | Check for outdated package dependencies                                                               |
+| npm audit                | Check for security vulnerabilities in package dependencies                                            |
+| npm audit fix            | Try to fix any security vulnerabilities by automatically updating vulnerable packages                 |
 
 **package.json**  
  Most Node applications we create include a package.json file, which means our Node applications are also Node packages.
@@ -276,7 +276,7 @@ For example, we can listen for the exit event on the current running process. In
 
   One typical folder structure for an API following RESTful architecture and using the Express framework can be found below. Node servers typically follow the Model View Controller pattern. Models live together in one folder. Controllers are grouped together based on which feature or collection they are related to. Views are typically managed by the front end, although some Node servers may serve static HTML or use templating engines like Handlebars.
 
-  > ```text
+  > ```
   > node-project/                   # top level project
   >  node_modules/                  # all installed node packages
   >  data/                          # static data files, if needed

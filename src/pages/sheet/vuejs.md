@@ -31,7 +31,7 @@ double curly braces {{Mustache}} syntax and outputs data as plain text
 
 #### a) Text Interpolation
 
-```vue
+```html
 <!-- variable -->
 <span>Message: {{ msg }}</span>
 <!-- expression -->
@@ -43,7 +43,7 @@ double curly braces {{Mustache}} syntax and outputs data as plain text
 
 `v-html` directive outputs real HTML
 
-```vue
+```html
 <span v-html="rawHtml"></span>
 ```
 
@@ -53,25 +53,25 @@ double curly braces {{Mustache}} syntax and outputs data as plain text
 
 - using `v-bind` directive
 
-```vue
+```html
 <div v-bind:id="dynamicId"></div>
 ```
 
 - using `:` shorthand
 
-```vue
+```html
 <div :id="dynamicId"></div>
 ```
 
 - binding expression using `v-bind` shorthand
 
-```vue
+```html
 <div :id="`prefix-${dynamicId}`"></div>
 ```
 
 - boolean attributes
 
-```vue
+```html
 <button :disabled="isButtonDisabled">Button</button>
 ```
 
@@ -93,19 +93,19 @@ const objectOfAttrs = {
 
 - Directives are special attributes prefixed with `v-`
 
-```vue
+```html
 <p v-if="seen">Now you see me</p>
 ```
 
 - Some directives with an "argument", denoted by a colon
 
-```vue
+```html
 <a v-bind:href="url"> ... </a>
 <!-- shorthand -->
 <a :href="url"> ... </a>
 ```
 
-```vue
+```html
 <a v-on:click="doSomething"> ... </a>
 <!-- shorthand -->
 <a @click="doSomething"> ... </a>
@@ -197,7 +197,7 @@ const publishedBooksMessage = computed(() => {
 
 - Render element based on condition using `v-if`, `v-else-if`, `v-else`
 
-```vue
+```html
 <div v-if="type === 'A'">
   A
 </div>
@@ -213,7 +213,7 @@ const publishedBooksMessage = computed(() => {
 
 `v-show` is similar to `v-if`, but element remains in DOM. It toggles the `display` property under the hood.
 
-```vue
+```html
 <h1 v-show="ok">Hello!</h1>
 ```
 
@@ -227,7 +227,7 @@ const publishedBooksMessage = computed(() => {
 const items = ref([{ message: "Foo" }, { message: "Bar" }]);
 ```
 
-```vue
+```html
 <li v-for="(item, index) in items">
  {{ index }} - {{ item.message }}
 </li>
@@ -242,7 +242,7 @@ const myObject = reactive({
 })
 ```
 
-```vue
+```html
 <li v-for="(value, key) in myObject">
   {{ key }}: {{ value }}
 </li>
@@ -250,7 +250,7 @@ const myObject = reactive({
 
 - Iterate over `range`
 
-```vue
+```html
 <span v-for="n in 10">{{ n }}</span>
 ```
 
@@ -268,7 +268,7 @@ const myObject = reactive({
 - Iterate with :key attribute
 - `:key` is used by vue internally to track changes of items in a collection. It is always recommended to use `:key`, unless the iterated DOM content is very simple.
 
-```vue
+```html
 <div v-for="item in items" :key="item.id">
   <!-- content -->
 </div>
@@ -286,7 +286,7 @@ const myObject = reactive({
 
 - inline class binding
 
-```vue
+```html
 <!-- :class can be used together with plain class attribute  -->
 <div class="item" :class="{ active: isActive }"></div>
 ```
@@ -319,13 +319,13 @@ const errorClass = ref("text-danger");
 
 - conditionally bind class using ternary operator
 
-```vue
+```html
 <div :class="[isActive ? activeClass : '', errorClass]"></div>
 ```
 
 - conditionally bind class using the object and array syntax
 
-```vue
+```html
 <div :class="[{ active: isActive }, errorClass]"></div>
 ```
 
@@ -338,13 +338,13 @@ const activeColor = ref("red");
 const fontSize = ref(30);
 ```
 
-```vue
+```html
 <div :style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
 ```
 
 - bind styles to a reactive variable
 
-```vue
+```html
 <div :style="styleObject"></div>
 ```
 
@@ -357,7 +357,7 @@ const styleObject = reactive({
 
 - bind styles to an array
 
-```vue
+```html
 <div :style="[baseStyles, overridingStyles]"></div>
 ```
 
@@ -369,7 +369,7 @@ const styleObject = reactive({
 const count = ref(0);
 ```
 
-```vue
+```html
 <button @click="count++">Add 1</button>
 <p>Count is: {{ count }}</p>
 ```
@@ -387,7 +387,7 @@ function greet(event) {
 }
 ```
 
-```vue
+```html
 <button @click="greet">Greet</button>
 ```
 
@@ -399,7 +399,7 @@ function say(message) {
 }
 ```
 
-```vue
+```html
 <button @click="say('hello')">Say hello</button>
 <button @click="say('bye')">Say bye</button>
 ```
@@ -412,7 +412,7 @@ function say(message) {
 - Built-in Event Modifiers
   `.stop`,`.prevent`,`.self`,`.capture`,`.once`,`.passive`
 
-```vue
+```html
 <!-- the click event's propagation will be stopped -->
 <a @click.stop="doThis"></a>
 
@@ -433,14 +433,14 @@ function say(message) {
 
 #### a) Text
 
-```vue
+```html
 <p>Message is: {{ message }}</p>
 <input v-model="message" placeholder="edit me" />
 ```
 
 #### b) Multiline text using Textarea
 
-```vue
+```html
 <span>Multiline message is:</span>
 <p style="white-space: pre-line;">{{ message }}</p>
 <textarea v-model="message" placeholder="add multiple lines"></textarea>
@@ -448,18 +448,18 @@ function say(message) {
 
 #### c) Checkbox
 
-```vue
+```html
 <input type="checkbox" id="checkbox" v-model="checked" />
 <label for="checkbox">{{ checked }}</label>
 ```
 
 #### d) Multiple Checkboxes bind to one value
 
-```vue
+```js
 const checkedNames = ref([])
 ```
 
-```vue
+```html
 <div>Checked names: {{ checkedNames }}</div>
 
 <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
@@ -472,7 +472,7 @@ const checkedNames = ref([])
 
 #### e) Radio
 
-```vue
+```html
 <div>Picked: {{ picked }}</div>
 
 <input type="radio" id="one" value="One" v-model="picked" />
@@ -484,7 +484,7 @@ const checkedNames = ref([])
 
 #### f) Select
 
-```vue
+```html
 <div>Selected: {{ selected }}</div>
 
 <select v-model="selected">
@@ -497,7 +497,7 @@ const checkedNames = ref([])
 
 #### g) Multiple Select
 
-```vue
+```html
 <div>Selected: {{ selected }}</div>
 
 <select v-model="selected" multiple>
@@ -511,19 +511,19 @@ const checkedNames = ref([])
 
 - `.lazy` synced after "change" instead of "input"
 
-```vue
+```html
 <input v-model.lazy="msg" />
 ```
 
 - `.number` automatically typecast as a number
 
-```vue
+```html
 <input v-model.number="age" />
 ```
 
 `.trim` trim whitespace
 
-```vue
+```html
 <input v-model.trim="msg" />
 ```
 
@@ -719,7 +719,7 @@ defineProps({
 - ParentComponent.vue
 - By convention `<PascalCase>` is used for components and `camel-case` for props
 
-```vue
+```html
 <!-- Passing static string prop -->
 <MyComponent title-text="hello" />
 
@@ -757,7 +757,7 @@ function buttonClick() {
 </script>
 ```
 
-```vue
+```html
 <!-- parent component -->
 <MyComponent @submit="callback" />
 ```
@@ -768,14 +768,14 @@ function buttonClick() {
 
 #### a) Using a slot
 
-```vue
+```html
 <ContentWrapper>
     <p>text</p>
     <AwesomeIcon name="plus" />
 </ContentWrapper>
 ```
 
-```vue
+```html
 <!--  ContentWrapper.vue  -->
 <div class="content-wrapper">
   <slot></slot> <!-- slot outlet will be replaced the template content -->
@@ -786,7 +786,7 @@ function buttonClick() {
 
 - fallback content is used as a placeholder when no content is provided
 
-```vue
+```html
 <div class="content-wrapper">
   <slot>
     Lorem Ipsum <!-- fallback content -->
@@ -796,7 +796,7 @@ function buttonClick() {
 
 #### c) Named Slots
 
-```vue
+```html
 <div class="container">
   <header>
     <slot name="header"></slot>
@@ -812,7 +812,7 @@ function buttonClick() {
 
 - `<template v-slot:header>` or its shortcut `<template #header>` can be used to pass content to a named slot
 
-```vue
+```html
 <BaseLayout>
   <template #header>
     <h1>header</h1>
@@ -866,7 +866,7 @@ const value = inject("message", "default value");
 
 - Conditionally caches component
 
-```vue
+```html
 <!-- Inactive components will be cached! -->
 <KeepAlive>
   <component :is="activeComponent" />
@@ -878,7 +878,7 @@ const value = inject("message", "default value");
 - Orchestrate async dependencies in a component tree.
   It can render a loading state while waiting for multiple nested async dependencies to be resolved.The `<Suspense>` component has two slots: `#default` and `#fallback`.
 
-```vue
+```html
 <Suspense>
   <!-- component with nested async dependencies -->
   <Dashboard />
@@ -893,7 +893,7 @@ const value = inject("message", "default value");
 
 - Teleport a part of a component's template into a DOM node that exists outside the DOM hierarchy of that component.
 
-```vue
+```html
 <button @click="open = true">Open Modal</button>
 <Teleport to="body">
   <div v-if="open" class="modal">
