@@ -198,6 +198,8 @@ If you have commited and realized that there is small change needed.
 #make your change then,
 git add . # or add individual files
 git commit --amend --no-edit
+
+git commit --amend -m "an updated commit message"
 # now your last commit contains that change!
 ```
 
