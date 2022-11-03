@@ -3,21 +3,20 @@ layout: ../../layouts/CheatSheet.astro
 title: "React-redux Cheatsheet"
 ---
 
-
 ## Synopsis
 
 React-redux lets your React components read data from a Redux store, and dispatch actions to the store to update state.
 Your React components may communicate with a Redux store without having to manually write the interaction code thanks to the react-redux package, the official Redux-UI binding module for React. This makes it possible for an application to rely on Redux to handle the overall state and React to render the user interface in accordance with the state.
 
-
 ## Install react-redux
 
-***npm install react-redux***
+**_npm install react-redux_**
 An initial npm installation of the react-redux package is required before adding it to a React/Redux project.
-```
 
+```
 npm install react-redux
 ```
+
 A handful of the react-redux resources that were imported are:
 
 - [Provider]
@@ -47,12 +46,12 @@ ReactDOM.render(
 );
 ```
 
-
 ## The useSelector() Hook
 
 Each time the state is updated, the useSelector() hook uses a selector function to get state data from the Redux store. Using useSelector (), any component contained within <Provider /> may access state. Inline selectors or pre-defined functions may be used with useSelector().
 
 whenever a React component is called, Selector (selector) achieves two objectives:
+
 - [returns the data that the selector retrieved.]
 - [allows you to force a re-render if the selector's result changes and subscribes the React component to changes in the store.]
 
@@ -65,7 +64,7 @@ const selectPosts = state => state.posts;
 
 const App = (props) => {
   const posts = useSelector(selectPosts);
-  
+
   // Alternatively, selectors can be used inline
   // const posts = useSelector(state => state.posts);
 
@@ -87,7 +86,7 @@ const MyComponent = () => {
   const dispatch = useDispatch();
 
   return (
-    <button 
+    <button
     	onClick={() => dispatch(
     		{ type: 'buttonClicked' }
   	)} >
@@ -96,7 +95,6 @@ const MyComponent = () => {
   );
 };
 ```
-
 
 ## Selectors
 

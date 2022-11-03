@@ -83,6 +83,7 @@ int gcd(int a, int b)
     return gcd(b % a, a);
 }
 ```
+
 ### LCM of Two Numbers
 
 ```cpp
@@ -200,7 +201,9 @@ struct DSU {
 	}
 };
 ```
+
 ## Sliding window template
+
 ```cpp
  int findSubstring(string s){
         vector<int> map(128,0);
@@ -214,21 +217,21 @@ struct DSU {
 
             if(map[s[end++]]-- ?){  /* modify counter here */ }
 
-            while(/* counter condition */){ 
-                 
+            while(/* counter condition */){
+
                  /* update d here if finding minimum*/
 
                 //increase begin to make it invalid/valid again
-                
+
                 if(map[s[begin++]]++ ?){ /*modify counter here*/ }
-            }  
+            }
 
             /* update d here if finding maximum*/
         }
         return d;
   }
-  ```
- 
+```
+
 ## Geometry
 
 ### linear-operations
@@ -372,11 +375,6 @@ point3d intersect(point3d a1, point3d n1, point3d a2, point3d n2, point3d a3, po
 }
 ```
 
-<<<<<<< HEAD:src/pages/sheet/competitive-programming.md
-
-=======
-**[🔼Back to Top](#table-of-contents)**
-
 ## String
 
 ### z-algorithm
@@ -402,7 +400,3 @@ vector<int> z_function(string s) {
 ```
 
 Related problem: [Codeforces 126B - Password](https://codeforces.com/contest/126/problem/B)
-
-**[🔼Back to Top](#table-of-contents)**
-
-> > > > > > > b00d371e1e1a7274c54964b33b95484ba97e282a:src/pages/sheet/competitive-programming-cheatsheet.md

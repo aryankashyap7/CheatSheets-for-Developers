@@ -484,17 +484,15 @@ The semi colon is used to seperate the tokens
 
 ### Operations on List and Set
 
-=======
-
-> > > > > > > | Method   | Description                               | Declaration             |
-> > > > > > > | -------- | ----------------------------------------- | ----------------------- |
-> > > > > > > | add      | To add an element into the list           | arr.add(element)        |
-> > > > > > > | remove   | To remove an element into the list        | arr.remove(element)     |
-> > > > > > > | get      | To get an element at particular index     | arr.get(element)        |
-> > > > > > > | set      | To set the element at a particular index  | arr.set(index, element) |
-> > > > > > > | size     | To get size of the list                   | arr.size()              |
-> > > > > > > | contains | To check if the list contains the element | arr.contains(element)   |
-> > > > > > > | indexOf  | To get the index of the element           | arr.indexOf(element)    |
+| Method   | Description                               | Declaration             |
+| -------- | ----------------------------------------- | ----------------------- |
+| add      | To add an element into the list           | arr.add(element)        |
+| remove   | To remove an element into the list        | arr.remove(element)     |
+| get      | To get an element at particular index     | arr.get(element)        |
+| set      | To set the element at a particular index  | arr.set(index, element) |
+| size     | To get size of the list                   | arr.size()              |
+| contains | To check if the list contains the element | arr.contains(element)   |
+| indexOf  | To get the index of the element           | arr.indexOf(element)    |
 
 ### Map
 
