@@ -9,7 +9,6 @@ Nuxt 3 is an open-source JavaScript meta-framework for modern web development. S
 *Nuxt 3 is the latest release candidate version of Nuxt.js. Any future reference to "Nuxt" in this cheatsheet is a reference to Nuxt 3.*
 
 ## Quick set-up
-In VS Code, use the following commands to **create a new project** and install the dependencies:
 ```bash
 npx nuxi init <project-name>
 cd <project-name>
@@ -55,7 +54,7 @@ export default defineNuxtConfig({
 ```
 
 ### Server Engine
-Nuxt uses [Nitro](https://github.com/unjs/nitro) as its server engine. Nuxt generates a standalone server dist when running `nuxt build` into a `.output/` directory.
+Nuxt uses [Nitro](https://github.com/unjs/nitro) as its server engine.
 
 ### Modules
 Nuxt uses a module system to extend its core framework. Once installed, these modules should be added to you config file:
@@ -273,10 +272,3 @@ Middleware added to the `server/middleware/` subdirectory will run on every requ
 
 ### Plugins
 Plugins added to the `server/plugins/` subdirectory will be registered as [Nitro plugins](https://nitro.unjs.io/guide/advanced/plugins)
-
-## Nuxt APIs
-- Composables
-- Components
-- Utils
-- Commands
-- Configuration
