@@ -119,8 +119,8 @@ The table below lists all the String datatype available in SQL, along with their
 
 # Important Sql Keywords
 
-| Keyword         | Description                                                                                               | Example                                                                                          |
-| --------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | -------------- |
+| Keyword         | Description                                                                    |Example   |
+| --------------- | ------------------------------------------ | --------------------------------- |
 | ADD             | Will add a new column to an existing table.                                                               | ALTER TABLE student ADD email_address VARCHAR(255)                                               |
 | ALTER TABLE     | Adds edits or deletes columns in a table                                                                  | ALTER TABLE student DROP COLUMN email_address                                                    |
 | ALTER COLUMN    | Can change the datatype of a table’s column                                                               | ALTER TABLE student ALTER COLUMN phone VARCHAR(15)                                               |
