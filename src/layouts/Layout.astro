@@ -154,8 +154,10 @@ const { title } = Astro.props;
         color: rgb(var(--accent));
       }
       .link-card-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+        /* display: grid; */
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr)); */
         gap: 1rem;
         padding: 0;
       }
