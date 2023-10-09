@@ -244,8 +244,10 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `tree -J`                | Outputs the directory tree as an JSON formatted array                                                |
 | `tree -o direc_tree.txt` | Redirect the tree’s output to filename                                                               |
 
-# Useful Tools
+## Useful Tools
+
 | Command                  | Description                                                                                          |
 | ------------------------ | ---------------------------------------------------------------------------------------------------- |
 | `neofetch`               | neofetch shows system info including storage, installed packages, window manager, etc                |
 | `ncdu`                   | ncdu is a powerful teminal utility to manage storage space with ease.                                |
+| `htop`                   | terminal utility to monitor system activity .                                                        |
