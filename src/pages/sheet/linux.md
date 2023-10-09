@@ -14,6 +14,7 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `exit`           | Close / exit from a from terminal        |
 | `xkill`          | After right click on any window to close |
 | `poweroff`       | Turn off the system using terminal       |
+| `shutdown -p +M` | M = Minute, Schedule shutdown system     |
 | `reboot`         | Restart the system using terminal        |
 
 
@@ -24,9 +25,11 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `ls`       | List files in current directory         |
 | `ls -l`    | List files in long format               |
 | `ls -a`    | List all files including hidden files   |
+| `open .`   | Open working directory on file manager  |
 | `pwd`      | Print working directory                 |
 | `cd`       | Change directory                        |
 | `cd ..`    | Change directory to parent directory    |
+| `cd -`     | Change directory to previous directory  |
 | `cd ~`     | Change directory to home directory      |
 | `cd -`     | Change directory to previous directory  |
 | `mkdir`    | Create directory                        |
@@ -240,3 +243,9 @@ Linux is a family of open source Unix-like operating systems based on the Linux 
 | `tree --du`              | Reports the size of each element                                                                     |
 | `tree -J`                | Outputs the directory tree as an JSON formatted array                                                |
 | `tree -o direc_tree.txt` | Redirect the tree’s output to filename                                                               |
+
+# Useful Tools
+| Command                  | Description                                                                                          |
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| `neofetch`               | neofetch shows system info including storage, installed packages, window manager, etc                |
+| `ncdu`                   | ncdu is a powerful teminal utility to manage storage space with ease.                                |
