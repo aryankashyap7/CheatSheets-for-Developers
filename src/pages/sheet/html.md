@@ -222,3 +222,7 @@ HTML is a markup language for creating web pages and web applications. With Casc
 | -------------------- | ----------------------------------------- |
 | `<video> … </video>` | Used to show a video on a web page.       |
 | `<audio> … </audio>` | Used to play an audio file on a web page. |
+
+## Visual HTML Cheat Sheet
+
+If you're a more visual person, check out this visual [HTML cheat sheet](https://www.git-tower.com/learn/cheat-sheets/html) available in light and dark versions.
