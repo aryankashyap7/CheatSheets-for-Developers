@@ -224,3 +224,6 @@ git revert [saved hash]
 # follow prompts to edit the commit message
 # or just save and commit
 ```
+## Visual Git Cheat Sheet
+
+If you're a more visual person, check out this visual [Git cheat sheet](https://www.git-tower.com/learn/cheat-sheets/git) available in multiple languages as well as light and dark modes.
