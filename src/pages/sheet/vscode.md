@@ -126,3 +126,7 @@ VS Code is a free source-code editor made by Microsoft for Windows, Linux and ma
 | ---------------- | -------------------- |
 | Ctrl + Shift + G | Open Source Control  |
 | Ctrl + Shift + P | Open Command Palette |
+
+## Downloadable Visual Studio Code Cheat Sheet
+
+If you're more visual person, check out this visual [VS Code cheat sheet](https://www.git-tower.com/learn/cheat-sheets/vscode).
