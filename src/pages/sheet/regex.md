@@ -119,3 +119,7 @@ Some regex implementations use `\` instead of `$`.
 |  `U *`   |             Ungreedy pattern             |
 
 > `*` --> **_PCRE modifier_**
+
+## Visual Regex Cheat Sheet
+
+If you're a more visual person, check out this visual [Regex cheat sheet](https://www.git-tower.com/learn/cheat-sheets/regex).
